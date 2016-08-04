@@ -1,0 +1,391 @@
+$padding: 1em;
+$bodysize: 15px;
+$h1size: $bodysize * 2;
+$h2size: $h1size * 4/5;
+$h3size: $h2size * 9/10;
+$h4size: $h3size * 9/10;
+$h5size: $h4size * 9/10;
+$h6size: $h5size * 9/10;
+
+@import url("pygment.css");
+
+@import url(//fonts.googleapis.com/css?family=PT+Mono);
+@import url(//fonts.googleapis.com/css?family=Titillium+Web);
+
+$font-stack: 'Titillium Web', sans-serif;
+$mono-font-stack: 'PT Mono', sans-serif;
+
+/*
+ *  Name: Fresh
+ *  Date: February 2013
+ *  Description: A Pelican theme with clean layout. Based on Smashing HTML5 and Twitter Bootstrap.
+ *  Version: 1.0.0
+ *  Author: Jui-Shan Liang
+ *  Author URI: http://jsliang.com
+ */
+
+body {
+  color: #333;
+  font-size: $bodysize;
+  font-family: $font-stack;
+  line-height: $bodysize * 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+a {
+  color: rgb(34, 106, 233);
+  &:hover {
+    color: #08c;
+  }
+}
+
+@mixin headings {
+  font-family: $font-stack;
+  font-weight: bold;
+}
+
+h1 {
+  @include headings;
+  font-size: $h1size;
+  line-height: $h1size * 2;
+}
+
+h2 {
+  @include headings;
+  font-size: $h2size;
+  color: #113D8B;
+  line-height: $h2size * 2;
+}
+
+h3 {
+  @include headings;
+  font-size: $h3size;
+  color: #000;
+  line-height: $h3size * 2;
+}
+
+h4 {
+  @include headings;
+  font-size: $h4size;
+  color: #000;
+  line-height: $h4size * 2;
+}
+
+h5 {
+  @include headings;
+  font-size: $h5size;
+  color: #666;
+  line-height: $h5size * 2;
+}
+
+h6 {
+  @include headings;
+  font-size: $h6size;
+  color: #777;
+  line-height: $h6size * 2;
+}
+
+hr {
+  border: 2px solid #eeeeee;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+  list-style: outside decimal;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+.post-info {
+  font-size: 0.8em;
+  text-align: right;
+  margin-bottom: 1em;
+  address {
+    font-style: normal;
+    display: inline;
+  }
+}
+
+.readmore {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.archive_row {
+  font-family: $font-stack;
+  .archive_year{
+    color: #113D8B;
+    font-size: $h2size;
+    font-weight: bold;
+    margin-top: $h2size;
+    text-align: center;
+  }
+  .archive_month{
+    color: #000;
+    font-size: $h3size;
+    font-weight: bold;
+    margin-top: $h3size;
+    text-align: center;
+  }
+  .archive_day {
+    text-align: center;
+  }
+}
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin: 10px;
+  overflow: auto;
+}
+
+code, pre {
+  font-family: $mono-font-stack;
+}
+
+blockquote {
+  margin: 20px;
+  font-style: normal;
+  border: 0;
+  p {
+    font-size: 15px;
+    margin-bottom: 1em;
+    font-weight: normal;
+  }
+}
+
+header, section, footer, aside, nav, article, figure {
+  display: block;
+}
+
+section {
+  padding: $padding;
+}
+
+img.right, figure.right {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+
+img.left, figure.left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0;
+  h1 {
+    font-size: 4em;
+    font-family: $font-stack;
+    line-height: 1;
+    text-align: center;
+    a {
+      &:link, &:visited {
+        color: #000305;
+        display: block;
+        font-weight: bold;
+        margin: 0 0 0.6em 0.2em;
+        text-decoration: none;
+      }
+      &:hover, &:active {
+        color: #113D8B;
+        text-shadow: 1px 1px #fff;
+      }
+    }
+  }
+  .nav > li > a {
+    font-family: $font-stack;
+    font-weight: bold;
+    &:hover {
+        text-shadow: 1px 1px #bbb;
+    }
+  }
+}
+
+#google-custom-search {
+  width: 300px;
+  float: right;
+  margin-top: 5px;
+  .gsc-control-cse {
+    padding: 0 !important;
+    border: 0 !important;
+    background-color: transparent !important;
+  }
+}
+
+#sidebar {
+  padding: 0.5em;
+}
+
+#site-footer {
+  text-align: right;
+  font-size: 0.8em;
+  padding: $padding;
+  address {
+    display: inline;
+  }
+}
+
+.hentry {
+  display: block;
+  clear: both;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1.5em 0;
+}
+
+li:last-child .hentry {
+  border: 0;
+  margin: 0;
+}
+
+#content > .hentry {
+  border: 0;
+  margin: 0;
+  padding: $padding 0;
+}
+
+.hentry img {
+  display: none;
+}
+
+.entry-title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  a {
+    &:link, &:visited {
+      text-decoration: none;
+      color: #333;
+    }
+    &:hover {
+      color: #113D8B;
+    }
+    &:visited {
+    }
+  }
+}
+
+.sharethis {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.sharethis-top {
+  @extend .sharethis;
+  text-align: right;
+}
+
+.sharethis-bottom {
+  @extend .sharethis;
+  text-align: left;
+}
+
+#posts-list {
+  list-style: none;
+  margin: 0;
+  padding: $padding;
+}
+
+.paginator {
+  padding-left: $padding;
+}
+
+#comments-list {
+  list-style: none;
+  margin: 0 1em;
+  blockquote {
+    background: #f8f8f8;
+    clear: both;
+    font-style: normal;
+    margin: 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  footer {
+    color: #888;
+    padding: 0.5em 1em 0 0;
+    text-align: right;
+  }
+  li:nth-child(2n) blockquote {
+    background: #F5f5f5;
+  }
+}
+
+#add-comment {
+  label {
+    clear: left;
+    float: left;
+    text-align: left;
+  }
+  input {
+    &[type='text'], &[type='email'], &[type='url'] {
+      float: left;
+    }
+  }
+  textarea {
+    float: left;
+    height: 150px;
+  }
+  p.req {
+    clear: both;
+    margin: 0 0.5em 1em 0;
+    text-align: right;
+  }
+  input[type='submit'] {
+    float: right;
+    margin: 0 0.5em;
+  }
+  * {
+    margin-bottom: .5em;
+  }
+}
+
+// overwriting pygment.css
+.err {
+  border: 0;
+}
+
+#cloud {
+  padding: 2px;
+  line-height: 2em;
+  text-align: center;
+  margin: 0;
+}
+#cloud a {
+  padding: 0px;
+}
+#cloud li {
+  display: inline;
+}
+
+li.tag-4 {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+li.tag-3 {
+  font-size: 1.0em;
+  font-weight: 200;
+}
+li.tag-2 {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+li.tag-1 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
