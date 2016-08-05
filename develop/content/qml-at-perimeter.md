@@ -1,5 +1,5 @@
 Title: Perimeter Institute hosts Quantum Machine Learning
-Date: 2016-08-04 15:00
+Date: 2016-08-04 20:00
 Modified: 2016-08-04 20:00
 Category: News
 Tags: quantum mechanics, neural nets, machine learning
