@@ -1,6 +1,6 @@
 Title: Machine Learning and Quantum Mechanics
 Date: 2016-09-10 20:00
-Category: Article
+Category: Articles
 Tags: quantum mechanics, machine learning
 Authors: Roger Melko
 Summary: How do quantum mechanics and machine learning fit together?
