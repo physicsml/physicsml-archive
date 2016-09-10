@@ -49,9 +49,6 @@
                 <nav class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                        {% for title, link in MENUITEMS %}
-                            <li {% if link[1:] == output_file %}class="active"{% endif %}><a href="{{ link }}">{{ title }}</a></li>
-                        {% endfor %}
                         {% if DISPLAY_PAGES_ON_MENU %}
                         {% for pa in PAGES %}
                             <li {% if pa == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ pa.url }}">{{ pa.title }}</a></li>
@@ -62,6 +59,9 @@
                             <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
                         {% endif %}
+                        {% for title, link in MENUITEMS %}
+                            <li {% if link[1:] == output_file %}class="active"{% endif %}><a href="{{ link }}">{{ title }}</a></li>
+                        {% endfor %}
                         </ul>
 
                         {% include 'google_custom_search.html' %}
