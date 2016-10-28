@@ -36,6 +36,12 @@
             hashAddressBar: false
         });
     </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['@@','@@'] ]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    </script>
 </head>
 
 <body id="index">
@@ -49,16 +55,19 @@
                 <nav class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                        {% if DISPLAY_PAGES_ON_MENU %}
-                        {% for pa in PAGES %}
-                            <li {% if pa == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ pa.url }}">{{ pa.title }}</a></li>
-                        {% endfor %}
-                        {% endif %}
+
                         {% if not HIDE_CATEGORIES_FROM_MENU %}
                         {% for cat, null in categories %}
                             <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                         {% endfor %}
                         {% endif %}
+
+                        {% if DISPLAY_PAGES_ON_MENU %}
+                        {% for pa in PAGES %}
+                            <li {% if pa == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ pa.url }}">{{ pa.title }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+
                         {% for title, link in MENUITEMS %}
                             <li {% if link[1:] == output_file %}class="active"{% endif %}><a href="{{ link }}">{{ title }}</a></li>
                         {% endfor %}

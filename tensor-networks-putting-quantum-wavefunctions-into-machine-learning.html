@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="PhysicsML" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content="Tensor Networks: Putting Quantum Wavefunctions into Machine Learning"/>
+    <meta property="og:url" content="/tensor-networks-putting-quantum-wavefunctions-into-machine-learning.html"/>
+    <meta property="og:site_name" content="&lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt;"/>
+    <meta property="og:type" content="article"/>
+
+    <link rel="canonical" href="/tensor-networks-putting-quantum-wavefunctions-into-machine-learning.html" />
+
+    <title>Tensor Networks: Putting Quantum Wavefunctions into Machine Learning | &lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['@@','@@'] ]}});
+    </script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+</head>
+
+<body id="index">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="/">&lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt; </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+
+                            <li class="active"><a href="/category/articles.html">Articles</a></li>
+                            <li ><a href="/category/news.html">News</a></li>
+
+                            <li ><a href="/pages/papers.html">Papers</a></li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/tensor-networks-putting-quantum-wavefunctions-into-machine-learning.html" rel="bookmark"
+             title="Permalink to Tensor Networks: Putting Quantum Wavefunctions into Machine Learning">Tensor Networks: Putting Quantum Wavefunctions into Machine Learning</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="/author/miles-stoudenmire.html">Miles Stoudenmire</a>
+    </address>
+
+    in <a href="/category/articles.html">Articles</a>
+
+    on 2016-10-27
+
+        |
+        tags:         <a href="/tag/tensor-networks.html">tensor networks</a>,        <a href="/tag/quantum-mechanics.html">quantum mechanics</a>,        <a href="/tag/machine-learning.html">machine learning</a>,        <a href="/tag/kernel-learning.html">kernel learning</a>,        <a href="/tag/support-vector-machines.html">support vector machines</a>
+
+
+    
+</footer><!-- /.post-info -->
+
+        <h2>Why tensor networks?</h2>
+<p>If you follow machine learning, you have definitely heard of neural networks. 
+If you are a physicist, you may have heard of tensor networks too.
+Both are schemes for assembling small units into very complex functions: a decision/classification function in the case of machine learning or a wavefunction in the case of quantum mechanics.</p>
+<p>But tensor networks differ from neural networks as they are composed only of linear elements. Neural networks crucially require <em>non-linear</em> elements for their success (specifically, <a href="https://en.wikipedia.org/wiki/Activation_function">neuron activation functions</a>). And neural networks have been so wildly successful in recent years that leading tech companies are staking their entire futures on them. </p>
+<p>So why bother with linear tensor networks if non-linearity is the key to success?</p>
+<p>The key is dimensionality. Problems which are difficult to solve in low dimensional spaces
+ become easier when "lifted" into a higher dimensional space. 
+ Think how much easier your day would be if you could move freely in that extra 
+dimension we call time. Data points which are hopelessly intertwined in their native, low-dimensional
+form can become linearly separable when given the extra breathing room of more dimensions.</p>
+<p>But extra dimensions come at a price, known as the "curse of dimensionality". 
+When constructing a high dimensional space from products of smaller spaces, the number of dimensions
+grows exponentially. Even optimizing a linear classifier in an exponentially big space becomes
+costly very quickly.</p>
+<p>This is the problem tensor networks solve: if you can get away with a restricted set of
+linear transformations, then tensor networks let you manipulate objects in an exponentially high 
+dimensional space easily and efficiently.</p>
+<p>Tensor networks can do linear things within spaces that are so big, there's no reason they couldn't be
+as effective as neural networks, which do non-linear things to much smaller spaces.</p>
+<h2>Taking off to feature space</h2>
+<p>Lifting data into a high-dimensional space to classify it is not a new idea. It is the starting
+point for the very elegant support vector machine (SVM) method, and non-linear kernel learning
+methods more broadly.</p>
+<p>Before classifying an input data vector @@\mathbf{x}@@, kernel methods lift the vector to a higher-dimensional
+<em>feature space</em> by applying a feature map @@\Phi(\mathbf{x})@@ to them.</p>
+<p>As a simple example, say the input vector is @@\mathbf{x} = (x_1,x_2)@@. Then we can lift this vector
+by defining a feature map as follows:
+$$
+\Phi(\mathbf{x}) = (1,\,x_1,\,x_2,\, x_1^2 ,\,x_2^2)
+$$
+This non-linear map takes the two-dimensional vector @@\mathbf{x}@@ into a five-dimensional vector @@\Phi(\mathbf{x})@@.</p>
+<p>We then classify our data with a decision function of the form
+$$
+f(\mathbf{x}) = W \cdot \Phi(\mathbf{x})
+$$
+which is just a linear classifier applied to the vector @@\Phi(\mathbf{x})@@.
+It is a linear classifier in <em>feature space</em>.</p>
+<p>What have we gained? Linear classifiers are straightforward to optimize. If there is a hyperplane that
+can separate our data, it only takes a bit of linear algebra to find it. By solving a linear problem,
+we get the full power of a non-linear decision function. (@@\Phi(\mathbf{x})@@ is non-linear so
+@@f(\mathbf{x})@@ will be too.)</p>
+<p>As an example, say we need to separate all inputs @@\mathbf{x}@@ with
+@@|\mathbf{x}| &lt; 1@@ from all other inputs with @@|\mathbf{x}| &gt; 1@@. The decision boundary
+will be a circle, which we cannot make with a plain "unlifted" linear classifier of the 
+form @@\mathbf{n} \cdot \mathbf{x}@@. But in our lifted model, by choosing @@W = (-1,0,0,1,1)@@ we obtain
+an @@f(\mathbf{x})@@ which is negative for points inside our circle and positive for points outside.</p>
+<p>There is a catch of course: a feature map like the example above may not be high-dimensional or 
+non-linear enough to make the data separable for the toughest problems. We can try to solve this 
+by mapping to a really high dimensional space as follows:</p>
+<p>\begin{align}
+\Phi(\mathbf{x}) = &amp; (1,\,x_1,\,x_2,\,\ldots,\,x_N,\, \\
+ &amp;\  x_1\cdot x_2,\ \ \ x_1 \cdot x_3,\,\ldots \\
+ &amp;\  x_1 \cdot x_2 \cdot x_3,\ \ \  x_1 \cdot x_2 \cdot x_4,\,\ldots \\
+ &amp;\  \ldots, \\
+ &amp;\  x_1 \cdot x_2 \cdot x_3 \cdot x_4 \cdots x_N \, )
+\end{align}</p>
+<p>The above feature map has all possible products of the components of @@\mathbf{x}@@ to all orders.
+But if you count the number of terms above,
+you will see that @@\Phi(\mathbf{x})@@ is a @@2^N@@-dimensional vector where @@N@@ is the number of entries
+of @@\mathbf{x}@@. That means the weight vector @@W@@ would need to be @@2^N@@ dimensional also. 
+There is no way to directly manipulate a vector that large once @@N@@ gets bigger than 40 or so.</p>
+<h2>Tensor network machines</h2>
+<p>Quantum physicists have known about the difficulties of 
+exponential spaces since the days of Dirac. Wavefunctions describing the collective
+state of @@N@@ quantum particles live in just such a high-dimensional space. For decades, approaches
+for dealing with these huge wavefunctions relied on guessing a good, small set of parameters 
+to optimize and hoping for the best. Or physicists avoided wavefunctions 
+in favor of large-scale simulations of the particle motions (quantum Monte Carlo methods).</p>
+<p>But it turns out the exponential size of quantum wavefunction space
+is mostly an illusion. The kinds of wavefunctions that normally occur in nature
+make up just a tiny fraction of the larger space they belong to. This smaller corner
+of wavefunction space is precisely the part tensor networks can reach.</p>
+<p>(--- Done through here ---)</p>
+<h2>Other applications of tensor networks to machine learning and data</h2>
+<p>Putting MRFs on a tensor train. Novikov. JMLR 2014. http://jmlr.org/proceedings/papers/v32/novikov14.pdf
+Tensorizing neural networks. Novikov. NIPS 2015 https://arxiv.org/abs/1509.06569
+Matrix Product State for Feature Extraction of Higher-Order Tensors. Bengua. 2015. https://arxiv.org/abs/1503.00516
+Very Large-Scale Singular Value Decomposition Using Tensor Train Networks. Lee &amp; Cichocki. 2014. https://arxiv.org/abs/1410.6895</p>
+<h2>A brief history of tensor networks</h2>
+<p>Tensor networks as a computational tool originated in the field of quantum physics. Early on
+they were considered for describing the mathematical structure of exotic states of quantum
+spin models, such as the <a href="https://en.wikipedia.org/wiki/AKLT_model">AKLT chain</a> (<a href="http://www.sciencedirect.com/science/article/pii/0370157381900703">Accardi,1981</a>; <a href="https://arxiv.org/abs/cond-mat/9409107">Lange,1994</a>).</p>
+<p>The tensor network known as the matrix product state (MPS) came into prominence with the 
+development of the DMRG algorithm (<a href="http://link.aps.org/doi/10.1103/PhysRevLett.69.2863">White,1992</a>), later shown to be a particularly efficient
+algorithm for optimizing MPS for representing ground states of quantum systems (<a href="http://dx.doi.org/10.1103/PhysRevLett.75.3537">Ostlund,1995</a>).</p>
+<p>Since then, tensor networks have been influential in many areas of physics such as quantum chemistry
+(<a href="http://www.annualreviews.org/doi/abs/10.1146/annurev-physchem-032210-103338">Chan,2011</a>), condensed matter physics (<a href="https://arxiv.org/abs/1603.03039">Bridgeman,2016</a>), and even in quantum gravity, where
+tensor networks have been proposed for understanding how gravity could emerge from quantum mechanics
+(<a href="https://doi.org/10.1103/PhysRevD.86.065007">Swingle,2012</a>; <a href="https://www.quantamagazine.org/20150428-how-quantum-pairs-stitch-space-time/">Quanta Magazine,2015</a>). Some key developments in tensor network technology
+were the proposal of the PEPS network for two-dimensional quantum systems (<a href="https://arxiv.org/abs/cond-mat/0407066">Verstraete,2004</a>)
+and the MERA network for critical systems (<a href="http://link.aps.org/doi/10.1103/PhysRevLett.99.220405">Vidal,2007</a>).</p>
+<p>More recently, there has been growing interest in tensor networks within the applied mathematics community 
+following the proposal of the hierarchical Tucker (<a href="http://rdcu.be/l1K0">Hackbush,2009</a>) and tensor train (<a href="http://dx.doi.org/10.1137/090752286">Oseledets,2011</a>) 
+decompositions (originally known as the tree tensor network and MPS decompositions, respectively, in the physics literature).</p>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        Blog powered by <a href="http://getpelican.com/">Pelican</a>, theme based on <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
