@@ -4,6 +4,7 @@ Category: Articles
 Tags: tensor networks, quantum mechanics, machine learning, kernel learning, support vector machines
 Authors: Miles Stoudenmire
 Summary: Tensor networks are a powerful tool for compressing quantum wavefunctions developed in the physics community. 
+Slug: tensor-network
 Status: draft
 
 ## Why tensor networks?
