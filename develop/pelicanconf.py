@@ -8,8 +8,8 @@ AUTHOR = u'PhysicsML'
 SITENAME = u'&lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt;'
 SITEURL = ''
 
-MENUITEMS = [("Papers","/papers.html"),]
-TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
+#MENUITEMS = [("Papers","/papers.html"),]
+#TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
