@@ -35,6 +35,22 @@ dimensional space easily and efficiently.
 Tensor networks can do linear things within spaces that are so big, there's no reason they couldn't be
 as effective as neural networks, which do non-linear things to much smaller spaces.
 
+## Tensor networks in physics
+
+Quantum physicists have known about the difficulties of 
+exponential spaces since the days of Dirac. Wavefunctions describing the collective
+state of @@N@@ quantum particles live in just such a high-dimensional space. For decades, approaches
+for dealing with these huge wavefunctions relied on guessing a smaller set of parameters 
+to optimize, then hoping for the best. Or physicists would avoid wavefunctions altogether
+in favor of large-scale simulations of particle motions (e.g. quantum Monte Carlo methods).
+
+But the exponential size of quantum wavefunction space
+is mostly an illusion. The kinds of wavefunctions normally found in nature
+are just a tiny fraction of the larger space they belong to. This smaller corner
+of wavefunction space is precisely the part tensor networks can reach.
+
+## Tensor network machines
+
 ## Taking off to feature space
 
 Lifting data into a high-dimensional space to classify it is not a new idea. It is the starting
@@ -87,19 +103,6 @@ you will see that @@\Phi(\mathbf{x})@@ is a @@2^N@@-dimensional vector where @@N
 of @@\mathbf{x}@@. That means the weight vector @@W@@ would need to be @@2^N@@ dimensional also. 
 There is no way to directly manipulate a vector that large once @@N@@ gets bigger than 40 or so.
 
-## Tensor network machines
-
-Quantum physicists have known about the difficulties of 
-exponential spaces since the days of Dirac. Wavefunctions describing the collective
-state of @@N@@ quantum particles live in just such a high-dimensional space. For decades, approaches
-for dealing with these huge wavefunctions relied on guessing a good, small set of parameters 
-to optimize and hoping for the best. Or physicists avoided wavefunctions 
-in favor of large-scale simulations of the particle motions (quantum Monte Carlo methods).
-
-But it turns out the exponential size of quantum wavefunction space
-is mostly an illusion. The kinds of wavefunctions that normally occur in nature
-make up just a tiny fraction of the larger space they belong to. This smaller corner
-of wavefunction space is precisely the part tensor networks can reach.
 
 
 (--- Done through here ---)
