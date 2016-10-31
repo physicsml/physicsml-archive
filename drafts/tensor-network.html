@@ -95,22 +95,22 @@
         <h2>Why tensor networks?</h2>
 <p>If you follow machine learning, you have definitely heard of neural networks. 
 If you are a physicist, you may have heard of tensor networks too.
-Both are schemes for assembling small units into very complex functions: a decision/classification function in the case of machine learning or a wavefunction in the case of quantum mechanics.</p>
-<p>But tensor networks differ from neural networks as they are composed only of linear elements. Neural networks crucially require <em>non-linear</em> elements for their success (specifically, <a href="https://en.wikipedia.org/wiki/Activation_function">neuron activation functions</a>). And neural networks have been so wildly successful in recent years that leading tech companies are staking their entire futures on them. </p>
+Both are schemes for assembling small units (neurons or tensors) into very complex functions: a decision/classification function in the case of machine learning or a wavefunction in the case of quantum mechanics.</p>
+<p>But tensor networks are only composed only of linear elements. Neural networks crucially require <em>non-linear</em> elements for their success (specifically, non-linear <a href="https://en.wikipedia.org/wiki/Activation_function">neuron activation functions</a>). And neural networks have been so wildly successful in recent years that leading tech companies are staking their entire futures on them. </p>
 <p>So why bother with linear tensor networks if non-linearity is the key to success?</p>
 <p>The key is dimensionality. Problems which are difficult to solve in low dimensional spaces
  become easier when "lifted" into a higher dimensional space. 
  Think how much easier your day would be if you could move freely in that extra 
 dimension we call time. Data points which are hopelessly intertwined in their native, low-dimensional
 form can become linearly separable when given the extra breathing room of more dimensions.</p>
-<p>But extra dimensions come at a price, known as the "curse of dimensionality". 
+<p>But extra dimensions come at a steep price, known as the "curse of dimensionality". 
 When constructing a high dimensional space from products of smaller spaces, the number of dimensions
 grows exponentially. Even optimizing a linear classifier in an exponentially big space becomes
 costly very quickly.</p>
-<p>This is the problem tensor networks solve: if you can get away with a restricted set of
+<p>This is the problem tensor networks solve: if you can live with a reduced set of
 linear transformations, then tensor networks let you manipulate objects in an exponentially high 
 dimensional space easily and efficiently.</p>
-<p>Tensor networks can do linear things within spaces that are so big, there's no reason they couldn't be
+<p>Tensor networks can do linear things within spaces so big, there's no reason they couldn't be
 as effective as neural networks, which do non-linear things to much smaller spaces.</p>
 <h2>Tensor networks in physics</h2>
 <p>Quantum physicists have known about the difficulties of 

@@ -11,9 +11,9 @@ Status: draft
 
 If you follow machine learning, you have definitely heard of neural networks. 
 If you are a physicist, you may have heard of tensor networks too.
-Both are schemes for assembling small units into very complex functions: a decision/classification function in the case of machine learning or a wavefunction in the case of quantum mechanics.
+Both are schemes for assembling small units (neurons or tensors) into very complex functions: a decision/classification function in the case of machine learning or a wavefunction in the case of quantum mechanics.
 
-But tensor networks differ from neural networks as they are composed only of linear elements. Neural networks crucially require *non-linear* elements for their success (specifically, [neuron activation functions][1]). And neural networks have been so wildly successful in recent years that leading tech companies are staking their entire futures on them. 
+But tensor networks are only composed only of linear elements. Neural networks crucially require *non-linear* elements for their success (specifically, non-linear [neuron activation functions][1]). And neural networks have been so wildly successful in recent years that leading tech companies are staking their entire futures on them. 
 
 So why bother with linear tensor networks if non-linearity is the key to success?
 
@@ -23,16 +23,16 @@ The key is dimensionality. Problems which are difficult to solve in low dimensio
 dimension we call time. Data points which are hopelessly intertwined in their native, low-dimensional
 form can become linearly separable when given the extra breathing room of more dimensions.
 
-But extra dimensions come at a price, known as the "curse of dimensionality". 
+But extra dimensions come at a steep price, known as the "curse of dimensionality". 
 When constructing a high dimensional space from products of smaller spaces, the number of dimensions
 grows exponentially. Even optimizing a linear classifier in an exponentially big space becomes
 costly very quickly.
 
-This is the problem tensor networks solve: if you can get away with a restricted set of
+This is the problem tensor networks solve: if you can live with a reduced set of
 linear transformations, then tensor networks let you manipulate objects in an exponentially high 
 dimensional space easily and efficiently.
 
-Tensor networks can do linear things within spaces that are so big, there's no reason they couldn't be
+Tensor networks can do linear things within spaces so big, there's no reason they couldn't be
 as effective as neural networks, which do non-linear things to much smaller spaces.
 
 ## Tensor networks in physics
