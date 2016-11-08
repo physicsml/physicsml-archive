@@ -112,6 +112,7 @@ to optimize can be exponentially big or even infinite.
 But this smells like a perfect problem for tensor networks: finding the best
 set of linear weights in an exponentially big space.
 
+
 To obtain a weight vector with a structure like a quantum wavefunction, and
 suitable for the tensor network approximations used in physics,
 recall that combining independent quantum systems corresponds to taking a tensor
@@ -126,6 +127,12 @@ The result is a @@d^N@@ dimensional feature vector. However, it has the structur
 of a product-state wavefunction (or rank-1 tensor in applied math parlance), making it
 easy to store and manipulate.
 
+<figure>
+<img style="width:250px;" src="/images/phi.png" />
+<figcaption>Feature map as a tensor product of local feature maps</figcaption>
+</figure>
+
+
 With the above construction, @@W@@ also has @@d^N@@ components, and has the structure of an
 @@N^\text{th}@@ order tensor (N indices of size d). This is an object in the same
 mathematical space as a wavefunction of N spins (d=2 corresponding to S=1/2, d=3 to S=1, etc.).
@@ -133,6 +140,11 @@ But while some wavefunctions in state space (now feature space) are readily
 compressible into tensor networks, the vast majority cannot be compressed at all. 
 Do weights of machine learning models live in the 
 same nicely compressible part of state space as tensor networks?
+
+<figure>
+<img style="width:350px;" src="/images/decision.png" />
+<figcaption>Decision function with a tensor-product feature map (top) and MPS approximation of weights (bottom)</figcaption>
+</figure>
 
 In lieu of a general answer, we did an experiment. Our work ([Stoudenmire,2016][19])
 considered grayscale image data of handwritten digits (the MNIST data set). Taking an

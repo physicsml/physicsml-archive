@@ -2,14 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = "themes/custom_fresh" #nice
+THEME = "themes/custom_fresh"
 
 AUTHOR = u'PhysicsML'
 SITENAME = u'&lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt;'
 SITEURL = ''
-
-#MENUITEMS = [("Papers","/papers.html"),]
-#TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
@@ -21,6 +18,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+#MENUITEMS = [("Papers","/papers.html"),]
+#TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
 
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
