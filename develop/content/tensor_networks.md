@@ -258,8 +258,8 @@ There is no way to directly manipulate a vector that large once @@N@@ gets bigge
 
 ## Appendix: A brief history of tensor networks
 
-Tensor networks as a computational tool originated in the field of quantum physics (and are
-different from [neural tensor networks][23]). Early on
+Tensor networks as a computational tool originated in the field of quantum physics
+(not to be confused with [neural tensor networks][23]). Early on
 they were considered for describing the mathematical structure of exotic states of quantum
 spin models, such as the [AKLT chain][2] ([Accardi,1981][3]; [Lange,1994][4]).
 
