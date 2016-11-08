@@ -128,10 +128,9 @@ of a product-state wavefunction (or rank-1 tensor in applied math parlance), mak
 easy to store and manipulate.
 
 <figure>
-<img style="width:250px;" src="/images/phi.png" />
+<img style="width:250px;" src="/images/phi.png"/>
 <figcaption>Feature map as a tensor product of local feature maps</figcaption>
 </figure>
-
 
 With the above construction, @@W@@ also has @@d^N@@ components, and has the structure of an
 @@N^\text{th}@@ order tensor (N indices of size d). This is an object in the same
@@ -142,7 +141,7 @@ Do weights of machine learning models live in the
 same nicely compressible part of state space as tensor networks?
 
 <figure>
-<img style="width:350px;" src="/images/decision.png" />
+<img style="width:350px;" src="/images/decision.png"/>
 <figcaption>Decision function with a tensor-product feature map (top) and MPS approximation of weights (bottom)</figcaption>
 </figure>
 
