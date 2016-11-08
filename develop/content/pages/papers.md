@@ -6,6 +6,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="http://arxiv.org/abs/1611.01518">"Triangular Quantum Loop Topography for Machine Learning"</a>, Yi&nbsp;Zhang, Eun-Ah&nbsp;Kim, arxiv:<a href="http://arxiv.org/abs/1611.01518">1611.01518</a>, Nov 2016
+
 - <a href="http://arxiv.org/abs/1610.04238">"A Neural Decoder for Topological Codes"</a>, Giacomo&nbsp;Torlai, Roger&nbsp;G.&nbsp;Melko, arxiv:<a href="http://arxiv.org/abs/1610.04238">1610.04238</a>, Oct 2016
 
 - <a href="http://arxiv.org/abs/1610.03137">"Self-Learning Monte Carlo Method"</a>, Junwei&nbsp;Liu, Yang&nbsp;Qi, Zi&nbsp;Yang&nbsp;Meng, Liang&nbsp;Fu, arxiv:<a href="http://arxiv.org/abs/1610.03137">1610.03137</a>, Oct 2016
