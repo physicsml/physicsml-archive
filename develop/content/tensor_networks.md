@@ -200,6 +200,7 @@ deep theoretical underpinnings of kernel learning the future could be bright!
 
 
 <!--
+
 ## Taking off to feature space
 
 Lifting data into a high-dimensional space to classify it is not a new idea. It is the starting
