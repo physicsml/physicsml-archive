@@ -103,19 +103,19 @@ adjustable "hyper parameters" (a common example of a feature map is the one asso
 
 The weight vector @@W@@ contain the actual parameters of the model to be learned. The clever thing about
 kernel learning is although the inputs enter non-linearly via the feature map @@\Phi@@, the
-weights @@W@@ enter *linearly*. The model is just a linear classifier in feature space, and
-the number of weights is determined by the dimensionality of the feature space (the target space of @@\Phi@@).
-A higher-dimensional feature space may yield a more powerful model, but also requires 
+weights @@W@@ enter *linearly* &mdash; the model is just a linear classifier in feature space. 
+The number of weights is determined by the dimensionality of the feature space (the target space of @@\Phi@@).
+A higher-dimensional feature space can produce a more powerful model, but also requires 
 optimizing more weights. In some common approaches, the number of weight parameters
 to optimize can be exponentially big or even infinite.
 
 But this smells like a perfect problem for tensor networks: finding the best
 set of linear weights in an exponentially big space.
 
-To obtain a weight vector with a structure like that of a quantum wavefunction, that is, 
-suitable for a tensor network approximation as in physics,
+To obtain a weight vector with a structure like a quantum wavefunction, and
+suitable for the tensor network approximations used in physics,
 recall that combining independent quantum systems corresponds to taking a tensor
-product of their respective state spaces. For a feature map mimicking this rule,
+product of their state spaces. For a feature map mimicking this rule,
 first map each component @@x\_j@@ of the input vector @@\mathbf{x}@@ into a
 small d-dimensional vector via a *local feature map* @@\phi(x\_j)@@. Then
 combine these local feature vectors using a tensor product:
@@ -148,18 +148,17 @@ standard data set and synthetic, highly correlated data and found similarly good
 
 Compressing the weight tensor into an MPS is interesting, but what are the benefits for machine learning?
 
-One immediate gain has to do with optimizing the weights directly. 
+One immediate gain comes from optimizing the weights directly. 
 The typical way to avoid the costs 
-of high-dimensional feature space is to use the so-called "kernel trick" which
-keeps the weights hidden. But this trick
+of high-dimensional feature space is avoid touching the weights by using the so-called "kernel trick" 
+which keeps the weights hidden in favor of alternate "dual variables". But this trick
 requires constructing a kernel matrix whose number of entries grows quadratically
 with training set size.
 In the era of big data, this scaling issue is cited
 as one reason why neural nets have overtaken kernel methods.
 In contrast, optimizing the weights as an MPS scales at
-most linearly in the training set size (once the training set
-is statistically significant). The cost of applying or testing the 
-model is independent of training set size.
+most linearly in the training set size (for a fixed size of the MPS matrices).
+The cost of applying or testing the model is independent of training set size.
 
 The simplicity of a model where the decision function depends linearly on the weights
 also makes it straightforward to import past insights and powerful optimization
@@ -189,7 +188,7 @@ both yield similar performance? Can tensor networks outperform neural networks
 on certain problems? 
 
 Given the excellent track record of tensor networks in physics, and the 
-deep theoretical underpinnings of kernel learning the future could be bright!
+deep theoretical underpinnings of kernel learning the future could be bright.
 
 
 <br/>
