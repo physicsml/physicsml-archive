@@ -6,10 +6,11 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1611.09364">"Self-Learning Monte Carlo Method in Fermion Systems"</a>, Junwei&nbsp;Liu, Huitao&nbsp;Shen, Yang&nbsp;Qi, Zi&nbsp;Yang&nbsp;Meng, Liang&nbsp;Fu, arxiv:<a href="https://arxiv.org/abs/1611.09364">1611.09364</a>, Nov 2016
+
 - <a href="http://arxiv.org/abs/1611.01518">"Triangular Quantum Loop Topography for Machine Learning"</a>, Yi&nbsp;Zhang, Eun-Ah&nbsp;Kim, arxiv:<a href="http://arxiv.org/abs/1611.01518">1611.01518</a>, Nov 2016
 
-- <a href="https://arxiv.org/abs/1610.02048">"Learning phase transitions by confusion"</a>, Evert&nbsp;P.L.&nbsp;van&nbsp;Nieuwenburg,&nbsp;Ye-Hua&nbsp;Liu,&nbsp;Sebastian&nbsp;D.&nbsp;Huber,
-arxiv:<a href="https://arxiv.org/abs/1610.02048">1610.02048</a>, Oct 2016
+- <a href="https://arxiv.org/abs/1610.02048">"Learning phase transitions by confusion"</a>, Evert&nbsp;P.L.&nbsp;van&nbsp;Nieuwenburg,&nbsp;Ye-Hua&nbsp;Liu,&nbsp;Sebastian&nbsp;D.&nbsp;Huber, arxiv:<a href="https://arxiv.org/abs/1610.02048">1610.02048</a>, Oct 2016
 
 - <a href="http://arxiv.org/abs/1610.04238">"A Neural Decoder for Topological Codes"</a>, Giacomo&nbsp;Torlai, Roger&nbsp;G.&nbsp;Melko, arxiv:<a href="http://arxiv.org/abs/1610.04238">1610.04238</a>, Oct 2016
 
