@@ -8,6 +8,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="https://arxiv.org/abs/1701.00246">"Restricted Boltzmann Machines for the Long Range Ising Models"</a>, Ken-Ichi&nbsp;Aoki, Tamao&nbsp;Kobayashi, arxiv:<a href="https://arxiv.org/abs/1701.00246">1701.00246</a>, Jan 2017
 
+- <a href="https://arxiv.org/abs/1612.05695">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>, Daniel&nbsp;Crawford, Anna&nbsp;Levit, Navid&nbsp;Ghadermarzy, Jaspreet&nbsp;Oberoi, Pooya&nbsp;Ronagh, arxiv:<a href="https://arxiv.org/abs/1612.05695">1612.05695</a>, Dec 2016
+
 - <a href="https://arxiv.org/abs/1611.09364">"Self-Learning Monte Carlo Method in Fermion Systems"</a>, Junwei&nbsp;Liu, Huitao&nbsp;Shen, Yang&nbsp;Qi, Zi&nbsp;Yang&nbsp;Meng, Liang&nbsp;Fu, arxiv:<a href="https://arxiv.org/abs/1611.09364">1611.09364</a>, Nov 2016
 
 - <a href="https://arxiv.org/abs/1611.05891">"Sampling algorithms for validation of supervised learning models for Ising-like systems"</a>, Nataliya&nbsp;Portman, Isaac&nbsp;Tamblyn, arxiv:<a href="https://arxiv.org/abs/1611.05891">1611.05891</a>, Nov 2016
