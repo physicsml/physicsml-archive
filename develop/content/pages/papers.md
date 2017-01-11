@@ -41,7 +41,7 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 - <a href="http://arxiv.org/abs/1601.02036">"Quantum Boltzmann Machine"</a>, Mohammad&nbsp;H.&nbsp;Amin, Evgeny&nbsp;Andriyash, Jason&nbsp;Rolfe, Bohdan&nbsp;Kulchytskyy, Roger&nbsp;Melko ,arxiv:<a href="http://arxiv.org/abs/1601.02036">1601.02036</a>, Jan 2016
 
 
-<b> Applying Physics Ideas to Machine Learning</b>
+<b> Physics-Inspired Ideas Applied to Machine Learning</b>
 
 - <a href="http://arxiv.org/abs/1609.00893">"Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale Optimization Problems: Perspectives and Challenges PART 1"</a>, A.&nbsp;Cichocki, N.&nbsp;Lee, I.V.&nbsp;Oseledets, A-H.&nbsp;Phan, Q.&nbsp;Zhao, D.&nbsp;Mandic, arxiv:<a href="http://arxiv.org/abs/1609.00893">1609.00893</a>, Sep 2016
 
@@ -52,5 +52,17 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 - <a href="http://arxiv.org/abs/1410.3831">"An exact mapping between the Variational Renormalization Group and Deep Learning"</a>, Pankaj&nbsp;Mehta, David&nbsp;J.&nbsp;Schwab , arxiv:<a href="http://arxiv.org/abs/1410.3831">1410.3831</a>, Oct 2014
 
 - <a href="http://arxiv.org/abs/1407.3124">"Tensor Networks for Big Data Analytics and Large-Scale Optimization Problems"</a>, Andrzej Cichocki, arxiv:<a href="http://arxiv.org/abs/1407.3124">1407.3124</a>, Jul 2014
+
+<b> Quantum Computation and Quantum Algorithms for Machine Learning </b>
+
+- <a href="http://arxiv.org/abs/1611.09347">"Quantum Machine Learning"</a>, Jacob&nbsp;Biamonte, Peter&nbsp;Wittek, Nicola&nbsp;Pancotti, Patrick&nbsp;Rebentrost, Nathan&nbsp;Wiebe, Seth&nbsp;Lloyd, arxiv:<a href="http://arxiv.org/abs/1611.09347">1611.09347</a>, Nov 2016
+
+- <a href="http://arxiv.org/abs/1307.0411">"Quantum algorithms for supervised and unsupervised machine learning"</a>, Seth&nbsp;Lloyd, Masoud&nbsp;Mohseni, Patrick&nbsp;Rebentrost, arxiv:<a href="http://arxiv.org/abs/1307.0411">1307.0411</a>, Jul 2013
+
+- <a href="http://arxiv.org/abs/quant-ph/0411140">"Improved Bounds on Quantum Learning Algorithms"</a>, Alp&nbsp;Atici, Rocco&nbsp;A.&nbsp;Servedio, arxiv:<a href="http://arxiv.org/abs/quant-ph/0411140">quant-ph/0411140</a>, Nov 2004
+
+- <a href="http://arxiv.org/abs/quant-ph/0309059">"The geometry of quantum learning"</a>, Markus&nbsp;Hunziker, David&nbsp;A.&nbsp;Meyer, Jihun&nbsp;Park, James&nbsp;Pommersheim, Mitch&nbsp;Rothstein, arxiv:<a href="http://arxiv.org/abs/quant-ph/0309059">quant-ph/0309059</a>, Sep 2003
+
+
 
 </div>
