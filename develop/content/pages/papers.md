@@ -46,7 +46,7 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="http://arxiv.org/abs/1609.00893">"Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale Optimization Problems: Perspectives and Challenges PART 1"</a>, A.&nbsp;Cichocki, N.&nbsp;Lee, I.V.&nbsp;Oseledets, A-H.&nbsp;Phan, Q.&nbsp;Zhao, D.&nbsp;Mandic, arxiv:<a href="http://arxiv.org/abs/1609.00893">1609.00893</a>, Sep 2016
 
-- <a href="https://arxiv.org/abs/1608.08225">"Why does deep and cheap learning work so well?"</a>, Henry&nbsp;Lin, Max&nbsp;Tegmark, arxiv:<a href="ttps://arxiv.org/abs/1608.08225">1608.08225</a>, Aug 2016
+- <a href="https://arxiv.org/abs/1608.08225">"Why does deep and cheap learning work so well?"</a>, Henry&nbsp;Lin, Max&nbsp;Tegmark, arxiv:<a href="https://arxiv.org/abs/1608.08225">1608.08225</a>, Aug 2016
 
 - <a href="http://arxiv.org/abs/1605.05775">"Supervised Learning with Quantum-Inspired Tensor Networks"</a>, E.&nbsp;Miles&nbsp;Stoudenmire, David&nbsp;J.&nbsp;Schwab, arxiv:<a href="http://arxiv.org/abs/1605.05775">1605.05775</a>, May 2016
 
@@ -59,6 +59,9 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 - <a href="http://arxiv.org/abs/1407.3124">"Tensor Networks for Big Data Analytics and Large-Scale Optimization Problems"</a>, Andrzej Cichocki, arxiv:<a href="http://arxiv.org/abs/1407.3124">1407.3124</a>, Jul 2014
 
 <b> Quantum Computation and Quantum Algorithms for Machine Learning </b>
+
+
+- <a href="https://arxiv.org/abs/1612.05204">"Tomography and Generative Data Modeling via Quantum Boltzmann Training"</a>, Maria Kieferova, Nathan Wiebe, arxiv:<a href="https://arxiv.org/abs/1612.05204">1612.05204</a>, Dec 2016
 
 - <a href="http://arxiv.org/abs/1611.09347">"Quantum Machine Learning"</a>, Jacob&nbsp;Biamonte, Peter&nbsp;Wittek, Nicola&nbsp;Pancotti, Patrick&nbsp;Rebentrost, Nathan&nbsp;Wiebe, Seth&nbsp;Lloyd, arxiv:<a href="http://arxiv.org/abs/1611.09347">1611.09347</a>, Nov 2016
 
