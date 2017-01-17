@@ -1,7 +1,7 @@
 Title: Papers
 Date: 2016-10-27 11:00
 
-The following are papers combining the fields of physics&mdash;especially quantum mechanics&mdash;and machine learning.
+The following are recent papers combining the fields of physics&mdash;especially quantum mechanics&mdash;and machine learning.
 Please email Roger Melko or Miles Stoudenmire if you would like to see a paper added to this page.
 
 <b> Applying Machine Learning to Physics </b>
@@ -45,6 +45,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 - <a href="http://arxiv.org/abs/1612.05695">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>, Daniel&nbsp;Crawford, Anna&nbsp;Levit, Navid&nbsp;Ghadermarzy, Jaspreet&nbsp;S.&nbsp;Oberoi, Pooya&nbsp;Ronagh, arxiv:<a href="http://arxiv.org/abs/1612.05695">1612.05695</a>, Dec 2016
 
 - <a href="http://arxiv.org/abs/1609.00893">"Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale Optimization Problems: Perspectives and Challenges PART 1"</a>, A.&nbsp;Cichocki, N.&nbsp;Lee, I.V.&nbsp;Oseledets, A-H.&nbsp;Phan, Q.&nbsp;Zhao, D.&nbsp;Mandic, arxiv:<a href="http://arxiv.org/abs/1609.00893">1609.00893</a>, Sep 2016
+
+- <a href="https://arxiv.org/abs/1608.08225">"Why does deep and cheap learning work so well?"</a>, Henry&nbsp;Lin, Max&nbsp;Tegmark, arxiv:<a href="ttps://arxiv.org/abs/1608.08225">1608.08225</a>, Aug 2016
 
 - <a href="http://arxiv.org/abs/1605.05775">"Supervised Learning with Quantum-Inspired Tensor Networks"</a>, E.&nbsp;Miles&nbsp;Stoudenmire, David&nbsp;J.&nbsp;Schwab, arxiv:<a href="http://arxiv.org/abs/1605.05775">1605.05775</a>, May 2016
 
