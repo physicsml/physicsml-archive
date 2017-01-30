@@ -6,6 +6,14 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1701.06246">"Neural network representation of tensor network and chiral states"</a>, Yichen&nbsp;Huang, Joel E.&nbsp;Moore, arxiv:<a href="https://arxiv.org/abs/1701.06246">1701.06246</a>, Jan 2017
+
+- <a href="https://arxiv.org/abs/1701.04831">"On the Equivalence of Restricted Boltzmann Machines and Tensor Network States"</a>, Jing&nbsp;Chen, Song&nbsp;Cheng, Haidong&nbsp;Xie, Lei&nbsp;Wang, Tao&nbsp;Xiang, arxiv:<a href="https://arxiv.org/abs/1701.04831">1701.04831</a>, Jan 2017
+
+- <a href="https://arxiv.org/abs/1701.05039">"Efficient Representation of Quantum Many-body States with Deep Neural Networks"</a>, Xun&nbsp;Gao, Lu-Ming&nbsp;Duan, arxiv:<a href="https://arxiv.org/abs/1701.05039">1701.05039</a>, Jan 2017
+
+- <a href="https://arxiv.org/abs/1701.04844">"Quantum Entanglement in Neural Network States"</a>, Dong-Ling&nbsp;Deng, Xiaopeng&nbsp;Li, S.&nbsp;Das Sarma, arxiv:<a href="https://arxiv.org/abs/1701.04844">1701.04844</a>, Jan 2017
+
 - <a href="https://arxiv.org/abs/1701.00246">"Restricted Boltzmann Machines for the Long Range Ising Models"</a>, Ken-Ichi&nbsp;Aoki, Tamao&nbsp;Kobayashi, arxiv:<a href="https://arxiv.org/abs/1701.00246">1701.00246</a>, Jan 2017
 
 - <a href="https://arxiv.org/abs/1612.05695">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>, Daniel&nbsp;Crawford, Anna&nbsp;Levit, Navid&nbsp;Ghadermarzy, Jaspreet&nbsp;Oberoi, Pooya&nbsp;Ronagh, arxiv:<a href="https://arxiv.org/abs/1612.05695">1612.05695</a>, Dec 2016
