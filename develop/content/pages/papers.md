@@ -16,6 +16,7 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="https://arxiv.org/abs/1701.00246">"Restricted Boltzmann Machines for the Long Range Ising Models"</a>, Ken-Ichi&nbsp;Aoki, Tamao&nbsp;Kobayashi, arxiv:<a href="https://arxiv.org/abs/1701.00246">1701.00246</a>, Jan 2017
 
+
 - <a href="https://arxiv.org/abs/1612.05695">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>, Daniel&nbsp;Crawford, Anna&nbsp;Levit, Navid&nbsp;Ghadermarzy, Jaspreet&nbsp;Oberoi, Pooya&nbsp;Ronagh, arxiv:<a href="https://arxiv.org/abs/1612.05695">1612.05695</a>, Dec 2016
 
 - <a href="https://arxiv.org/abs/1611.09364">"Self-Learning Monte Carlo Method in Fermion Systems"</a>, Junwei&nbsp;Liu, Huitao&nbsp;Shen, Yang&nbsp;Qi, Zi&nbsp;Yang&nbsp;Meng, Liang&nbsp;Fu, arxiv:<a href="https://arxiv.org/abs/1611.09364">1611.09364</a>, Nov 2016
@@ -34,6 +35,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="https://arxiv.org/abs/1609.09060">"Exact Machine Learning Topological States"</a>, Dong-Ling&nbsp;Deng, Xiaopeng&nbsp;Li, S.&nbsp;Das Sarma, arxiv:<a href="https://arxiv.org/abs/1609.09060">1609.09060</a>, Sep 2016
 
+- <a href="https://arxiv.org/abs/1609.0375">"Pure density functional for strong correlations and the thermodynamic limit from machine learning"</a>, Li&nbsp;Li, Thomas&nbsp;E.&nbsp;Baker, Steven&nbsp;R.&nbsp;White, Kieron&nbsp;Burke, arxiv:<a href="https://arxiv.org/abs/1609.0375">1612.05695</a>, Sep 2016
+
 - <a href="http://arxiv.org/abs/1609.02552">"Machine Learning Phases of Strongly Correlated Fermions"</a>, Kelvin&nbsp;Ch'ng, Juan&nbsp;Carrasquilla, Roger&nbsp;G.&nbsp;Melko, Ehsan&nbsp;Khatami, arxiv:<a href="http://arxiv.org/abs/1609.02552">1609.02552</a>, Sep 2016
 
 - <a href="http://arxiv.org/abs/1608.07848">"Machine learning quantum phases of matter beyond the fermion sign problem"</a>, Peter&nbsp;Broecker, Juan&nbsp;Carrasquilla, Roger&nbsp;G.&nbsp;Melko, Simon&nbsp;Trebst, arxiv:<a href="http://arxiv.org/abs/1608.07848">1608.07848</a>, Aug 2016
@@ -46,6 +49,7 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="http://arxiv.org/abs/1605.01735">"Machine learning phases of matter"</a>, Juan&nbsp;Carrasquilla, Roger&nbsp;G.&nbsp;Melko, arxiv:<a href="http://arxiv.org/abs/1605.01735">1605.01735</a>, May 2016
 
+- <a href="http://onlinelibrary.wiley.com/doi/10.1002/qua.25040/abstract">"Understanding machine-learned density functionals"</a>, Li&nbsp;Li, John&nbsp;C.&nbsp;Snyder, Isabelle&nbsp;M.&nbsp;Pelaschier, Jessica&nbsp;Huang, Uma-Naresh&nbsp;Niranjan, Paul&nbsp;Duncan, Matthias&nbsp;Rupp, Klaus-Robert&nbsp;Müller, Kieron&nbsp;Burke, International Journal of Quantum Chemistry, 116, <a href="http://onlinelibrary.wiley.com/doi/10.1002/qua.25040/abstract">819</a>, Nov 2015
 
 
 <b> Physics-Inspired Ideas Applied to Machine Learning</b>
