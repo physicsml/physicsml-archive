@@ -6,6 +6,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1703.02435">"Unsupervised learning of phase transitions: from principal component analysis to variational autoencoders"</a>, Sebastian&nbsp;Wetzel, arxiv:<a href="https://arxiv.org/abs/1703.02435">1703.02435</a>, March 2017
+
 - <a href="https://arxiv.org/abs/1701.06246">"Neural network representation of tensor network and chiral states"</a>, Yichen&nbsp;Huang, Joel E.&nbsp;Moore, arxiv:<a href="https://arxiv.org/abs/1701.06246">1701.06246</a>, Jan 2017
 
 - <a href="https://arxiv.org/abs/1701.04831">"On the Equivalence of Restricted Boltzmann Machines and Tensor Network States"</a>, Jing&nbsp;Chen, Song&nbsp;Cheng, Haidong&nbsp;Xie, Lei&nbsp;Wang, Tao&nbsp;Xiang, arxiv:<a href="https://arxiv.org/abs/1701.04831">1701.04831</a>, Jan 2017
