@@ -76,6 +76,9 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Quantum Computation and Quantum Algorithms for Machine Learning </b>
 
+
+- <a href="https://arxiv.org/abs/1703.05402">"Experimental Quantum Hamiltonian Learning"</a>, Jianwei Wang, Stefano Paesani, Raffaele Santagati, Sebastian Knauer, Antonio A. Gentile, Nathan Wiebe, Maurangelo Petruzzella, Jeremy L. O'Brien, John G. Rarity, Anthony Laing, Mark G. Thompson, arxiv:<a href="https://arxiv.org/abs/1703.05402">1703.05402</a>, March 2017
+
 - <a href="https://arxiv.org/abs/1612.05204">"Tomography and Generative Data Modeling via Quantum Boltzmann Training"</a>, Maria Kieferova, Nathan Wiebe, arxiv:<a href="https://arxiv.org/abs/1612.05204">1612.05204</a>, Dec 2016
 
 - <a href="http://arxiv.org/abs/1611.09347">"Quantum Machine Learning"</a>, Jacob&nbsp;Biamonte, Peter&nbsp;Wittek, Nicola&nbsp;Pancotti, Patrick&nbsp;Rebentrost, Nathan&nbsp;Wiebe, Seth&nbsp;Lloyd, arxiv:<a href="http://arxiv.org/abs/1611.09347">1611.09347</a>, Nov 2016
