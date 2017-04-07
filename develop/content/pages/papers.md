@@ -6,6 +6,10 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1704.01578">"Probing many-body localization with neural networks"</a>, Frank Schindler, Nicolas Regnault, Titus Neupert, arxiv:<a href="https://arxiv.org/abs/1704.01578">1704.01578</a>, April 2017
+
+- <a href="https://arxiv.org/abs/1704.00080">"Discovering Phases, Phase Transitions and Crossovers through Unsupervised Machine Learning: A critical examination"</a>, Wenjian Hu, Rajiv R.P. Singh, Richard T. Scalettar, arxiv:<a href="https://arxiv.org/abs/1704.00080">1704.00080</a>, March 2017
+
 - <a href="https://arxiv.org/abs/1703.05334">"Many-body quantum state tomography with neural networks"</a>, Giacomo&nbsp;Torlai, Guglielmo&nbsp;Mazzola, Juan&nbsp;Carrasquilla, Matthias&nbsp;Troyer, Roger&nbsp;Melko, Giuseppe&nbsp;Carleo, arxiv:<a href="https://arxiv.org/abs/1703.05334">1703.05334</a>, March 2017
 
 - <a href="https://arxiv.org/abs/1703.02435">"Unsupervised learning of phase transitions: from principal component analysis to variational autoencoders"</a>, Sebastian&nbsp;Wetzel, arxiv:<a href="https://arxiv.org/abs/1703.02435">1703.02435</a>, March 2017
@@ -57,6 +61,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 
 <b> Physics-Inspired Ideas Applied to Machine Learning</b>
+
+- <a href="https://arxiv.org/abs/1704.01552">"Deep Learning and Quantum Physics : A Fundamental Bridge"</a>, Yoav Levine, David Yakira, Nadav Cohen, Amnon Shashua, arxiv:<a href="https://arxiv.org/abs/1704.01552">1704.01552</a>, April 2017
 
 - <a href="http://arxiv.org/abs/1612.05695">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>, Daniel&nbsp;Crawford, Anna&nbsp;Levit, Navid&nbsp;Ghadermarzy, Jaspreet&nbsp;S.&nbsp;Oberoi, Pooya&nbsp;Ronagh, arxiv:<a href="http://arxiv.org/abs/1612.05695">1612.05695</a>, Dec 2016
 
