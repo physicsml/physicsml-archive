@@ -72,7 +72,7 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="http://arxiv.org/abs/1605.05775">"Supervised Learning with Quantum-Inspired Tensor Networks"</a>, E.&nbsp;Miles&nbsp;Stoudenmire, David&nbsp;J.&nbsp;Schwab, arxiv:<a href="http://arxiv.org/abs/1605.05775">1605.05775</a>, May 2016
 
-- <a href="http://arxiv.org/abs/1605.03795">"Tensor Train polynomial models via Riemannian optimization"</a>, Alexander&nbsp;Novikov, Mikhail&nbsp;Trofimov, Ivan&nbsp;Oseledets, arxiv:<a href="http://arxiv.org/abs/1605.03795">1605.03795</a>, May 2016
+- <a href="http://arxiv.org/abs/1605.03795">"Exponential Machines"</a>, Alexander&nbsp;Novikov, Mikhail&nbsp;Trofimov, Ivan&nbsp;Oseledets, arxiv:<a href="http://arxiv.org/abs/1605.03795">1605.03795</a>, May 2016
 
 - <a href="http://arxiv.org/abs/1601.02036">"Quantum Boltzmann Machine"</a>, Mohammad&nbsp;H.&nbsp;Amin, Evgeny&nbsp;Andriyash, Jason&nbsp;Rolfe, Bohdan&nbsp;Kulchytskyy, Roger&nbsp;Melko, arxiv:<a href="http://arxiv.org/abs/1601.02036">1601.02036</a>, Jan 2016
 
