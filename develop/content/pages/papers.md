@@ -6,6 +6,10 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1705.05582">"Machine Learning of Explicit Order Parameters: From the Ising Model to SU(2) Lattice Gauge Theory"</a>, Sebastian Johann Wetzel, Manuel Scherzer, arxiv:<a href="https://arxiv.org/abs/1705.05582">1705.05582</a>, May 2017
+
+- <a href="https://arxiv.org/abs/1705.01947">"Machine Learning ℤ2 Quantum Spin Liquids with Quasi-particle Statistics"</a>, Yi Zhang, Roger G. Melko, Eun-Ah Kim, arxiv:<a href="https://arxiv.org/abs/1705.01947">1705.01947</a>, May 2017
+
 - <a href="https://arxiv.org/abs/1705.00857">"Decoding Small Surface Codes with Feedforward Neural Networks"</a>, Savvas Varsamopoulos, Ben Criger and Koen Bertels, arxiv:<a href="https://arxiv.org/abs/1705.00857">1705.00857</a>, May 2017
 
 - <a href="https://arxiv.org/abs/1705.01523">"A Separability-Entanglement Classifier via Machine Learning"</a>, Sirui Lu, Shilin Huang, Keren Li, Jun Li, Jianxin Chen, Dawei Lu, Zhengfeng Ji, Yi Shen, Duanlu Zhou and Bei Zeng, arxiv:<a href="https://arxiv.org/abs/1705.01523">1705.01523</a>, May 2017
