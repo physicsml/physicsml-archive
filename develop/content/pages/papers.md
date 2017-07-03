@@ -6,6 +6,20 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1706.09779">"Deep neural networks for direct, featureless learning through observation: the case of 2d spin models"</a>, K. Mills, I. Tamblyn, arxiv:<a href="https://arxiv.org/abs/1706.09779">1706.09779</a>, June 2017 
+
+- <a href="https://arxiv.org/abs/1706.07977">"Machine Learning Studies of Frustrated Classical Spin Models"</a>, Ce Wang, Hui Zhai, arxiv:<a href="https://arxiv.org/abs/1706.07977">1706.07977</a>, June 2017 
+
+- <a href="https://arxiv.org/abs/1706.08111">"Self-Learning Phase Boundaries by Active Contours"</a>, Ye-Hua Liu, Evert P.L. van Nieuwenburg, arxiv:<a href="https://arxiv.org/abs/1706.08111">1706.08111</a>, June 2017 
+
+- <a href="https://arxiv.org/abs/1705.07855">"Machine-learning-assisted correction of correlated qubit errors in a topological code"</a>, P. Baireuther, T. E. O'Brien, B. Tarasinski, C. W. J. Beenakker, arxiv:<a href="https://arxiv.org/abs/1705.07855">1705.07855</a>, May 2017
+
+- <a href="https://arxiv.org/abs/1705.06724">"Self-Learning Monte Carlo Method: Continuous-Time Algorithm"</a>, Yuki Nagai, Huitao Shen, Yang Qi, Junwei Liu, Liang Fu, arxiv:<a href="https://arxiv.org/abs/1705.06724">1705.06724</a>, May 2017
+
+- <a href="https://arxiv.org/abs/1705.11023">"Criticality & Deep Learning II: Momentum Renormalisation Group"</a>, Dan Oprisa, Peter Toth, arxiv:<a href="https://arxiv.org/abs/1705.11023">1705.11023</a>, May 2017
+
+- <a href="https://arxiv.org/abs/1705.05372">"Construction of Hamiltonians by machine learning of energy and entanglement spectra"</a>, Hiroyuki Fujita, Yuya O. Nakagawa, Sho Sugiura, Masaki Oshikawa, arxiv:<a href="https://arxiv.org/abs/1705.05372">1705.05372</a>, May 2017
+
 - <a href="https://arxiv.org/abs/1705.05582">"Machine Learning of Explicit Order Parameters: From the Ising Model to SU(2) Lattice Gauge Theory"</a>, Sebastian Johann Wetzel, Manuel Scherzer, arxiv:<a href="https://arxiv.org/abs/1705.05582">1705.05582</a>, May 2017
 
 - <a href="https://arxiv.org/abs/1705.01947">"Machine Learning ℤ2 Quantum Spin Liquids with Quasi-particle Statistics"</a>, Yi Zhang, Roger G. Melko, Eun-Ah Kim, arxiv:<a href="https://arxiv.org/abs/1705.01947">1705.01947</a>, May 2017
@@ -15,6 +29,8 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 - <a href="https://arxiv.org/abs/1705.01523">"A Separability-Entanglement Classifier via Machine Learning"</a>, Sirui Lu, Shilin Huang, Keren Li, Jun Li, Jianxin Chen, Dawei Lu, Zhengfeng Ji, Yi Shen, Duanlu Zhou and Bei Zeng, arxiv:<a href="https://arxiv.org/abs/1705.01523">1705.01523</a>, May 2017
 
 - <a href="https://arxiv.org/abs/1705.00565">"Machine Learning Meets Quantum State Preparation. The Phase Diagram of Quantum Control"</a>, Marin Bukov, Alexandre G.R. Day, Dries Sels, Phillip Weinberg, Anatoli Polkovnikov and Pankaj Mehta, arxiv:<a href="https://arxiv.org/abs/1705.00565">1705.00565</a>, May 2017
+
+- <a href="https://arxiv.org/abs/1704.05822">"Deterministic Quantum Annealing Expectation-Maximization Algorithm"</a>, Hideyuki Miyahara, Koji Tsumura, Yuki Sughiyama, arxiv:<a href="https://arxiv.org/abs/1704.05822">1704.05822</a>, April 2017
 
 - <a href="https://arxiv.org/abs/1704.06279">"Mutual Information, Neural Networks and the Renormalization Group"</a>, Maciej Koch-Janusz and Zohar Ringel, arxiv:<a href="https://arxiv.org/abs/1704.06279">1704.06279</a>, April 2017
 
