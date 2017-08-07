@@ -83,6 +83,9 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 - <a href="http://arxiv.org/abs/1608.07848">"Machine learning quantum phases of matter beyond the fermion sign problem"</a>, Peter&nbsp;Broecker, Juan&nbsp;Carrasquilla, Roger&nbsp;G.&nbsp;Melko, Simon&nbsp;Trebst, arxiv:<a href="http://arxiv.org/abs/1608.07848">1608.07848</a>, Aug 2016
 
+- <a href="https://www.nature.com/articles/npjqi201619">"Quantum gate learning in qubit networks: Toffoli gate without time-dependent control"</a>, Leonardo&nbsp;Banchi, Nicola&nbsp;Pancotti, Sougato&nbsp;Bose, <i>NPJ Quantum Information</i> <b>2</b>, <a href="https://www.nature.com/articles/npjqi201619">160109</a>, Jul 2016
+
+
 - <a href="http://arxiv.org/abs/1606.02718">"Learning Thermodynamics with Boltzmann Machines"</a>, Giacomo&nbsp;Torlai, Roger&nbsp;G.&nbsp;Melko, arxiv:<a href="http://arxiv.org/abs/1606.02718">1606.02718</a>, Jun 2016
 
 - <a href="https://arxiv.org/abs/1606.02318">"Solving the Quantum Many-Body Problem with Artificial Neural Networks"</a>, Guiseppe&nbsp;Carleo, Matthias&nbsp;Troyer, arxiv<a href="https://arxiv.org/abs/1606.02318">1606.02318</a>, June 2016
