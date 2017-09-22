@@ -2,7 +2,7 @@ Title: Papers
 Date: 2016-10-27 11:00
 
 The following are recent papers combining the fields of physics&mdash;especially quantum mechanics&mdash;and machine learning.
-Please email Roger Melko or Miles Stoudenmire if you would like to see a paper added to this page.
+Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stoudenmire if you would like to see a paper added to this page.
 
 <b> Applying Machine Learning to Physics </b>
 
