@@ -6,6 +6,18 @@ Please email Roger Melko or Miles Stoudenmire if you would like to see a paper a
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://arxiv.org/abs/1709.05790">"Learning Disordered Topological Phases by Statistical Recovery of Symmetry"</a>, Nobuyuki Yoshioka, Yutaka Akagi, Hosho Katsura, arxiv:<a href="https://arxiv.org/abs/1709.05790">1709.05790</a>, Sept 2017 
+
+- <a href="https://arxiv.org/abs/1709.06475">"Restricted-Boltzmann-Machine Learning for Solving Strongly Correlated Quantum Systems"</a>, Yusuke Nomura, Andrew Darmawan, Youhei Yamaji, Masatoshi Imada, arxiv:<a href="https://arxiv.org/abs/1709.06475">1709.06475</a>, Sept 2017 
+
+- <a href="https://arxiv.org/abs/1709.02597">"Identifying Product Order with Restricted Boltzmann Machines"</a>, Wen-Jia Rao, Zhenyu Li, Qiong Zhu, Mingxing Luo, Xin Wan, arxiv:<a href="https://arxiv.org/abs/1709.02597">1709.02597</a>, Sept 2017 
+
+- <a href="https://arxiv.org/abs/1709.02779">"Machine learning & artificial intelligence in the quantum domain"</a>, Vedran Dunjko, Hans J. Briegel, arxiv:<a href="https://arxiv.org/abs/1709.02779">1709.02779</a>, Sept 2017 
+
+- <a href="https://arxiv.org/abs/1709.00812">"Phase Diagrams of Three-Dimensional Anderson and Quantum Percolation Models by Deep Three-Dimensional Convolutional Neural Network"</a>, Tomohiro Mano, Tomi Ohtsuki, arxiv:<a href="https://arxiv.org/abs/1709.00812">1709.00812</a>, Sept 2017 
+
+- <a href="https://arxiv.org/abs/1709.01662">"Unsupervised Generative Modeling Using Matrix Product States"</a>, Zhao-Yu Han, Jun Wang, Heng Fan, Lei Wang, Pan Zhang, arxiv:<a href="https://arxiv.org/abs/1709.01662">1709.01662</a>, Sept 2017 
+
 - <a href="https://arxiv.org/abs/1709.01223">"Machine Learning Spatial Geometry from Entanglement Features"</a>, Yi-Zhuang You, Zhao Yang, Xiao-Liang Qi, arxiv:<a href="https://arxiv.org/abs/1709.01223">1709.01223</a>, Sept 2017 
 
 - <a href="https://arxiv.org/abs/1708.09401">"Machine Learning Topological Invariants with Neural Networks"</a>, Pengfei Zhang, Huitao Shen, Hui Zhai, arxiv:<a href="https://arxiv.org/abs/1708.09401">1708.09401</a>, Aug 2017 
