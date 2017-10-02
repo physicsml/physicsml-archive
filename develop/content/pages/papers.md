@@ -16,7 +16,6 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 - <a href="https://arxiv.org/abs/1709.00812">"Phase Diagrams of Three-Dimensional Anderson and Quantum Percolation Models by Deep Three-Dimensional Convolutional Neural Network"</a>, Tomohiro Mano, Tomi Ohtsuki, arxiv:<a href="https://arxiv.org/abs/1709.00812">1709.00812</a>, Sept 2017 
 
-- <a href="https://arxiv.org/abs/1709.01662">"Unsupervised Generative Modeling Using Matrix Product States"</a>, Zhao-Yu Han, Jun Wang, Heng Fan, Lei Wang, Pan Zhang, arxiv:<a href="https://arxiv.org/abs/1709.01662">1709.01662</a>, Sept 2017 
 
 - <a href="https://arxiv.org/abs/1709.01223">"Machine Learning Spatial Geometry from Entanglement Features"</a>, Yi-Zhuang You, Zhao Yang, Xiao-Liang Qi, arxiv:<a href="https://arxiv.org/abs/1709.01223">1709.01223</a>, Sept 2017 
 
@@ -130,6 +129,8 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 
 <b> Physics-Inspired Ideas Applied to Machine Learning</b>
+
+- <a href="https://arxiv.org/abs/1709.01662">"Unsupervised Generative Modeling Using Matrix Product States"</a>, Zhao-Yu Han, Jun Wang, Heng Fan, Lei Wang, Pan Zhang, arxiv:<a href="https://arxiv.org/abs/1709.01662">1709.01662</a>, Sept 2017 
 
 - <a href="https://arxiv.org/abs/1704.01552">"Deep Learning and Quantum Physics : A Fundamental Bridge"</a>, Yoav Levine, David Yakira, Nadav Cohen, Amnon Shashua, arxiv:<a href="https://arxiv.org/abs/1704.01552">1704.01552</a>, April 2017
 
