@@ -6,6 +6,8 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 <b> Applying Machine Learning to Physics </b>
 
+- <a href="https://www.nature.com/articles/s41467-017-00839-3">"Bypassing the Kohn-Sham equations with machine learning"</a>, Felix Brockherde, Leslie Vogt, Li Li, Mark E. Tuckerman, Kieron Burke & Klaus-Robert Müller, Nature Comm. <b>8</b> <a href="https://www.nature.com/articles/s41467-017-00839-3">872</a>, Oct 2017 
+
 - <a href="https://arxiv.org/abs/1709.05790">"Learning Disordered Topological Phases by Statistical Recovery of Symmetry"</a>, Nobuyuki Yoshioka, Yutaka Akagi, Hosho Katsura, arxiv:<a href="https://arxiv.org/abs/1709.05790">1709.05790</a>, Sept 2017 
 
 - <a href="https://arxiv.org/abs/1709.06475">"Restricted-Boltzmann-Machine Learning for Solving Strongly Correlated Quantum Systems"</a>, Yusuke Nomura, Andrew Darmawan, Youhei Yamaji, Masatoshi Imada, arxiv:<a href="https://arxiv.org/abs/1709.06475">1709.06475</a>, Sept 2017 
@@ -129,6 +131,8 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 
 <b> Physics-Inspired Ideas Applied to Machine Learning</b>
+
+- <a href="https://arxiv.org/abs/1710.04833">"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A Quantum Information Theoretic Perspective on Deep Architectures"</a>, Ding Liu, Shi-Ju Ran, Peter Wittek, Cheng Peng, Raul Blázquez García, Gang Su, Maciej Lewenstein, arxiv:<a href="https://arxiv.org/abs/1710.04833">1710.04833</a>, Oct 2017 
 
 - <a href="https://arxiv.org/abs/1709.01662">"Unsupervised Generative Modeling Using Matrix Product States"</a>, Zhao-Yu Han, Jun Wang, Heng Fan, Lei Wang, Pan Zhang, arxiv:<a href="https://arxiv.org/abs/1709.01662">1709.01662</a>, Sept 2017 
 
