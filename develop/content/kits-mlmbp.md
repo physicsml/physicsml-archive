@@ -14,6 +14,6 @@ The central questions addressed in this workshop are "How is machine learning us
 <li>Quantum algorithms and quantum hardwares for machine learning</li>
 </ul>
 
-<a href="http://kits.ucas.ac.cn/index.php/events/workshop/52-machine-learning-and-many-body-physics-jun-28th-jul-7th-2017">See link to workshop webpage.</a>.)
+<a href="http://kits.ucas.ac.cn/index.php/events/workshop/52-machine-learning-and-many-body-physics-jun-28th-jul-7th-2017">See link to workshop webpage.</a>
 
 
