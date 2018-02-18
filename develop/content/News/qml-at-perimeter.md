@@ -1,7 +1,6 @@
 Title: Perimeter Institute hosts Quantum Machine Learning
 Date: 2016-08-04 20:00
 Modified: 2016-08-05 18:00
-Category: News
 Tags: quantum mechanics, neural nets, machine learning
 Authors: Roger Melko
 Summary: Scientists from academia and industry converge on Waterloo as the Perimeter Institute hosts Quantum Machine Learning.

@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 THEME = "themes/custom_fresh"
 
 AUTHOR = u'PhysicsML'
-SITENAME = u'&lt;&nbsp;physics&nbsp;|&nbsp;machine&nbsp;learning&nbsp;&gt;'
+SITENAME = u'&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;'
 SITEURL = ''
 
 PATH = 'content'
@@ -19,8 +19,11 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-#MENUITEMS = [("Papers","/papers.html"),]
+USE_FOLDER_AS_CATEGORY = True
+
+MENUITEMS = [("Papers","/papers.html"),]
 #TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
+#DISPLAY_CATEGORIES_ON_MENU = False
 
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),

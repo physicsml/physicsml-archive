@@ -1,6 +1,5 @@
 Title: The Unreasonable Effectiveness of Restricted Boltzmann Machines
 Date: 2017-01-17 20:00
-Category: Articles
 Tags: quantum mechanics, machine learning, Boltzmann Machines
 Authors: Roger Melko
 Summary: The unsupervised learning tool, ambiguous in modern deep learning, has some important lessons for quantum physicists

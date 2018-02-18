@@ -1,6 +1,5 @@
 Title: Workshop in Machine Learning and Many-Body Physics at KITS
 Date: 2017-07-04 20:00
-Category: News
 Tags: quantum mechanics, neural nets, machine learning, many-body physics
 Authors: Roger Melko 
 Summary: KITS Workshop in Machine Learning and Many-Body Physics (Jun. 28 - Jul. 7, 2017)

@@ -1,6 +1,5 @@
 Title: Tensor Networks: Putting Quantum Wavefunctions into Machine Learning
 Date: 2016-11-7 19:00
-Category: Articles
 Tags: tensor networks, quantum mechanics, machine learning, kernel learning, support vector machines
 Authors: Miles Stoudenmire
 Summary: Tensor networks are a powerful tool for compressing quantum wavefunctions developed in the physics community. Parameterizing a special class of models with tensor networks brings the full power of tensor networks to machine learning tasks.
