@@ -21,7 +21,7 @@ AUTHOR_FEED_RSS = None
 
 USE_FOLDER_AS_CATEGORY = True
 
-#MENUITEMS = [("Papers","/papers.html"),]
+MENUITEMS = [("Papers","/papers.html"),]
 #TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
 #DISPLAY_CATEGORIES_ON_MENU = False
 

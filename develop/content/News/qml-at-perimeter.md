@@ -19,4 +19,4 @@ The conference "Quantum Machine Learning" brings together experts from a variety
 The participant list for the conference boasts a diverse group from academia, as well as industry, including Google, Microsoft, D-wave Systems, Intel, Scotiabank, and many more.  
 
 More information can be found at
-https://perimeterinstitute.ca/conferences/quantum-machine-learning
+[https://perimeterinstitute.ca/conferences/quantum-machine-learning](https://perimeterinstitute.ca/conferences/quantum-machine-learning)
