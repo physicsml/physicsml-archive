@@ -317,7 +317,7 @@ The following are recent papers combining the fields of physics — especially q
   arXiv: `1709.01662 <https://arxiv.org/abs/1709.01662>`_ , 
   Sept 2017
 
-- `"Deep Learning and Quantum Physics: A Fundamental Bridge" <https://arxiv.org/abs/1704.01552>`_ , 
+- `"Deep Learning and Quantum Entanglement: Fundamental Connections with Implications to Network Design" <https://arxiv.org/abs/1704.01552>`_ , 
   Yoav Levine, David Yakira, Nadav Cohen, Amnon Shashua, 
   arXiv: `1704.01552 <https://arxiv.org/abs/1704.01552>`_ , 
   April 2017
