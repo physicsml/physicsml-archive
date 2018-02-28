@@ -1,82 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="PhysicsML" />
-    <meta name="robots" content="index, follow"/>
+Title: Papers
+Date: 2016-10-27 11:00
 
-    <meta property="og:title" content="Papers"/>
-    <meta property="og:url" content="/pages/papers.html"/>
-    <meta property="og:site_name" content="&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;"/>
-    <meta property="og:type" content="website"/>
-
-    <link rel="canonical" href="/pages/papers.html" />
-
-    <title>Papers | &#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
-
-    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
-
-    <!--
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">
-        stLight.options({
-            publisher: "",
-            doNotHash: false,
-            doNotCopy: false,
-            hashAddressBar: false
-        });
-    </script>
-    -->
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['@@','@@'] ]}});
-    </script>
-    <script type="text/javascript"
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-    </script>
-</head>
-
-<body id="index">
-    <div class="row-fluid">
-        <div class="span10 offset1">
-            <header id="banner" >
-                <h1>
-                    <a href="/">&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297; </a>
-                </h1>
-                <nav class="navbar">
-                    <div class="navbar-inner">
-                        <ul class="nav">
-
-                            <li ><a href="/category/articles.html">Articles</a></li>
-                            <li ><a href="/category/news.html">News</a></li>
+The following are recent papers combining the fields of physics - especially quantum mechanics - and machine learning.
+Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stoudenmire if you would like to see a paper added to this page.
 
 
-                            <li ><a href="/papers.html">Papers</a></li>
-                        </ul>
+## Applying Machine Learning to Physics
 
-                    </div>
-                </nav>
-            </header><!-- /#banner -->
-        </div>
-    </div>
-
-    <div class="row-fluid">
-        <div class="span10 offset1">
-            <div class="row-fluid">
-        
-<section  >    
-    <h1 class="entry-title">Papers</h1>
-    
-    <p>The following are recent papers combining the fields of physics - especially quantum mechanics - and machine learning.
-Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stoudenmire if you would like to see a paper added to this page.</p>
-<h2>Applying Machine Learning to Physics</h2>
-<ul>
-<li>
-<p><a href="http://arxiv.org/abs/1802.06441v1" title="Finding efficient decoders for quantum error correcting codes adapted to
+- ["Deep neural decoders for near term fault-tolerant experiments"](
+http://arxiv.org/abs/1802.06441v1
+"Finding efficient decoders for quantum error correcting codes adapted to
 realistic experimental noise in fault-tolerant devices represents a significant
 challenge. In this paper we introduce several decoding algorithms complemented
 by deep neural decoders and apply them to analyze several fault-tolerant error
@@ -93,13 +26,14 @@ rigorous analysis of the decoding runtime of trained deep neural decoders and
 compare our methods with anticipated gate times in future quantum devices.
 Given the broad applications of our decoding schemes, we believe that the
 methods presented in this paper could have practical applications for near term
-fault-tolerant experiments.">"Deep neural decoders for near term fault-tolerant experiments"</a>,
+fault-tolerant experiments."),
 Christopher Chamberland, Pooya Ronagh,
-arXiv: <a href="http://arxiv.org/abs/1802.06441v1">1802.06441</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.02840v1" title="We present a variational renormalization group approach using deep generative
+arXiv: [1802.06441](http://arxiv.org/abs/1802.06441v1),
+2/2018
+
+- ["Neural Network Renormalization Group"](
+http://arxiv.org/abs/1802.02840v1
+"We present a variational renormalization group approach using deep generative
 model composed of bijectors. The model can learn hierarchical transformations
 between physical variables and renormalized collective variables. It can
 directly generate statistically independent physical configurations by
@@ -109,13 +43,15 @@ the collective variables and supports unbiased rejection sampling of the
 physical variables. To train the neural network, we employ probability density
 distillation, in which the training loss is a variational upper bound of the
 physical free energy. The approach could be useful for automatically
-identifying collective variables and effective field theories.">"Neural Network Renormalization Group"</a>,
+identifying collective variables and effective field theories."),
 Shuo-Hui Li, Lei Wang,
-arXiv: <a href="http://arxiv.org/abs/1802.02840v1">1802.02840</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.00850v1" title="State-of-the-art computer codes for simulating real physical systems are
+arXiv: [1802.02840](http://arxiv.org/abs/1802.02840v1),
+2/2018
+
+- ["Deep UQ: Learning deep neural network surrogate models for high
+  dimensional uncertainty quantification"](
+http://arxiv.org/abs/1802.00850v1
+"State-of-the-art computer codes for simulating real physical systems are
 often characterized by a vast number of input parameters. Performing
 uncertainty quantification (UQ) tasks with Monte Carlo (MC) methods is almost
 always infeasible because of the need to perform hundreds of thousands or even
@@ -136,14 +72,14 @@ uncertain diffusion coefficient. We deviate from traditional formulations of
 the SPDE problem by not imposing a specific covariance structure on the random
 diffusion coefficient. Instead, we attempt to solve a more challenging problem
 of learning a map between an arbitrary snapshot of the diffusion field and the
-response.">"Deep UQ: Learning deep neural network surrogate models for high
-  dimensional uncertainty quantification"</a>,
+response."),
 Rohit Tripathy, Ilias Bilionis,
-arXiv: <a href="http://arxiv.org/abs/1802.00850v1">1802.00850</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1801.07508v1" title="Detecting a change point is a crucial task in statistics that has been
+arXiv: [1802.00850](http://arxiv.org/abs/1802.00850v1),
+2/2018
+
+- ["Experimentally detecting a quantum change point via Bayesian inference"](
+http://arxiv.org/abs/1801.07508v1
+"Detecting a change point is a crucial task in statistics that has been
 recently extended to the quantum realm. A source state generator that emits a
 series of single photons in a default state suffers an alteration at some point
 and starts to emit photons in a mutated state. The problem consists in
@@ -154,24 +90,26 @@ according to the past experimental results finds the change position in an
 online fashion. Our results show that the local-detection success probability
 can be largely improved by using such a machine learning technique. This
 protocol provides a tool for improvement in many applications where a sequence
-of identical quantum states is required.">"Experimentally detecting a quantum change point via Bayesian inference"</a>,
+of identical quantum states is required."),
 Shang Yu, Chang-Jiang Huang, Jian-Shun Tang, Zhih-Ahn Jia, Yi-Tao Wang, Zhi-Jin Ke, Wei Liu, Xiao Liu, Zong-Quan Zhou, Ze-Di Cheng, Jin-Shi Xu, Yu-Chun Wu, Yuan-Yuan Zhao, Guo-Yong Xiang, Chuan-Feng Li, Guang-Can Guo, Gael Sentís, Ramon Muñoz-Tapia,
-arXiv: <a href="http://arxiv.org/abs/1801.07508v1">1801.07508</a>,
-1/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1801.03523v1" title="The present paper aims to demonstrate the usage of Convolutional Neural
+arXiv: [1801.07508](http://arxiv.org/abs/1801.07508v1),
+1/2018
+
+- ["Generative Models for Stochastic Processes Using Convolutional Neural
+  Networks"](
+http://arxiv.org/abs/1801.03523v1
+"The present paper aims to demonstrate the usage of Convolutional Neural
 Networks as a generative model for stochastic processes, enabling researchers
 from a wide range of fields (such as quantitative finance and physics) to
 develop a general tool for forecasts and simulations without the need to
-identify/assume a specific system structure or estimate its parameters.">"Generative Models for Stochastic Processes Using Convolutional Neural
-  Networks"</a>,
+identify/assume a specific system structure or estimate its parameters."),
 Fernando Fernandes Neto,
-arXiv: <a href="http://arxiv.org/abs/1801.03523v1">1801.03523</a>,
-1/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.06863v1" title="The difficulty of validating large-scale quantum devices, such as Boson
+arXiv: [1801.03523](http://arxiv.org/abs/1801.03523v1),
+1/2018
+
+- ["Pattern recognition techniques for Boson Sampling validation"](
+http://arxiv.org/abs/1712.06863v1
+"The difficulty of validating large-scale quantum devices, such as Boson
 Samplers, poses a major challenge for any research program that aims to show
 quantum advantages over classical hardware. To address this problem, we propose
 a novel data-driven approach wherein models are trained to identify common
@@ -185,13 +123,14 @@ scattershot experiments. The effectiveness of such method relies on
 particle-type-dependent internal correlations present in the output
 distributions. This approach performs substantially better on the test data
 than previous methods and underscores the ability to further generalize its
-operation beyond the scope of the examples that it was trained on.">"Pattern recognition techniques for Boson Sampling validation"</a>,
+operation beyond the scope of the examples that it was trained on."),
 Iris Agresti, Niko Viggianiello, Fulvio Flamini, Nicolò Spagnolo, Andrea Crespi, Roberto Osellame, Nathan Wiebe, Fabio Sciarrino,
-arXiv: <a href="http://arxiv.org/abs/1712.06863v1">1712.06863</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.03893v1" title="In this paper we propose new algorithm to reduce autocorrelation in Markov
+arXiv: [1712.06863](http://arxiv.org/abs/1712.06863v1),
+12/2017
+
+- ["Towards reduction of autocorrelation in HMC by machine learning"](
+http://arxiv.org/abs/1712.03893v1
+"In this paper we propose new algorithm to reduce autocorrelation in Markov
 chain Monte-Carlo algorithms for euclidean field theories on the lattice. Our
 proposing algorithm is the Hybrid Monte-Carlo algorithm (HMC) with restricted
 Boltzmann machine. We examine the validity of the algorithm by employing the
@@ -204,13 +143,14 @@ the other hand, two-point Green's functions have slight difference between one
 calculated by the HMC and one by our proposing algorithm in the symmetric
 phase. Furthermore, near the criticality, the distribution of the one-point
 Green's function differs from the one from HMC. We discuss the origin of
-discrepancies and its improvement.">"Towards reduction of autocorrelation in HMC by machine learning"</a>,
+discrepancies and its improvement."),
 Akinori Tanaka, Akio Tomiya,
-arXiv: <a href="http://arxiv.org/abs/1712.03893v1">1712.03893</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.00371v1" title="We detect the quantum phase transition of a quantum many-body system by
+arXiv: [1712.03893](http://arxiv.org/abs/1712.03893v1),
+12/2017
+
+- ["Deep Neural Network Detects Quantum Phase Transition"](
+http://arxiv.org/abs/1712.00371v1
+"We detect the quantum phase transition of a quantum many-body system by
 mapping the observed results of the quantum state onto a neural network. In the
 present study, we utilized the simplest case of a quantum many-body system,
 namely a one-dimensional chain of Ising spins with the transverse Ising model.
@@ -222,13 +162,14 @@ technique with spin configurations generated by a quantum Monte Carlo
 simulation without initial relaxation. The neural network successfully
 classified the strength of transverse field only from the spin configurations,
 leading to consistent estimations of the critical point of our model $\Gamma_c
-=J$.">"Deep Neural Network Detects Quantum Phase Transition"</a>,
+=J$."),
 Shunta Arai, Masayuki Ohzeki, Kazuyuki Tanaka,
-arXiv: <a href="http://arxiv.org/abs/1712.00371v1">1712.00371</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.00127v1" title="The number of parameters describing a quantum state is well known to grow
+arXiv: [1712.00371](http://arxiv.org/abs/1712.00371v1),
+12/2017
+
+- ["Experimental learning of quantum states"](
+http://arxiv.org/abs/1712.00127v1
+"The number of parameters describing a quantum state is well known to grow
 exponentially with the number of particles. This scaling clearly limits our
 ability to do tomography to systems with no more than a few qubits and has been
 used to argue against the universal validity of quantum mechanics itself.
@@ -238,15 +179,16 @@ using only a linear number of measurements. Here we experimentally demonstrate
 this linear scaling in optical systems with up to 6 qubits. Our results
 highlight the power of computational learning theory to investigate quantum
 information, provide the first experimental demonstration that quantum states
-can be &quot;probably approximately learned&quot; with access to a number of copies of
+can be "probably approximately learned" with access to a number of copies of
 the state that scales linearly with the number of qubits, and pave the way to
-probing quantum states at new, larger scales.">"Experimental learning of quantum states"</a>,
+probing quantum states at new, larger scales."),
 Andrea Rocchetto, Scott Aaronson, Simone Severini, Gonzalo Carvacho, Davide Poderini, Iris Agresti, Marco Bentivegna, Fabio Sciarrino,
-arXiv: <a href="http://arxiv.org/abs/1712.00127v1">1712.00127</a>,
-11/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.00725v1" title="Studying general quantum many-body systems is one of the major challenges in
+arXiv: [1712.00127](http://arxiv.org/abs/1712.00127v1),
+11/2017
+
+- ["Learning hard quantum distributions with variational autoencoders"](
+http://arxiv.org/abs/1710.00725v1
+"Studying general quantum many-body systems is one of the major challenges in
 modern physics because it requires an amount of computational resources that
 scales exponentially with the size of the system.Simulating the evolution of a
 state, or even storing its description, rapidly becomes intractable for exact
@@ -267,13 +209,14 @@ Such states are provably hard to sample for classical computers, but not for
 quantum ones, under plausible computational complexity assumptions. The good
 level of compression achieved for hard states suggests these methods can be
 suitable for characterising states of the size expected in first generation
-quantum hardware.">"Learning hard quantum distributions with variational autoencoders"</a>,
+quantum hardware."),
 Andrea Rocchetto, Edward Grant, Sergii Strelchuk, Giuseppe Carleo, Simone Severini,
-arXiv: <a href="http://arxiv.org/abs/1710.00725v1">1710.00725</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.08015v1" title="Our understanding of supercooled liquids and glasses has lagged significantly
+arXiv: [1710.00725](http://arxiv.org/abs/1710.00725v1),
+10/2017
+
+- ["Combining Machine Learning and Physics to Understand Glassy Systems"](
+http://arxiv.org/abs/1709.08015v1
+"Our understanding of supercooled liquids and glasses has lagged significantly
 behind that of simple liquids and crystalline solids. This is in part due to
 the many possibly relevant degrees of freedom that are present due to the
 disorder inherent to these systems and in part to non-equilibrium effects which
@@ -287,13 +230,16 @@ However, until recently it has been impossible to find structural signatures
 that are predictive of dynamics. Here we summarize and recast the results from
 several recent papers offering a data driven approach to building a
 phenomenological theory of disordered materials by combining machine learning
-with physical intuition.">"Combining Machine Learning and Physics to Understand Glassy Systems"</a>,
+with physical intuition."),
 Samuel S. Schoenholz,
-arXiv: <a href="http://arxiv.org/abs/1709.08015v1">1709.08015</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1609.02815v3" title="Last year, at least 30,000 scientific papers used the Kohn-Sham scheme of
+arXiv: [1709.08015](http://arxiv.org/abs/1709.08015v1),
+9/2017
+
+
+
+- ["By-passing the Kohn-Sham equations with machine learning"](
+http://arxiv.org/abs/1609.02815v3
+"Last year, at least 30,000 scientific papers used the Kohn-Sham scheme of
 density functional theory to solve electronic structure problems in a wide
 variety of scientific fields, ranging from materials science to biochemistry to
 astrophysics. Machine learning holds the promise of learning the kinetic energy
@@ -307,13 +253,15 @@ accuracy and lower computational cost with this method are demonstrated by
 reproducing DFT energies for a range of molecular geometries generated during
 molecular dynamics simulations. Moreover, the methodology could be applied
 directly to quantum chemical calculations, allowing construction of density
-functionals of quantum-chemical accuracy.">"By-passing the Kohn-Sham equations with machine learning"</a>,
+functionals of quantum-chemical accuracy."),
 Felix Brockherde, Leslie Vogt, Li Li, Mark E. Tuckerman, Kieron Burke, Klaus-Robert Müller,
-arXiv: <a href="http://arxiv.org/abs/1609.02815v3">1609.02815</a>,
-9/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.05790v2" title="In this letter, we apply the artificial neural network in a supervised manner
+arXiv: [1609.02815](http://arxiv.org/abs/1609.02815v3),
+9/2016
+
+- ["Learning Disordered Topological Phases by Statistical Recovery of
+  Symmetry"](
+http://arxiv.org/abs/1709.05790v2
+"In this letter, we apply the artificial neural network in a supervised manner
 to map out the quantum phase diagram of disordered topological superconductor
 in class DIII. Given the disorder that keeps the discrete symmetries of the
 ensemble as a whole, translational symmetry which is broken in the
@@ -329,14 +277,15 @@ the machine remains confused in the certain region, leading us to conclude the
 detection of the unknown phase which is eventually identified as the thermal
 metal phase. In our method, only the first moment of the quasiparticle
 distribution is used for input, but application to a wider variety of systems
-is expected by the inclusion of higher moments.">"Learning Disordered Topological Phases by Statistical Recovery of
-  Symmetry"</a>,
+is expected by the inclusion of higher moments."),
 Nobuyuki Yoshioka, Yutaka Akagi, Hosho Katsura,
-arXiv: <a href="http://arxiv.org/abs/1709.05790v2">1709.05790</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.06475v2" title="We develop a machine learning method to construct accurate ground-state wave
+arXiv: [1709.05790](http://arxiv.org/abs/1709.05790v2),
+9/2017
+
+- ["Restricted-Boltzmann-Machine Learning for Solving Strongly Correlated
+  Quantum Systems"](
+http://arxiv.org/abs/1709.06475v2
+"We develop a machine learning method to construct accurate ground-state wave
 functions of strongly interacting and entangled quantum spin as well as
 fermionic models on lattices. A restricted Boltzmann machine algorithm in the
 form of an artificial neural network is combined with a conventional
@@ -345,14 +294,14 @@ quantum number projections. The combination allows an application of the
 machine learning scheme to interacting fermionic systems. The combined method
 substantially improves the accuracy beyond that ever achieved by each method
 separately, in the Heisenberg as well as Hubbard models on square lattices,
-thus proving its power as a highly accurate quantum many-body solver.">"Restricted-Boltzmann-Machine Learning for Solving Strongly Correlated
-  Quantum Systems"</a>,
+thus proving its power as a highly accurate quantum many-body solver."),
 Yusuke Nomura, Andrew S. Darmawan, Youhei Yamaji, Masatoshi Imada,
-arXiv: <a href="http://arxiv.org/abs/1709.06475v2">1709.06475</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.02597v1" title="Unsupervised machine learning via a restricted Boltzmann machine is an useful
+arXiv: [1709.06475](http://arxiv.org/abs/1709.06475v2),
+9/2017
+
+- ["Identifying Product Order with Restricted Boltzmann Machines"](
+http://arxiv.org/abs/1709.02597v1
+"Unsupervised machine learning via a restricted Boltzmann machine is an useful
 tool in distinguishing an ordered phase from a disordered phase. Here we study
 its application on the two-dimensional Ashkin-Teller model, which features a
 partially ordered product phase. We train the neural network with spin
@@ -360,13 +309,14 @@ configuration data generated by Monte Carlo simulations and show that distinct
 features of the product phase can be learned from non-ergodic samples resulting
 from symmetry breaking. Careful analysis of the weight matrices inspires us to
 define a nontrivial machine-learning motivated quantity of the product form,
-which resembles the conventional product order parameter.">"Identifying Product Order with Restricted Boltzmann Machines"</a>,
+which resembles the conventional product order parameter."),
 Wen-Jia Rao, Zhenyu Li, Qiong Zhu, Mingxing Luo, Xin Wan,
-arXiv: <a href="http://arxiv.org/abs/1709.02597v1">1709.02597</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.02779v1" title="Quantum information technologies, and intelligent learning systems, are both
+arXiv: [1709.02597](http://arxiv.org/abs/1709.02597v1),
+9/2017
+
+- ["Machine learning \& artificial intelligence in the quantum domain"](
+http://arxiv.org/abs/1709.02779v1
+"Quantum information technologies, and intelligent learning systems, are both
 emergent technologies that will likely have a transforming impact on our
 society. The respective underlying fields of research -- quantum information
 (QI) versus machine learning (ML) and artificial intelligence (AI) -- have
@@ -377,7 +327,7 @@ each other. QML explores the interaction between quantum computing and ML,
 investigating how results and techniques from one field can be used to solve
 the problems of the other. Recently, we have witnessed breakthroughs in both
 directions of influence. For instance, quantum computing is finding a vital
-application in providing speed-ups in ML, critical in our &quot;big data&quot; world.
+application in providing speed-ups in ML, critical in our "big data" world.
 Conversely, ML already permeates cutting-edge technologies, and may become
 instrumental in advanced quantum technologies. Aside from quantum speed-up in
 data analysis, or classical ML optimization used in quantum experiments,
@@ -391,13 +341,15 @@ This deals with questions of the very meaning of learning and intelligence in a
 world that is described by quantum mechanics. In this review, we describe the
 main ideas, recent developments, and progress in a broad spectrum of research
 investigating machine learning and artificial intelligence in the quantum
-domain.">"Machine learning \&amp; artificial intelligence in the quantum domain"</a>,
+domain."),
 Vedran Dunjko, Hans J. Briegel,
-arXiv: <a href="http://arxiv.org/abs/1709.02779v1">1709.02779</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.00812v2" title="The three-dimensional Anderson model is a well-studied model of disordered
+arXiv: [1709.02779](http://arxiv.org/abs/1709.02779v1),
+9/2017
+
+- ["Phase Diagrams of Three-Dimensional Anderson and Quantum Percolation
+  Models using Deep Three-Dimensional Convolutional Neural Network"](
+http://arxiv.org/abs/1709.00812v2
+"The three-dimensional Anderson model is a well-studied model of disordered
 electron systems that shows the delocalization--localization transition. As in
 our previous papers on two- and three-dimensional (2D, 3D) quantum phase
 transitions [J. Phys. Soc. Jpn. {\bf 85}, 123706 (2016), {\bf 86}, 044708
@@ -408,14 +360,14 @@ entire 3D wave functions. We show that a full phase diagram of the
 disorder-energy plane is obtained once the 3D convolutional neural network has
 been trained at the band center. We further demonstrate that the full phase
 diagram for 3D quantum bond and site percolations can be drawn by training the
-3D Anderson model at the band center.">"Phase Diagrams of Three-Dimensional Anderson and Quantum Percolation
-  Models using Deep Three-Dimensional Convolutional Neural Network"</a>,
+3D Anderson model at the band center."),
 Tomohiro Mano, Tomi Ohtsuki,
-arXiv: <a href="http://arxiv.org/abs/1709.00812v2">1709.00812</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.01223v2" title="Motivated by the close relations of the renormalization group with both the
+arXiv: [1709.00812](http://arxiv.org/abs/1709.00812v2),
+9/2017
+
+- ["Machine Learning Spatial Geometry from Entanglement Features"](
+http://arxiv.org/abs/1709.01223v2
+"Motivated by the close relations of the renormalization group with both the
 holography duality and the deep learning, we propose that the holographic
 geometry can emerge from deep learning the entanglement feature of a quantum
 many-body state. We develop a concrete algorithm, call the entanglement feature
@@ -427,13 +379,14 @@ the entanglement feature. The RTN geometry can then be interpreted as the
 emergent holographic geometry. We demonstrate the EFL algorithm on 1D free
 fermion system and observe the emergence of the hyperbolic geometry (AdS$_3$
 spatial geometry) as we tune the fermion system towards the gapless critical
-point (CFT$_2$ point).">"Machine Learning Spatial Geometry from Entanglement Features"</a>,
+point (CFT$_2$ point)."),
 Yi-Zhuang You, Zhao Yang, Xiao-Liang Qi,
-arXiv: <a href="http://arxiv.org/abs/1709.01223v2">1709.01223</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1708.09401v3" title="In this Letter we supervisedly train neural networks to distinguish different
+arXiv: [1709.01223](http://arxiv.org/abs/1709.01223v2),
+9/2017
+
+- ["Machine Learning Topological Invariants with Neural Networks"](
+http://arxiv.org/abs/1708.09401v3
+"In this Letter we supervisedly train neural networks to distinguish different
 topological phases in the context of topological band insulators. After
 training with Hamiltonians of one-dimensional insulators with chiral symmetry,
 the neural network can predict their topological winding numbers with nearly
@@ -444,13 +397,14 @@ quantum phases from local inputs. By opening up the neural network, we confirm
 that the network does learn the discrete version of the winding number formula.
 We also make a couple of remarks regarding the role of the symmetry and the
 opposite effect of regularization techniques when applying machine learning to
-physical systems.">"Machine Learning Topological Invariants with Neural Networks"</a>,
+physical systems."),
 Pengfei Zhang, Huitao Shen, Hui Zhai,
-arXiv: <a href="http://arxiv.org/abs/1708.09401v3">1708.09401</a>,
-8/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1708.06686v1" title="We present a procedure for training and evaluating a deep neural network
+arXiv: [1708.09401](http://arxiv.org/abs/1708.09401v3),
+8/2017
+
+- ["Extensive deep neural networks"](
+http://arxiv.org/abs/1708.06686v1
+"We present a procedure for training and evaluating a deep neural network
 which can efficiently infer extensive parameters of arbitrarily large systems,
 doing so with O(N) complexity. We use a form of domain decomposition for
 training and inference, where each sub-domain (tile) is comprised of a
@@ -463,13 +417,14 @@ interactions. They are well suited to massively parallel inference, as no
 inter-thread communication is necessary during evaluation. Example uses for
 learning simple spin models, Laplacian (derivative) operator, and approximating
 many-body quantum mechanical operators (within the density functional theory
-approach) are demonstrated.">"Extensive deep neural networks"</a>,
+approach) are demonstrated."),
 Iryna Luchak, Kyle Mills, Kevin Ryczko, Adam Domurad, Isaac Tamblyn,
-arXiv: <a href="http://arxiv.org/abs/1708.06686v1">1708.06686</a>,
-8/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1708.04762v2" title="We use determinant Quantum Monte Carlo (DQMC), in combination with the
+arXiv: [1708.06686](http://arxiv.org/abs/1708.06686v1),
+8/2017
+
+- ["Learning Fermionic Critical Points"](
+http://arxiv.org/abs/1708.04762v2
+"We use determinant Quantum Monte Carlo (DQMC), in combination with the
 principal component analysis (PCA) approach to unsupervised learning, to
 extract information about phase transitions in several of the most fundamental
 Hamiltonians describing strongly correlated materials. We first explore the
@@ -483,13 +438,14 @@ Holstein model, where the electrons are coupled to phonon degrees of freedom.
 We examine the different behaviors associated with providing
 Hubbard-Stratonovich auxiliary fields configurations on both the entire
 space-time lattice and on a single imaginary time slice, or other quantities,
-such as equal-time Green's and pair-pair correlation functions.">"Learning Fermionic Critical Points"</a>,
+such as equal-time Green's and pair-pair correlation functions."),
 Natanael C. Costa, Wenjian Hu, Z. J. Bai, Richard T. Scalettar, Rajiv R. P. Singh,
-arXiv: <a href="http://arxiv.org/abs/1708.04762v2">1708.04762</a>,
-8/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1708.04622v1" title="It is well established that neural networks with deep architectures perform
+arXiv: [1708.04762](http://arxiv.org/abs/1708.04762v2),
+8/2017
+
+- ["Deep Learning the Ising Model Near Criticality"](
+http://arxiv.org/abs/1708.04622v1
+"It is well established that neural networks with deep architectures perform
 better than shallow networks for many tasks in machine learning. In statistical
 physics, while there has been recent interest in representing physical data
 with generative modelling, the focus has been on shallow neural networks. A
@@ -507,13 +463,14 @@ depends only on the number of neurons in the first hidden layer of the network,
 and not on other model details such as network depth or model type. This is
 evidence that shallow networks are more efficient than deep networks at
 representing physical probability distributions associated with Ising systems
-near criticality.">"Deep Learning the Ising Model Near Criticality"</a>,
+near criticality."),
 Alan Morningstar, Roger G. Melko,
-arXiv: <a href="http://arxiv.org/abs/1708.04622v1">1708.04622</a>,
-8/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1708.02917v2" title="The Restricted Boltzmann Machine (RBM), an important tool used in machine
+arXiv: [1708.04622](http://arxiv.org/abs/1708.04622v1),
+8/2017
+
+- ["Spectral Dynamics of Learning Restricted Boltzmann Machines"](
+http://arxiv.org/abs/1708.02917v2
+"The Restricted Boltzmann Machine (RBM), an important tool used in machine
 learning in particular for unsupervized learning tasks, is investigated from
 the perspective of its spectral properties. Starting from empirical
 observations, we propose a generic statistical ensemble for the weight matrix
@@ -523,25 +480,28 @@ training, the statistical properties of the data drive the selection of the
 unstable modes of the weight matrix. A set of equations characterizing the
 non-linear regime is then derived, unveiling in some way how the selected modes
 interact in later stages of the learning procedure and defining a deterministic
-learning curve for the RBM.">"Spectral Dynamics of Learning Restricted Boltzmann Machines"</a>,
+learning curve for the RBM."),
 Aurélien Decelle, Giancarlo Fissore, Cyril Furtlehner,
-arXiv: <a href="http://arxiv.org/abs/1708.02917v2">1708.02917</a>,
-8/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1707.09723v1" title="Motivated by the recent successful application of artificial neural networks
+arXiv: [1708.02917](http://arxiv.org/abs/1708.02917v2),
+8/2017
+
+- ["Solving the Bose-Hubbard model with machine learning"](
+http://arxiv.org/abs/1707.09723v1
+"Motivated by the recent successful application of artificial neural networks
 to quantum many-body problems [G. Carleo and M. Troyer, Science {\bf 355}, 602
 (2017)], a method to calculate the ground state of the Bose-Hubbard model using
 a feedforward neural network is proposed. The results are in good agreement
 with those obtained by exact diagonalization and the Gutzwiller approximation.
 The method of neural-network quantum states is promising for solving quantum
-many-body problems of ultracold atoms in optical lattices.">"Solving the Bose-Hubbard model with machine learning"</a>,
+many-body problems of ultracold atoms in optical lattices."),
 Hiroki Saito,
-arXiv: <a href="http://arxiv.org/abs/1707.09723v1">1707.09723</a>,
-7/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1707.06656v4" title="The efficient representation of quantum many-body states with classical
+arXiv: [1707.09723](http://arxiv.org/abs/1707.09723v1),
+7/2017
+
+- ["Quantum dynamics in transverse-field Ising models from classical
+  networks"](
+http://arxiv.org/abs/1707.06656v4
+"The efficient representation of quantum many-body states with classical
 resources is a key challenge in quantum many-body theory. In this work we
 analytically construct classical networks for the description of the quantum
 dynamics in transverse-field Ising models that can be solved efficiently using
@@ -553,26 +513,27 @@ and three dimensions including local observables, entanglement production, and
 Loschmidt amplitudes using Monte Carlo algorithms and demonstrate the accuracy
 of this approach by comparisons to exact results. We include a mapping to
 equivalent artificial neural networks, which were recently introduced to
-provide a universal structure for classical network wave functions.">"Quantum dynamics in transverse-field Ising models from classical
-  networks"</a>,
+provide a universal structure for classical network wave functions."),
 Markus Schmitt, Markus Heyl,
-arXiv: <a href="http://arxiv.org/abs/1707.06656v4">1707.06656</a>,
-7/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1707.03114v2" title="We construct a hidden variable model for the EPR correlations using a
+arXiv: [1707.06656](http://arxiv.org/abs/1707.06656v4),
+7/2017
+
+- ["Learning the Einstein-Podolsky-Rosen correlations on a Restricted
+  Boltzmann Machine"](
+http://arxiv.org/abs/1707.03114v2
+"We construct a hidden variable model for the EPR correlations using a
 Restricted Boltzmann Machine. The model reproduces the expected correlations
 and thus violates the Bell inequality, as required by Bell's theorem. Unlike
 most hidden-variable models, this model does not violate the $locality$
 assumption in Bell's argument. Rather, it violates $measurement$
-$independence$, albeit in a decidedly non-conspiratorial way.">"Learning the Einstein-Podolsky-Rosen correlations on a Restricted
-  Boltzmann Machine"</a>,
+$independence$, albeit in a decidedly non-conspiratorial way."),
 Steven Weinstein,
-arXiv: <a href="http://arxiv.org/abs/1707.03114v2">1707.03114</a>,
-7/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1707.00663v1" title="The application of state-of-the-art machine learning techniques to
+arXiv: [1707.03114](http://arxiv.org/abs/1707.03114v2),
+7/2017
+
+- ["Quantum phase recognition via unsupervised machine learning"](
+http://arxiv.org/abs/1707.00663v1
+"The application of state-of-the-art machine learning techniques to
 statistical physic problems has seen a surge of interest for their ability to
 discriminate phases of matter by extracting essential features in the many-body
 wavefunction or the ensemble of correlators sampled in Monte Carlo simulations.
@@ -586,13 +547,15 @@ zero and finite temperatures and show that first-order, second-order, and
 Kosterlitz-Thouless phase transitions can all be identified. We explicitly
 demonstrate that our approach is capable of identifying the phase transition to
 non-trivial many-body phases such as superfluids or topologically ordered
-phases without supervision.">"Quantum phase recognition via unsupervised machine learning"</a>,
+phases without supervision."),
 Peter Broecker, Fakher F. Assaad, Simon Trebst,
-arXiv: <a href="http://arxiv.org/abs/1707.00663v1">1707.00663</a>,
-7/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1706.09779v1" title="We train a deep convolutional neural network to accurately predict the
+arXiv: [1707.00663](http://arxiv.org/abs/1707.00663v1),
+7/2017
+
+- ["Deep neural networks for direct, featureless learning through
+  observation: the case of 2d spin models"](
+http://arxiv.org/abs/1706.09779v1
+"We train a deep convolutional neural network to accurately predict the
 energies and magnetizations of Ising model configurations, using both the
 traditional nearest-neighbour Hamiltonian, as well as a long-range screened
 Coulomb Hamiltonian. We demonstrate the capability of a convolutional deep
@@ -606,15 +569,16 @@ accuracy to replicate the low-temperature Ising phase transition. Finally, we
 teach the convolutional deep neural network to accurately predict a long-range
 interaction through a screened Coulomb Hamiltonian. In this case, the benefits
 of the neural network become apparent; it is able to make predictions with a
-high degree of accuracy, 1600 times faster than a CUDA-optimized &quot;exact&quot;
-calculation.">"Deep neural networks for direct, featureless learning through
-  observation: the case of 2d spin models"</a>,
+high degree of accuracy, 1600 times faster than a CUDA-optimized "exact"
+calculation."),
 K. Mills, I. Tamblyn,
-arXiv: <a href="http://arxiv.org/abs/1706.09779v1">1706.09779</a>,
-6/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1706.08466v1" title="Inferring a generative model from data is a fundamental problem in machine
+arXiv: [1706.09779](http://arxiv.org/abs/1706.09779v1),
+6/2017
+
+- ["Inverse Ising inference by combining Ornstein-Zernike theory with deep
+  learning"](
+http://arxiv.org/abs/1706.08466v1
+"Inferring a generative model from data is a fundamental problem in machine
 learning. It is well-known that the Ising model is the maximum entropy model
 for binary variables which reproduces the sample mean and pairwise
 correlations. Learning the parameters of the Ising model from data is the
@@ -626,14 +590,15 @@ as biochemical datasets, that the deep neural network model outperforms
 systematic field-theoretic expansions and can generalize well beyond the
 parameter regime of the training data. The neural network is able to learn from
 synthetic data, which can be generated with relative ease, to give accurate
-predictions on real world datasets.">"Inverse Ising inference by combining Ornstein-Zernike theory with deep
-  learning"</a>,
+predictions on real world datasets."),
 Alpha A. Lee,
-arXiv: <a href="http://arxiv.org/abs/1706.08466v1">1706.08466</a>,
-6/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1706.07977v2" title="This work aims at the goal whether the artificial intelligence can recognize
+arXiv: [1706.08466](http://arxiv.org/abs/1706.08466v1),
+6/2017
+
+- ["Unsupervised Learning of Frustrated Classical Spin Models I: Principle
+  Component Analysis"](
+http://arxiv.org/abs/1706.07977v2
+"This work aims at the goal whether the artificial intelligence can recognize
 phase transition without the prior human knowledge. If this becomes successful,
 it can be applied to, for instance, analyze data from quantum simulation of
 unsolved physical models. Toward this goal, we first need to apply the machine
@@ -648,14 +613,14 @@ the temperature dependences of the major components detect the nature and the
 locations of the phase transitions. Our work offers promise for using machine
 learning techniques to study sophisticated statistical models, and our results
 can be further improved by using principle component analysis with kernel
-tricks and the neural network method.">"Unsupervised Learning of Frustrated Classical Spin Models I: Principle
-  Component Analysis"</a>,
+tricks and the neural network method."),
 Ce Wang, Hui Zhai,
-arXiv: <a href="http://arxiv.org/abs/1706.07977v2">1706.07977</a>,
-6/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1706.08111v1" title="We introduce a fully automatic self-learning scheme for detecting phase
+arXiv: [1706.07977](http://arxiv.org/abs/1706.07977v2),
+6/2017
+
+- ["Self-Learning Phase Boundaries by Active Contours"](
+http://arxiv.org/abs/1706.08111v1
+"We introduce a fully automatic self-learning scheme for detecting phase
 boundaries. This method extends the previously introduced confusion scheme for
 learning phase transitions, by using a cooperative network that learns to
 optimize the guess for the transition point. The networks together are capable
@@ -664,13 +629,15 @@ us to efficiently study 1D and 2D parameter spaces, where for the latter we
 utilize an active contour model -- the snake -- from computer vision as a
 representation of the learned phase boundary. The snakes, equipped with neural
 networks, can learn while they move in the parameter space and thereby detect
-phase boundaries automatically.">"Self-Learning Phase Boundaries by Active Contours"</a>,
+phase boundaries automatically."),
 Ye-Hua Liu, Evert P. L. van Nieuwenburg,
-arXiv: <a href="http://arxiv.org/abs/1706.08111v1">1706.08111</a>,
-6/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.07855v3" title="A fault-tolerant quantum computation requires an efficient means to detect
+arXiv: [1706.08111](http://arxiv.org/abs/1706.08111v1),
+6/2017
+
+- ["Machine-learning-assisted correction of correlated qubit errors in a
+  topological code"](
+http://arxiv.org/abs/1705.07855v3
+"A fault-tolerant quantum computation requires an efficient means to detect
 and correct errors that accumulate in encoded quantum information. In the
 context of machine learning, neural networks are a promising new approach to
 quantum error correction. Here we show that a recurrent neural network can be
@@ -683,14 +650,14 @@ learning algorithm adapts to the physical system, hence no noise model is
 needed. The long short-term memory layers of the recurrent neural network
 maintain their performance over a large number of quantum error correction
 cycles, making it a practical decoder for forthcoming experimental realizations
-of the surface code.">"Machine-learning-assisted correction of correlated qubit errors in a
-  topological code"</a>,
+of the surface code."),
 P. Baireuther, T. E. O'Brien, B. Tarasinski, C. W. J. Beenakker,
-arXiv: <a href="http://arxiv.org/abs/1705.07855v3">1705.07855</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.06724v2" title="The recently-introduced self-learning Monte Carlo method is a general-purpose
+arXiv: [1705.07855](http://arxiv.org/abs/1705.07855v3),
+5/2017
+
+- ["Self-Learning Monte Carlo Method: Continuous-Time Algorithm"](
+http://arxiv.org/abs/1705.06724v2
+"The recently-introduced self-learning Monte Carlo method is a general-purpose
 numerical method that speeds up Monte Carlo simulations by training an
 effective model to propose uncorrelated configurations in the Markov chain. We
 implement this method in the framework of continuous time Monte Carlo method
@@ -699,27 +666,30 @@ diagram generating function (DGF) to model the probability distribution of
 auxiliary field configurations in continuous imaginary time, at all orders of
 diagrammatic expansion. By using DGF to propose global moves in configuration
 space, we show that the self-learning continuous-time Monte Carlo method can
-significantly reduce the computational complexity of the simulation.">"Self-Learning Monte Carlo Method: Continuous-Time Algorithm"</a>,
+significantly reduce the computational complexity of the simulation."),
 Yuki Nagai, Huitao Shen, Yang Qi, Junwei Liu, Liang Fu,
-arXiv: <a href="http://arxiv.org/abs/1705.06724v2">1705.06724</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.11023v1" title="Guided by critical systems found in nature we develop a novel mechanism
+arXiv: [1705.06724](http://arxiv.org/abs/1705.06724v2),
+5/2017
+
+- ["Criticality & Deep Learning II: Momentum Renormalisation Group"](
+http://arxiv.org/abs/1705.11023v1
+"Guided by critical systems found in nature we develop a novel mechanism
 consisting of inhomogeneous polynomial regularisation via which we can induce
 scale invariance in deep learning systems. Technically, we map our deep
 learning (DL) setup to a genuine field theory, on which we act with the
 Renormalisation Group (RG) in momentum space and produce the flow equations of
 the couplings; those are translated to constraints and consequently interpreted
-as &quot;critical regularisation&quot; conditions in the optimiser; the resulting
+as "critical regularisation" conditions in the optimiser; the resulting
 equations hence prove to be sufficient conditions for - and serve as an elegant
-and simple mechanism to induce scale invariance in any deep learning setup.">"Criticality &amp; Deep Learning II: Momentum Renormalisation Group"</a>,
+and simple mechanism to induce scale invariance in any deep learning setup."),
 Dan Oprisa, Peter Toth,
-arXiv: <a href="http://arxiv.org/abs/1705.11023v1">1705.11023</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.05372v4" title="Correlated many-body problems ubiquitously appear in various fields of
+arXiv: [1705.11023](http://arxiv.org/abs/1705.11023v1),
+5/2017
+
+- ["Construction of Hamiltonians by supervised learning of energy and
+  entanglement spectra"](
+http://arxiv.org/abs/1705.05372v4
+"Correlated many-body problems ubiquitously appear in various fields of
 physics such as condensed matter physics, nuclear physics, and statistical
 physics. However, due to the interplay of the large number of degrees of
 freedom, it is generically impossible to treat these problems from first
@@ -739,14 +709,15 @@ the Haldane phase, we find that the entanglement Hamiltonian is non-local by
 nature, and the locality can be restored by introducing the anisotropy and
 turning the system into the large-$D$ phase. Possible applications to the study
 of strongly-correlated systems and the model construction from experimental
-data are discussed.">"Construction of Hamiltonians by supervised learning of energy and
-  entanglement spectra"</a>,
+data are discussed."),
 Hiroyuki Fujita, Yuya O. Nakagawa, Sho Sugiura, Masaki Oshikawa,
-arXiv: <a href="http://arxiv.org/abs/1705.05372v4">1705.05372</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.05582v1" title="We present a procedure for reconstructing the decision function of an
+arXiv: [1705.05372](http://arxiv.org/abs/1705.05372v4),
+5/2017
+
+- ["Machine Learning of Explicit Order Parameters: From the Ising Model to
+  SU(2) Lattice Gauge Theory"](
+http://arxiv.org/abs/1705.05582v1
+"We present a procedure for reconstructing the decision function of an
 artificial neural network as a simple function of the input, provided the
 decision function is sufficiently symmetric. In this case one can easily deduce
 the quantity by which the neural network classifies the input. The procedure is
@@ -757,14 +728,15 @@ which the algorithm distinguishes between phases. We assume no prior knowledge
 about the Hamiltonian or the order parameters except Monte Carlo-sampled
 configurations. The method is applied to the Ising Model and SU(2) lattice
 gauge theory. In both systems we deduce the explicit expressions of the known
-order parameters from the decision functions of the neural networks.">"Machine Learning of Explicit Order Parameters: From the Ising Model to
-  SU(2) Lattice Gauge Theory"</a>,
+order parameters from the decision functions of the neural networks."),
 Sebastian Johann Wetzel, Manuel Scherzer,
-arXiv: <a href="http://arxiv.org/abs/1705.05582v1">1705.05582</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.01947v2" title="After decades of progress and effort, obtaining a phase diagram for a
+arXiv: [1705.05582](http://arxiv.org/abs/1705.05582v1),
+5/2017
+
+- ["Machine Learning $\mathbb{Z}_{2}$ Quantum Spin Liquids with
+  Quasi-particle Statistics"](
+http://arxiv.org/abs/1705.01947v2
+"After decades of progress and effort, obtaining a phase diagram for a
 strongly-correlated topological system still remains a challenge. Although in
 principle one could turn to Wilson loops and long-range entanglement,
 evaluating these non-local observables at many points in phase space can be
@@ -780,14 +752,14 @@ simple feed-forward neural network. Furthermore, we demonstrate advantages of
 our approach for the evaluation of phase diagrams relating to speed and
 storage. Such statistics-based machine learning of topological phases opens new
 efficient routes to studying topological phase diagrams in strongly correlated
-systems.">"Machine Learning $\mathbb{Z}_{2}$ Quantum Spin Liquids with
-  Quasi-particle Statistics"</a>,
+systems."),
 Yi Zhang, Roger G. Melko, Eun-Ah Kim,
-arXiv: <a href="http://arxiv.org/abs/1705.01947v2">1705.01947</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.00857v1" title="Surface codes reach high error thresholds when decoded with known algorithms,
+arXiv: [1705.01947](http://arxiv.org/abs/1705.01947v2),
+5/2017
+
+- ["Decoding Small Surface Codes with Feedforward Neural Networks"](
+http://arxiv.org/abs/1705.00857v1
+"Surface codes reach high error thresholds when decoded with known algorithms,
 but the decoding time will likely exceed the available time budget, especially
 for near-term implementations. To decrease the decoding time, we reduce the
 decoding problem to a classification problem that a feedforward neural network
@@ -796,13 +768,14 @@ code distances using neural network-based decoders, demonstrating that the
 neural network can generalize to inputs that were not provided during training
 and that they can reach similar or better decoding performance compared to
 previous algorithms. We conclude by discussing the time required by a
-feedforward neural network decoder in hardware.">"Decoding Small Surface Codes with Feedforward Neural Networks"</a>,
+feedforward neural network decoder in hardware."),
 Savvas Varsamopoulos, Ben Criger, Koen Bertels,
-arXiv: <a href="http://arxiv.org/abs/1705.00857v1">1705.00857</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.01523v3" title="The problem of determining whether a given quantum state is entangled lies at
+arXiv: [1705.00857](http://arxiv.org/abs/1705.00857v1),
+5/2017
+
+- ["A Separability-Entanglement Classifier via Machine Learning"](
+http://arxiv.org/abs/1705.01523v3
+"The problem of determining whether a given quantum state is entangled lies at
 the heart of quantum information processing, which is known to be an NP-hard
 problem in general. Despite the proposed many methods such as the positive
 partial transpose (PPT) criterion and the k-symmetric extendibility criterion
@@ -812,13 +785,14 @@ form a high-dimensional convex set, which exhibits a vastly complicated
 structure. In this work, we build a new separability-entanglement classifier
 underpinned by machine learning techniques. Our method outperforms the existing
 methods in generic cases in terms of both speed and accuracy, opening up the
-avenues to explore quantum entanglement via the machine learning approach.">"A Separability-Entanglement Classifier via Machine Learning"</a>,
+avenues to explore quantum entanglement via the machine learning approach."),
 Sirui Lu, Shilin Huang, Keren Li, Jun Li, Jianxin Chen, Dawei Lu, Zhengfeng Ji, Yi Shen, Duanlu Zhou, Bei Zeng,
-arXiv: <a href="http://arxiv.org/abs/1705.01523v3">1705.01523</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1705.00565v2" title="The ability to prepare a physical system in a desired quantum state is
+arXiv: [1705.01523](http://arxiv.org/abs/1705.01523v3),
+5/2017
+
+- ["Reinforcement Learning in Different Phases of Quantum Control"](
+http://arxiv.org/abs/1705.00565v2
+"The ability to prepare a physical system in a desired quantum state is
 central to many areas of physics such as nuclear magnetic resonance, cold
 atoms, and quantum computing. Preparing states quickly and with high fidelity
 remains a formidable challenge. In this work we implement cutting-edge
@@ -832,13 +806,14 @@ function of the protocol duration. Our RL-aided approach helps identify
 variational protocols with nearly optimal fidelity, even in the glassy phase,
 where optimal state preparation appears exponentially hard. This study
 highlights the usefulness of RL for applications in out-of-equilibrium quantum
-physics.">"Reinforcement Learning in Different Phases of Quantum Control"</a>,
+physics."),
 Marin Bukov, Alexandre G. R. Day, Dries Sels, Phillip Weinberg, Anatoli Polkovnikov, Pankaj Mehta,
-arXiv: <a href="http://arxiv.org/abs/1705.00565v2">1705.00565</a>,
-5/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.05822v1" title="Maximum likelihood estimation (MLE) is one of the most important methods in
+arXiv: [1705.00565](http://arxiv.org/abs/1705.00565v2),
+5/2017
+
+- ["Deterministic Quantum Annealing Expectation-Maximization Algorithm"](
+http://arxiv.org/abs/1704.05822v1
+"Maximum likelihood estimation (MLE) is one of the most important methods in
 machine learning, and the expectation-maximization (EM) algorithm is often used
 to obtain maximum likelihood estimates. However, EM heavily depends on initial
 configurations and fails to find the global optimum. On the other hand, in the
@@ -847,29 +822,31 @@ approach. Motivated by QA, we propose a quantum annealing extension of EM,
 which we call the deterministic quantum annealing expectation-maximization
 (DQAEM) algorithm. We also discuss its advantage in terms of the path integral
 formulation. Furthermore, by employing numerical simulations, we illustrate how
-it works in MLE and show that DQAEM outperforms EM.">"Deterministic Quantum Annealing Expectation-Maximization Algorithm"</a>,
+it works in MLE and show that DQAEM outperforms EM."),
 Hideyuki Miyahara, Koji Tsumura, Yuki Sughiyama,
-arXiv: <a href="http://arxiv.org/abs/1704.05822v1">1704.05822</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.06279v1" title="Physical systems differing in their microscopic details often display
+arXiv: [1704.05822](http://arxiv.org/abs/1704.05822v1),
+4/2017
+
+- ["Mutual Information, Neural Networks and the Renormalization Group"](
+http://arxiv.org/abs/1704.06279v1
+"Physical systems differing in their microscopic details often display
 strikingly similar behaviour when probed at low energies. Those universal
 properties, largely determining their physical characteristics, are revealed by
 the powerful renormalization group (RG) procedure, which systematically retains
-&quot;slow&quot; degrees of freedom and integrates out the rest. However, the important
+"slow" degrees of freedom and integrates out the rest. However, the important
 degrees of freedom may be difficult to identify. Here we demonstrate a machine
 learning (ML) algorithm capable of identifying the relevant degrees of freedom
 without any prior knowledge about the system. We introduce an artificial neural
 network based on a model-independent, information-theoretic characterization of
 a real-space RG procedure, performing this task. We apply the algorithm to
-classical statistical physics problems in two dimensions.">"Mutual Information, Neural Networks and the Renormalization Group"</a>,
+classical statistical physics problems in two dimensions."),
 Maciej Koch-Janusz, Zohar Ringel,
-arXiv: <a href="http://arxiv.org/abs/1704.06279v1">1704.06279</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.05848v1" title="Machine learning is capable of discriminating phases of matter, and finding
+arXiv: [1704.06279](http://arxiv.org/abs/1704.06279v1),
+4/2017
+
+- ["Kernel methods for interpretable machine learning of order parameters"](
+http://arxiv.org/abs/1704.05848v1
+"Machine learning is capable of discriminating phases of matter, and finding
 associated phase transitions, directly from large data sets of raw state
 configurations. In the context of condensed matter physics, most progress in
 the field of supervised learning has come from employing neural networks as
@@ -884,13 +861,15 @@ models: the ferromagnetic Ising model, a conserved-order-parameter Ising model,
 and the Ising gauge theory. The ability of SVMs to provide interpretable
 classification highlights their potential for automating feature detection in
 both synthetic and experimental data sets for condensed matter and other
-many-body systems.">"Kernel methods for interpretable machine learning of order parameters"</a>,
+many-body systems."),
 Pedro Ponte, Roger G. Melko,
-arXiv: <a href="http://arxiv.org/abs/1704.05848v1">1704.05848</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.05148v4" title="In this paper, we demonstrate the expressibility of artificial neural
+arXiv: [1704.05848](http://arxiv.org/abs/1704.05848v1),
+4/2017
+
+- ["Approximating quantum many-body wave-functions using artificial neural
+  networks"](
+http://arxiv.org/abs/1704.05148v4
+"In this paper, we demonstrate the expressibility of artificial neural
 networks (ANNs) in quantum many-body physics by showing that a feed-forward
 neural network with a small number of hidden layers can be trained to
 approximate with high precision the ground states of some notable quantum
@@ -902,14 +881,14 @@ architecture fails, while that with a slightly modified one successfully learns
 the frustration-induced complex sign rule in the ground state and approximates
 the ground states with high precisions. As an example of practical use of our
 method, we also perform the variational method to explore the ground state of
-an anti-ferromagnetic $J_1-J_2$ Heisenberg model.">"Approximating quantum many-body wave-functions using artificial neural
-  networks"</a>,
+an anti-ferromagnetic $J_1-J_2$ Heisenberg model."),
 Zi Cai, Jinguo Liu,
-arXiv: <a href="http://arxiv.org/abs/1704.05148v4">1704.05148</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.01578v2" title="We show that a simple artificial neural network trained on entanglement
+arXiv: [1704.05148](http://arxiv.org/abs/1704.05148v4),
+4/2017
+
+- ["Probing many-body localization with neural networks"](
+http://arxiv.org/abs/1704.01578v2
+"We show that a simple artificial neural network trained on entanglement
 spectra of individual states of a many-body quantum system can be used to
 determine the transition between a many-body localized and a thermalizing
 regime. Specifically, we study the Heisenberg spin-1/2 chain in a random
@@ -927,13 +906,15 @@ us to map out the structure of these eigenstates across the transition with
 spatial resolution. Furthermore, we analyze the network operation using the
 dreaming technique to show that the neural network correctly learns by itself
 the power-law structure of the entanglement spectra in the many-body localized
-regime.">"Probing many-body localization with neural networks"</a>,
+regime."),
 Frank Schindler, Nicolas Regnault, Titus Neupert,
-arXiv: <a href="http://arxiv.org/abs/1704.01578v2">1704.01578</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.00080v2" title="We apply unsupervised machine learning techniques, mainly principal component
+arXiv: [1704.01578](http://arxiv.org/abs/1704.01578v2),
+4/2017
+
+- ["Discovering Phases, Phase Transitions and Crossovers through
+  Unsupervised Machine Learning: A critical examination"](
+http://arxiv.org/abs/1704.00080v2
+"We apply unsupervised machine learning techniques, mainly principal component
 analysis (PCA), to compare and contrast the phase behavior and phase
 transitions in several classical spin models - the square and
 triangular-lattice Ising models, the Blume-Capel model, a highly degenerate
@@ -948,18 +929,18 @@ to incipient orders. Unlike the other well-studied models, the properties of
 the BSI model are less well known. Using both PCA and conventional Monte Carlo
 analysis, we demonstrate that the BSI model shows an absence of phase
 transition and macroscopic ground-state degeneracy. The failure to capture the
-charge' correlations (vorticity) in the BSI model (XY model) from raw spin
+`charge' correlations (vorticity) in the BSI model (XY model) from raw spin
 configurations points to some of the limitations of PCA. Finally, we employ a
-nonlinear unsupervised machine learning procedure, theantoencoder method',
+nonlinear unsupervised machine learning procedure, the `antoencoder method',
 and demonstrate that it too can be trained to capture phase transitions and
-critical points.">"Discovering Phases, Phase Transitions and Crossovers through
-  Unsupervised Machine Learning: A critical examination"</a>,
+critical points."),
 Wenjian Hu, Rajiv R. P. Singh, Richard T. Scalettar,
-arXiv: <a href="http://arxiv.org/abs/1704.00080v2">1704.00080</a>,
-3/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1703.05334v2" title="The experimental realization of increasingly complex synthetic quantum
+arXiv: [1704.00080](http://arxiv.org/abs/1704.00080v2),
+3/2017
+
+- ["Many-body quantum state tomography with neural networks"](
+http://arxiv.org/abs/1703.05334v2
+"The experimental realization of increasingly complex synthetic quantum
 systems calls for the development of general theoretical methods, to validate
 and fully exploit quantum resources. Quantum-state tomography (QST) aims at
 reconstructing the full quantum state from simple measurements, and therefore
@@ -971,13 +952,15 @@ states, in both one and two dimensions. Remarkably, the resulting approach
 allows one to reconstruct traditionally challenging many-body quantities - such
 as the entanglement entropy - from simple, experimentally accessible
 measurements. This approach can benefit existing and future generations of
-devices ranging from quantum computers to ultra-cold atom quantum simulators.">"Many-body quantum state tomography with neural networks"</a>,
+devices ranging from quantum computers to ultra-cold atom quantum simulators."),
 Giacomo Torlai, Guglielmo Mazzola, Juan Carrasquilla, Matthias Troyer, Roger Melko, Giuseppe Carleo,
-arXiv: <a href="http://arxiv.org/abs/1703.05334v2">1703.05334</a>,
-3/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1703.02435v2" title="We employ unsupervised machine learning techniques to learn latent parameters
+arXiv: [1703.05334](http://arxiv.org/abs/1703.05334v2),
+3/2017
+
+- ["Unsupervised learning of phase transitions: from principal component
+  analysis to variational autoencoders"](
+http://arxiv.org/abs/1703.02435v2
+"We employ unsupervised machine learning techniques to learn latent parameters
 which best describe states of the two-dimensional Ising model and the
 three-dimensional XY model. These methods range from principal component
 analysis to artificial neural network based variational autoencoders. The
@@ -987,14 +970,14 @@ known order parameters. The latent representation of the states of the models
 in question are clustered, which makes it possible to identify phases without
 prior knowledge of their existence or the underlying Hamiltonian. Furthermore,
 we find that the reconstruction loss function can be used as a universal
-identifier for phase transitions.">"Unsupervised learning of phase transitions: from principal component
-  analysis to variational autoencoders"</a>,
+identifier for phase transitions."),
 Sebastian Johann Wetzel,
-arXiv: <a href="http://arxiv.org/abs/1703.02435v2">1703.02435</a>,
-3/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1701.06246v1" title="We study the representational power of a Boltzmann machine (a type of neural
+arXiv: [1703.02435](http://arxiv.org/abs/1703.02435v2),
+3/2017
+
+- ["Neural network representation of tensor network and chiral states"](
+http://arxiv.org/abs/1701.06246v1
+"We study the representational power of a Boltzmann machine (a type of neural
 network) in quantum many-body systems. We prove that any (local) tensor network
 state has a (local) neural network representation. The construction is almost
 optimal in the sense that the number of parameters in the neural network
@@ -1002,13 +985,14 @@ representation is almost linear in the number of nonzero parameters in the
 tensor network representation. Despite the difficulty of representing (gapped)
 chiral topological states with local tensor networks, we construct a
 quasi-local neural network representation for a chiral p-wave superconductor.
-This demonstrates the power of Boltzmann machines.">"Neural network representation of tensor network and chiral states"</a>,
+This demonstrates the power of Boltzmann machines."),
 Yichen Huang, Joel E. Moore,
-arXiv: <a href="http://arxiv.org/abs/1701.06246v1">1701.06246</a>,
-1/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1701.04831v2" title="The restricted Boltzmann machine (RBM) is one of the fundamental building
+arXiv: [1701.06246](http://arxiv.org/abs/1701.06246v1),
+1/2017
+
+- ["Equivalence of restricted Boltzmann machines and tensor network states"](
+http://arxiv.org/abs/1701.04831v2
+"The restricted Boltzmann machine (RBM) is one of the fundamental building
 blocks of deep learning. RBM finds wide applications in dimensional reduction,
 feature extraction, and recommender systems via modeling the probability
 distributions of a variety of input data including natural images, speech
@@ -1023,13 +1007,15 @@ bound of TNS, we can rigorously quantify the expressive power of RBM on complex
 data sets. Insights into TNS and its entanglement capacity can guide the design
 of more powerful deep learning architectures. On the other hand, RBM can
 represent quantum many-body states with fewer parameters compared to TNS, which
-may allow more efficient classical simulations.">"Equivalence of restricted Boltzmann machines and tensor network states"</a>,
+may allow more efficient classical simulations."),
 Jing Chen, Song Cheng, Haidong Xie, Lei Wang, Tao Xiang,
-arXiv: <a href="http://arxiv.org/abs/1701.04831v2">1701.04831</a>,
-1/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1701.05039v1" title="The challenge of quantum many-body problems comes from the difficulty to
+arXiv: [1701.04831](http://arxiv.org/abs/1701.04831v2),
+1/2017
+
+- ["Efficient Representation of Quantum Many-body States with Deep Neural
+  Networks"](
+http://arxiv.org/abs/1701.05039v1
+"The challenge of quantum many-body problems comes from the difficulty to
 represent large-scale quantum states, which in general requires an
 exponentially large number of parameters. Recently, a connection has been made
 between quantum many-body states and the neural network representation
@@ -1041,14 +1027,14 @@ physical states, including those generated by any polynomial size quantum
 circuits or ground states of many body Hamiltonians with polynomial-size gaps,
 while a shallow network through a restricted Boltzmann machine cannot
 efficiently represent those states unless the polynomial hierarchy in
-computational complexity theory collapses.">"Efficient Representation of Quantum Many-body States with Deep Neural
-  Networks"</a>,
+computational complexity theory collapses."),
 Xun Gao, Lu-Ming Duan,
-arXiv: <a href="http://arxiv.org/abs/1701.05039v1">1701.05039</a>,
-1/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1701.04844v3" title="Machine learning, one of today's most rapidly growing interdisciplinary
+arXiv: [1701.05039](http://arxiv.org/abs/1701.05039v1),
+1/2017
+
+- ["Quantum Entanglement in Neural Network States"](
+http://arxiv.org/abs/1701.04844v3
+"Machine learning, one of today's most rapidly growing interdisciplinary
 fields, promises an unprecedented perspective for solving intricate quantum
 many-body problems. Understanding the physical aspects of the representative
 artificial neural-network states is recently becoming highly desirable in the
@@ -1072,25 +1058,27 @@ states, that the RBM representation may also be used as a tool to analytically
 compute the entanglement spectrum. Our results uncover the unparalleled power
 of artificial neural networks in representing quantum many-body states, which
 paves a novel way to bridge computer science based machine learning techniques
-to outstanding quantum condensed matter physics problems.">"Quantum Entanglement in Neural Network States"</a>,
+to outstanding quantum condensed matter physics problems."),
 Dong-Ling Deng, Xiaopeng Li, S. Das Sarma,
-arXiv: <a href="http://arxiv.org/abs/1701.04844v3">1701.04844</a>,
-1/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1701.00246v1" title="We set up Restricted Boltzmann Machines (RBM) to reproduce the Long Range
+arXiv: [1701.04844](http://arxiv.org/abs/1701.04844v3),
+1/2017
+
+- ["Restricted Boltzmann Machines for the Long Range Ising Models"](
+http://arxiv.org/abs/1701.00246v1
+"We set up Restricted Boltzmann Machines (RBM) to reproduce the Long Range
 Ising (LRI) models of the Ohmic type in one dimension. The RBM parameters are
 tuned by using the standard machine learning procedure with an additional
 method of Configuration with Probability (CwP). The quality of resultant RBM
 are evaluated through the susceptibility with respect to the magnetic external
 field. We compare the results with those by Block Decimation Renormalization
-Group (BDRG) method, and our RBM clear the test with satisfactory precision.">"Restricted Boltzmann Machines for the Long Range Ising Models"</a>,
+Group (BDRG) method, and our RBM clear the test with satisfactory precision."),
 Ken-Ichi Aoki, Tamao Kobayashi,
-arXiv: <a href="http://arxiv.org/abs/1701.00246v1">1701.00246</a>,
-1/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1612.05695v2" title="We investigate whether quantum annealers with select chip layouts can
+arXiv: [1701.00246](http://arxiv.org/abs/1701.00246v1),
+1/2017
+
+- ["Reinforcement Learning Using Quantum Boltzmann Machines"](
+http://arxiv.org/abs/1612.05695v2
+"We investigate whether quantum annealers with select chip layouts can
 outperform classical computers in reinforcement learning tasks. We associate a
 transverse field Ising spin Hamiltonian with a layout of qubits similar to that
 of a deep Boltzmann machine (DBM) and use simulated quantum annealing (SQA) to
@@ -1104,28 +1092,31 @@ not classically feasible, this is evidence of advantage of a non-Turing
 sampling oracle. We then develop a framework for training the network as a
 quantum Boltzmann machine (QBM) in the presence of a significant transverse
 field for reinforcement learning. This further improves the reinforcement
-learning method using DBMs.">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>,
+learning method using DBMs."),
 Daniel Crawford, Anna Levit, Navid Ghadermarzy, Jaspreet S. Oberoi, Pooya Ronagh,
-arXiv: <a href="http://arxiv.org/abs/1612.05695v2">1612.05695</a>,
-12/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1611.09364v1" title="We develop the self-learning Monte Carlo (SLMC) method, a general-purpose
+arXiv: [1612.05695](http://arxiv.org/abs/1612.05695v2),
+12/2016
+
+- ["Self-Learning Monte Carlo Method in Fermion Systems"](
+http://arxiv.org/abs/1611.09364v1
+"We develop the self-learning Monte Carlo (SLMC) method, a general-purpose
 numerical method recently introduced to simulate many-body systems, for
 studying interacting fermion systems. Our method uses a highly-efficient update
-algorithm, which we design and dub &quot;cumulative update&quot;, to generate new
+algorithm, which we design and dub "cumulative update", to generate new
 candidate configurations in the Markov chain based on a self-learned bosonic
 effective model. From general analysis and numerical study of the double
 exchange model as an example, we find the SLMC with cumulative update
 drastically reduces the computational cost of the simulation, while remaining
 statistically exact. Remarkably, its computational complexity is far less than
-the conventional algorithm with local updates.">"Self-Learning Monte Carlo Method in Fermion Systems"</a>,
+the conventional algorithm with local updates."),
 Junwei Liu, Huitao Shen, Yang Qi, Zi Yang Meng, Liang Fu,
-arXiv: <a href="http://arxiv.org/abs/1611.09364v1">1611.09364</a>,
-11/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1611.05891v1" title="In this paper, we build and explore supervised learning models of
+arXiv: [1611.09364](http://arxiv.org/abs/1611.09364v1),
+11/2016
+
+- ["Sampling algorithms for validation of supervised learning models for
+  Ising-like systems"](
+http://arxiv.org/abs/1611.05891v1
+"In this paper, we build and explore supervised learning models of
 ferromagnetic system behavior, using Monte-Carlo sampling of the spin
 configuration space generated by the 2D Ising model. Given the enormous size of
 the space of all possible Ising model realizations, the question arises as to
@@ -1137,7 +1128,7 @@ configuration subspace. We show that application of this method retains phase
 transitions in both training and testing datasets and serves the purpose of
 validation of a machine learning algorithm. For larger lattice dimensions,
 ID-MH is not feasible as it requires knowledge of the complete configuration
-space. As such, we develop a new &quot;block-ID&quot; sampling strategy: it decomposes
+space. As such, we develop a new "block-ID" sampling strategy: it decomposes
 the given structure into square blocks with lattice dimension no greater than 5
 and uses ID-MH sampling of candidate blocks. Further comparison of the
 performance of commonly used machine learning methods such as random forests,
@@ -1145,14 +1136,14 @@ decision trees, k nearest neighbors and artificial neural networks shows that
 the PCA-based Decision Tree regressor is the most accurate predictor of
 magnetizations of the Ising model. For energies, however, the accuracy of
 prediction is not satisfactory, highlighting the need to consider more
-algorithmically complex methods (e.g., deep learning).">"Sampling algorithms for validation of supervised learning models for
-  Ising-like systems"</a>,
+algorithmically complex methods (e.g., deep learning)."),
 Nataliya Portman, Isaac Tamblyn,
-arXiv: <a href="http://arxiv.org/abs/1611.05891v1">1611.05891</a>,
-11/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1611.01518v2" title="Despite rapidly growing interest in harnessing machine learning in the study
+arXiv: [1611.05891](http://arxiv.org/abs/1611.05891v1),
+11/2016
+
+- ["Quantum Loop Topography for Machine Learning"](
+http://arxiv.org/abs/1611.01518v2
+"Despite rapidly growing interest in harnessing machine learning in the study
 of quantum many-body systems, training neural networks to identify quantum
 phases is a nontrivial challenge. The key challenge is in efficiently
 extracting essential information from the many-body Hamiltonian or wave
@@ -1160,7 +1151,7 @@ function and turning the information into an image that can be fed into a
 neural network. When targeting topological phases, this task becomes
 particularly challenging as topological phases are defined in terms of
 non-local properties. Here we introduce quantum loop topography (QLT): a
-procedure of constructing a multi-dimensional image from the &quot;sample&quot;
+procedure of constructing a multi-dimensional image from the "sample"
 Hamiltonian or wave function by evaluating two-point operators that form loops
 at independent Monte Carlo steps. The loop configuration is guided by
 characteristic response for defining the phase, which is Hall conductivity for
@@ -1170,13 +1161,14 @@ trained to distinguish Chern insulator and fractional Chern insulator from
 trivial insulators with high fidelity. In addition to establishing the first
 case of obtaining a phase diagram with topological quantum phase transition
 with machine learning, the perspective of bridging traditional condensed matter
-theory with machine learning will be broadly valuable.">"Quantum Loop Topography for Machine Learning"</a>,
+theory with machine learning will be broadly valuable."),
 Yi Zhang, Eun-Ah Kim,
-arXiv: <a href="http://arxiv.org/abs/1611.01518v2">1611.01518</a>,
-11/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1610.02048v1" title="Classifying phases of matter is a central problem in physics. For quantum
+arXiv: [1611.01518](http://arxiv.org/abs/1611.01518v2),
+11/2016
+
+- ["Learning phase transitions by confusion"](
+http://arxiv.org/abs/1610.02048v1
+"Classifying phases of matter is a central problem in physics. For quantum
 mechanical systems, this task can be daunting owing to the exponentially large
 Hilbert space. Thanks to the available computing power and access to ever
 larger data sets, classification problems are now routinely solved using
@@ -1189,26 +1181,28 @@ and the many-body-localization transition in a disordered quantum spin chain.
 Our method does not depend on order parameters, knowledge of the topological
 content of the phases, or any other specifics of the transition at hand. It
 therefore paves the way to a generic tool to identify unexplored phase
-transitions.">"Learning phase transitions by confusion"</a>,
+transitions."),
 Evert P. L. van Nieuwenburg, Ye-Hua Liu, Sebastian D. Huber,
-arXiv: <a href="http://arxiv.org/abs/1610.02048v1">1610.02048</a>,
-10/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1610.04238v1" title="We present an algorithm for error correction in topological codes that
+arXiv: [1610.02048](http://arxiv.org/abs/1610.02048v1),
+10/2016
+
+- ["A Neural Decoder for Topological Codes"](
+http://arxiv.org/abs/1610.04238v1
+"We present an algorithm for error correction in topological codes that
 exploits modern machine learning techniques. Our decoder is constructed from a
 stochastic neural network called a Boltzmann machine, of the type extensively
 used in deep learning. We provide a general prescription for the training of
 the network and a decoding strategy that is applicable to a wide variety of
 stabilizer codes with very little specialization. We demonstrate the neural
 decoder numerically on the well-known two dimensional toric code with
-phase-flip errors.">"A Neural Decoder for Topological Codes"</a>,
+phase-flip errors."),
 Giacomo Torlai, Roger G. Melko,
-arXiv: <a href="http://arxiv.org/abs/1610.04238v1">1610.04238</a>,
-10/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1610.03137v2" title="Monte Carlo simulation is an unbiased numerical tool for studying classical
+arXiv: [1610.04238](http://arxiv.org/abs/1610.04238v1),
+10/2016
+
+- ["Self-Learning Monte Carlo Method"](
+http://arxiv.org/abs/1610.03137v2
+"Monte Carlo simulation is an unbiased numerical tool for studying classical
 and quantum many-body systems. One of its bottlenecks is the lack of general
 and efficient update algorithm for large size systems close to phase transition
 or with strong frustrations, for which local updates perform badly. In this
@@ -1216,13 +1210,14 @@ work, we propose a new general-purpose Monte Carlo method, dubbed self-learning
 Monte Carlo (SLMC), in which an efficient update algorithm is first learned
 from the training data generated in trial simulations and then used to speed up
 the actual simulation. We demonstrate the efficiency of SLMC in a spin model at
-the phase transition point, achieving a 10-20 times speedup.">"Self-Learning Monte Carlo Method"</a>,
+the phase transition point, achieving a 10-20 times speedup."),
 Junwei Liu, Yang Qi, Zi Yang Meng, Liang Fu,
-arXiv: <a href="http://arxiv.org/abs/1610.03137v2">1610.03137</a>,
-10/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1610.02746v2" title="Despite their exceptional flexibility and popularity, the Monte Carlo methods
+arXiv: [1610.03137](http://arxiv.org/abs/1610.03137v2),
+10/2016
+
+- ["Accelerate Monte Carlo Simulations with Restricted Boltzmann Machines"](
+http://arxiv.org/abs/1610.02746v2
+"Despite their exceptional flexibility and popularity, the Monte Carlo methods
 often suffer from slow mixing times for challenging statistical physics
 problems. We present a general strategy to overcome this difficulty by adopting
 ideas and techniques from the machine learning community. We fit the
@@ -1232,13 +1227,14 @@ exploiting its feature detection ability, we utilize the restricted Boltzmann
 machine for efficient Monte Carlo updates and to speed up the simulation of the
 original physical system. We implement these ideas for the Falicov-Kimball
 model and demonstrate improved acceptance ratio and autocorrelation time near
-the phase transition point.">"Accelerate Monte Carlo Simulations with Restricted Boltzmann Machines"</a>,
+the phase transition point."),
 Li Huang, Lei Wang,
-arXiv: <a href="http://arxiv.org/abs/1610.02746v2">1610.02746</a>,
-10/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1609.09060v2" title="Artificial neural networks and machine learning have now reached a new era
+arXiv: [1610.02746](http://arxiv.org/abs/1610.02746v2),
+10/2016
+
+- ["Machine Learning Topological States"](
+http://arxiv.org/abs/1609.09060v2
+"Artificial neural networks and machine learning have now reached a new era
 after several decades of improvement where applications are to explode in many
 fields of science, industry, and technology. Here, we use artificial neural
 networks to study an intriguing phenomenon in quantum physics--- the
@@ -1259,13 +1255,15 @@ capable of finding the topological ground states of non-integrable Hamiltonians
 with strong interactions and studying their topological phase transitions. Our
 results demonstrate explicitly the exceptional power of neural networks in
 describing topological quantum states, and at the same time provide valuable
-guidance to machine learning of topological phases in generic lattice models.">"Machine Learning Topological States"</a>,
+guidance to machine learning of topological phases in generic lattice models."),
 Dong-Ling Deng, Xiaopeng Li, S. Das Sarma,
-arXiv: <a href="http://arxiv.org/abs/1609.09060v2">1609.09060</a>,
-9/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1609.03705v1" title="We use density-matrix renormalization group, applied to a one-dimensional
+arXiv: [1609.09060](http://arxiv.org/abs/1609.09060v2),
+9/2016
+
+- ["Pure density functional for strong correlations and the thermodynamic
+  limit from machine learning"](
+http://arxiv.org/abs/1609.03705v1
+"We use density-matrix renormalization group, applied to a one-dimensional
 model of continuum Hamiltonians, to accurately solve chains of hydrogen atoms
 of various separations and numbers of atoms. We train and test a
 machine-learned approximation to $F[n]$, the universal part of the electronic
@@ -1274,14 +1272,14 @@ bypasses the standard Kohn-Sham approach, avoiding the need to find orbitals,
 (b) includes the strong correlation of highly-stretched bonds without any
 specific difficulty (unlike all standard DFT approximations) and (c) is so
 accurate that it can be used to find the energy in the thermodynamic limit to
-quantum chemical accuracy.">"Pure density functional for strong correlations and the thermodynamic
-  limit from machine learning"</a>,
+quantum chemical accuracy."),
 Li Li, Thomas E. Baker, Steven R. White, Kieron Burke,
-arXiv: <a href="http://arxiv.org/abs/1609.03705v1">1609.03705</a>,
-9/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1609.02552v3" title="Machine learning offers an unprecedented perspective for the problem of
+arXiv: [1609.03705](http://arxiv.org/abs/1609.03705v1),
+9/2016
+
+- ["Machine Learning Phases of Strongly Correlated Fermions"](
+http://arxiv.org/abs/1609.02552v3
+"Machine learning offers an unprecedented perspective for the problem of
 classifying phases in condensed matter physics. We employ neural-network
 machine learning techniques to distinguish finite-temperature phases of the
 strongly correlated fermions on cubic lattices. We show that a three
@@ -1293,13 +1291,15 @@ the trend in the transition temperature as the system is doped away from half
 filling. This transfer learning approach predicts that the instability to the
 magnetic phase extends to at least 5% doping in this region. Our results pave
 the way for other machine learning applications in correlated quantum many-body
-systems.">"Machine Learning Phases of Strongly Correlated Fermions"</a>,
+systems."),
 Kelvin Ch'ng, Juan Carrasquilla, Roger G. Melko, Ehsan Khatami,
-arXiv: <a href="http://arxiv.org/abs/1609.02552v3">1609.02552</a>,
-9/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1608.07848v1" title="State-of-the-art machine learning techniques promise to become a powerful
+arXiv: [1609.02552](http://arxiv.org/abs/1609.02552v3),
+9/2016
+
+- ["Machine learning quantum phases of matter beyond the fermion sign
+  problem"](
+http://arxiv.org/abs/1608.07848v1
+"State-of-the-art machine learning techniques promise to become a powerful
 tool in statistical mechanics via their capacity to distinguish different
 phases of matter in an automated way. Here we demonstrate that convolutional
 neural networks (CNN) can be optimized for quantum many-fermion systems such
@@ -1313,14 +1313,15 @@ problem where conventional approaches to extract information from the Green's
 function, e.g.~in the form of equal-time correlation functions, fail. We expect
 that this capacity of hierarchical machine learning techniques to circumvent
 the fermion sign problem will drive novel insights into some of the most
-fundamental problems in statistical physics.">"Machine learning quantum phases of matter beyond the fermion sign
-  problem"</a>,
+fundamental problems in statistical physics."),
 Peter Broecker, Juan Carrasquilla, Roger G. Melko, Simon Trebst,
-arXiv: <a href="http://arxiv.org/abs/1608.07848v1">1608.07848</a>,
-8/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1509.04298v2" title="We put forward a strategy to encode a quantum operation into the unmodulated
+arXiv: [1608.07848](http://arxiv.org/abs/1608.07848v1),
+8/2016
+
+- ["Quantum gate learning in engineered qubit networks: Toffoli gate with
+  always-on interactions"](
+http://arxiv.org/abs/1509.04298v2
+"We put forward a strategy to encode a quantum operation into the unmodulated
 dynamics of a quantum network without the need of external control pulses,
 measurements or active feedback. Our optimization scheme, inspired by
 supervised machine learning, consists in engineering the pairwise couplings
@@ -1330,14 +1331,14 @@ scheme is demonstrated by the finding of uncontrolled four-qubit networks that
 implement either the Toffoli gate, the Fredkin gate, or remote logic
 operations. The proposed Toffoli gate is stable against imperfections, has a
 high-fidelity for fault tolerant quantum computation, and is fast, being based
-on the non-equilibrium dynamics.">"Quantum gate learning in engineered qubit networks: Toffoli gate with
-  always-on interactions"</a>,
+on the non-equilibrium dynamics."),
 Leonardo Banchi, Nicola Pancotti, Sougato Bose,
-arXiv: <a href="http://arxiv.org/abs/1509.04298v2">1509.04298</a>,
-9/2015</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1606.02718v1" title="A Boltzmann machine is a stochastic neural network that has been extensively
+arXiv: [1509.04298](http://arxiv.org/abs/1509.04298v2),
+9/2015
+
+- ["Learning Thermodynamics with Boltzmann Machines"](
+http://arxiv.org/abs/1606.02718v1
+"A Boltzmann machine is a stochastic neural network that has been extensively
 used in the layers of deep architectures for modern machine learning
 applications. In this paper, we develop a Boltzmann machine that is capable of
 modelling thermodynamic observables for physical systems in thermal
@@ -1349,13 +1350,14 @@ generate spin states, for which we compare thermodynamic observables to those
 computed by direct MC sampling. We demonstrate that the Boltzmann machine can
 faithfully reproduce the observables of the physical system. Further, we
 observe that the number of neurons required to obtain accurate results
-increases as the system is brought close to criticality.">"Learning Thermodynamics with Boltzmann Machines"</a>,
+increases as the system is brought close to criticality."),
 Giacomo Torlai, Roger G. Melko,
-arXiv: <a href="http://arxiv.org/abs/1606.02718v1">1606.02718</a>,
-6/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1606.02318v1" title="The challenge posed by the many-body problem in quantum physics originates
+arXiv: [1606.02718](http://arxiv.org/abs/1606.02718v1),
+6/2016
+
+- ["Solving the Quantum Many-Body Problem with Artificial Neural Networks"](
+http://arxiv.org/abs/1606.02318v1
+"The challenge posed by the many-body problem in quantum physics originates
 from the difficulty of describing the non-trivial correlations encoded in the
 exponential complexity of the many-body wave function. Here we demonstrate that
 systematic machine learning of the wave function can reduce this complexity to
@@ -1367,13 +1369,14 @@ the ground-state or describing the unitary time evolution of complex
 interacting quantum systems. We show that this approach achieves very high
 accuracy in the description of equilibrium and dynamical properties of
 prototypical interacting spins models in both one and two dimensions, thus
-offering a new powerful tool to solve the quantum many-body problem.">"Solving the Quantum Many-Body Problem with Artificial Neural Networks"</a>,
+offering a new powerful tool to solve the quantum many-body problem."),
 Giuseppe Carleo, Matthias Troyer,
-arXiv: <a href="http://arxiv.org/abs/1606.02318v1">1606.02318</a>,
-6/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1606.00318v2" title="Unsupervised learning is a discipline of machine learning which aims at
+arXiv: [1606.02318](http://arxiv.org/abs/1606.02318v1),
+6/2016
+
+- ["Discovering Phase Transitions with Unsupervised Learning"](
+http://arxiv.org/abs/1606.00318v2
+"Unsupervised learning is a discipline of machine learning which aims at
 discovering patterns in big data sets or classifying the data into several
 categories without being trained explicitly. We show that unsupervised learning
 techniques can be readily used to identify phases and phases transitions of
@@ -1384,13 +1387,14 @@ identify distinct phases in the feature space. This approach successfully finds
 out physical concepts such as order parameter and structure factor to be
 indicators of the phase transition. We discuss future prospects of discovering
 more complex phases and phase transitions using unsupervised learning
-techniques.">"Discovering Phase Transitions with Unsupervised Learning"</a>,
+techniques."),
 Lei Wang,
-arXiv: <a href="http://arxiv.org/abs/1606.00318v2">1606.00318</a>,
-6/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1605.01735v1" title="Neural networks can be used to identify phases and phase transitions in
+arXiv: [1606.00318](http://arxiv.org/abs/1606.00318v2),
+6/2016
+
+- ["Machine learning phases of matter"](
+http://arxiv.org/abs/1605.01735v1
+"Neural networks can be used to identify phases and phase transitions in
 condensed matter systems via supervised machine learning. Readily programmable
 through modern software libraries, we show that a standard feed-forward neural
 network can be trained to detect multiple types of order parameter directly
@@ -1400,13 +1404,14 @@ convolutional neural network, topological phases with no conventional order
 parameter. We show that this classification occurs within the neural network
 without knowledge of the Hamiltonian or even the general locality of
 interactions. These results demonstrate the power of machine learning as a
-basic research tool in the field of condensed matter and statistical physics.">"Machine learning phases of matter"</a>,
+basic research tool in the field of condensed matter and statistical physics."),
 Juan Carrasquilla, Roger G. Melko,
-arXiv: <a href="http://arxiv.org/abs/1605.01735v1">1605.01735</a>,
-5/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1404.1333v2" title="Kernel ridge regression is used to approximate the kinetic energy of
+arXiv: [1605.01735](http://arxiv.org/abs/1605.01735v1),
+5/2016
+
+- ["Understanding Machine-learned Density Functionals"](
+http://arxiv.org/abs/1404.1333v2
+"Kernel ridge regression is used to approximate the kinetic energy of
 non-interacting fermions in a one-dimensional box as a functional of their
 density. The properties of different kernels and methods of cross-validation
 are explored, and highly accurate energies are achieved. Accurate {\em
@@ -1415,16 +1420,18 @@ constrained minimization of the total energy. A projected gradient descent
 algorithm is derived using local principal component analysis. Additionally, a
 sparse grid representation of the density can be used without degrading the
 performance of the methods. The implications for machine-learned density
-functional approximations are discussed.">"Understanding Machine-learned Density Functionals"</a>,
+functional approximations are discussed."),
 Li Li, John C. Snyder, Isabelle M. Pelaschier, Jessica Huang, Uma-Naresh Niranjan, Paul Duncan, Matthias Rupp, Klaus-Robert Müller, Kieron Burke,
-arXiv: <a href="http://arxiv.org/abs/1404.1333v2">1404.1333</a>,
-4/2014</p>
-</li>
-</ul>
-<h2>Physics-Inspired Ideas Applied to Machine Learning</h2>
-<ul>
-<li>
-<p><a href="http://arxiv.org/abs/1802.06126v2" title="The mean field approximation to the Ising model is a canonical variational
+arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
+4/2014
+
+
+## Physics-Inspired Ideas Applied to Machine Learning
+
+- ["The Mean-Field Approximation: Information Inequalities, Algorithms, and
+  Complexity"](
+http://arxiv.org/abs/1802.06126v2
+"The mean field approximation to the Ising model is a canonical variational
 tool that is used for analysis and inference in Ising models. We provide a
 simple and optimal bound for the KL error of the mean field approximation for
 Ising models on general graphs, and extend it to higher order Markov random
@@ -1435,20 +1442,20 @@ order terms. Building on the methods used to prove the bound, along with
 techniques from combinatorics and optimization, we study the algorithmic
 problem of estimating the (variational) free energy for Ising models and
 general Markov random fields. For a graph $G$ on $n$ vertices and interaction
-matrix $J$ with Frobenius norm $| J |_F$, we provide algorithms that
-approximate the free energy within an additive error of $\epsilon n |J|_F$ in
+matrix $J$ with Frobenius norm $\| J \|_F$, we provide algorithms that
+approximate the free energy within an additive error of $\epsilon n \|J\|_F$ in
 time $\exp(poly(1/\epsilon))$. We also show that approximation within $(n
-|J|_F)^{1-\delta}$ is NP-hard for every $\delta &gt; 0$. Finally, we provide
+\|J\|_F)^{1-\delta}$ is NP-hard for every $\delta > 0$. Finally, we provide
 more efficient approximation algorithms, which find the optimal mean field
 approximation, for ferromagnetic Ising models and for Ising models satisfying
-Dobrushin's condition.">"The Mean-Field Approximation: Information Inequalities, Algorithms, and
-  Complexity"</a>,
+Dobrushin's condition."),
 Vishesh Jain, Frederic Koehler, Elchanan Mossel,
-arXiv: <a href="http://arxiv.org/abs/1802.06126v2">1802.06126</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.05756v1" title="In many-body physics, renormalization techniques are used to extract aspects
+arXiv: [1802.06126](http://arxiv.org/abs/1802.06126v2),
+2/2018
+
+- ["Inferring relevant features: from QFT to PCA"](
+http://arxiv.org/abs/1802.05756v1
+"In many-body physics, renormalization techniques are used to extract aspects
 of a statistical or quantum state that are relevant at large scale, or for low
 energy experiments. Recent works have proposed that these features can be
 formally identified as those perturbations of the states whose
@@ -1456,15 +1463,17 @@ distinguishability most resist coarse-graining. Here, we examine whether this
 same strategy can be used to identify important features of an unlabeled
 dataset. This approach indeed results in a technique very similar to kernel PCA
 (principal component analysis), but with a kernel function that is
-automatically adapted to the data, or &quot;learned&quot;. We test this approach on
+automatically adapted to the data, or "learned". We test this approach on
 handwritten digits, and find that the most relevant features are significantly
-better for classification than those obtained from a simple gaussian kernel.">"Inferring relevant features: from QFT to PCA"</a>,
+better for classification than those obtained from a simple gaussian kernel."),
 Cédric Bény,
-arXiv: <a href="http://arxiv.org/abs/1802.05756v1">1802.05756</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.02154v1" title="In this paper we approach two relevant deep learning topics: i) tackling of
+arXiv: [1802.05756](http://arxiv.org/abs/1802.05756v1),
+2/2018
+
+- ["Critical Percolation as a Framework to Analyze the Training of Deep
+  Networks"](
+http://arxiv.org/abs/1802.02154v1
+"In this paper we approach two relevant deep learning topics: i) tackling of
 graph structured input data and ii) a better understanding and analysis of deep
 networks and related learning algorithms. With this in mind we focus on the
 topological classification of reachability in a particular subset of planar
@@ -1479,14 +1488,15 @@ of the cost function near this global minimum. We further identify an obstacle
 to learning in the form of poorly performing local minima in which the network
 chooses to ignore some of the inputs. We further support our claims with
 training experiments and numerical analysis of the cost function on networks
-with up to $128$ layers.">"Critical Percolation as a Framework to Analyze the Training of Deep
-  Networks"</a>,
+with up to $128$ layers."),
 Zohar Ringel, Rodrigo de Bem,
-arXiv: <a href="http://arxiv.org/abs/1802.02154v1">1802.02154</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1801.07172v1" title="Theoretical understanding of how deep neural network (DNN) extracts features
+arXiv: [1802.02154](http://arxiv.org/abs/1802.02154v1),
+2/2018
+
+- ["Scale-invariant Feature Extraction of Neural Network and Renormalization
+  Group Flow"](
+http://arxiv.org/abs/1801.07172v1
+"Theoretical understanding of how deep neural network (DNN) extracts features
 from input images is still unclear, but it is widely believed that the
 extraction is performed hierarchically through a process of coarse-graining. It
 reminds us of the basic concept of renormalization group (RG) in statistical
@@ -1498,14 +1508,15 @@ temperatures from $T=0$ to $T=6$ generates a flow along which the temperature
 approaches the critical value $T_c=2.27$. This behavior is opposite to the
 typical RG flow of the Ising model. By analyzing various properties of the
 weight matrices of the trained RBM, we discuss why it flows towards $T_c$ and
-how the RBM learns to extract features of spin configurations.">"Scale-invariant Feature Extraction of Neural Network and Renormalization
-  Group Flow"</a>,
+how the RBM learns to extract features of spin configurations."),
 Satoshi Iso, Shotaro Shiba, Sumito Yokoo,
-arXiv: <a href="http://arxiv.org/abs/1801.07172v1">1801.07172</a>,
-1/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1801.01743v1" title="We propose a modification of the cost function of the Hopfield model whose
+arXiv: [1801.07172](http://arxiv.org/abs/1801.07172v1),
+1/2018
+
+- ["A relativistic extension of Hopfield neural networks via the mechanical
+  analogy"](
+http://arxiv.org/abs/1801.01743v1
+"We propose a modification of the cost function of the Hopfield model whose
 salient features shine in its Taylor expansion and result in more than pairwise
 interactions with alternate signs, suggesting a unified framework for handling
 both with deep learning and network pruning. In our analysis, we heavily rely
@@ -1520,14 +1531,14 @@ self-consistency equations in the thermodynamic limit. On the numerical side,
 we test the performances of our proposal with MC simulations, showing that the
 stability of spurious states (limiting the capabilities of the standard Hebbian
 construction) is sensibly reduced due to presence of unlearning contributions
-in this extended framework.">"A relativistic extension of Hopfield neural networks via the mechanical
-  analogy"</a>,
+in this extended framework."),
 Adriano Barra, Matteo Beccaria, Alberto Fachechi,
-arXiv: <a href="http://arxiv.org/abs/1801.01743v1">1801.01743</a>,
-1/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1801.00315v1" title="Inspired by coarse-graining approaches used in physics, we show how similar
+arXiv: [1801.01743](http://arxiv.org/abs/1801.01743v1),
+1/2018
+
+- ["Learning Relevant Features of Data with Multi-scale Tensor Networks"](
+http://arxiv.org/abs/1801.00315v1
+"Inspired by coarse-graining approaches used in physics, we show how similar
 algorithms can be adapted for data. The resulting algorithms are based on
 layered tree tensor networks and scale linearly with both the dimension of the
 input and the training set size. Computing most of the layers with an
@@ -1535,13 +1546,15 @@ unsupervised algorithm, then optimizing just the top layer for supervised
 classification of the MNIST and fashion-MNIST data sets gives very good
 results. We also discuss mixing a prior guess for supervised weights together
 with an unsupervised representation of the data, yielding a smaller number of
-features nevertheless able to give good performance.">"Learning Relevant Features of Data with Multi-scale Tensor Networks"</a>,
+features nevertheless able to give good performance."),
 E. M. Stoudenmire,
-arXiv: <a href="http://arxiv.org/abs/1801.00315v1">1801.00315</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.04144v1" title="We compare and contrast the statistical physics and quantum physics inspired
+arXiv: [1801.00315](http://arxiv.org/abs/1801.00315v1),
+12/2017
+
+- ["Information Perspective to Probabilistic Modeling: Boltzmann Machines
+  versus Born Machines"](
+http://arxiv.org/abs/1712.04144v1
+"We compare and contrast the statistical physics and quantum physics inspired
 approaches for unsupervised generative modeling of classical data. The two
 approaches represent probabilities of observed data using energy-based models
 and quantum states respectively.Classical and quantum information patterns of
@@ -1549,14 +1562,15 @@ the target datasets therefore provide principled guidelines for structural
 design and learning in these two approaches. Taking the restricted Boltzmann
 machines (RBM) as an example, we analyze the information theoretical bounds of
 the two approaches. We verify our reasonings by comparing the performance of
-RBMs of various architectures on the standard MNIST datasets.">"Information Perspective to Probabilistic Modeling: Boltzmann Machines
-  versus Born Machines"</a>,
+RBMs of various architectures on the standard MNIST datasets."),
 Song Cheng, Jing Chen, Lei Wang,
-arXiv: <a href="http://arxiv.org/abs/1712.04144v1">1712.04144</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.11029v2" title="Stochastic gradient descent (SGD) is widely believed to perform implicit
+arXiv: [1712.04144](http://arxiv.org/abs/1712.04144v1),
+12/2017
+
+- ["Stochastic gradient descent performs variational inference, converges to
+  limit cycles for deep networks"](
+http://arxiv.org/abs/1710.11029v2
+"Stochastic gradient descent (SGD) is widely believed to perform implicit
 regularization when used to train deep neural networks, but the precise manner
 in which this occurs has thus far been elusive. We prove that SGD minimizes an
 average potential over the posterior distribution of weights along with an
@@ -1566,18 +1580,19 @@ different loss than the one used to compute the gradients. Even more
 surprisingly, SGD does not even converge in the classical sense: we show that
 the most likely trajectories of SGD for deep networks do not behave like
 Brownian motion around critical points. Instead, they resemble closed loops
-with deterministic components. We prove that such &quot;out-of-equilibrium&quot; behavior
+with deterministic components. We prove that such "out-of-equilibrium" behavior
 is a consequence of highly non-isotropic gradient noise in SGD; the covariance
 matrix of mini-batch gradients for deep networks has a rank as small as 1% of
 its dimension. We provide extensive empirical validation of these claims,
-proven in the appendix.">"Stochastic gradient descent performs variational inference, converges to
-  limit cycles for deep networks"</a>,
+proven in the appendix."),
 Pratik Chaudhari, Stefano Soatto,
-arXiv: <a href="http://arxiv.org/abs/1710.11029v2">1710.11029</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.06570v1" title="A number of recent papers have provided evidence that practical design
+arXiv: [1710.11029](http://arxiv.org/abs/1710.11029v2),
+10/2017
+
+- ["A Correspondence Between Random Neural Networks and Statistical Field
+  Theory"](
+http://arxiv.org/abs/1710.06570v1
+"A number of recent papers have provided evidence that practical design
 questions about neural networks may be tackled theoretically by studying the
 behavior of random networks. However, until now the tools available for
 analyzing random neural networks have been relatively ad-hoc. In this work, we
@@ -1592,14 +1607,15 @@ each case, the approximate distribution can be diagonalized by Fourier
 transformation. We show that this approximation accurately describes the
 results of numerical simulations of wide random neural networks. Finally, we
 demonstrate that in each case the large scale behavior of the random networks
-can be approximated by an effective field theory.">"A Correspondence Between Random Neural Networks and Statistical Field
-  Theory"</a>,
+can be approximated by an effective field theory."),
 Samuel S. Schoenholz, Jeffrey Pennington, Jascha Sohl-Dickstein,
-arXiv: <a href="http://arxiv.org/abs/1710.06570v1">1710.06570</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.05520v1" title="The success of deep convolutional neural network (CNN) in computer vision
+arXiv: [1710.06570](http://arxiv.org/abs/1710.06570v1),
+10/2017
+
+- ["Entanglement Entropy of Target Functions for Image Classification and
+  Convolutional Neural Network"](
+http://arxiv.org/abs/1710.05520v1
+"The success of deep convolutional neural network (CNN) in computer vision
 especially image classification problems requests a new information theory for
 function of image, instead of image itself. In this article, after establishing
 a deep mathematical connection between image classification problem and quantum
@@ -1616,14 +1632,15 @@ expressive power of different neural networks. For example, we show that to
 maintain the same expressive power, number of channels $D$ in a convolutional
 neural network should scale with the number of convolution layers $n_c$ as
 $D\sim D_0^{\frac{1}{n_c}}$. Therefore, deeper CNN with large $n_c$ is more
-efficient than shallow ones.">"Entanglement Entropy of Target Functions for Image Classification and
-  Convolutional Neural Network"</a>,
+efficient than shallow ones."),
 Ya-Hui Zhang,
-arXiv: <a href="http://arxiv.org/abs/1710.05520v1">1710.05520</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.04833v1" title="The resemblance between the methods used in studying quantum-many body
+arXiv: [1710.05520](http://arxiv.org/abs/1710.05520v1),
+10/2017
+
+- ["Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+  Quantum Information Theoretic Perspective on Deep Architectures"](
+http://arxiv.org/abs/1710.04833v1
+"The resemblance between the methods used in studying quantum-many body
 physics and in machine learning has drawn considerable attention. In
 particular, tensor networks (TNs) and deep learning architectures bear striking
 similarities to the extent that TNs can be used for machine learning. Previous
@@ -1640,14 +1657,15 @@ states, including quantum entanglement and fidelity. We suggest these
 quantities could be novel properties that characterize the image classes, as
 well as the machine learning tasks. Our work could be further applied to
 identifying possible quantum properties of certain artificial intelligence
-methods.">"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
-  Quantum Information Theoretic Perspective on Deep Architectures"</a>,
+methods."),
 Ding Liu, Shi-Ju Ran, Peter Wittek, Cheng Peng, Raul Blázquez García, Gang Su, Maciej Lewenstein,
-arXiv: <a href="http://arxiv.org/abs/1710.04833v1">1710.04833</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.04045v2" title="Neural Networks Quantum States have been recently introduced as an Ansatz for
+arXiv: [1710.04833](http://arxiv.org/abs/1710.04833v1),
+10/2017
+
+- ["Neural Networks Quantum States, String-Bond States and chiral
+  topological states"](
+http://arxiv.org/abs/1710.04045v2
+"Neural Networks Quantum States have been recently introduced as an Ansatz for
 describing the wave function of quantum many-body systems. We show that there
 are strong connections between Neural Networks Quantum States in the form of
 Restricted Boltzmann Machines and some classes of Tensor Network states in
@@ -1671,14 +1689,15 @@ numerical evidence that Neural Networks Quantum States can approximate a chiral
 spin liquid with better accuracy than Entangled Plaquette States and local
 String-Bond States. Our results demonstrate the efficiency of neural networks
 to describe complex quantum wave functions and pave the way towards the use of
-String-Bond States as a tool in more traditional machine learning applications.">"Neural Networks Quantum States, String-Bond States and chiral
-  topological states"</a>,
+String-Bond States as a tool in more traditional machine learning applications."),
 Ivan Glasser, Nicola Pancotti, Moritz August, Ivan D. Rodriguez, J. Ignacio Cirac,
-arXiv: <a href="http://arxiv.org/abs/1710.04045v2">1710.04045</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.01467v2" title="Deep neural networks as powerful tools are widely used in various domains.
+arXiv: [1710.04045](http://arxiv.org/abs/1710.04045v2),
+10/2017
+
+- ["Mean-field theory of input dimensionality reduction in unsupervised deep
+  neural networks"](
+http://arxiv.org/abs/1710.01467v2
+"Deep neural networks as powerful tools are widely used in various domains.
 However, the nature of computations at each layer of the deep networks is far
 from being well understood. Increasing the interpretability of deep neural
 networks is thus important. Here, we construct a mean-field framework to
@@ -1688,14 +1707,17 @@ network parameters are learned from input data. Our theory shows that the deep
 computation implements a dimensionality reduction while maintaining a finite
 level of weak correlations between neurons for possible feature extraction.
 This work may pave the way for understanding how a sensory hierarchy works in
-general.">"Mean-field theory of input dimensionality reduction in unsupervised deep
-  neural networks"</a>,
+general."),
 Haiping Huang,
-arXiv: <a href="http://arxiv.org/abs/1710.01467v2">1710.01467</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.04833v1" title="The resemblance between the methods used in studying quantum-many body
+arXiv: [1710.01467](http://arxiv.org/abs/1710.01467v2),
+10/2017
+
+
+
+- ["Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+  Quantum Information Theoretic Perspective on Deep Architectures"](
+http://arxiv.org/abs/1710.04833v1
+"The resemblance between the methods used in studying quantum-many body
 physics and in machine learning has drawn considerable attention. In
 particular, tensor networks (TNs) and deep learning architectures bear striking
 similarities to the extent that TNs can be used for machine learning. Previous
@@ -1712,14 +1734,14 @@ states, including quantum entanglement and fidelity. We suggest these
 quantities could be novel properties that characterize the image classes, as
 well as the machine learning tasks. Our work could be further applied to
 identifying possible quantum properties of certain artificial intelligence
-methods.">"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
-  Quantum Information Theoretic Perspective on Deep Architectures"</a>,
+methods."),
 Ding Liu, Shi-Ju Ran, Peter Wittek, Cheng Peng, Raul Blázquez García, Gang Su, Maciej Lewenstein,
-arXiv: <a href="http://arxiv.org/abs/1710.04833v1">1710.04833</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.01662v2" title="Generative modeling, which learns joint probability distribution from
+arXiv: [1710.04833](http://arxiv.org/abs/1710.04833v1),
+10/2017
+
+- ["Unsupervised Generative Modeling Using Matrix Product States"](
+http://arxiv.org/abs/1709.01662v2
+"Generative modeling, which learns joint probability distribution from
 training data and generates samples according to it, is an important task in
 machine learning and artificial intelligence. Inspired by probabilistic
 interpretation of quantum physics, we propose a generative model using matrix
@@ -1735,13 +1757,15 @@ drawbacks of our model over popular generative models such as Hopfield model,
 Boltzmann machines and generative adversarial networks. Our work shed light on
 many interesting directions for future exploration on the development of
 quantum-inspired algorithms for unsupervised machine learning, which is of
-possibility of being realized by a quantum device.">"Unsupervised Generative Modeling Using Matrix Product States"</a>,
+possibility of being realized by a quantum device."),
 Zhao-Yu Han, Jun Wang, Heng Fan, Lei Wang, Pan Zhang,
-arXiv: <a href="http://arxiv.org/abs/1709.01662v2">1709.01662</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1704.01552v2" title="Deep convolutional networks have witnessed unprecedented success in various
+arXiv: [1709.01662](http://arxiv.org/abs/1709.01662v2),
+9/2017
+
+- ["Deep Learning and Quantum Entanglement: Fundamental Connections with
+  Implications to Network Design"](
+http://arxiv.org/abs/1704.01552v2
+"Deep convolutional networks have witnessed unprecedented success in various
 machine learning applications. Formal understanding on what makes these
 networks so successful is gradually unfolding, but for the most part there are
 still significant mysteries to unravel. The inductive bias, which reflects
@@ -1766,14 +1790,14 @@ validate our findings on more common ConvNets which involve ReLU activations
 and max pooling. Beyond the results described above, the description of a deep
 convolutional network in well-defined graph-theoretic tools and the formal
 connection to quantum entanglement, are two interdisciplinary bridges that are
-brought forth by this work.">"Deep Learning and Quantum Entanglement: Fundamental Connections with
-  Implications to Network Design"</a>,
+brought forth by this work."),
 Yoav Levine, David Yakira, Nadav Cohen, Amnon Shashua,
-arXiv: <a href="http://arxiv.org/abs/1704.01552v2">1704.01552</a>,
-4/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1612.05695v2" title="We investigate whether quantum annealers with select chip layouts can
+arXiv: [1704.01552](http://arxiv.org/abs/1704.01552v2),
+4/2017
+
+- ["Reinforcement Learning Using Quantum Boltzmann Machines"](
+http://arxiv.org/abs/1612.05695v2
+"We investigate whether quantum annealers with select chip layouts can
 outperform classical computers in reinforcement learning tasks. We associate a
 transverse field Ising spin Hamiltonian with a layout of qubits similar to that
 of a deep Boltzmann machine (DBM) and use simulated quantum annealing (SQA) to
@@ -1787,13 +1811,15 @@ not classically feasible, this is evidence of advantage of a non-Turing
 sampling oracle. We then develop a framework for training the network as a
 quantum Boltzmann machine (QBM) in the presence of a significant transverse
 field for reinforcement learning. This further improves the reinforcement
-learning method using DBMs.">"Reinforcement Learning Using Quantum Boltzmann Machines"</a>,
+learning method using DBMs."),
 Daniel Crawford, Anna Levit, Navid Ghadermarzy, Jaspreet S. Oberoi, Pooya Ronagh,
-arXiv: <a href="http://arxiv.org/abs/1612.05695v2">1612.05695</a>,
-12/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1609.00893v3" title="Machine learning and data mining algorithms are becoming increasingly
+arXiv: [1612.05695](http://arxiv.org/abs/1612.05695v2),
+12/2016
+
+- ["Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale
+  Optimization Problems: Perspectives and Challenges PART 1"](
+http://arxiv.org/abs/1609.00893v3
+"Machine learning and data mining algorithms are becoming increasingly
 important in analyzing large volume, multi-relational and multi--modal
 datasets, which are often conveniently represented as multiway arrays or
 tensors. It is therefore timely and valuable for the multidisciplinary research
@@ -1809,48 +1835,50 @@ multilinear blind source separation, tensor completion, linear/multilinear
 dimensionality reduction, large-scale optimization problems, symmetric
 eigenvalue decomposition (EVD), PCA/SVD, huge systems of linear equations,
 pseudo-inverse of very large matrices, Lasso and Canonical Correlation Analysis
-(CCA) (This is Part 1)">"Low-Rank Tensor Networks for Dimensionality Reduction and Large-Scale
-  Optimization Problems: Perspectives and Challenges PART 1"</a>,
+(CCA) (This is Part 1)"),
 A. Cichocki, N. Lee, I. V. Oseledets, A. -H. Phan, Q. Zhao, D. Mandic,
-arXiv: <a href="http://arxiv.org/abs/1609.00893v3">1609.00893</a>,
-9/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1608.08225v4" title="We show how the success of deep learning could depend not only on mathematics
+arXiv: [1609.00893](http://arxiv.org/abs/1609.00893v3),
+9/2016
+
+- ["Why does deep and cheap learning work so well?"](
+http://arxiv.org/abs/1608.08225v4
+"We show how the success of deep learning could depend not only on mathematics
 but also on physics: although well-known mathematical theorems guarantee that
 neural networks can approximate arbitrary functions well, the class of
-functions of practical interest can frequently be approximated through &quot;cheap
-learning&quot; with exponentially fewer parameters than generic ones. We explore how
+functions of practical interest can frequently be approximated through "cheap
+learning" with exponentially fewer parameters than generic ones. We explore how
 properties frequently encountered in physics such as symmetry, locality,
 compositionality, and polynomial log-probability translate into exceptionally
 simple neural networks. We further argue that when the statistical process
 generating the data is of a certain hierarchical form prevalent in physics and
 machine-learning, a deep neural network can be more efficient than a shallow
 one. We formalize these claims using information theory and discuss the
-relation to the renormalization group. We prove various &quot;no-flattening
-theorems&quot; showing when efficient linear deep networks cannot be accurately
+relation to the renormalization group. We prove various "no-flattening
+theorems" showing when efficient linear deep networks cannot be accurately
 approximated by shallow ones without efficiency loss, for example, we show that
 $n$ variables cannot be multiplied using fewer than 2^n neurons in a single
-hidden layer.">"Why does deep and cheap learning work so well?"</a>,
+hidden layer."),
 Henry W. Lin, Max Tegmark, David Rolnick,
-arXiv: <a href="http://arxiv.org/abs/1608.08225v4">1608.08225</a>,
-8/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1605.05775v2" title="Tensor networks are efficient representations of high-dimensional tensors
+arXiv: [1608.08225](http://arxiv.org/abs/1608.08225v4),
+8/2016
+
+- ["Supervised Learning with Quantum-Inspired Tensor Networks"](
+http://arxiv.org/abs/1605.05775v2
+"Tensor networks are efficient representations of high-dimensional tensors
 which have been very successful for physics and mathematics applications. We
 demonstrate how algorithms for optimizing such networks can be adapted to
 supervised learning tasks by using matrix product states (tensor trains) to
 parameterize models for classifying images. For the MNIST data set we obtain
 less than 1% test set classification error. We discuss how the tensor network
 form imparts additional structure to the learned model and suggest a possible
-generative interpretation.">"Supervised Learning with Quantum-Inspired Tensor Networks"</a>,
+generative interpretation."),
 E. Miles Stoudenmire, David J. Schwab,
-arXiv: <a href="http://arxiv.org/abs/1605.05775v2">1605.05775</a>,
-5/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1605.03795v3" title="Modeling interactions between features improves the performance of machine
+arXiv: [1605.05775](http://arxiv.org/abs/1605.05775v2),
+5/2016
+
+- ["Exponential Machines"](
+http://arxiv.org/abs/1605.03795v3
+"Modeling interactions between features improves the performance of machine
 learning solutions in many domains (e.g. recommender systems or sentiment
 analysis). In this paper, we introduce Exponential Machines (ExM), a predictor
 that models all interactions of every order. The key idea is to represent an
@@ -1861,13 +1889,14 @@ stochastic Riemannian optimization procedure, which allows us to fit tensors
 with 2^160 entries. We show that the model achieves state-of-the-art
 performance on synthetic data with high-order interactions and that it works on
 par with high-order factorization machines on a recommender system dataset
-MovieLens 100K.">"Exponential Machines"</a>,
+MovieLens 100K."),
 Alexander Novikov, Mikhail Trofimov, Ivan Oseledets,
-arXiv: <a href="http://arxiv.org/abs/1605.03795v3">1605.03795</a>,
-5/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1601.02036v1" title="Inspired by the success of Boltzmann Machines based on classical Boltzmann
+arXiv: [1605.03795](http://arxiv.org/abs/1605.03795v3),
+5/2016
+
+- ["Quantum Boltzmann Machine"](
+http://arxiv.org/abs/1601.02036v1
+"Inspired by the success of Boltzmann Machines based on classical Boltzmann
 distribution, we propose a new machine learning approach based on quantum
 Boltzmann distribution of a transverse-field Ising Hamiltonian. Due to the
 non-commutative nature of quantum mechanics, the training process of the
@@ -1876,13 +1905,15 @@ problem by introducing bounds on the quantum probabilities. This allows us to
 train the QBM efficiently by sampling. We show examples of QBM training with
 and without the bound, using exact diagonalization, and compare the results
 with classical Boltzmann training. We also discuss the possibility of using
-quantum annealing processors like D-Wave for QBM training and application.">"Quantum Boltzmann Machine"</a>,
+quantum annealing processors like D-Wave for QBM training and application."),
 Mohammad H. Amin, Evgeny Andriyash, Jason Rolfe, Bohdan Kulchytskyy, Roger Melko,
-arXiv: <a href="http://arxiv.org/abs/1601.02036v1">1601.02036</a>,
-1/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1410.3831v1" title="Deep learning is a broad set of techniques that uses multiple layers of
+arXiv: [1601.02036](http://arxiv.org/abs/1601.02036v1),
+1/2016
+
+- ["An exact mapping between the Variational Renormalization Group and Deep
+  Learning"](
+http://arxiv.org/abs/1410.3831v1
+"Deep learning is a broad set of techniques that uses multiple layers of
 representation to automatically learn relevant features directly from
 structured data. Recently, such techniques have yielded record-breaking results
 on a diverse set of difficult machine learning tasks in computer vision, speech
@@ -1898,20 +1929,21 @@ renormalization group, first introduced by Kadanoff, and deep learning
 architectures based on Restricted Boltzmann Machines (RBMs). We illustrate
 these ideas using the nearest-neighbor Ising Model in one and two-dimensions.
 Our results suggests that deep learning algorithms may be employing a
-generalized RG-like scheme to learn relevant features from data.">"An exact mapping between the Variational Renormalization Group and Deep
-  Learning"</a>,
+generalized RG-like scheme to learn relevant features from data."),
 Pankaj Mehta, David J. Schwab,
-arXiv: <a href="http://arxiv.org/abs/1410.3831v1">1410.3831</a>,
-10/2014</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1407.3124v2" title="In this paper we review basic and emerging models and associated algorithms
+arXiv: [1410.3831](http://arxiv.org/abs/1410.3831v1),
+10/2014
+
+- ["Tensor Networks for Big Data Analytics and Large-Scale Optimization
+  Problems"](
+http://arxiv.org/abs/1407.3124v2
+"In this paper we review basic and emerging models and associated algorithms
 for large-scale tensor networks, especially Tensor Train (TT) decompositions
 using novel mathematical and graphical representations. We discus the concept
 of tensorization (i.e., creating very high-order tensors from lower-order
 original data) and super compression of data achieved via quantized tensor
 train (QTT) networks. The purpose of a tensorization and quantization is to
-achieve, via low-rank tensor approximations &quot;super&quot; compression, and
+achieve, via low-rank tensor approximations "super" compression, and
 meaningful, compact representation of structured data. The main objective of
 this paper is to show how tensor networks can be used to solve a wide class of
 big data optimization problems (that are far from tractable by classical
@@ -1922,21 +1954,21 @@ optimized and approximative tensor contractions.
 states (MPS), matrix product operators (MPO), basic tensor operations,
 tensorization, distributed representation od data optimization problems for
 very large-scale problems: generalized eigenvalue decomposition (GEVD),
-PCA/SVD, canonical correlation analysis (CCA).">"Tensor Networks for Big Data Analytics and Large-Scale Optimization
-  Problems"</a>,
+PCA/SVD, canonical correlation analysis (CCA)."),
 Andrzej Cichocki,
-arXiv: <a href="http://arxiv.org/abs/1407.3124v2">1407.3124</a>,
-7/2014</p>
-</li>
-</ul>
-<h2>Quantum Computation and Quantum Algorithms for Machine Learning</h2>
-<ul>
-<li>
-<p><a href="http://arxiv.org/abs/1802.05779v1" title="Variational autoencoders (VAEs) are powerful generative models with the
+arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
+7/2014
+
+
+## Quantum Computation and Quantum Algorithms for Machine Learning
+
+- ["Quantum Variational Autoencoder"](
+http://arxiv.org/abs/1802.05779v1
+"Variational autoencoders (VAEs) are powerful generative models with the
 salient ability to perform inference. Here, we introduce a \emph{quantum
 variational autoencoder} (QVAE): a VAE whose latent generative process is
 implemented as a quantum Boltzmann machine (QBM). We show that our model can be
-trained end-to-end by maximizing a well-defined loss-function: a &quot;quantum&quot;
+trained end-to-end by maximizing a well-defined loss-function: a "quantum"
 lower-bound to a variational approximation of the log-likelihood. We use
 quantum Monte Carlo (QMC) simulations to train and evaluate the performance of
 QVAEs. To achieve the best performance, we first create a VAE platform with
@@ -1950,26 +1982,29 @@ relevant despite training via the quantum bound. Our findings open the way to
 the use of quantum computers to train QVAEs to achieve competitive performance
 for generative models. Placing a QBM in the latent space of a VAE leverages the
 full potential of current and next-generation quantum computers as sampling
-devices.">"Quantum Variational Autoencoder"</a>,
+devices."),
 Amir Khoshaman, Walter Vinci, Brandon Denis, Evgeny Andriyash, Mohammad H. Amin,
-arXiv: <a href="http://arxiv.org/abs/1802.05779v1">1802.05779</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.05690v1" title="We show that DNF formulae can be quantum PAC-learned in polynomial time under
+arXiv: [1802.05779](http://arxiv.org/abs/1802.05779v1),
+2/2018
+
+- ["Learning DNFs under product distributions via μ-biased quantum
+  Fourier sampling"](
+http://arxiv.org/abs/1802.05690v1
+"We show that DNF formulae can be quantum PAC-learned in polynomial time under
 product distributions using a quantum example oracle. The best classical
 algorithm (without access to membership queries) runs in superpolynomial time.
 Our result extends the work by Bshouty and Jackson (1998) that proved that DNF
 formulae are efficiently learnable under the uniform distribution using a
 quantum example oracle. Our proof is based on a new quantum algorithm that
-efficiently samples the coefficients of a {\mu}-biased Fourier transform.">"Learning DNFs under product distributions via μ-biased quantum
-  Fourier sampling"</a>,
+efficiently samples the coefficients of a {\mu}-biased Fourier transform."),
 Varun Kanade, Andrea Rocchetto, Simone Severini,
-arXiv: <a href="http://arxiv.org/abs/1802.05690v1">1802.05690</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.04063v1" title="In this work we introduce the application of black-box quantum control as an
+arXiv: [1802.05690](http://arxiv.org/abs/1802.05690v1),
+2/2018
+
+- ["Taking gradients through experiments: LSTMs and memory proximal policy
+  optimization for black-box quantum control"](
+http://arxiv.org/abs/1802.04063v1
+"In this work we introduce the application of black-box quantum control as an
 interesting rein- forcement learning problem to the machine learning community.
 We analyze the structure of the reinforcement learning problems arising in
 quantum physics and argue that agents parameterized by long short-term memory
@@ -1979,14 +2014,14 @@ optimization (PPO) algorithm called the memory proximal policy optimization
 (MPPO) which is based on this analysis. We then show how it can be applied to
 specific learning tasks and present results of nu- merical experiments showing
 that our method achieves state-of-the-art results for several learning tasks in
-quantum control with discrete and continouous control parameters.">"Taking gradients through experiments: LSTMs and memory proximal policy
-  optimization for black-box quantum control"</a>,
+quantum control with discrete and continouous control parameters."),
 Moritz August, José Miguel Hernández-Lobato,
-arXiv: <a href="http://arxiv.org/abs/1802.04063v1">1802.04063</a>,
-2/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1802.00069v1" title="Accurate, reliable sampling from fully-connected graphs with arbitrary
+arXiv: [1802.04063](http://arxiv.org/abs/1802.04063v1),
+2/2018
+
+- ["Leveraging Adiabatic Quantum Computation for Election Forecasting"](
+http://arxiv.org/abs/1802.00069v1
+"Accurate, reliable sampling from fully-connected graphs with arbitrary
 correlations is a difficult problem. Such sampling requires knowledge of the
 probabilities of observing every possible state of a graph. As graph size
 grows, the number of model states becomes intractably large and efficient
@@ -1995,26 +2030,28 @@ that are only approximations of full sampling. This work investigates the
 potential impact of adiabatic quantum computation for sampling purposes,
 building on recent successes training Boltzmann machines using a quantum
 device. We investigate the use case of quantum computation to train Boltzmann
-machines for predicting the 2016 Presidential election.">"Leveraging Adiabatic Quantum Computation for Election Forecasting"</a>,
+machines for predicting the 2016 Presidential election."),
 Maxwell Henderson, John Novak, Tristan Cook,
-arXiv: <a href="http://arxiv.org/abs/1802.00069v1">1802.00069</a>,
-1/2018</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1712.04709v1" title="Variational Bayes (VB) inference is one of the most important algorithms in
+arXiv: [1802.00069](http://arxiv.org/abs/1802.00069v1),
+1/2018
+
+- ["A Quantum Extension of Variational Bayes Inference"](
+http://arxiv.org/abs/1712.04709v1
+"Variational Bayes (VB) inference is one of the most important algorithms in
 machine learning and widely used in engineering and industry. However, VB is
 known to suffer from the problem of local optima. In this Letter, we generalize
 VB by using quantum mechanics, and propose a new algorithm, which we call
 quantum annealing variational Bayes (QAVB) inference. We then show that QAVB
 drastically improve the performance of VB by applying them to a clustering
 problem described by a Gaussian mixture model. Finally, we discuss an intuitive
-understanding on how QAVB works well.">"A Quantum Extension of Variational Bayes Inference"</a>,
+understanding on how QAVB works well."),
 Hideyuki Miyahara, Yuki Sughiyama,
-arXiv: <a href="http://arxiv.org/abs/1712.04709v1">1712.04709</a>,
-12/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1711.06652v1" title="Security for machine learning has begun to become a serious issue for present
+arXiv: [1712.04709](http://arxiv.org/abs/1712.04709v1),
+12/2017
+
+- ["Hardening Quantum Machine Learning Against Adversaries"](
+http://arxiv.org/abs/1711.06652v1
+"Security for machine learning has begun to become a serious issue for present
 day applications. An important question remaining is whether emerging quantum
 technologies will help or hinder the security of machine learning. Here we
 discuss a number of ways that quantum information can be used to help make
@@ -2031,13 +2068,14 @@ private form of $k$--means clustering that can be used to prevent an all
 powerful adversary from learning more than a small fraction of a bit from any
 user. These examples show the role that quantum technologies can play in the
 security of ML and vice versa. This illustrates that quantum computing can
-provide useful advantages to machine learning apart from speedups.">"Hardening Quantum Machine Learning Against Adversaries"</a>,
+provide useful advantages to machine learning apart from speedups."),
 Nathan Wiebe, Ram Shankar Siva Kumar,
-arXiv: <a href="http://arxiv.org/abs/1711.06652v1">1711.06652</a>,
-11/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1711.02038v1" title="A central task in the field of quantum computing is to find applications
+arXiv: [1711.06652](http://arxiv.org/abs/1711.06652v1),
+11/2017
+
+- ["An efficient quantum algorithm for generative machine learning"](
+http://arxiv.org/abs/1711.02038v1
+"A central task in the field of quantum computing is to find applications
 where quantum computer could provide exponential speedup over any classical
 computer. Machine learning represents an important field with broad
 applications where quantum computer may offer significant speedup. Several
@@ -2054,13 +2092,14 @@ least for some instances under a reasonable assumption in computational
 complexity theory. Our result opens a new direction for quantum machine
 learning and offers a remarkable example in which a quantum algorithm shows
 exponential improvement over any classical algorithm in an important
-application field.">"An efficient quantum algorithm for generative machine learning"</a>,
+application field."),
 Xun Gao, Zhengyu Zhang, Luming Duan,
-arXiv: <a href="http://arxiv.org/abs/1711.02038v1">1711.02038</a>,
-11/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1710.09016v1" title="Hidden Quantum Markov Models (HQMMs) can be thought of as quantum
+arXiv: [1711.02038](http://arxiv.org/abs/1711.02038v1),
+11/2017
+
+- ["Learning Hidden Quantum Markov Models"](
+http://arxiv.org/abs/1710.09016v1
+"Hidden Quantum Markov Models (HQMMs) can be thought of as quantum
 probabilistic graphical models that can model sequential data. We extend
 previous work on HQMMs with three contributions: (1) we show how classical
 hidden Markov models (HMMs) can be simulated on a quantum circuit, (2) we
@@ -2071,13 +2110,14 @@ larger datasets, we are able to evaluate our algorithm using several synthetic
 datasets. We show that on HQMM generated data, our algorithm learns HQMMs with
 the same number of hidden states and predictive accuracy as the true HQMMs,
 while HMMs learned with the Baum-Welch algorithm require more states to match
-the predictive accuracy.">"Learning Hidden Quantum Markov Models"</a>,
+the predictive accuracy."),
 Siddarth Srinivasan, Geoff Gordon, Byron Boots,
-arXiv: <a href="http://arxiv.org/abs/1710.09016v1">1710.09016</a>,
-10/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.08519v1" title="We study the quantum synchronization between a pair of two-level systems
+arXiv: [1710.09016](http://arxiv.org/abs/1710.09016v1),
+10/2017
+
+- ["Enhanced Quantum Synchronization via Quantum Machine Learning"](
+http://arxiv.org/abs/1709.08519v1
+"We study the quantum synchronization between a pair of two-level systems
 inside two coupledcavities. Using a digital-analog decomposition of the master
 equation that rules the system dynamics, we show that this approach leads to
 quantum synchronization between both two-level systems. Moreover, we can
@@ -2092,13 +2132,14 @@ Indeed, numerical simulations show that this protocol enhances the
 synchronization process, even when every subsystem experience different
 loss/decoherence mechanisms, and give us flexibility to choose the
 synchronization state. Finally, we propose an implementation based on current
-technologies in superconducting circuits.">"Enhanced Quantum Synchronization via Quantum Machine Learning"</a>,
+technologies in superconducting circuits."),
 F. A. Cárdenas-López, M. Sanz, J. C. Retamal, E. Solano,
-arXiv: <a href="http://arxiv.org/abs/1709.08519v1">1709.08519</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.07848v1" title="We propose a protocol to perform generalized quantum reinforcement learning
+arXiv: [1709.08519](http://arxiv.org/abs/1709.08519v1),
+9/2017
+
+- ["Generalized Quantum Reinforcement Learning with Quantum Technologies"](
+http://arxiv.org/abs/1709.07848v1
+"We propose a protocol to perform generalized quantum reinforcement learning
 with quantum technologies. At variance with recent results on quantum
 reinforcement learning with superconducting circuits [L. Lamata, Sci. Rep. 7,
 1609 (2017)], in our current protocol coherent feedback during the learning
@@ -2109,13 +2150,14 @@ multilevel systems, as well as open-system dynamics. We finally propose
 possible implementations of this protocol in trapped ions and superconducting
 circuits. The field of quantum reinforcement learning with quantum technologies
 will enable enhanced quantum control, as well as more efficient machine
-learning calculations.">"Generalized Quantum Reinforcement Learning with Quantum Technologies"</a>,
+learning calculations."),
 F. A. Cárdenas-López, L. Lamata, J. C. Retamal, E. Solano,
-arXiv: <a href="http://arxiv.org/abs/1709.07848v1">1709.07848</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1709.07409v1" title="The quantum autoencoder is a recent paradigm in the field of quantum machine
+arXiv: [1709.07848](http://arxiv.org/abs/1709.07848v1),
+9/2017
+
+- ["Quantum Autoencoders via Quantum Adders with Genetic Algorithms"](
+http://arxiv.org/abs/1709.07409v1
+"The quantum autoencoder is a recent paradigm in the field of quantum machine
 learning, which may enable an enhanced use of resources in quantum
 technologies. To this end, quantum neural networks with less nodes in the inner
 than in the outer layers were considered. Here, we propose a useful connection
@@ -2124,13 +2166,14 @@ link allows us to employ optimized approximate quantum adders, obtained with
 genetic algorithms, for the implementation of quantum autoencoders for a
 variety of initial states. Furthermore, we can also directly optimize the
 quantum autoencoders via genetic algorithms. Our approach opens a different
-path for the design of quantum autoencoders in controllable quantum platforms.">"Quantum Autoencoders via Quantum Adders with Genetic Algorithms"</a>,
+path for the design of quantum autoencoders in controllable quantum platforms."),
 L. Lamata, U. Alvarez-Rodriguez, J. D. Martín-Guerrero, M. Sanz, E. Solano,
-arXiv: <a href="http://arxiv.org/abs/1709.07409v1">1709.07409</a>,
-9/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1707.08561v3" title="Recently, increased computational power and data availability, as well as
+arXiv: [1709.07409](http://arxiv.org/abs/1709.07409v1),
+9/2017
+
+- ["Quantum machine learning: a classical perspective"](
+http://arxiv.org/abs/1707.08561v3
+"Recently, increased computational power and data availability, as well as
 algorithmic advances, have led machine learning techniques to impressive
 results in regression, classification, data-generation and reinforcement
 learning tasks. Despite these successes, the proximity to the physical limits
@@ -2145,13 +2188,16 @@ counterparts and why quantum resources are expected to provide advantages for
 learning problems. Learning in the presence of noise and certain
 computationally hard problems in machine learning are identified as promising
 directions for the field. Practical questions, like how to upload classical
-data into quantum form, will also be addressed.">"Quantum machine learning: a classical perspective"</a>,
+data into quantum form, will also be addressed."),
 Carlo Ciliberto, Mark Herbster, Alessandro Davide Ialongo, Massimiliano Pontil, Andrea Rocchetto, Simone Severini, Leonard Wossnig,
-arXiv: <a href="http://arxiv.org/abs/1707.08561v3">1707.08561</a>,
-7/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1703.05402v1" title="Efficiently characterising quantum systems, verifying operations of quantum
+arXiv: [1707.08561](http://arxiv.org/abs/1707.08561v3),
+7/2017
+
+
+
+- ["Experimental Quantum Hamiltonian Learning"](
+http://arxiv.org/abs/1703.05402v1
+"Efficiently characterising quantum systems, verifying operations of quantum
 devices and validating underpinning physical models, are central challenges for
 the development of quantum technologies and for our continued understanding of
 foundational physics. Machine-learning enhanced by quantum simulators has been
@@ -2166,13 +2212,14 @@ Hamiltonian model, which we exploit to further improve the model itself. We go
 on to implement an interactive version of the protocol and experimentally show
 its ability to characterise the operation of the quantum photonic device. This
 work demonstrates powerful new quantum-enhanced techniques for investigating
-foundational physical models and characterising quantum technologies.">"Experimental Quantum Hamiltonian Learning"</a>,
+foundational physical models and characterising quantum technologies."),
 Jianwei Wang, Stefano Paesani, Raffaele Santagati, Sebastian Knauer, Antonio A. Gentile, Nathan Wiebe, Maurangelo Petruzzella, Jeremy L. O'Brien, John G. Rarity, Anthony Laing, Mark G. Thompson,
-arXiv: <a href="http://arxiv.org/abs/1703.05402v1">1703.05402</a>,
-3/2017</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1612.05204v1" title="The promise of quantum neural nets, which utilize quantum effects to model
+arXiv: [1703.05402](http://arxiv.org/abs/1703.05402v1),
+3/2017
+
+- ["Tomography and Generative Data Modeling via Quantum Boltzmann Training"](
+http://arxiv.org/abs/1612.05204v1
+"The promise of quantum neural nets, which utilize quantum effects to model
 complex data sets, has made their development an aspirational goal for quantum
 machine learning and quantum computing in general. Here we provide new methods
 of training quantum Boltzmann machines, which are a class of recurrent quantum
@@ -2184,13 +2231,14 @@ a perscription for generating copies of the reconstructed state. Classical
 Boltzmann machines are incapable of this. Finally we compare small
 non-stoquastic quantum Boltzmann machines to traditional Boltzmann machines for
 generative tasks and observe evidence that quantum models outperform their
-classical counterparts.">"Tomography and Generative Data Modeling via Quantum Boltzmann Training"</a>,
+classical counterparts."),
 Maria Kieferova, Nathan Wiebe,
-arXiv: <a href="http://arxiv.org/abs/1612.05204v1">1612.05204</a>,
-12/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1611.09347v1" title="Recent progress implies that a crossover between machine learning and quantum
+arXiv: [1612.05204](http://arxiv.org/abs/1612.05204v1),
+12/2016
+
+- ["Quantum Machine Learning"](
+http://arxiv.org/abs/1611.09347v1
+"Recent progress implies that a crossover between machine learning and quantum
 information processing benefits both fields. Traditional machine learning has
 dramatically improved the benchmarking and control of experimental quantum
 computing systems, including adaptive quantum phase estimation and designing
@@ -2203,13 +2251,14 @@ Progress has been rapid, fostered by demonstrations of midsized quantum
 optimizers which are predicted to soon outperform their classical counterparts.
 Further, we are witnessing the emergence of a physical theory pinpointing the
 fundamental and natural limitations of learning. Here we survey the cutting
-edge of this merger and list several open problems.">"Quantum Machine Learning"</a>,
+edge of this merger and list several open problems."),
 Jacob Biamonte, Peter Wittek, Nicola Pancotti, Patrick Rebentrost, Nathan Wiebe, Seth Lloyd,
-arXiv: <a href="http://arxiv.org/abs/1611.09347v1">1611.09347</a>,
-11/2016</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/1307.0411v2" title="Machine-learning tasks frequently involve problems of manipulating and
+arXiv: [1611.09347](http://arxiv.org/abs/1611.09347v1),
+11/2016
+
+- ["Quantum algorithms for supervised and unsupervised machine learning"](
+http://arxiv.org/abs/1307.0411v2
+"Machine-learning tasks frequently involve problems of manipulating and
 classifying large numbers of vectors in high-dimensional spaces. Classical
 algorithms for solving such problems typically take time polynomial in the
 number of vectors and the dimension of the space. Quantum computers are good at
@@ -2217,13 +2266,14 @@ manipulating high-dimensional vectors in large tensor product spaces. This
 paper provides supervised and unsupervised quantum machine learning algorithms
 for cluster assignment and cluster finding. Quantum machine learning can take
 time logarithmic in both the number of vectors and their dimension, an
-exponential speed-up over classical algorithms.">"Quantum algorithms for supervised and unsupervised machine learning"</a>,
+exponential speed-up over classical algorithms."),
 Seth Lloyd, Masoud Mohseni, Patrick Rebentrost,
-arXiv: <a href="http://arxiv.org/abs/1307.0411v2">1307.0411</a>,
-7/2013</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/quant-ph/0411140v2" title="In this article we give several new results on the complexity of algorithms
+arXiv: [1307.0411](http://arxiv.org/abs/1307.0411v2),
+7/2013
+
+- ["Improved Bounds on Quantum Learning Algorithms"](
+http://arxiv.org/abs/quant-ph/0411140v2
+"In this article we give several new results on the complexity of algorithms
 that learn Boolean functions from quantum queries and quantum examples.
   Hunziker et al. conjectured that for any class C of Boolean functions, the
 number of quantum black-box queries which are required to exactly identify an
@@ -2243,45 +2293,24 @@ polynomially related to each other.
   Finally, we improve the known lower bounds on the number of quantum examples
 (as opposed to quantum black-box queries) required for $(\epsilon,\delta)$-PAC
 learning any concept class of Vapnik-Chervonenkis dimension d over the domain
-${0,1}^n$ from $\Omega(\frac{d}{n})$ to $\Omega(\frac{1}{\epsilon}\log
+$\{0,1\}^n$ from $\Omega(\frac{d}{n})$ to $\Omega(\frac{1}{\epsilon}\log
 \frac{1}{\delta}+d+\frac{\sqrt{d}}{\epsilon})$. This new lower bound comes
-closer to matching known upper bounds for classical PAC learning.">"Improved Bounds on Quantum Learning Algorithms"</a>,
+closer to matching known upper bounds for classical PAC learning."),
 Alp Atici, Rocco A. Servedio,
-arXiv: <a href="http://arxiv.org/abs/quant-ph/0411140v2">quant-ph/0411140</a>,
-11/2004</p>
-</li>
-<li>
-<p><a href="http://arxiv.org/abs/quant-ph/0309059v1" title="Concept learning provides a natural framework in which to place the problems
+arXiv: [quant-ph/0411140](http://arxiv.org/abs/quant-ph/0411140v2),
+11/2004
+
+- ["The geometry of quantum learning"](
+http://arxiv.org/abs/quant-ph/0309059v1
+"Concept learning provides a natural framework in which to place the problems
 solved by the quantum algorithms of Bernstein-Vazirani and Grover. By combining
 the tools used in these algorithms--quantum fast transforms and amplitude
 amplification--with a novel (in this context) tool--a solution method for
 geometrical optimization problems--we derive a general technique for quantum
-concept learning. We name this technique &quot;Amplified Impatient Learning&quot; and
+concept learning. We name this technique "Amplified Impatient Learning" and
 apply it to construct quantum algorithms solving two new problems: BATTLESHIP
-and MAJORITY, more efficiently than is possible classically.">"The geometry of quantum learning"</a>,
+and MAJORITY, more efficiently than is possible classically."),
 Markus Hunziker, David A. Meyer, Jihun Park, James Pommersheim, Mitch Rothstein,
-arXiv: <a href="http://arxiv.org/abs/quant-ph/0309059v1">quant-ph/0309059</a>,
-9/2003</p>
-</li>
-</ul>
-</section>
-            </div>
-        </div>
-    </div>
+arXiv: [quant-ph/0309059](http://arxiv.org/abs/quant-ph/0309059v1),
+9/2003
 
-    <footer id="site-footer">
-        <div class="row-fluid">
-            <div class="span10 offset1">
-                <address>
-                    <p>
-                        Blog powered by <a href="http://getpelican.com/">Pelican</a>, theme based on <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a>.
-                    </p>
-                </address>
-            </div>
-        </div>
-    </footer>
-
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-</body>
-</html>

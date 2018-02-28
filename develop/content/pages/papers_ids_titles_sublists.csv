@@ -1,0 +1,90 @@
+Index,ID,Sublist,Title
+0,1802.06441,0,Deep neural decoders for near term fault-tolerant experiments
+1,1802.02840,0,Neural Network Renormalization Group
+2,1802.00850,0,"Deep UQ: Learning deep neural network surrogate models for high
+  dimensional uncertainty quantification"
+3,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
+4,1801.03523,0,"Generative Models for Stochastic Processes Using Convolutional Neural
+  Networks"
+5,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
+6,1712.03893,0,Towards reduction of autocorrelation in HMC by machine learning
+7,1712.00371,0,Deep Neural Network Detects Quantum Phase Transition
+8,1712.00127,0,Experimental learning of quantum states
+9,1710.00725,0,Learning hard quantum distributions with variational autoencoders
+10,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
+11,1802.06126,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
+  Complexity"
+12,1802.05756,1,Inferring relevant features: from QFT to PCA
+13,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
+  Networks"
+14,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
+  Group Flow"
+15,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
+  analogy"
+16,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
+17,1712.04144,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
+  versus Born Machines"
+18,1710.11029,1,"Stochastic gradient descent performs variational inference, converges to
+  limit cycles for deep networks"
+19,1710.06570,1,"A Correspondence Between Random Neural Networks and Statistical Field
+  Theory"
+20,1710.05520,1,"Entanglement Entropy of Target Functions for Image Classification and
+  Convolutional Neural Network"
+21,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+  Quantum Information Theoretic Perspective on Deep Architectures"
+22,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
+  topological states"
+23,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
+  neural networks"
+24,1802.05779,2,Quantum Variational Autoencoder
+25,1802.05690,2,"Learning DNFs under product distributions via μ-biased quantum
+  Fourier sampling"
+26,1802.04063,2,"Taking gradients through experiments: LSTMs and memory proximal policy
+  optimization for black-box quantum control"
+27,1802.00069,2,Leveraging Adiabatic Quantum Computation for Election Forecasting
+28,1712.04709,2,A Quantum Extension of Variational Bayes Inference
+29,1711.06652,2,Hardening Quantum Machine Learning Against Adversaries
+30,1711.02038,2,An efficient quantum algorithm for generative machine learning
+31,1710.09016,2,Learning Hidden Quantum Markov Models
+32,1709.08519,2,Enhanced Quantum Synchronization via Quantum Machine Learning
+33,1709.07848,2,Generalized Quantum Reinforcement Learning with Quantum Technologies
+34,1709.07409,2,Quantum Autoencoders via Quantum Adders with Genetic Algorithms
+35,1707.08561,2,Quantum machine learning: a classical perspective
+36,1802.0644100000002,0,Deep neural decoders for near term fault-tolerant experiments
+37,1802.0284,0,Neural Network Renormalization Group
+38,1802.0085,0,"Deep UQ: Learning deep neural network surrogate models for high
+  dimensional uncertainty quantification"
+39,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
+40,1801.0352300000002,0,"Generative Models for Stochastic Processes Using Convolutional Neural
+  Networks"
+41,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
+42,1712.0389300000002,0,Towards reduction of autocorrelation in HMC by machine learning
+43,1712.0037100000002,0,Deep Neural Network Detects Quantum Phase Transition
+44,1712.00127,0,Experimental learning of quantum states
+45,1710.00725,0,Learning hard quantum distributions with variational autoencoders
+46,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
+47,1802.0612600000002,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
+  Complexity"
+48,1802.0575600000002,1,Inferring relevant features: from QFT to PCA
+49,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
+  Networks"
+50,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
+  Group Flow"
+51,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
+  analogy"
+52,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
+53,1712.0414399999997,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
+  versus Born Machines"
+54,1710.1102899999998,1,"Stochastic gradient descent performs variational inference, converges to
+  limit cycles for deep networks"
+55,1710.0657,1,"A Correspondence Between Random Neural Networks and Statistical Field
+  Theory"
+56,1710.0552,1,"Entanglement Entropy of Target Functions for Image Classification and
+  Convolutional Neural Network"
+57,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+  Quantum Information Theoretic Perspective on Deep Architectures"
+58,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
+  topological states"
+59,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
+  neural networks"
+60,1802.0577899999998,2,Quantum Variational Autoencoder
