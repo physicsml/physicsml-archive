@@ -3,6 +3,9 @@
 from __future__ import unicode_literals
 
 THEME = "themes/custom_fresh"
+PLUGIN_PATHS=["./plugins"]
+PLUGINS = ["render_math.math"]
+
 
 AUTHOR = u'PhysicsML'
 SITENAME = u'&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;'

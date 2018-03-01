@@ -314,7 +314,7 @@ Wen-Jia Rao, Zhenyu Li, Qiong Zhu, Mingxing Luo, Xin Wan,
 arXiv: [1709.02597](http://arxiv.org/abs/1709.02597v1),
 9/2017
 
-- ["Machine learning \& artificial intelligence in the quantum domain"](
+- ["Machine learning & artificial intelligence in the quantum domain"](
 http://arxiv.org/abs/1709.02779v1
 "Quantum information technologies, and intelligent learning systems, are both
 emergent technologies that will likely have a transforming impact on our
@@ -733,7 +733,7 @@ Sebastian Johann Wetzel, Manuel Scherzer,
 arXiv: [1705.05582](http://arxiv.org/abs/1705.05582v1),
 5/2017
 
-- ["Machine Learning $\mathbb{Z}_{2}$ Quantum Spin Liquids with
+- ["Machine Learning $Z_2$ Quantum Spin Liquids with
   Quasi-particle Statistics"](
 http://arxiv.org/abs/1705.01947v2
 "After decades of progress and effort, obtaining a phase diagram for a
@@ -745,7 +745,7 @@ computation comes the need for an efficient approach for obtaining topological
 phase diagrams. Here we turn to machine learning using quantum loop topography
 (QLT), a notion we have recently introduced. Specifically, we propose a
 construction of QLT that is sensitive to quasi-particle statistics. We then use
-mutual statistics between the spinons and visons to detect a $\mathbb{Z}_{2}$
+mutual statistics between the spinons and visons to detect a $Z_2$
 quantum spin liquid in a multi-parameter phase space. We successfully obtain
 the quantum phase boundary between the topological and trivial phases using a
 simple feed-forward neural network. Furthermore, we demonstrate advantages of

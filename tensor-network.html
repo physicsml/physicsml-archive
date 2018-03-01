@@ -159,9 +159,11 @@ of MPS developed in physics?</p>
 <p>Two recent papers propose that tensor networks could be especially powerful 
  in the setting of non-linear kernel learning: <a href="http://arxiv.org/abs/1605.03795">Novikov,Trofimov,Oseledets (2016)</a> and <a href="http://arxiv.org/abs/1605.05775">Stoudenmire,Schwab (2016)</a>.
 Kernel learning basically means optimizing a decision function of the form
-$$
+</p>
+<div class="math">$$
 f(\mathbf{x}) = W\cdot\Phi(\mathbf{x})
-$$
+$$</div>
+<p>
 where @@\mathbf{x}@@ is a moderate-size vector of inputs (e.g. pixels of an image) and the output
 @@f(\mathbf{x})@@ determines how to classify each input. </p>
 <p>The function @@\Phi(\mathbf{x})@@ is known as the <em>feature map</em>. Its role is to "lift" 
@@ -184,9 +186,11 @@ product of their state spaces. For a feature map mimicking this rule,
 first map each component @@x_j@@ of the input vector @@\mathbf{x}@@ into a
 small d-dimensional vector via a <em>local feature map</em> @@\phi(x_j)@@. Then
 combine these local feature vectors using a tensor product:
-$$
-\Phi^{s_1 s_2 \cdots s_N}(\mathbf{x}) = \phi^{s_1}(x_1) \otimes \phi^{s_2}(x_2) \otimes \cdots \otimes \phi^{s_N}(x_N)
-$$
+</p>
+<div class="math">$$
+\Phi^{s\_1 s\_2 \cdots s\_N}(\mathbf{x}) = \phi^{s\_1}(x\_1) \otimes \phi^{s\_2}(x\_2) \otimes \cdots \otimes \phi^{s\_N}(x\_N)
+$$</div>
+<p>
 The result is a @@d^N@@ dimensional feature vector. However, it has the structure
 of a product-state wavefunction (or rank-1 tensor in applied math parlance), making it
 easy to store and manipulate.</p>
@@ -333,6 +337,61 @@ and the MERA network for critical systems (<a href="http://link.aps.org/doi/10.1
 <p>More recently, there has been growing interest in tensor networks within the applied mathematics community 
 following the proposal of the hierarchical Tucker (<a href="http://rdcu.be/l1K0">Hackbush,2009</a>) and tensor train (<a href="http://dx.doi.org/10.1137/090752286">Oseledets,2011</a>) 
 decompositions (respectively known in the physics literature as the tree tensor network and MPS decompositions).</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
       </div><!-- /.entry-content -->
 
