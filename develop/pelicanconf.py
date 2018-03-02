@@ -2,18 +2,30 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = "themes/custom_fresh"
-PLUGIN_PATHS=["./plugins"]
-PLUGINS = ["render_math.math"]
+import sys
+sys.path.append('.')
 
+
+LOAD_CONTENT_CACHE = False
 
 AUTHOR = u'PhysicsML'
 SITENAME = u'&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;'
 SITEURL = ''
 
-PATH = 'content'
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
+
+
+#from utils import filters
+#JINJA_FILTERS = { 'sidebar': filters.sidebar }
+
+
+PATH = 'content'
+
+THEME = "themes/custom_fresh"
+#THEME = "themes/twenty-pelican-html5up"
+PLUGIN_PATHS=["./plugins"]
+PLUGINS = ["render_math.math"]
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -25,6 +37,7 @@ AUTHOR_FEED_RSS = None
 USE_FOLDER_AS_CATEGORY = True
 
 MENUITEMS = [("Papers","/papers.html"),]
+#MENUITEMS = [("Papers","/papers.html"),("Sign up!","/signup.html"),]
 #TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
 #DISPLAY_CATEGORIES_ON_MENU = False
 
