@@ -7,6 +7,78 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 ## Applying Machine Learning to Physics
 
+- ["Parameter diagnostics of phases and phase transition learning by neural
+  networks"](
+http://arxiv.org/abs/1802.09876v1
+"We present an analysis of neural network-based machine learning schemes for
+phases and phase transitions in theoretical condensed matter research, focusing
+on neural networks with a single hidden layer. Such shallow neural networks
+were previously found to be efficient in classifying phases and locating phase
+transitions of various basic model systems. In order to rationalize the
+emergence of the classification process and for identifying any underlying
+physical quantities, it is feasible to examine the weight matrices and the
+convolutional filter kernels that result from the learning process of such
+shallow networks. Furthermore, we demonstrate how the learning-by-confusing
+scheme can be used, in combination with a simple threshold-value classification
+method, to diagnose the learning parameters of neural networks. In particular,
+we study the classification process of both fully-connected and convolutional
+neural networks for the two-dimensional Ising model with extended domain wall
+configurations included in the low-temperature regime. Moreover, we consider
+the two-dimensional XY model and contrast the performance of the
+learning-by-confusing scheme and convolutional neural networks trained on bare
+spin configurations to the case of preprocessed samples with respect to vortex
+configurations. We discuss these findings in relation to similar recent
+investigations and possible further applications."),
+Philippe Suchsland, Stefan Wessel,
+arXiv: [1802.09876](http://arxiv.org/abs/1802.09876v1),
+2/2018
+
+- ["Reinforcement Learning with Neural Networks for Quantum Feedback"](
+http://arxiv.org/abs/1802.05267v1
+"Artificial neural networks are revolutionizing science. While the most
+prevalent technique involves supervised training on queries with a known
+correct answer, more advanced challenges often require discovering answers
+autonomously. In reinforcement learning, control strategies are improved
+according to a reward function. The power of this approach has been highlighted
+by spectactular recent successes, such as playing Go. So far, it has remained
+an open question whether neural-network-based reinforcement learning can be
+successfully applied in physics. Here, we show how to use this method for
+finding quantum feedback schemes, where a network-based "agent" interacts with
+and occasionally decides to measure a quantum system. We illustrate the utility
+by finding gate sequences that preserve the quantum information stored in a
+small collection of qubits against noise. This specific application will help
+to find hardware-adapted feedback schemes for small quantum modules while
+demonstrating more generally the promise of neural-network based reinforcement
+learning in physics."),
+Thomas Fösel, Petru Tighineanu, Talitha Weiss, Florian Marquardt,
+arXiv: [1802.05267](http://arxiv.org/abs/1802.05267v1),
+2/2018
+
+- ["Online Learning of Quantum States"](
+http://arxiv.org/abs/1802.09025v1
+"Suppose we have many copies of an unknown $n$-qubit state $\rho$. We measure
+some copies of $\rho$ using a known two-outcome measurement $E_{1}$, then other
+copies using a measurement $E_{2}$, and so on. At each stage $t$, we generate a
+current hypothesis $\sigma_{t}$ about the state $\rho$, using the outcomes of
+the previous measurements. We show that it is possible to do this in a way that
+guarantees that $|\operatorname{Tr}(E_{i} \sigma_{t}) -
+\operatorname{Tr}(E_{i}\rho) |$, the error in our prediction for the next
+measurement, is at least $\varepsilon$ at most $\operatorname{O}\!\left(n /
+\varepsilon^2 \right) $ times. Even in the "non-realizable" setting---where
+there could be arbitrary noise in the measurement outcomes---we show how to
+output hypothesis states that do significantly worse than the best possible
+states at most $\operatorname{O}\!\left(\sqrt {Tn}\right) $ times on the first
+$T$ measurements. These results generalize a 2007 theorem by Aaronson on the
+PAC-learnability of quantum states, to the online and regret-minimization
+settings. We give three different ways to prove our results---using convex
+optimization, quantum postselection, and sequential fat-shattering
+dimension---which have different advantages in terms of parameters and
+portability."),
+Scott Aaronson, Xinyi Chen, Elad Hazan, Ashwin Nayak,
+arXiv: [1802.09025](http://arxiv.org/abs/1802.09025v1),
+2/2018
+
+
 - ["Deep neural decoders for near term fault-tolerant experiments"](
 http://arxiv.org/abs/1802.06441v1
 "Finding efficient decoders for quantum error correcting codes adapted to
@@ -185,6 +257,29 @@ probing quantum states at new, larger scales."),
 Andrea Rocchetto, Scott Aaronson, Simone Severini, Gonzalo Carvacho, Davide Poderini, Iris Agresti, Marco Bentivegna, Fabio Sciarrino,
 arXiv: [1712.00127](http://arxiv.org/abs/1712.00127v1),
 11/2017
+
+- ["Machine learning out-of-equilibrium phases of matter"](
+http://arxiv.org/abs/1711.00020v1
+"Neural network based machine learning is emerging as a powerful tool for
+obtaining phase diagrams when traditional regression schemes using local
+equilibrium order parameters are not available, as in many-body localized or
+topological phases. Nevertheless, instances of machine learning offering new
+insights have been rare up to now. Here we show that a single feed-forward
+neural network can decode the defining structures of two distinct MBL phases
+and a thermalizing phase, using entanglement spectra obtained from individual
+eigenstates. For this, we introduce a simplicial geometry based method for
+extracting multi-partite phase boundaries. We find that this method outperforms
+conventional metrics (like the entanglement entropy) for identifying MBL phase
+transitions, revealing a sharper phase boundary and shedding new insight into
+the topology of the phase diagram. Furthermore, the phase diagram we acquire
+from a single disorder configuration confirms that the machine-learning based
+approach we establish here can enable speedy exploration of large phase spaces
+that can assist with the discovery of new MBL phases. To our knowledge this
+work represents the first example of a machine learning approach revealing new
+information beyond conventional knowledge."),
+Jordan Venderley, Vedika Khemani, Eun-Ah Kim,
+arXiv: [1711.00020](http://arxiv.org/abs/1711.00020v1),
+10/2017
 
 - ["Learning hard quantum distributions with variational autoencoders"](
 http://arxiv.org/abs/1710.00725v1
@@ -1428,6 +1523,28 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+- ["Energy-entropy competition and the effectiveness of stochastic gradient
+  descent in machine learning"](
+http://arxiv.org/abs/1803.01927v1
+"Finding parameters that minimise a loss function is at the core of many
+machine learning methods. The Stochastic Gradient Descent algorithm is widely
+used and delivers state of the art results for many problems. Nonetheless,
+Stochastic Gradient Descent typically cannot find the global minimum, thus its
+empirical effectiveness is hitherto mysterious. We derive a correspondence
+between parameter inference and free energy minimisation in statistical
+physics. The degree of undersampling plays the role of temperature. Analogous
+to the energy-entropy competition in statistical physics, wide but shallow
+minima can be optimal if the system is undersampled, as is typical in many
+applications. Moreover, we show that the stochasticity in the algorithm has a
+non-trivial correlation structure which systematically biases it towards wide
+minima. We illustrate our argument with two prototypical models: image
+classification using deep learning, and a linear neural network where we can
+analytically reveal the relationship between entropy and out-of-sample error."),
+Yao Zhang, Andrew M. Saxe, Madhu S. Advani, Alpha A. Lee,
+arXiv: [1803.01927](http://arxiv.org/abs/1803.01927v1),
+3/2018
+
+
 - ["The Mean-Field Approximation: Information Inequalities, Algorithms, and
   Complexity"](
 http://arxiv.org/abs/1802.06126v2
@@ -1711,7 +1828,6 @@ general."),
 Haiping Huang,
 arXiv: [1710.01467](http://arxiv.org/abs/1710.01467v2),
 10/2017
-
 
 
 - ["Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
