@@ -6,11 +6,11 @@
     <meta name="robots" content="index, follow"/>
 
     <meta property="og:title" content="Machine Learning Topological Defects in the XY Model"/>
-    <meta property="og:url" content="/ML-in-XY.html"/>
+    <meta property="og:url" content="/pages/ML-in-XY.html"/>
     <meta property="og:site_name" content="&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;"/>
-    <meta property="og:type" content="article"/>
+    <meta property="og:type" content="website"/>
 
-    <link rel="canonical" href="/ML-in-XY.html" />
+    <link rel="canonical" href="/pages/ML-in-XY.html" />
 
     <title>Machine Learning Topological Defects in the XY Model | &#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
                     <div class="navbar-inner">
                         <ul class="nav">
 
-                            <li class="active"><a href="/category/articles.html">Articles</a></li>
+                            <li ><a href="/category/articles.html">Articles</a></li>
                             <li ><a href="/category/news.html">News</a></li>
 
 
@@ -67,148 +67,62 @@
     <div class="row-fluid">
         <div class="span10 offset1">
             <div class="row-fluid">
-<div class="span10 offset1">
-  <section>
-    <article>
-      <header>
-        <h1 class="entry-title">
-          <a href="/ML-in-XY.html" rel="bookmark"
-             title="Permalink to Machine Learning Topological Defects in the XY Model">Machine Learning Topological Defects in the XY Model</a></h1>
-      </header>
-      <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="/author/matt-beach.html">Matt Beach</a>
-    </address>
-
-    in <a href="/category/articles.html">Articles</a>
-
-    on 2018-03-14
-
-        |
-        tags:         <a href="/tag/quantum-mechanics.html">quantum mechanics</a>,        <a href="/tag/topological-phase-transitions.html">topological phase transitions</a>,        <a href="/tag/machine-learning.html">machine learning</a>,        <a href="/tag/supervised-learning.html">supervised learning</a>
-
-
+        
+<section  >    
+    <h1 class="entry-title">Machine Learning Topological Defects in the XY Model</h1>
     
-</footer><!-- /.post-info -->
-
-        <p>One of the discoveries that earned the 2016 Nobel Prize was that topological effects play an important role in classical phase transitions. The work of David J. Thouless and J. Michael Kosterlitz explained how two-dimensional materials, like thin films, can have phase transitions despite lacking a true ordered phase. They showed that small distortions of the field called vortices are bound tightly together at low temperatures, and yet at high temperature, they become unbound and proliferate. This sharp change in behavior turns out to be universal and explains many unconventional phase transitions such as those found in superfluid helium and superconductors.</p>
-<p>It took over 30 years for physicists to recognize that topological defects are responsible for the superfluid helium transition, but what if there was another way to detect these objects?</p>
-<p>In the last few years, we have seen remarkable success of novel algorithms that are capable of finding meaningful structures and patterns in massive datasets. Machine learning - in particular deep neural networks - have had tremendous success in achieving state-of-the-art results on image recognition tasks. These networks are capable of finding common features between images which lets them differentiate between distinct objects like cats and dogs. </p>
+    <p>One of the discoveries that earned the <a href="https://www.nobelprize.org/nobel_prizes/physics/laureates/2016/">2016 Nobel Prize</a> was that topological effects play an important role in classical phase transitions. The work of David J. Thouless and J. Michael Kosterlitz explained how two-dimensional materials, like thin films, can have phase transitions despite lacking a true ordered phase. They showed that small objects called vortices are bound tightly together at low temperatures, and yet at high temperature, they become unbound and proliferate. This sharp change in behavior turns out to be universal and explains many unconventional phase transitions such as those found in superfluid helium and superconductors.</p>
+<p>It took over three decades for physicists to recognize that topological defects are responsible for the superfluid helium transition, but what if there was another way to detect these objects?</p>
+<p>In the last few years, we have seen the remarkable success of algorithms that are capable of finding meaningful structures and patterns in massive datasets. Machine learning - in particular, deep neural networks - have had tremendous success in achieving state-of-the-art results on image recognition tasks. By breaking down an image into it's most important properties, neural networks are able to identify complex objects.</p>
 <p>Machine learning has already found many uses in physics - from detecting particle collisions to identifying quantum phases of matter, and even classifying galaxies from satellite images. Can machine learning also tell us something about topological defects?</p>
+<p>Before addressing this question, we will first briefly discuss what exactly a topological defect or vortex is. </p>
 <h2>What is a vortex?</h2>
-<p>The simplest model that allows to study vortices is the two-dimensional classical XY model. It describes spins on a two-dimensional lattice that can rotate in the plane, such that the state of each spin can be specified by a single angle @@\theta\in[0,2\pi)@@, and the Hamiltonian reads</p>
-<div class="math">$$H = -J\sum_{\langle i,j \rangle }\cos(\theta_i - \theta_j)\,.$$</div>
-<p>The coupling @@J@@ is positive, such that the ground state at @@T=0@@ is an Ising ferromagnet. However, the spin-wave excitations at low temperatures @@T\gt 0@@ prevent any true long-range order. Unlike in the ferromagnet, one finds that in this regime the correlations between spins decay polynomially with their separation.</p>
-<p>The vortex in the XY model is a topological spin configuration that cannot be transformed into the ground state where all spins are aligned by a continuous rotation of the spins.</p>
-<p>In the continuum, a vortex is defined through a finite value of vorticity</p>
-<div class="math">$$ w = \frac{1}{2\pi}\oint_{C} d\mathbb{r}\cdot \nabla\theta(\mathbb{r}), $$</div>
-<p>where @@C@@ is any curve enclosing the center of the vortex. Since the integral measures the total rotation of the spin vector along the curve, @@w@@ is simply the number of full turns it makes when circling the vortex, also referred to as the winding number.</p>
-<p>Analogously, on a square lattice, a vortex is defined as four spins on a plaquette which undergo a clockwise rotation about the plaquette center as shown in Figure 1. The explicit formula for the vorticity of each plaquette @@\mathcal{P}@@ is </p>
-<div class="math">$$ w = \frac{1}{2\pi}\sum_{[i,j]\in \mathcal{P}}\Delta\theta_{ij} $$</div>
-<p>with @@\Delta\theta_{ij} = (\theta_i - \theta_j) \mod 2\pi@@ such that @@\Delta\theta_{ij}\in [-\pi, \pi)@@. A positive winding number @@w@@ indicates a vortex, and a negative @@w@@ corresponds to an antivortex. Winding numbers higher than @@|w|=1@@ occur rarely. Some examples of different @@w@@'s are shown in Figure 1.</p>
+<p>The simplest model with vortices is the two-dimensional classical XY model which consists of continuous spins @@\theta_i\in[0,2\pi)@@ that interact only with their nearest neighbors. At low temperatures, the spins generally align like an Ising ferromagnet, however, spin-wave excitations prevent any true long-range order. Unlike the ferromagnet, in this regime, the correlations between spins decay polynomially with their separation.</p>
+<p>A vortex is a group of spins that have a different topology than regularly aligned spins. Because of this, a spin configuration with vortices cannot be transformed into the ferromagnetic ground state. The topology of a vortex is classified by its <strong>winding number</strong>. This measures the total rotation that the spins undergo along the closed curve.</p>
+<p>For a square lattice, a vortex is just four neighboring spins which undergo a clockwise rotation about their center (Figure 1). A positive winding number @@w@@ indicates a vortex, and a negative @@w@@ corresponds to an antivortex. Winding numbers higher than @@|w|=1@@ are extremely rare so they can be neglected. </p>
 <figure>
 <img style="width:400px;" src="/images/windings.png"/>
-<figcaption>Illustration of how @@w@@ counts the number of times the vectors rotate around the origin.</figcaption>
+<figcaption>Figure 1. Illustration of how the winding number @@w@@ counts the number of times the vectors rotate around the origin.</figcaption>
 </figure>
 
-<p>A single vortex introduces a field distortion that propagates through the entire system. In fact, it can be shown that the energy of a vortex diverges logarithmically with the linear system size @@L@@, and hence a single vortex can not be excited by thermal fluctuations. The combination of a vortex with an antivortex, however, introduces only a local field distortion, and the associated energy of the pair scales logarithmically with their separation distance. This kind of excitations can be induced thermally and are therefore found in the low-temperature regime of the XY model.</p>
-<p>At the temperature @@T_{\text{BKT}} \approx 0.892@@, the XY model exhibits the Berezinskii–Kosterlitz–Thouless transition. Unlike conventional phase transitions, the BKT transition displays no discontinuity in any observable. Instead, it is caused by the unbinding of vortex-antivortex pairs above @@T_{\text{BKT}}@@, as shown in Figure 2. The reason why pairs can unbind despite the logarithmically divergent energy of the individual (anti)vortices is their high entropy which scales logarithmically with the quadratic system size @@L^2@@. Above @@T_{\text{BKT}}@@ the entropic contribution to the free energy outweights the energetic one, and the pairs can unbind. There is also a finite peak in the specific heat near @@T=1.1@@ which indicates where the number of vortices increases most rapidly.</p>
+<p>At the temperature @@T_{\text{BKT}} \approx 0.892@@, the XY model exhibits the Berezinskii–Kosterlitz–Thouless transition. Unlike conventional phase transitions, the BKT transition displays no discontinuity in any observable. Instead, it is caused by the unbinding of vortex-antivortex pairs above @@T_{\text{BKT}}@@.  Below this temperature it takes infinite energy to excite a single vortex, however, thermal fluctuations can create vortex-antivortex <strong>pairs</strong> so long as they remain bound together to decrease their energy. Above @@T_{\text{BKT}}@@, it is entropically favorable for vortices to separate. This balancing act between energy and entropy is responsible for vortex unbinding. </p>
 <figure>
 <img style="width:400px;" src="/images/below.png"/>
 <img style="width:400px;" src="/images/above.png"/>
-<figcaption>Spin configuration below  @@T_{\text{BKT}}@@ (left) and above @@T_{\text{BKT}}@@ (right).</figcaption>
+<figcaption>Figure 2. Spin configuration below  @@T_{\text{BKT}}@@ (left) contain boudn nvortex-antivortex pairs, and above @@T_{\text{BKT}}@@ (right) pairs seperate.</figcaption>
 </figure>
 
 <h2>Can neural networks learn to recognize vortices?</h2>
-<p>Training a neural network to recognize vortices is different than training it to classify cats and dogs. Instead of a single number (or word) labeling the image, we have an entire array of numbers @@w@@ - one for each plaquette of the lattice. The network must learn to distinguish between spin configurations based on the location and vorticity of each plaquette.</p>
-<p>The input to our network is the spin configurations of the 2D XY model on a square lattice generated by Monte Carlo sampling. Now we want the network to output the vorticity of each plaquette (the circles in Figure 2), so we create labels to all spin configurations by applying formula (1). The result is a two-dimensional array of numbers, with value +1/-1 for vortex/antivortex, and 0 otherwise. </p>
-<p>Instead of training directly on the vorticity, we split the output of the network into three channels, for @@w=0,\pm 1@@ respectively. This is the equivalent of one-hot encoding vectors into binary vectors. We encode the vorticity @@w\in[0,\pm1]@@ into three binary arrays.  We could also add more channels for higher winding numbers, but these are extremely rare and can be neglected here. To revert back to the ordinary 'one-channel' vorticity, we simply take the "@@+1@@" channel minus the "@@-1@@" channel.</p>
+<p>Training a neural network to recognize vortices is different than training it to classify cats and dogs. Instead of a single number (or word) labeling the image, we have an entire array of numbers @@w@@ - one for each square of the lattice. The network must learn to compute the winding number for each square of neighboring spins.</p>
+<p>We use a supervised convolutional neural network, where the input is spin configurations on a square lattice generated by Monte Carlo sampling, and the labels are generated applying formula (1). The label is not one number, but rather a two-dimensional array of numbers, with value +1/-1 for vortex/antivortex, and 0 otherwise. </p>
+<p>Instead of training directly on the vorticity, we split the label into three channels. This is the equivalent of one-hot encoding vectors into binary vectors, except for matrices. Instead of the vorticity @@w\in[0,\pm1]@@, we encode this into three binary arrays containing only @@0@@'s and @@1@@'s.  We could also add more channels for higher winding numbers, but these are extremely rare so we neglect them. To revert back to the ordinary 'one-channel' vorticity, we simply take the "@@w=+1@@" channel minus the "@@w=-1@@" channel.</p>
 <figure>
 <img style="width:500px;" src="/images/CNN.png"/>
-<figcaption>Network architecture for learning vortices in the XY model.</figcaption>
+<figcaption>Figure 3. Network architecture for supervised learning of vortices in the 2D XY model.</figcaption>
 </figure>
 
-<p>The network architecture used is displayed in Figure 2. The first convolutional layer with 2x2 filters can learn local angle differences. The second layer, we expect, learns that certain difference are equivalent, i.e. @@\Delta \theta = 2\pi \equiv \Delta \theta = 0@@. This performs the @@\text{mod } 2\pi@@ from the definition of @@w@@. Lastly, the three-channel output is activated with a @@\text{Softmax}@@ function. This forces the network to choose only one value for the vorticity of each plaquette. Adding more neurons or increasing the depth usually results in faster convergence, but we prefer to keep the network minimal here.</p>
-<p>It turns out that this network architecture readily achieves over 99% accuracy. In Figure 3, the loss function on the training and cross-validation set using the Adam optimizer. Early stopping was used with a patience of 10 epochs to prevent overfitting. The final test accuracy for a @@16\times 16@@ lattice was 99.6%. </p>
+<p>The full network architecture is displayed in Figure 3. The motivation for this structure is that the first convolutional layer with 2x2 filters might learn local angle differences as in [1]. Lastly, the three-channel output is activated with a @@\text{Softmax}@@ function. This forces the network to choose only one value for the vorticity of each plaquette. Adding more neurons or increasing the depth usually results in faster convergence, but we prefer to keep the network minimal here.</p>
+<p>It turns out that this network architecture readily achieves over 99% accuracy. In Figure 3, the loss function during training is shown for some different lattice sizes. Each network was training using the Adam optimizer and early stopping with a patience of 10 epochs was used to prevent overfitting. The final test accuracy for a @@16\times 16@@ lattice was 99.6%. </p>
 <figure>
 <img style="width:400px;" src="/images/loss.png"/>
-<figcaption>Training and cross-validation loss function for system sizes from @@8\times 8@@ up to @@64\times 64@@.</figcaption>
+<figcaption>Figure 4. Training and cross-validation loss function for system sizes from @@8\times 8@@ up to @@64\times 64@@.</figcaption>
 </figure>
 
-<p>So far, we have demonstrated that a neural network can easily learn to recognize vortices when trained directly on the vorticity, yet it remains to be seen if an unsupervised method could achieve similar results. So far, the results from PCA and variational autoencoders both suffer from learning the energy or magnetization instead of vorticity [2,3,4,5]. This is perhaps not surprising since (while in the thermodynamic limit the 2D XY model has no magnetization) a finite-size system has a very large magnetization in the low-temperature region.</p>
-<p>Another question proposed in [6] is whether it's possible for supervised learning to identify vortices for the purpose of phase classification. Basically, one can just add an additional layer to the end of the architecture which classifies the phase as either below or above @@T_{\text{BKT}}@@. Hopefully, the network would learn vortices in an intermediate layer (the @@\text{Softmax}@@ layer) before classifying the phases. Unfortunately, this was not possible with our network nor that studied in [6]. It seems that it is in general not beneficial to learn vortices and very difficult given the nature of the BKT transition. Turns out neural networks may be more like experimentalists than theoreticians - they observe the transition in the magnetization.</p>
-<ul>
-<li>In [6] it was shown that the unsupervised "confusion" method predicts @@T=1.1@@ as the critical temperature instead of the true @@T_{\text{BKT}}@@. This corresponds to the peak in the specific heat.</li>
-</ul>
+<p>Extending this to the quantum case has already been done for 1D topological band insulators [2]. Here the label is the global winding number which describes which topological sector of the spin Hamiltonian. A network similar to Figure 3. achieves over 99\% accuracy and even can detect higher-order winding numbers not included in the training data.</p>
+<h2>Conclusions</h2>
+<p>So far, we have demonstrated that a neural network can easily learn to recognize vortices when trained directly on the vorticity, yet it remains to be seen if an unsupervised method could achieve similar results. So far, the results from PCA and variational autoencoders both suffer from learning the energy or magnetization instead of vorticity [2-5]. This is perhaps not surprising since (while in the thermodynamic limit the 2D XY model has no magnetization) a finite-size system has a very large magnetization in the low-temperature region. Even a lattice the size of Texas would have a large magnetization!</p>
+<p>Another question is whether it's possible for supervised learning to identify vortices for the purpose of phase classification. Given the experimental evidence of a phase transition, could a network have learned that vortices drive the transition? </p>
+<p>Sadly, the answer is no. Basically, one can just add an additional layer to the end of the architecture which classifies the phase as either below or above @@T_{\text{BKT}}@@. Hopefully, the network would learn vortices in an intermediate layer (the @@\text{Softmax}@@ layer) before classifying the phases. Unfortunately, this was not possible with our network, nor that studied in [7].</p>
+<p>Turns out neural networks could not earn the Nobel Prize... at least not yet... </p>
 <h2>References</h2>
-<p>[1] P. Zhang, H. Shen, and H. Zhai, <em>Machine Learning Topological Invariants with Neural Networks</em> <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.066401">Phys. Rev. Lett. 120, 066401 (2018)</a></p>
-<p>[2] W. Hu, R. R. P. Singh, and R. T. Scalettar, <em>Discovering phases, phase transitions, and crossovers through unsupervised machine learning: A critical examination</em> <a href="https://link.aps.org/doi/10.1103/PhysRevE.95.062122">Phys. Rev. E 95.062122 (2017)</a></p>
-<p>[3] C. Wang, and H. Zhai, <em>Machine learning of frustrated classical spin models. I. Principal component analysis</em> <a href="https://link.aps.org/doi/10.1103/PhysRevB.96.144432">Phys. Rev. B 96.144432 (2017)</a></p>
-<p>[4] C. Wang, and H. Zhai, <em>Machine Learning of Frustrated Classical Spin Models. II. Kernel Principal Component Analysis</em> <a href="https://arxiv.org/abs/1803.01205">https://arxiv.org/abs/1803.01205 (2018)</a></p>
-<p>[5] M. Cristoforetti, G. Jurman, A. I. Nardelli, and C. Furlanello, <em>Towards meaningful physics from generative models</em> <a href="https://arxiv.org/abs/1705.09524">arXiv:1705.09524 (2017)</a></p>
-<p>[6] Matthew J. S. Beach, Anna Golubeva, and Roger G. Melko, <em>Machine learning vortices at the Kosterlitz-Thouless transition</em> <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.045207">Phys. Rev. B 97.045207 (2018)</a></p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
-
-      </div><!-- /.entry-content -->
-
-    </article>
-  </section>
-</div>
+<p>[1] P. Suchsland, S. Wessel, <em>Parameter diagnostics of phases and phase transition learning by neural networks</em> <a href="https://arxiv.org/abs/1802.09876">arXiv: 802.09876 (2018)</a></p>
+<p>[2] P. Zhang, H. Shen, and H. Zhai, <em>Machine Learning Topological Invariants with Neural Networks</em> <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.066401">Phys. Rev. Lett. 120, 066401 (2018)</a></p>
+<p>[3] W. Hu, R. R. P. Singh, and R. T. Scalettar, <em>Discovering phases, phase transitions, and crossovers through unsupervised machine learning: A critical examination</em> <a href="https://link.aps.org/doi/10.1103/PhysRevE.95.062122">Phys. Rev. E 95.062122 (2017)</a></p>
+<p>[4] C. Wang, and H. Zhai, <em>Machine learning of frustrated classical spin models. I. Principal component analysis</em> <a href="https://link.aps.org/doi/10.1103/PhysRevB.96.144432">Phys. Rev. B 96.144432 (2017)</a></p>
+<p>[5] C. Wang, and H. Zhai, <em>Machine Learning of Frustrated Classical Spin Models. II. Kernel Principal Component Analysis</em> <a href="https://arxiv.org/abs/1803.01205">https://arxiv.org/abs/1803.01205 (2018)</a></p>
+<p>[6] M. Cristoforetti, G. Jurman, A. I. Nardelli, and C. Furlanello, <em>Towards meaningful physics from generative models</em> <a href="https://arxiv.org/abs/1705.09524">arXiv:1705.09524 (2017)</a></p>
+<p>[7] M. J. S. Beach, A. Golubeva, and R. G. Melko, <em>Machine learning vortices at the Kosterlitz-Thouless transition</em> <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.045207">Phys. Rev. B 97.045207 (2018)</a></p>
+</section>
             </div>
         </div>
     </div>
