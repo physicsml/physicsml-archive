@@ -203,7 +203,7 @@ deep theoretical underpinnings of kernel learning the future could be bright.
 
 <br/>
 <br/>
-~~~~~~~~~~~~~~~~~~~
+****
 <br/>
 <br/>
 

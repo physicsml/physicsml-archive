@@ -51,7 +51,7 @@ def build():
     """Build local version of site"""
     local('pelican -s pelicanconf.py')
     # from frank's fab:
-#    collectstatic()
+    collectstatic()
     #--
 
 def rebuild():
