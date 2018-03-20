@@ -7,6 +7,7 @@ Please email <a href="mailto:rgmelko@uwaterloo.ca">Roger Melko</a> or Miles Stou
 
 ## Applying Machine Learning to Physics
 
+
 - ["Parameter diagnostics of phases and phase transition learning by neural
   networks"](
 http://arxiv.org/abs/1802.09876v1
@@ -33,6 +34,24 @@ Philippe Suchsland, Stefan Wessel,
 arXiv: [1802.09876](http://arxiv.org/abs/1802.09876v1),
 2/2018
 
+- ["Advantages of versatile neural-network decoding for topological codes"](
+http://arxiv.org/abs/1802.08680v1
+"Finding optimal correction of errors in generic stabilizer codes is a
+computationally hard problem, even for simple noise models. While this task can
+be simplified for codes with some structure, such as topological stabilizer
+codes, developing good and efficient decoders still remains a challenge. In our
+work, we systematically study a very versatile class of decoders based on
+feedforward neural networks. To demonstrate adaptability, we apply neural
+decoders to the triangular color and toric codes under various noise models
+with realistic features, such as spatially-correlated errors. We report that
+neural decoders provide significant improvement over leading efficient decoders
+in terms of the error-correction threshold. Using neural networks simplifies
+the process of designing well-performing decoders, and does not require prior
+knowledge of the underlying noise model."),
+Nishad Maskara, Aleksander Kubica, Tomas Jochym-O'Connor,
+arXiv: [1802.08680](http://arxiv.org/abs/1802.08680v1),
+2/2018
+
 - ["Reinforcement Learning with Neural Networks for Quantum Feedback"](
 http://arxiv.org/abs/1802.05267v1
 "Artificial neural networks are revolutionizing science. While the most
@@ -51,7 +70,7 @@ to find hardware-adapted feedback schemes for small quantum modules while
 demonstrating more generally the promise of neural-network based reinforcement
 learning in physics."),
 Thomas Fösel, Petru Tighineanu, Talitha Weiss, Florian Marquardt,
-arXiv: [1802.05267](http://arxiv.org/abs/1802.05267v1),
+arXiv: [1802.05267](https://arxiv.org/abs/1802.05267v2),
 2/2018
 
 - ["Online Learning of Quantum States"](
@@ -1523,6 +1542,96 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+- ["Comparing Dynamics: Deep Neural Networks versus Glassy Systems"](
+http://arxiv.org/abs/1803.06969v1
+"We analyze numerically the training dynamics of deep neural networks (DNN) by
+using methods developed in statistical physics of glassy systems. The two main
+issues we address are the complexity of the loss-landscape and of the dynamics
+within it, and to what extent DNNs share similarities with glassy systems. Our
+findings, obtained for different architectures and datasets, suggest that
+during the training process the dynamics slows down because of an increasingly
+large number of flat directions. At large times, when the loss is approaching
+zero, the system diffuses at the bottom of the landscape. Despite some
+similarities with the dynamics of mean-field glassy systems, in particular, the
+absence of barrier crossing, we find distinctive dynamical behaviors in the two
+cases, showing that the statistical properties of the corresponding loss and
+energy landscapes are different. In contrast, when the network is
+under-parametrized we observe a typical glassy behavior, thus suggesting the
+existence of different phases depending on whether the network is
+under-parametrized or over-parametrized."),
+M. Baity-Jesi, L. Sagun, M. Geiger, S. Spigler, G. Ben Arous, C. Cammarota, Y. LeCun, M. Wyart, G. Biroli,
+arXiv: [1803.06969](http://arxiv.org/abs/1803.06969v1),
+3/2018
+
+- ["Vulnerability of Deep Learning"](
+http://arxiv.org/abs/1803.06111v1
+"The Renormalisation Group (RG) provides a framework in which it is possible
+to assess whether a deep-learning network is sensitive to small changes in the
+input data and hence prone to error, or susceptible to adversarial attack.
+Distinct classification outputs are associated with different RG fixed points
+and sensitivity to small changes in the input data is due to the presence of
+relevant operators at a fixed point. A numerical scheme, based on Monte Carlo
+RG ideas, is proposed for identifying the existence of relevant operators and
+the corresponding directions of greatest sensitivity in the input data. Thus, a
+trained deep-learning network may be tested for its robustness and, if it is
+vulnerable to attack, dangerous perturbations of the input data identified."),
+Richard Kenway,
+arXiv: [1803.06111](http://arxiv.org/abs/1803.06111v1),
+3/2018
+
+- ["Thermodynamics of Restricted Boltzmann Machines and related learning
+  dynamics"](
+http://arxiv.org/abs/1803.01960v1
+"We analyze the learning process of the restricted Boltzmann machine (RBM), a
+certain type of generative models used in the context of unsupervised learning.
+In a first step, we investigate the thermodynamics properties by considering a
+realistic statistical ensemble of RBM, assuming the information content of the
+RBM to be mainly reflected by spectral properties of its weight matrix W. A
+phase diagram is obtained which seems at first sight similar to the one of the
+Sherrington-Kirkpatrick (SK) model with ferromagnetic couplings. The main
+difference resides in the structure of the ferromagnetic phase which may or may
+not be of compositional type, depending mainly on the distribution's kurtosis
+of the singular vectors components of W. In a second step the learning dynamics
+of an RBM from arbitrary data is studied in thermodynamic limit. A "typical"
+learning trajectory is shown to solve an effective dynamical equation, based on
+the aforementioned ensemble average and involving explicitly order parameters
+obtained from the thermodynamic analysis. This accounts in particular for the
+dominant singular values evolution and how this is driven by the input data: in
+the linear regime at the beginning of the learning, they correspond to unstable
+deformation modes of W reflecting dominant covariance modes of the data. In the
+non-linear regime it is seen how the selected modes interact in later stages of
+the learning procedure, by eventually imposing a matching between order
+parameters with their empirical counterparts estimated from the data.
+Experiments on both artificial and real data illustrate these considerations,
+showing in particular how the RBM operates in the ferromagnetic compositional
+phase."),
+Aurélien Decelle, Giancarlo Fissore, Cyril Furtlehner,
+arXiv: [1803.01960](http://arxiv.org/abs/1803.01960v1),
+3/2018
+
+- ["Energy-entropy competition and the effectiveness of stochastic gradient
+  descent in machine learning"](
+http://arxiv.org/abs/1803.01927v1
+"Finding parameters that minimise a loss function is at the core of many
+machine learning methods. The Stochastic Gradient Descent algorithm is widely
+used and delivers state of the art results for many problems. Nonetheless,
+Stochastic Gradient Descent typically cannot find the global minimum, thus its
+empirical effectiveness is hitherto mysterious. We derive a correspondence
+between parameter inference and free energy minimisation in statistical
+physics. The degree of undersampling plays the role of temperature. Analogous
+to the energy-entropy competition in statistical physics, wide but shallow
+minima can be optimal if the system is undersampled, as is typical in many
+applications. Moreover, we show that the stochasticity in the algorithm has a
+non-trivial correlation structure which systematically biases it towards wide
+minima. We illustrate our argument with two prototypical models: image
+classification using deep learning, and a linear neural network where we can
+analytically reveal the relationship between entropy and out-of-sample error."),
+Yao Zhang, Andrew M. Saxe, Madhu S. Advani, Alpha A. Lee,
+arXiv: [1803.01927](http://arxiv.org/abs/1803.01927v1),
+3/2018
+
+
+
 - ["Energy-entropy competition and the effectiveness of stochastic gradient
   descent in machine learning"](
 http://arxiv.org/abs/1803.01927v1
@@ -2077,6 +2186,37 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 
 
 ## Quantum Computation and Quantum Algorithms for Machine Learning
+
+- ["Measurement-based adaptation protocol with quantum reinforcement
+  learning"](
+http://arxiv.org/abs/1803.05340v1
+"Machine learning employs dynamical algorithms that mimic the human capacity
+to learn, where the reinforcement learning ones are among the most similar to
+humans in this respect. On the other hand, adaptability is an essential aspect
+to perform any task efficiently in a changing environment, and it is
+fundamental for many purposes, such as natural selection. Here, we propose an
+algorithm based on successive measurements to adapt one quantum state to a
+reference unknown state, in the sense of achieving maximum overlap. The
+protocol naturally provides many identical copies of the reference state, such
+that in each measurement iteration more information about it is obtained. In
+our protocol, we consider a system composed of three parts, the "environment"
+system, which provides the reference state copies; the register, which is an
+auxiliary subsystem that interacts with the environment to acquire information
+from it; and the agent, which corresponds to the quantum state that is adapted
+by digital feedback with input corresponding to the outcome of the measurements
+on the register. With this proposal we can achieve an average fidelity between
+the environment and the agent of more than $90\% $ with less than $30$
+iterations of the protocol. In addition, we extend the formalism to $ d
+$-dimensional states, reaching an average fidelity of around $80\% $ in less
+than $400$ iterations for $d=$ 11, for a variety of genuinely quantum as well
+as semiclassical states. This work paves the way for the development of quantum
+reinforcement learning protocols using quantum data, and the future deployment
+of semi-autonomous quantum systems."),
+F. Albarrán-Arriagada, J. C. Retamal, E. Solano, L. Lamata,
+arXiv: [1803.05340](http://arxiv.org/abs/1803.05340v1),
+3/2018
+
+
 
 - ["Quantum Variational Autoencoder"](
 http://arxiv.org/abs/1802.05779v1
