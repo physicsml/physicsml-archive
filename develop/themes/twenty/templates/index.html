@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% include 'banner.html' %}
+
+{% block content %}
+<!-- Main -->
+<article id="main">
+
+  <header class="special container">
+    <!-- <span class="icon fa-bar-chart-o"></span> -->
+    <h2>Text<br />
+    text.</h2>
+    <p>New paragraph, I guess. Text,<br />
+    text,<br />
+    text with <a href="http://html5up.net/license">link</a> text!</p>
+  </header>
+
+  <!-- One -->
+  <section class="wrapper style2 container special-alt"> <!--  -->
+    <div class="row half">
+      <div class="8u">
+
+        <header>
+          <h2>Text in caps, and <strong>emphasized</strong> text.</h2>
+        </header>
+        <p>De bello Gallico.</p>
+        <footer>
+          <ul class="buttons">
+            <li><a href="#" class="button">Buttontext?</a></li>
+          </ul>
+        </footer>
+
+      </div>
+      <div class="4u skel-cell-important">
+
+        <ul class="feature-icons">
+          <li><span class="icon fa-clock-o"><span class="label">Clock icon</span></span></li>
+          <li><span class="icon fa-volume-up"><span class="label">Volume icon</span></span></li>
+          <li><span class="icon fa-laptop"><span class="label">Laptop icon</span></span></li>
+          <li><span class="icon fa-bullhorn"><span class="label">Feature 4</span></span></li>
+          <li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+          <li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Two -->
+  <section class="wrapper style1 container special">
+    <div class="row">
+
+      {% for article in articles_page.object_list %}
+      <div class="4u">
+
+        <section>
+          <span class="icon feature fa-{{ article.icon }}"></span>
+          <header>
+            <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'><h3>{{ article.title }}</h3></a>
+          </header>
+          <p>{{ article.content[:196]|striptags }}</p>
+          <footer>
+              <ul class="buttons">
+                  <li><a href="{{ SITEURL }}/{{ article.url }}" class="button small">Read More</a></li>
+              </ul>
+          </footer>
+        </section>
+
+      </div>
+      {% endfor %}
+
+    </div> <!-- /.row -->
+
+    {% include 'pagination.html' %}
+
+  </section> <!-- /section -->
+
+</article>
+
+{% include 'coolstuff.html' %}
+{% include 'cta.html' %}
+
+{% endblock content %}
