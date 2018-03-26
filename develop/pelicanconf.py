@@ -34,7 +34,7 @@ AUTHOR_FEED_RSS = None
 
 USE_FOLDER_AS_CATEGORY = True
 
-MENUITEMS = [("Papers","/papers.html"),]
+MENUITEMS = [("Papers","papers.html"),]
 DISPLAY_PAGES_ON_MENU = False
 #MENUITEMS = [("Papers","/papers.html"),("Sign up!","/signup.html"),]
 #TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
