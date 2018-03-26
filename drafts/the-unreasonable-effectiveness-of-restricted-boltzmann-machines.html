@@ -1,123 +1,98 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/skel-layers.min.js"></script>
-    <script src="/js/init.js"></script>
-    <link rel="stylesheet" href="/css/pygment.css" />
-    <noscript>
-        <link rel="stylesheet" href="/css/skel.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/style-noscript.css" />
-    </noscript>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="PhysicsML" />
+    <meta name="robots" content="index, follow"/>
 
-    <title>The Unreasonable Effectiveness of Restricted Boltzmann Machines | &#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297; </title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="The Unreasonable Effectiveness of Restricted Boltzmann Machines"/>
+    <meta property="og:url" content="/drafts/the-unreasonable-effectiveness-of-restricted-boltzmann-machines.html"/>
+    <meta property="og:site_name" content="&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;"/>
+    <meta property="og:type" content="article"/>
+
+    <link rel="canonical" href="/drafts/the-unreasonable-effectiveness-of-restricted-boltzmann-machines.html" />
+
+    <title>The Unreasonable Effectiveness of Restricted Boltzmann Machines | &#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+
+    <!--
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+    -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['@@','@@'] ]}});
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    </script>
 </head>
 
-<body class=" loading">
+<body id="index">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="/">&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297; </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+
+                            <li class="active"><a href="/category/articles.html">Articles</a></li>
+                            <li ><a href="/category/news.html">News</a></li>
 
 
+                            <li ><a href="/papers.html">Papers</a></li>
+                        </ul>
 
-    <!-- Header -->
-    <header id="header" >
-        <h1 class="logo">
-            <a href="..">&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</a>
-        </h1>
-        <nav id="nav">
-            <ul>
-                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
-                    <li><a href="/category/news.html">News</a></li>
-                    <li><a href="/category/articles.html">Blog</a></li>
-                    <li><a href="/pages/papers.html">Papers</a></li>
-                <!--
-                <li class="submenu">
-                    <a href="../">No Blog</a>
-                    <ul>
-                            <li class="active">
-                                <a href="../category/articles/">Articles</a>
-                            </li>
-                            <li >
-                                <a href="../category/news/">News</a>
-                            </li>
-                    </ul>
-                </li>
-                -->
-                <!--
-                <li><a href="#" class="button special">Nothing to Sign Up to</a></li>
-                -->
-            </ul>
-        </nav>
-    </header>
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
 
-<!-- Main -->
-<article id="main">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/drafts/the-unreasonable-effectiveness-of-restricted-boltzmann-machines.html" rel="bookmark"
+             title="Permalink to The Unreasonable Effectiveness of Restricted Boltzmann Machines">The Unreasonable Effectiveness of Restricted Boltzmann Machines</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="/author/roger-melko.html">Roger Melko</a>
+    </address>
 
-    <header class="special container">
-        <!-- <span class="icon fa-"></span> -->
-        <h2>The Unreasonable Effectiveness of Restricted Boltzmann Machines</h2>
-        <!-- add page sub title here -->
-        <p>Posted in
-            <a href="../category/articles.html">Articles</a> on 17-01-2017 by Roger Melko</p>
-        <!-- <p></p> -->
-    </header>
+    in <a href="/category/articles.html">Articles</a>
 
-    <style>
-        .bordered {
-            width: 200px;
-            height: 100px;
-            padding: 20px;
-            border: 1px solid darkorange;
-            border-radius: 8px;
-        }
+    on 2017-01-17
 
-        .tagcloud {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .tagcloud a {
-            display: inline-block;
-            font-size: 0.9em;
-            margin: 0.125rem;
-            padding: 0.4375rem;
-            background: #f3f6fa;
-            border: 0px solid rgba(0, 0, 255, 0.2);
-            border-radius: 40px;
-            transition: all 0.1s ease-in-out;
-        }
-
-        .tagcloud a:hover,
-        .tagcloud a:focus {
-            background: grey;
-            color: white;
-            transform: scale(1.1);
-        }
-    </style>
+        |
+        tags:         <a href="/tag/quantum-mechanics.html">quantum mechanics</a>,        <a href="/tag/machine-learning.html">machine learning</a>,        <a href="/tag/boltzmann-machines.html">Boltzmann Machines</a>
 
 
-    <!-- One -->
-    <section class="wrapper style4 container">
+    
+</footer><!-- /.post-info -->
 
-        <!-- Content -->
-        <div class="content">
-            <section>
-                <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
-                <!-- <h3>Posted in <a href="../category/articles.html">Articles</a></h3> -->
-                <p><p>When I first encountered a Boltzmann Machine, I did not immediately see its appeal to a quantum many-body physicist.<br>
+        <p>When I first encountered a Boltzmann Machine, I did not immediately see its appeal to a quantum many-body physicist.<br>
 A Boltzmann Machine is a stochastic neural network used to (approximately) learn probability distributions, 
 and to generate samples from the learned distribution.  It is a common tool in feature extraction, 
 classification, and other tasks in the modern machine learning community.</p>
@@ -142,84 +117,30 @@ quantum states (wavefunctions).  Below, I've outlined some of the promise inhere
 condensed matter and quantum many-body physics.</p>
 <h2>Representation of wavefunctions, and the inverse problem</h2>
 <h2>Ancillary support for Monte Carlo simulations</h2>
-<p>(<a href="http://www.theverge.com/2016/6/14/11939310/andy-rubin-google-android-playground-ai-robotics" title="Andy Rubin AI Robotics">Andy Rubin</a> among them) </p></p>
-                <br />
-                <br />
-                <p class="tags tagcloud">
-                     <a href="../tag/quantum-mechanics/">quantum mechanics</a>
-                    <a href="../tag/machine-learning/">machine learning</a>
-                    <a href="../tag/boltzmann-machines/">Boltzmann Machines</a>
-                 </p>
-            </section>
+<p>(<a href="http://www.theverge.com/2016/6/14/11939310/andy-rubin-google-android-playground-ai-robotics" title="Andy Rubin AI Robotics">Andy Rubin</a> among them) </p>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+</div>
+            </div>
         </div>
+    </div>
 
-    </section>
-
-    <!-- Two 
-    <section class="wrapper style1 container special">
-        <div class="row">
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="../blog/conference-on-machine-learning-and-physics-at-iastu.html" rel='bookmark'><h3>Conference on Machine Learning and Physics at IASTU</h3></a>
-              </header>
-              <p>The Insitute for Advanced Study of Tsinghua University in Beijing invites to the first of the biannual conference series <a href="http://mlphys2018.csp.escienc</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="../blog/conference-on-machine-learning-and-physics-at-iastu.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="../blog/program-on-machine-learning-for-quantum-many-body-physics-at-kitp.html" rel='bookmark'><h3>Program on Machine Learning for Quantum Many-Body Physics at KITP</h3></a>
-              </header>
-              <p>The Kavli Institute for Theoretical Physics in Santa Barbara announces the program "Machine Learning f</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="../blog/program-on-machine-learning-for-quantum-many-body-physics-at-kitp.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
-          <div class="4u">
-
-            <section>
-              <span class="icon feature fa-"></span>
-              <header>
-                <a href="../blog/workshop-machine-learning-for-quantum-many-body-physics-at-mpipks.html" rel='bookmark'><h3>Workshop Machine Learning for Quantum Many-Body Physics at mpipks</h3></a>
-              </header>
-              <p>The Max Planck Institute for the Physics of Complex Systems in Dresden hosts "Machine Learning for Quantum Many-Body Ph</p>
-              <footer>
-                  <ul class="buttons">
-                      <li><a href="../blog/workshop-machine-learning-for-quantum-many-body-physics-at-mpipks.html" class="button small">Read More</a></li>
-                  </ul>
-              </footer>
-            </section>
-
-          </div>
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        Blog powered by <a href="http://getpelican.com/">Pelican</a>, theme based on <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a>.
+                    </p>
+                </address>
+            </div>
         </div>
-    </section> -->
+    </footer>
 
-</article>
-
- 
-<!-- Footer -->
-<footer id="footer">
-
-    <ul class="icons">
-    </ul>
-
-    <span class="copyright">&copy; physicsml. All rights reserved. <br> Powered by <a href="https://blog.getpelican.com">Pelican</a>. Theme Twenty, Design: <a href="http://html5up.net">HTML5 UP</a>. Implemented and maintained by Anna Go.</span>
-
-</footer>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>

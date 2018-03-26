@@ -10,7 +10,7 @@ LOAD_CONTENT_CACHE = False
 
 AUTHOR = u'PhysicsML'
 SITENAME = u'&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;'
-SITEURL = 'https://physicsml.github.io'
+SITEURL = ''
 
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
@@ -20,8 +20,8 @@ JINJA_FILTERS = { 'sidebar': filters.sidebar }
 
 PATH = 'content'
 
-#THEME = "themes/custom_fresh"
-THEME = "themes/twenty"
+THEME = "themes/custom_fresh"
+#THEME = "themes/twenty"
 PLUGIN_PATHS=["./plugins"]
 PLUGINS = ["render_math.math"]
 
@@ -31,6 +31,14 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+
+USE_FOLDER_AS_CATEGORY = True
+
+MENUITEMS = [("Papers","/papers.html"),]
+DISPLAY_PAGES_ON_MENU = False
+#MENUITEMS = [("Papers","/papers.html"),("Sign up!","/signup.html"),]
+#TEMPLATE_PAGES = {'papers.html' : 'papers.html' }
+#DISPLAY_CATEGORIES_ON_MENU = False
 
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -42,54 +50,7 @@ AUTHOR_FEED_RSS = None
 #SOCIAL = (('You can add links in your config file', '#'),
 #          ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 3
-POST_LIMIT = 3
-
-# Show most recent posts first
-NEWEST_FIRST_ARCHIVES = True
+DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
-
-MENUITEMS = [("News", "/category/news.html"), ("Blog", "/category/articles.html"), ("Papers", "/pages/papers.html")]
-#TEMPLATE_PAGES = {'/themes/twenty/templates/page.html' : 'papers.html' }
-
-# Formatting for urls
-ARTICLE_PATHS = ['Articles', 'News']
-ARTICLE_URL = "blog/{slug}.html"
-ARTICLE_SAVE_AS = "blog/{slug}.html"
-
-#ARCHIVES_URL = "blog"
-#ARCHIVES_SAVE_AS = "blog/index.html"
-
-PAGE_PATHS = ['Pages']
-PAGE_URL = 'pages/{slug}.html'
-PAGE_SAVE_AS = 'pages/{slug}.html'
-
-#CATEGORY_URL = "category/{slug}/"
-#CATEGORY_SAVE_AS = "category/{slug}/index.html"
-
-TAG_URL = "tag/{slug}/"
-TAG_SAVE_AS = "tag/{slug}.html"
-
-USE_FOLDER_AS_CATEGORY = True
-
-
-#DISPLAY_PAGES_ON_MENU = True
-#DISPLAY_CATEGORIES_ON_MENU = True
-
-# Generate yearly archive
-#YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
-
-# Formatting for dates
-DEFAULT_DATE_FORMAT = ('%d-%m-%Y')
-
-STATIC_PATHS = ['images',
-                'fonts',
-                'css',
-                'js',
-                ]
-
-import datetime
-now = datetime.datetime.utcnow()
-YEAR = now.strftime("%Y")
+#RELATIVE_URLS = True

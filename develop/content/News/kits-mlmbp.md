@@ -1,7 +1,8 @@
 Title: Workshop in Machine Learning and Many-Body Physics at KITS
 Date: 2017-07-04 20:00
 Tags: quantum mechanics, neural nets, machine learning, many-body physics
-Summary: KITS Beijing hosts a workshop in Machine Learning and Many-Body Physics (June 28 - July 7, 2017)
+Authors: Roger Melko 
+Summary: KITS Workshop in Machine Learning and Many-Body Physics (Jun. 28 - Jul. 7, 2017)
 
 The Kavli Institute for Theoretical Sciences at the University of Chinese Acadamy of Sciences presents "Machine Learning and Many-Body Physics", a summer school and workshop.  
 The central questions addressed in this workshop are "How is machine learning useful for physics/chemistry ?" and "How can physicists/chemists help with the development of machine learning ?".  In particular, we will touch on the following topics: 
@@ -12,6 +13,6 @@ The central questions addressed in this workshop are "How is machine learning us
 <li>Quantum algorithms and quantum hardwares for machine learning</li>
 </ul>
 
-See link to workshop <a href="http://kits.ucas.ac.cn/index.php/events/workshop/52-machine-learning-and-many-body-physics-jun-28th-jul-7th-2017">webpage</a>.
+<a href="http://kits.ucas.ac.cn/index.php/events/workshop/52-machine-learning-and-many-body-physics-jun-28th-jul-7th-2017">See link to workshop webpage.</a>
 
 

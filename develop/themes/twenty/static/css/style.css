@@ -27,7 +27,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #7c8081; /* #636667 */
+		color: #7c8081;
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -41,20 +41,9 @@
 		-o-transition: all 0.2s ease-in-out;
 		-ms-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
-		color: #3fb1a3; /* #389f92 */
+		color: #3fb1a3;
 		text-decoration: none;
-		border-bottom: 0; /* dotted 1px */
-	}
-
-	a.special {
-		color:#1e626c; /* #1e5a6c #256b6b #1e636d #393d55 #7c8081 */
-		font-family: 'Lato', sans-serif;
-		font-size: 1em;
-		font-weight: 300;
-		letter-spacing: 0.025em;
-		text-transform: uppercase;
-		text-decoration: none;
-		border-bottom: none;
+		border-bottom: dotted 1px;
 	}
 
 		a:hover {
@@ -66,11 +55,7 @@
 	}
 
 	p, ul, ol, dl, table, blockquote {
-		margin: 0 0 1.2em 0;
-	}
-
-	ul {
-		list-style-type: square;
+		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -170,7 +155,7 @@
 			left: 0;
 			position: absolute;
 			text-align: center;
-			top: 0.3em;
+			top: 1em;
 			width: 100%;
 		}
 
@@ -186,65 +171,6 @@
 	footer.major {
 		padding-top: 3em;
 	}
-
-
-
-/* News container on the index page */
-    .content .news {
-       background-color: white;
-       border-radius: 15px;
-    }
-    .newscontainer {
-        display: flex;
-        flex-direction: row;
-    }
-    .newscontainer .calender{
-        width: 35px;
-        flex-shrink: 0;
-        margin-top: 8px;
-    }
-    .newscontainer .calender .date{
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        border: 2px solid grey;
-        margin-top: 9px;
-    }
-    .newscontainer .newsteaser{
-        flex-grow: 1;
-    }
-    .newscontainer .newsteaser h3{
-        flex-grow: 1;
-        margin-bottom: 0.15em;
-    }
-
-/* an attempt that did not work!
-    h3.newsteaser:before {
-        font-family: Font Awesome\ 5 Free;
-        content: "\f0a1";
-        color: #c83f3f;
-    }
-*/
-
-/* About container on the index page */
-    ul.thumbnail-photos {
-      cursor: default;
-      margin: -0.75em 0 0 0;
-      overflow: hidden;
-      position: relative;
-    }
-    ul.thumbnail-photos .crop{
-        width: 120px;
-        height: 120px;
-        overflow: hidden;
-        border-radius: 60px;
-        float: left;
-        margin: 16px;
-    }
-    ul.thumbnail-photos .crop img{
-        width: 120px;
-    }
-
 
 /* Form */
 
@@ -356,7 +282,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: Font Awesome\ 5 Free;
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 		}
@@ -643,12 +569,8 @@
 
 		.wrapper.style4 {
 			background: white;
-			color: inherit; /* normal text color */
-			font-size: 0.9em;
-			padding: 8em;
-			padding-top: 5em;
-			padding-bottom: 5em;
-			line-height: 1.4;
+			color: inherit;
+			padding: 4em;
 		}
 
 /* Header */
@@ -715,7 +637,7 @@
 				#header nav ul li.submenu > a:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: Font Awesome\ 5 Free;
+					font-family: FontAwesome;
 					font-style: normal;
 					font-weight: normal;
 				}
@@ -974,7 +896,7 @@
 		#topButton .toggle:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: Font Awesome\ 5 Free;
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 		}
@@ -1017,7 +939,7 @@
 		#sideButton .toggle:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: Font Awesome\ 5 Free;
+			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 		}
