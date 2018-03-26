@@ -1,9 +1,8 @@
-Title: Perimeter Institute hosts Quantum Machine Learning
+Title: Quantum Machine Learning Conference at PI
 Date: 2016-08-04 20:00
 Modified: 2016-08-05 18:00
 Tags: quantum mechanics, neural nets, machine learning
-Authors: Roger Melko
-Summary: Scientists from academia and industry converge on Waterloo as the Perimeter Institute hosts Quantum Machine Learning.
+Summary: Scientists from academia and industry converge on Waterloo as the Perimeter Institute hosts Quantum Machine Learning (August 5-12, 2016)
 
 The remarkable progress of machine learning algorithms in the last few years has not escaped the notice of physicists.  
 In fact, this community have been using techniques derived from machine learning for years, in research as far flung as materials science, quantum chemistry, and high-energy experiment.  New developments are now bringing the fields even closer together; particularly interesting are the new synergies developing between quantum physicists and the machine learning community.
@@ -18,5 +17,4 @@ The conference "Quantum Machine Learning" brings together experts from a variety
 
 The participant list for the conference boasts a diverse group from academia, as well as industry, including Google, Microsoft, D-wave Systems, Intel, Scotiabank, and many more.  
 
-More information can be found at
-[https://perimeterinstitute.ca/conferences/quantum-machine-learning](https://perimeterinstitute.ca/conferences/quantum-machine-learning)
+More information can be found on this [website](https://perimeterinstitute.ca/conferences/quantum-machine-learning).
