@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="{{ AUTHOR }}" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content="{% block ogtitle %}{{ SITENAME }}{%endblock%}"/>
+    <meta property="og:url" content="{% block ogurl %}{{ SITEURL }}{%endblock%}"/>
+    <meta property="og:site_name" content="{{ SITENAME }}"/>
+    <meta property="og:type" content="{% block ogtype %}website{%endblock%}"/>
+
+    <link rel="canonical" href="{% block canonicalurl %}{{ SITEURL }}{%endblock%}" />
+
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+    <!--
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "{{ SHARETHIS_PUB_KEY }}",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+    -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['@@','@@'] ]}});
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+    </script>
+</head>
+
+<body id="index">
+{% include 'github.html' %}
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+
+                        {% if not HIDE_CATEGORIES_FROM_MENU %}
+                        {% for cat, null in categories %}
+                            <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+
+                        {% if DISPLAY_PAGES_ON_MENU %}
+                        {% for pa in PAGES %}
+                            <li {% if pa == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ pa.url }}">{{ pa.title }}</a></li>
+                        {% endfor %}
+                        {% endif %}
+
+                        {% for title, link in MENUITEMS %}
+                            <li {% if link[1:] == output_file %}class="active"{% endif %}><a href="{{ link }}">{{ title }}</a></li>
+                        {% endfor %}
+                        </ul>
+
+                        {% include 'google_custom_search.html' %}
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+                {% block content %}{% endblock %}
+                {% block sidebar %}{% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        Blog powered by <a href="http://getpelican.com/">Pelican</a>, theme based on <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+{% include 'analytics.html' %}
+{% include 'piwik.html' %}
+{% include 'disqus_script.html' %}
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
