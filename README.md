@@ -1,11 +1,8 @@
 # physicsml.github.io
-PhysicsML Blog
-
+PhysicsML NEW VERSION
 
 
 
 
 
 #### To Do:
-- fix `render_math` plugin
-- implement journal update for the paper list
