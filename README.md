@@ -1,5 +1,11 @@
 # physicsml.github.io
-PhysicsML Blog is under maintenance. Sorry!
+PhysicsML Blog
 
 
 
+
+
+
+#### To Do:
+- fix `render_math` plugin
+- implement journal update for the paper list
