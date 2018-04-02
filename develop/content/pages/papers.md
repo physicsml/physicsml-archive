@@ -4,6 +4,49 @@ Date: 2016-10-27 11:00
 ## Applying Machine Learning to Physics
 
 
+- ["Deep Learning Phase Segregation"](
+http://arxiv.org/abs/1803.08993v1
+"Phase segregation, the process by which the components of a binary mixture
+spontaneously separate, is a key process in the evolution and design of many
+chemical, mechanical, and biological systems. In this work, we present a
+data-driven approach for the learning, modeling, and prediction of phase
+segregation. A direct mapping between an initially dispersed, immiscible binary
+fluid and the equilibrium concentration field is learned by conditional
+generative convolutional neural networks. Concentration field predictions by
+the deep learning model conserve phase fraction, correctly predict phase
+transition, and reproduce area, perimeter, and total free energy distributions
+up to 98% accuracy."),
+Amir Barati Farimani, Joseph Gomes, Rishi Sharma, Franklin L. Lee, Vijay S. Pande,
+arXiv: [1803.08993](http://arxiv.org/abs/1803.08993v1),
+3/2018
+
+- ["A high-bias, low-variance introduction to Machine Learning for
+  physicists"](
+http://arxiv.org/abs/1803.08823v1
+"Machine Learning (ML) is one of the most exciting and dynamic areas of modern
+research and application. The purpose of this review is to provide an
+introduction to the core concepts and tools of machine learning in a manner
+easily understood and intuitive to physicists. The review begins by covering
+fundamental concepts in ML and modern statistics such as the bias-variance
+tradeoff, overfitting, regularization, and generalization before moving on to
+more advanced topics in both supervised and unsupervised learning. Topics
+covered in the review include ensemble models, deep learning and neural
+networks, clustering and data visualization, energy-based models (including
+MaxEnt models and Restricted Boltzmann Machines), and variational methods.
+Throughout, we emphasize the many natural connections between ML and
+statistical physics. A notable aspect of the review is the use of Python
+notebooks to introduce modern ML/statistical packages to readers using
+physics-inspired datasets (the Ising Model and Monte-Carlo simulations of
+supersymmetric decays of proton-proton collisions). We conclude with an
+extended outlook discussing possible uses of machine learning for furthering
+our understanding of the physical world as well as open problems in ML where
+physicists maybe able to contribute. (Notebooks are available at
+https://physics.bu.edu/~pankajm/MLnotebooks.html )"),
+Pankaj Mehta, Marin Bukov, Ching-Hao Wang, Alexandre G. R. Day, Clint Richardson, Charles K. Fisher, David J. Schwab,
+arXiv: [1803.08823](http://arxiv.org/abs/1803.08823v1),
+3/2018
+
+
 - ["Parameter diagnostics of phases and phase transition learning by neural
   networks"](
 http://arxiv.org/abs/1802.09876v1
@@ -272,6 +315,29 @@ probing quantum states at new, larger scales."),
 Andrea Rocchetto, Scott Aaronson, Simone Severini, Gonzalo Carvacho, Davide Poderini, Iris Agresti, Marco Bentivegna, Fabio Sciarrino,
 arXiv: [1712.00127](http://arxiv.org/abs/1712.00127v1),
 11/2017
+
+- ["Machine learning vortices at the Kosterlitz-Thouless transition"](
+http://arxiv.org/abs/1710.09842v1
+"Efficient and automated classification of phases from minimally processed
+data is one goal of machine learning in condensed matter and statistical
+physics. Supervised algorithms trained on raw samples of microstates can
+successfully detect conventional phase transitions via learning a bulk feature
+such as an order parameter. In this paper, we investigate whether neural
+networks can learn to classify phases based on topological defects. We address
+this question on the two-dimensional classical XY model which exhibits a
+Kosterlitz-Thouless transition. We find significant feature engineering of the
+raw spin states is required to convincingly claim that features of the vortex
+configurations are responsible for learning the transition temperature. We
+further show a single-layer network does not correctly classify the phases of
+the XY model, while a convolutional network easily performs classification by
+learning the global magnetization. Finally, we design a deep network capable of
+learning vortices without feature engineering. We demonstrate the detection of
+vortices does not necessarily result in the best classification accuracy,
+especially for lattices of less than approximately 1000 spins. For larger
+systems, it remains a difficult task to learn vortices."),
+Matthew J. S. Beach, Anna Golubeva, Roger G. Melko,
+arXiv: [1710.09842](http://arxiv.org/abs/1710.09842v1),
+10/2017
 
 - ["Machine learning out-of-equilibrium phases of matter"](
 http://arxiv.org/abs/1711.00020v1
@@ -1538,6 +1604,78 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+
+
+- ["Protection against Cloning for Deep Learning"](
+http://arxiv.org/abs/1803.10995v1
+"The susceptibility of deep learning to adversarial attack can be understood
+in the framework of the Renormalisation Group (RG) and the vulnerability of a
+specific network may be diagnosed provided the weights in each layer are known.
+An adversary with access to the inputs and outputs could train a second network
+to clone these weights and, having identified a weakness, use them to compute
+the perturbation of the input data which exploits it. However, the RG framework
+also provides a means to poison the outputs of the network imperceptibly,
+without affecting their legitimate use, so as to prevent such cloning of its
+weights and thereby foil the generation of adversarial data."),
+Richard Kenway,
+arXiv: [1803.10995](http://arxiv.org/abs/1803.10995v1),
+3/2018
+
+- ["Bridging Many-Body Quantum Physics and Deep Learning via Tensor Networks"](
+http://arxiv.org/abs/1803.09780v1
+"The harnessing of modern computational abilities for many-body wave-function
+representations is naturally placed as a prominent avenue in contemporary
+condensed matter physics. Specifically, highly expressive computational schemes
+that are able to efficiently represent the entanglement properties of
+many-particle systems are of interest. In the seemingly unrelated field of
+machine learning, deep network architectures have exhibited an unprecedented
+ability to tractably encompass the dependencies characterizing hard learning
+tasks such as image classification. However, key questions regarding deep
+learning architecture design still have no adequate theoretical answers. In
+this paper, we establish a Tensor Network (TN) based common language between
+the two disciplines, which allows us to offer bidirectional contributions. By
+showing that many-body wave-functions are structurally equivalent to mappings
+of ConvACs and RACs, we construct their TN equivalents, and suggest quantum
+entanglement measures as natural quantifiers of dependencies in such networks.
+Accordingly, we propose a novel entanglement based deep learning design scheme.
+In the other direction, we identify that an inherent re-use of information in
+state-of-the-art deep learning architectures is a key trait that distinguishes
+them from TNs. We suggest a new TN manifestation of information re-use, which
+enables TN constructs of powerful architectures such as deep recurrent networks
+and overlapping convolutional networks. This allows us to theoretically
+demonstrate that the entanglement scaling supported by these architectures can
+surpass that of commonly used TNs in 1D, and can support volume law
+entanglement in 2D polynomially more efficiently than RBMs. We thus provide
+theoretical motivation to shift trending neural-network based wave-function
+representations closer to state-of-the-art deep learning architectures."),
+Yoav Levine, Or Sharir, Nadav Cohen, Amnon Shashua,
+arXiv: [1803.09780](http://arxiv.org/abs/1803.09780v1),
+3/2018
+
+- ["Learning architectures based on quantum entanglement: a simple matrix
+  product state algorithm for image recognition"](
+http://arxiv.org/abs/1803.09111v1
+"It is a fundamental, but still elusive question whether methods based on
+quantum mechanics, in particular on quantum entanglement, can be used for
+classical information processing and machine learning. Even partial answer to
+this question would bring important insights to both fields of both machine
+learning and quantum mechanics. In this work, we implement simple numerical
+experiments, related to pattern/images classification, in which we represent
+the classifiers by quantum matrix product states (MPS). Classical machine
+learning algorithm is then applied to these quantum states. We explicitly show
+how quantum features (i.e., single-site and bipartite entanglement) can emerge
+in such represented images; entanglement characterizes here the importance of
+data, and this information can be practically used to improve the learning
+procedures. Thanks to the low demands on the dimensions and number of the
+unitary matrices, necessary to construct the MPS, we expect such numerical
+experiments could open new paths in classical machine learning, and shed at
+same time lights on generic quantum simulations/computations."),
+Yuhan Liu, Xiao Zhang, Maciej Lewenstein, Shi-Ju Ran,
+arXiv: [1803.09111](http://arxiv.org/abs/1803.09111v1),
+3/2018
+
+
+
 - ["Comparing Dynamics: Deep Neural Networks versus Glassy Systems"](
 http://arxiv.org/abs/1803.06969v1
 "We analyze numerically the training dynamics of deep neural networks (DNN) by
@@ -2182,6 +2320,73 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 
 
 ## Quantum Computation and Quantum Algorithms for Machine Learning
+
+
+
+- ["Towards Quantum Machine Learning with Tensor Networks"](
+http://arxiv.org/abs/1803.11537v1
+"Machine learning is a promising application of quantum computing, but
+challenges remain as near-term devices will have a limited number of physical
+qubits and high error rates. Motivated by the usefulness of tensor networks for
+machine learning in the classical context, we propose quantum computing
+approaches to both discriminative and generative learning, with circuits based
+on tree and matrix product state tensor networks that could have benefits for
+near-term devices. The result is a unified framework where classical and
+quantum computing can benefit from the same theoretical and algorithmic
+developments, and the same model can be trained classically then transferred to
+the quantum setting for additional optimization. Tensor network circuits can
+also provide qubit-efficient schemes where, depending on the architecture, the
+number of physical qubits required scales only logarithmically with, or
+independently of the input or output data sizes. We demonstrate our proposals
+with numerical experiments, training a discriminative model to perform
+handwriting recognition using a optimization procedure that could be carried
+out on quantum hardware, and testing the noise resilience of the trained model."),
+William Huggins, Piyush Patel, K. Birgitta Whaley, E. Miles Stoudenmire,
+arXiv: [1803.11537](http://arxiv.org/abs/1803.11537v1),
+3/2018
+
+- ["Barren plateaus in quantum neural network training landscapes"](
+http://arxiv.org/abs/1803.11173v1
+"Many experimental proposals for noisy intermediate scale quantum devices
+involve training a parameterized quantum circuit with a classical optimization
+loop. Such hybrid quantum-classical algorithms are popular for applications in
+quantum simulation, optimization, and machine learning. Due to its simplicity
+and hardware efficiency, random circuits are often proposed as initial guesses
+for exploring the space of quantum states. We show that the exponential
+dimension of Hilbert space and the gradient estimation complexity make this
+choice unsuitable for hybrid quantum-classical algorithms run on more than a
+few qubits. Specifically, we show that for a wide class of reasonable
+parameterized quantum circuits, the probability that the gradient along any
+reasonable direction is non-zero to some fixed precision is exponentially small
+as a function of the number of qubits. We argue that this is related to the
+2-design characteristic of random circuits, and that solutions to this problem
+must be studied."),
+Jarrod R. McClean, Sergio Boixo, Vadim N. Smelyanskiy, Ryan Babbush, Hartmut Neven,
+arXiv: [1803.11173](http://arxiv.org/abs/1803.11173v1),
+3/2018
+
+- ["Quantum algorithms for training Gaussian Processes"](
+http://arxiv.org/abs/1803.10520v1
+"Gaussian processes (GPs) are important models in supervised machine learning.
+Training in Gaussian processes refers to selecting the covariance functions and
+the associated parameters in order to improve the outcome of predictions, the
+core of which amounts to evaluating the logarithm of the marginal likelihood
+(LML) of a given model. LML gives a concrete measure of the quality of
+prediction that a GP model is expected to achieve. The classical computation of
+LML typically carries a polynomial time overhead with respect to the input
+size. We propose a quantum algorithm that computes the logarithm of the
+determinant of a Hermitian matrix, which runs in logarithmic time for sparse
+matrices. This is applied in conjunction with a variant of the quantum linear
+system algorithm that allows for logarithmic time computation of the form
+$\mathbf{y}^TA^{-1}\mathbf{y}$, where $\mathbf{y}$ is a dense vector and $A$ is
+the covariance matrix. We hence show that quantum computing can be used to
+estimate the LML of a GP with exponentially improved efficiency under certain
+conditions."),
+Zhikuan Zhao, Jack K. Fitzsimons, Michael A. Osborne, Stephen J. Roberts, Joseph F. Fitzsimons,
+arXiv: [1803.10520](http://arxiv.org/abs/1803.10520v1),
+3/2018
+
+
 
 - ["Measurement-based adaptation protocol with quantum reinforcement
   learning"](
