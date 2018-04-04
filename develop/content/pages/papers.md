@@ -3,6 +3,24 @@ Date: 2016-10-27 11:00
 
 ## Applying Machine Learning to Physics
 
+- ["Matrix Product Operators for Sequence to Sequence Learning"](
+http://arxiv.org/abs/1803.10908v1
+"The method of choice to study one-dimensional strongly interacting many body
+quantum systems is based on matrix product states and operators. Such method
+allows to explore the most relevant, and numerically manageable, portion of an
+exponentially large space. Here we show how to construct a machine learning
+model in which matrix product operators are trained to implement sequence to
+sequence prediction, i.e. given a sequence at a time step, it allows one to
+predict the next sequence. We then apply our algorithm to cellular automata
+(for which we show exact analytical solutions in terms of matrix product
+operators), and to nonlinear coupled maps. We show advantages of the proposed
+algorithm when compared to conditional random fields and bidirectional long
+short-term memory neural network. To highlight the flexibility of the
+algorithm, we also show how it can perform classification tasks."),
+Chu Guo, Zhanming Jie, Wei Lu, Dario Poletti,
+arXiv: [1803.10908](http://arxiv.org/abs/1803.10908v1),
+3/2018
+
 
 - ["Deep Learning Phase Segregation"](
 http://arxiv.org/abs/1803.08993v1
@@ -1605,7 +1623,6 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 ## Physics-Inspired Ideas Applied to Machine Learning
 
 
-
 - ["Protection against Cloning for Deep Learning"](
 http://arxiv.org/abs/1803.10995v1
 "The susceptibility of deep learning to adversarial attack can be understood
@@ -2154,6 +2171,37 @@ Yoav Levine, David Yakira, Nadav Cohen, Amnon Shashua,
 arXiv: [1704.01552](http://arxiv.org/abs/1704.01552v2),
 4/2017
 
+
+- ["Opening the Black Box of Deep Neural Networks via Information"](
+http://arxiv.org/abs/1703.00810v3
+"Despite their great success, there is still no comprehensive theoretical
+understanding of learning with Deep Neural Networks (DNNs) or their inner
+organization. Previous work proposed to analyze DNNs in the \textit{Information
+Plane}; i.e., the plane of the Mutual Information values that each layer
+preserves on the input and output variables. They suggested that the goal of
+the network is to optimize the Information Bottleneck (IB) tradeoff between
+compression and prediction, successively, for each layer.
+  In this work we follow up on this idea and demonstrate the effectiveness of
+the Information-Plane visualization of DNNs. Our main results are: (i) most of
+the training epochs in standard DL are spent on {\emph compression} of the
+input to efficient representation and not on fitting the training labels. (ii)
+The representation compression phase begins when the training errors becomes
+small and the Stochastic Gradient Decent (SGD) epochs change from a fast drift
+to smaller training error into a stochastic relaxation, or random diffusion,
+constrained by the training error value. (iii) The converged layers lie on or
+very close to the Information Bottleneck (IB) theoretical bound, and the maps
+from the input to any hidden layer and from this hidden layer to the output
+satisfy the IB self-consistent equations. This generalization through noise
+mechanism is unique to Deep Neural Networks and absent in one layer networks.
+(iv) The training time is dramatically reduced when adding more hidden layers.
+Thus the main advantage of the hidden layers is computational. This can be
+explained by the reduced relaxation time, as this it scales super-linearly
+(exponentially for simple diffusion) with the information compression from the
+previous layer."),
+Ravid Shwartz-Ziv, Naftali Tishby,
+arXiv: [1703.00810](http://arxiv.org/abs/1703.00810v3),
+3/2017
+
 - ["Reinforcement Learning Using Quantum Boltzmann Machines"](
 http://arxiv.org/abs/1612.05695v2
 "We investigate whether quantum annealers with select chip layouts can
@@ -2320,6 +2368,8 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 
 
 ## Quantum Computation and Quantum Algorithms for Machine Learning
+
+
 
 
 
