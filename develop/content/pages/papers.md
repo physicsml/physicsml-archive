@@ -3,24 +3,6 @@ Date: 2016-10-27 11:00
 
 ## Applying Machine Learning to Physics
 
-- ["Matrix Product Operators for Sequence to Sequence Learning"](
-http://arxiv.org/abs/1803.10908v1
-"The method of choice to study one-dimensional strongly interacting many body
-quantum systems is based on matrix product states and operators. Such method
-allows to explore the most relevant, and numerically manageable, portion of an
-exponentially large space. Here we show how to construct a machine learning
-model in which matrix product operators are trained to implement sequence to
-sequence prediction, i.e. given a sequence at a time step, it allows one to
-predict the next sequence. We then apply our algorithm to cellular automata
-(for which we show exact analytical solutions in terms of matrix product
-operators), and to nonlinear coupled maps. We show advantages of the proposed
-algorithm when compared to conditional random fields and bidirectional long
-short-term memory neural network. To highlight the flexibility of the
-algorithm, we also show how it can perform classification tasks."),
-Chu Guo, Zhanming Jie, Wei Lu, Dario Poletti,
-arXiv: [1803.10908](http://arxiv.org/abs/1803.10908v1),
-3/2018
-
 
 - ["Deep Learning Phase Segregation"](
 http://arxiv.org/abs/1803.08993v1
@@ -1621,6 +1603,24 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 
 ## Physics-Inspired Ideas Applied to Machine Learning
+
+- ["Matrix Product Operators for Sequence to Sequence Learning"](
+http://arxiv.org/abs/1803.10908v1
+"The method of choice to study one-dimensional strongly interacting many body
+quantum systems is based on matrix product states and operators. Such method
+allows to explore the most relevant, and numerically manageable, portion of an
+exponentially large space. Here we show how to construct a machine learning
+model in which matrix product operators are trained to implement sequence to
+sequence prediction, i.e. given a sequence at a time step, it allows one to
+predict the next sequence. We then apply our algorithm to cellular automata
+(for which we show exact analytical solutions in terms of matrix product
+operators), and to nonlinear coupled maps. We show advantages of the proposed
+algorithm when compared to conditional random fields and bidirectional long
+short-term memory neural network. To highlight the flexibility of the
+algorithm, we also show how it can perform classification tasks."),
+Chu Guo, Zhanming Jie, Wei Lu, Dario Poletti,
+arXiv: [1803.10908](http://arxiv.org/abs/1803.10908v1),
+3/2018
 
 
 - ["Protection against Cloning for Deep Learning"](
