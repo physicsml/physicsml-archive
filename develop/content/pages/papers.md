@@ -1604,6 +1604,7 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+
 - ["Matrix Product Operators for Sequence to Sequence Learning"](
 http://arxiv.org/abs/1803.10908v1
 "The method of choice to study one-dimensional strongly interacting many body
@@ -2370,9 +2371,6 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 ## Quantum Computation and Quantum Algorithms for Machine Learning
 
 
-
-
-
 - ["Towards Quantum Machine Learning with Tensor Networks"](
 http://arxiv.org/abs/1803.11537v1
 "Machine learning is a promising application of quantum computing, but
@@ -2554,6 +2552,23 @@ problem described by a Gaussian mixture model. Finally, we discuss an intuitive
 understanding on how QAVB works well."),
 Hideyuki Miyahara, Yuki Sughiyama,
 arXiv: [1712.04709](http://arxiv.org/abs/1712.04709v1),
+12/2017
+
+- ["A quantum algorithm to train neural networks using low-depth circuits"](
+http://arxiv.org/abs/1712.05304v1
+"The question has remained open if near-term gate model quantum computers will
+offer a quantum advantage for practical applications in the pre-fault tolerance
+noise regime. A class of algorithms which have shown some promise in this
+regard are the so-called classical-quantum hybrid variational algorithms. Here
+we develop a low-depth quantum algorithm to train quantum Boltzmann machine
+neural networks using such variational methods. We introduce a method which
+employs the quantum approximate optimization algorithm as a subroutine in order
+to approximately sample from Gibbs states of Ising Hamiltonians. We use this
+approximate Gibbs sampling to train neural networks for which we demonstrate
+training convergence for numerically simulated noisy circuits with depolarizing
+errors of rates of up to 4%."),
+Guillaume Verdon, Michael Broughton, Jacob Biamonte,
+arXiv: [1712.05304](http://arxiv.org/abs/1712.05304v1),
 12/2017
 
 - ["Hardening Quantum Machine Learning Against Adversaries"](
