@@ -3,6 +3,65 @@ Date: 2016-10-27 11:00
 
 ## Applying Machine Learning to Physics
 
+- ["Multiparameter optimisation of a magneto-optical trap using deep
+  learning"](
+http://arxiv.org/abs/1805.00654v1
+"Many important physical processes have dynamics that are too complex to
+completely model analytically. Optimisation of such processes often relies on
+intuition, trial-and-error, or the construction of empirical models. Machine
+learning based on artificial neural networks has emerged as an efficient means
+to develop empirical models of complex systems. We implement a deep artificial
+neural network to optimise the magneto-optic cooling and trapping of neutral
+atomic ensembles. Cold atomic ensembles have become commonplace in laboratories
+around the world, however, many-body interactions give rise to complex dynamics
+that preclude precise analytic optimisation of the cooling and trapping
+process. The solution identified by machine learning is radically different to
+the smoothly varying adiabatic solutions currently used. Despite this, the
+solutions vastly outperform best known solutions producing higher optical
+densities. This may provide a pathway to a new understanding of the dynamics of
+the cooling and trapping processes in cold atomic ensembles."),
+Aaron D. Tranter, Harry J. Slatyer, Michael R. Hush, Anthony C. Leung, Jesse L. Everett, Karun V. Paul, Pierre Vernaz-Gris, Ping Koy Lam, Ben C. Buchler, Geoff T. Campbell,
+arXiv: [1805.00654](http://arxiv.org/abs/1805.00654v1),
+5/2018
+
+- ["Probing Hidden Spin Order with Interpretable Machine Learning"](
+http://arxiv.org/abs/1804.08557v1
+"Machine learning shows promise for improving our understanding of many-body
+problems. Tackling an unsolved problem, or classifying intricate phases,
+remains however a daunting task. Building on a recently introduced
+interpretable supervised learning scheme, we introduce a generic protocol to
+probe and identify nonlinear orientational spin order. We extract the tensorial
+order parameter up to rank 6. Moreover, we find that our approach yields
+reliable results already for a modest amount of training data and without
+knowledge of the exact transition temperature. Our approach may prove useful
+for identifying novel spin order and ruling out spurious spin liquid
+candidates."),
+Jonas Greitemann, Ke Liu, Lode Pollet,
+arXiv: [1804.08557](http://arxiv.org/abs/1804.08557v1),
+4/2018
+
+- ["Learning non-Higgsable gauge groups in 4D F-theory"](
+http://arxiv.org/abs/1804.07296v3
+"We apply machine learning techniques to solve a specific classification
+problem in 4D F-theory. For a divisor $D$ on a given complex threefold base, we
+want to read out the non-Higgsable gauge group on it using local geometric
+information near $D$. The input features are the triple intersection numbers
+among divisors near $D$ and the output label is the non-Higgsable gauge group.
+We use decision tree to solve this problem and achieved 85%-98% out-of-sample
+accuracies for different classes of divisors, where the data sets are generated
+from toric threefold bases without (4,6) curves. We have explicitly generated a
+large number of analytic rules directly from the decision tree and proved a
+small number of them. As a crosscheck, we applied these decision trees on bases
+with (4,6) curves as well and achieved high accuracies. Additionally, we have
+trained a decision tree to distinguish toric (4,6) curves as well. Finally, we
+present an application of these analytic rules to reversely construct local
+base configurations with interesting gauge groups such as SU(3)."),
+Yi-Nan Wang, Zhibai Zhang,
+arXiv: [1804.07296](http://arxiv.org/abs/1804.07296v3),
+4/2018
+
+
+
 - ["A sequential sampling strategy for extreme event statistics in nonlinear
   dynamical systems"](
 http://arxiv.org/abs/1804.07240v1
@@ -1764,6 +1823,38 @@ arXiv: [1404.1333](http://arxiv.org/abs/1404.1333v2),
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+- ["Neural networks as Interacting Particle Systems: Asymptotic convexity of
+  the Loss Landscape and Universal Scaling of the Approximation Error"](
+http://arxiv.org/abs/1805.00915v1
+"Neural networks, a central tool in machine learning, have demonstrated
+remarkable, high fidelity performance on image recognition and classification
+tasks. These successes evince an ability to accurately represent high
+dimensional functions, potentially of great use in computational and applied
+mathematics. That said, there are few rigorous results about the representation
+error and trainability of neural networks, as well as how they scale with the
+network size. Here we characterize both the error and scaling by reinterpreting
+the standard optimization algorithm used in machine learning applications,
+stochastic gradient descent, as the evolution of a particle system with
+interactions governed by a potential related to the objective or "loss"
+function used to train the network. We show that, when the number $n$ of
+parameters is large, the empirical distribution of the particles descends on a
+convex landscape towards a minimizer at a rate independent of $n$. We establish
+a Law of Large Numbers and a Central Limit Theorem for the empirical
+distribution, which together show that the approximation error of the network
+universally scales as $o(n^{-1})$. Remarkably, these properties do not depend
+on the dimensionality of the domain of the function that we seek to represent.
+Our analysis also quantifies the scale and nature of the noise introduced by
+stochastic gradient descent and provides guidelines for the step size and batch
+size to use when training a neural network. We illustrate our findings on
+examples in which we train neural network to learn the energy function of the
+continuous 3-spin model on the sphere. The approximation error scales as our
+analysis predicts in as high a dimension as $d=25$."),
+Grant M. Rotskoff, Eric Vanden-Eijnden,
+arXiv: [1805.00915](http://arxiv.org/abs/1805.00915v1),
+5/2018
+
+
+
 - ["Supervised machine learning algorithms based on generalized Gibbs
   ensembles"](
 http://arxiv.org/abs/1804.03546v1
@@ -2577,6 +2668,125 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 
 
 ## Quantum Computation and Quantum Algorithms for Machine Learning
+
+- ["Supervised learning with quantum enhanced feature spaces"](
+http://arxiv.org/abs/1804.11326v1
+"Machine learning and quantum computing are two technologies each with the
+potential for altering how computation is performed to address previously
+untenable problems. Kernel methods for machine learning are ubiquitous for
+pattern recognition, with support vector machines (SVMs) being the most
+well-known method for classification problems. However, there are limitations
+to the successful solution to such problems when the feature space becomes
+large, and the kernel functions become computationally expensive to estimate. A
+core element to computational speed-ups afforded by quantum algorithms is the
+exploitation of an exponentially large quantum state space through controllable
+entanglement and interference. Here, we propose and use two novel methods which
+represent the feature space of a classification problem by a quantum state,
+taking advantage of the large dimensionality of quantum Hilbert space to obtain
+an enhanced solution. One method, the quantum variational classifier builds on
+[1,2] and operates through using a variational quantum circuit to classify a
+training set in direct analogy to conventional SVMs. In the second, a quantum
+kernel estimator, we estimate the kernel function and optimize the classifier
+directly. The two methods present a new class of tools for exploring the
+applications of noisy intermediate scale quantum computers to machine learning."),
+Vojtech Havlicek, Antonio D. Córcoles, Kristan Temme, Aram W. Harrow, Jerry M. Chow, Jay M. Gambetta,
+arXiv: [1804.11326](http://arxiv.org/abs/1804.11326v1),
+4/2018
+
+- ["Quantum generative adversarial learning"](
+http://arxiv.org/abs/1804.09139v1
+"Generative adversarial networks (GANs) represent a powerful tool for
+classical machine learning: a generator tries to create statistics for data
+that mimics those of a true data set, while a discriminator tries to
+discriminate between the true and fake data. The learning process for generator
+and discriminator can be thought of as an adversarial game, and under
+reasonable assumptions, the game converges to the point where the generator
+generates the same statistics as the true data and the discriminator is unable
+to discriminate between the true and the generated data. This paper introduces
+the notion of quantum generative adversarial networks (QuGANs), where the data
+consists either of quantum states, or of classical data, and the generator and
+discriminator are equipped with quantum information processors. We show that
+the unique fixed point of the quantum adversarial game also occurs when the
+generator produces the same statistics as the data. Since quantum systems are
+intrinsically probabilistic the proof of the quantum case is different from -
+and simpler than - the classical case. We show that when the data consists of
+samples of measurements made on high-dimensional spaces, quantum adversarial
+networks may exhibit an exponential advantage over classical adversarial
+networks."),
+Seth Lloyd, Christian Weedbrook,
+arXiv: [1804.09139](http://arxiv.org/abs/1804.09139v1),
+4/2018
+
+- ["Quantum generative adversarial networks"](
+http://arxiv.org/abs/1804.08641v2
+"Quantum machine learning is expected to be one of the first potential
+general-purpose applications of near-term quantum devices. A major recent
+breakthrough in classical machine learning is the notion of generative
+adversarial training, where the gradients of a discriminator model are used to
+train a separate generative model. In this work and a companion paper, we
+extend adversarial training to the quantum domain and show how to construct
+generative adversarial networks using quantum circuits. Furthermore, we also
+show how to compute gradients -- a key element in generative adversarial
+network training -- using another quantum circuit. We give an example of a
+simple practical circuit ansatz to parametrize quantum machine learning models
+and perform a simple numerical experiment to demonstrate that quantum
+generative adversarial networks can be trained successfully."),
+Pierre-Luc Dallaire-Demers, Nathan Killoran,
+arXiv: [1804.08641](http://arxiv.org/abs/1804.08641v2),
+4/2018
+
+- ["Machine learning assisted readout of trapped-ion qubits"](
+http://arxiv.org/abs/1804.07718v2
+"We reduce measurement errors in a quantum computer using machine learning
+techniques. We exploit a simple yet versatile neural network to classify
+multi-qubit quantum states, which is trained using experimental data. This
+flexible approach allows the incorporation of any number of features of the
+data with minimal modifications to the underlying network architecture. We
+experimentally illustrate this approach in the readout of trapped-ion qubits
+using additional spatial and temporal features in the data. Using this neural
+network classifier, we efficiently treat qubit readout crosstalk, resulting in
+a 30\% improvement in detection error over the conventional threshold method.
+Our approach does not depend on the specific details of the system and can be
+readily generalized to other quantum computing platforms."),
+Alireza Seif, Kevin A. Landsman, Norbert M. Linke, Caroline Figgatt, C. Monroe, Mohammad Hafezi,
+arXiv: [1804.07718](http://arxiv.org/abs/1804.07718v2),
+4/2018
+
+- ["Quantum codes from classical graphical models"](
+http://arxiv.org/abs/1804.07653v1
+"We introduce a new graphical framework for designing quantum error correction
+codes based on classical principles. A key feature of this graphical language,
+over previous approaches, is that it is closely related to that of factor
+graphs or graphical models in classical information theory and machine
+learning. It enables us to formulate the description of recently-introduced
+`coherent parity check' quantum error correction codes entirely within the
+language of classical information theory. This makes our construction
+accessible without requiring background in quantum error correction or even
+quantum mechanics in general. More importantly, this allows for a collaborative
+interplay where one can design new quantum error correction codes derived from
+classical codes."),
+Joschka Roffe, Stefan Zohren, Dominic Horsman, Nicholas Chancellor,
+arXiv: [1804.07653](http://arxiv.org/abs/1804.07653v1),
+4/2018
+
+- ["A Simple Quantum Neural Net with a Periodic Activation Function"](
+http://arxiv.org/abs/1804.07633v2
+"In this paper, we propose a simple neural net that requires only $O(nlog_2k)$
+number of qubits and $O(nk)$ quantum gates: Here, $n$ is the number of input
+parameters, and $k$ is the number of weights applied to these parameters in the
+proposed neural net. We describe the network in terms of a quantum circuit, and
+then draw its equivalent classical neural net which involves $O(k^n)$ nodes in
+the hidden layer. Then, we show that the network uses a periodic activation
+function of cosine values of the linear combinations of the inputs and weights.
+The backpropagation is described through the gradient descent, and then iris
+and breast cancer datasets are used for the simulations. The numerical results
+indicate the network can be used in machine learning problems and it may
+provide exponential speedup over the same structured classical neural net."),
+Ammar Daskin,
+arXiv: [1804.07633](http://arxiv.org/abs/1804.07633v2),
+4/2018
+
+
 
 - ["Optimizing a Polynomial Function on a Quantum Simulator"](
 http://arxiv.org/abs/1804.05231v1
