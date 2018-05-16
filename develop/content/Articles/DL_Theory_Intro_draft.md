@@ -35,10 +35,11 @@ statistical learning theory. In this context, the variance refers to
 the amount by which the fit function changes if estimated on a different 
 training set, and the bias measures how much the chosen ansatz for the 
 fit function is off from reality. Generally, when the model flexibitliy 
-is increased, the variance will increase and the bias will decrease. 
-Consider the plots presented in figure Y below: Y.a shows three models 
+is increased, the variance will increase and the bias will decrease (cf. 
+figure 2a). 
+Consider the plots presented in figure 2 below: 2.b shows three models 
 of different flexibility fitting the given data (open circles), which was 
-sampled from the true target function (black curve) with noise. Y.b shows 
+sampled from the true target function (black curve) with noise. 2.c shows 
 how these models perform on the training (grey) and test (red) dataset by 
 plotting the prediction error as a function of model flexibility. The 
 linear model (orange) does a rather poor job. Among all, it has the largest 
@@ -54,36 +55,35 @@ selecting a model that is sufficiently complex to capture the reality,
 but still rigid enough to ignore the noise.
 
 Notice that with increasing model flexibility the training error monotonically 
-decreases (cf. figure Y.b). The test error, however, exhibits a local minimum 
+decreases (cf. figure 2a). The test error, however, exhibits a local minimum 
 at a certain flexibility, and grows rapidly as the flexibility increases further. 
 The discrepancy between the training and the test error is called the *generalization 
 gap* (GG) and is used as a measure for the generalization ability of a model.
 
 
-# HASTIE-TIBSHIRANI BIAS-VARIANCE TRADEOFF -- 2 figures, 3 subplots
 <figure>
     <img
-    style="float: center; width: 90%; margin-right: 1%; margin-bottom: 0.0em;"
-    src="/Users/annagolubeva/Desktop/physicsml.github.io/develop/content/images/bias_variance.png"
+    style="float: center; width: 39%; margin-right: 1%;"
+    src="/images/bias_variance_2.png"
     />
     <img
-    style="float: center; width: 90%; margin-right: 1%; margin-bottom: 0.0em;"
-    src="/Users/annagolubeva/Desktop/physicsml.github.io/develop/content/images/bias_variance_2.png"
+    style="float: center; width: 55%;"
+    src="/images/bias_variance.png"
     />
     <p style="clear: both;">
     <figcaption>
-    <b>Figure 1.</b> Illustration of the bias-variance tradeoff. 
-    Left: Open circles is data simulated from the function $f$ shown 
-    in black. Orange, blue and green curves are three estimates of $f$ 
-    with increasing model complexity (flexibility).
-    Right: Training (grey) and test (red) errors, relative to the 
-    minimum possible test error over all methods (dashed line). 
+    <b>Figure 2.</b> Illustration of the bias-variance tradeoff. 
+    <b>Left:</b> Training (grey) and test (red) errors, relative 
+    to the minimum possible test error over all methods (dashed line). 
     Squares represent the values for the three fits shown on the left.
-    Second figure: Model complexity vs error. Maybe it should be first!
-    Figure from Hastie, Tibshirani (Introduction to Statistical Learning).
+    <b>Right:</b> Open circles is data simulated from the true 
+    target function shown in black. Orange, blue and green curves 
+    are three estimates of the target, with increasing model complexity 
+    (flexibility).
     </figcaption>
 </figure>
 <br/>
+
 
 In statistical learning theory, models are typically characterized through a bound 
 on GG, which is derived based on some notion of model complexity. The latter is not 
@@ -109,7 +109,7 @@ a somewhat diffuse piece of common knowledge. Recently, Zhang et al. (2017)
 brought this topic into focus of attention by making a concrete statement about 
 the DDNs complexity in terms of their capacity:
 
-"Modern DNNs have enough capacity to fit random noise."
+  > Modern DNNs have enough capacity to fit random noise.
 
 They demonstrate this in a series of simple and systematic experiments on 
 state-of-the art DNNs for the image classification task using the ImageNet 
