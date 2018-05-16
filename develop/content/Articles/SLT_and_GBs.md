@@ -4,7 +4,7 @@ Tags: learning theory, machine learning, supervised learning
 Author: Anna Go
 Summary: Generalization bounds in Statistical Learning Theory
 Slug: generalization-bounds
-
+Status: draft
 
 When setting up a supervised learning task, we define an ansatz for the 
 target function $f$ by making an (implicit) assumption about the form of 
