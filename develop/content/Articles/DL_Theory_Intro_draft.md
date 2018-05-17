@@ -1,12 +1,13 @@
-Title: The Theory of Deep Learning
+Title: The Theory of Deep Learning - Part I
 Date: 2018-05-16
+Tags: machine learning, deep learning, theory of deep learning
 Author: Anna Go
 Slug: DL-theory
-Status: draft
 
-"Why do modern deep neural networks (DNNs) perform so well on 
-previously unseen test data, even when their number of weights 
-is much larger than the number of data points in the training set?"
+
+ > Why do modern deep neural networks (DNNs) perform so well on 
+    previously unseen test data, even when their number of weights 
+    is much larger than the number of data points in the training set?
 
 This question keeps puzzling many theorists and practicioners doing 
 Deep Learning (DL), in particular those who are used to the rules of 
@@ -30,7 +31,7 @@ general features of the data. As a result, its performance on a previously
 unseen test data will be poorer (cf. figure 1). To sum up, the larger the 
 number of parameters in a model, the more prone it is to overfitting.
 
-This is known as the *bias-variance tradeoff*, a central concept of 
+This is known as the **bias-variance tradeoff**, a central concept of 
 statistical learning theory. In this context, the variance refers to 
 the amount by which the fit function changes if estimated on a different 
 training set, and the bias measures how much the chosen ansatz for the 
@@ -57,17 +58,13 @@ but still rigid enough to ignore the noise.
 Notice that with increasing model flexibility the training error monotonically 
 decreases (cf. figure 1a). The test error, however, exhibits a local minimum 
 at a certain flexibility, and grows rapidly as the flexibility increases further. 
-The discrepancy between the training and the test error is called the *generalization 
-gap* (GG) and is used as a measure for the generalization ability of a model.
+The discrepancy between the training and the test error is called the **generalization 
+gap** (GG) and is used as a measure for the generalization ability of a model.
 
 
 <figure>
     <img
-    style="float: center; width: 39%; margin-right: 1%;"
-    src="/images/bias_variance_2.png"
-    />
-    <img
-    style="float: center; width: 55%;"
+    style="float: center; width: 100%; margin-right: 0%;"
     src="/images/bias_variance.png"
     />
     <p style="clear: both;">
@@ -79,14 +76,14 @@ gap* (GG) and is used as a measure for the generalization ability of a model.
     <b>Right:</b> Open circles is data simulated from the true 
     target function shown in black. Orange, blue and green curves 
     are three estimates of the target, with increasing model complexity 
-    (flexibility).
+    (flexibility). Figures from: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Hastie, Tibshirani, Friedman - The Elements of Statistical Learning</a>
     </figcaption>
 </figure>
 <br/>
 
 
-In statistical learning theory, models are typically characterized through a bound 
-on GG, which is derived based on some notion of model complexity. The latter is not 
+In statistical learning theory, models are typically characterized through a **bound 
+on GG**, which is derived based on some notion of model complexity. The latter is not 
 uniquely defined, and there is a number of different suggestions, but typically it 
 is proportional to the number of free parameters in the model. A classical result 
 states that GG scales, in leading order, as
@@ -105,7 +102,7 @@ very well in practice.
 
 In lack of a hard definition of model complexity for DNNs, the fact that they 
 are overparametrized and thus unnecessarily complex for the actual task remains 
-a somewhat diffuse piece of common knowledge. Recently, Zhang et al. (2017) 
+a somewhat diffuse piece of common knowledge. Recently, [Zhang et al. (2017)](https://arxiv.org/abs/1611.03530) 
 brought this topic into focus of attention by making a concrete statement about 
 the DDNs complexity in terms of their capacity:
 
@@ -127,11 +124,16 @@ were tested) does not substantially affect the results stated above.
 The key insight provided by these experiments is that the GG of a model can 
 be substantially increased by randomizing the labels alone, without changing 
 the model, its size, the hyperparameters or the optimizer. This fact challenges 
-the conventional view of statistical learning theory, where the bounds on the 
-GG are established based on some model features, while the dataset is fully 
-disregarded. This is essentially the reason why standard notions of model 
-complexity, such as, for example, the Rademacher complexity and VC dimension, 
-are not useful in the DL setting. Looking deeper into classical learning theory, 
-one finds that, in fact, many fundamental concepts are not applicable to DNNs, 
-and thus building a theory of DL requires overthinking some of the established 
-approaches.
+the conventional view of statistical learning theory, which establishes bounds 
+on the GG based on some model features, while fully disregarding the dataset. 
+This is essentially the reason why standard notions of model complexity, such 
+as, for example, the [Rademacher complexity](https://en.wikipedia.org/wiki/Rademacher_complexity) 
+and the [VC dimension](https://epubs.siam.org/doi/10.1137/1116025), are not useful in 
+the DL setting. Looking deeper into classical learning theory, one finds that, 
+in fact, many fundamental concepts are not applicable to DNNs, and thus building 
+a theory of DL requires overthinking some of the established frameworks.
+
+Is there a way to tackle the puzzle posed by DL outside the paradigm of classical 
+statistical learning theory, or can the classical frameworks be reconciled with 
+the modern learning machines? - Stay tuned for part II in this series!
+
