@@ -2,7 +2,7 @@ Title: The Theory of Deep Learning
 Date: 2018-05-16
 Author: Anna Go
 Slug: DL-theory
-
+Status: draft
 
 "Why do modern deep neural networks (DNNs) perform so well on 
 previously unseen test data, even when their number of weights 
@@ -27,7 +27,7 @@ selection. A larger number of parameters increases the model's flexibility,
 allowing it to express more complex functions. However, a more flexible 
 model will adjust to many details of the training set which are not the 
 general features of the data. As a result, its performance on a previously 
-unseen test data will be poorer (cf. figure X). To sum up, the larger the 
+unseen test data will be poorer (cf. figure 1). To sum up, the larger the 
 number of parameters in a model, the more prone it is to overfitting.
 
 This is known as the *bias-variance tradeoff*, a central concept of 
@@ -36,10 +36,10 @@ the amount by which the fit function changes if estimated on a different
 training set, and the bias measures how much the chosen ansatz for the 
 fit function is off from reality. Generally, when the model flexibitliy 
 is increased, the variance will increase and the bias will decrease (cf. 
-figure 2a). 
-Consider the plots presented in figure 2 below: 2.b shows three models 
+figure 1a). 
+Consider the plots presented in figure 1 below: 1.b shows three models 
 of different flexibility fitting the given data (open circles), which was 
-sampled from the true target function (black curve) with noise. 2.c shows 
+sampled from the true target function (black curve) with noise. 1.c shows 
 how these models perform on the training (grey) and test (red) dataset by 
 plotting the prediction error as a function of model flexibility. The 
 linear model (orange) does a rather poor job. Among all, it has the largest 
@@ -55,7 +55,7 @@ selecting a model that is sufficiently complex to capture the reality,
 but still rigid enough to ignore the noise.
 
 Notice that with increasing model flexibility the training error monotonically 
-decreases (cf. figure 2a). The test error, however, exhibits a local minimum 
+decreases (cf. figure 1a). The test error, however, exhibits a local minimum 
 at a certain flexibility, and grows rapidly as the flexibility increases further. 
 The discrepancy between the training and the test error is called the *generalization 
 gap* (GG) and is used as a measure for the generalization ability of a model.
@@ -72,7 +72,7 @@ gap* (GG) and is used as a measure for the generalization ability of a model.
     />
     <p style="clear: both;">
     <figcaption>
-    <b>Figure 2.</b> Illustration of the bias-variance tradeoff. 
+    <b>Figure 1.</b> Illustration of the bias-variance tradeoff. 
     <b>Left:</b> Training (grey) and test (red) errors, relative 
     to the minimum possible test error over all methods (dashed line). 
     Squares represent the values for the three fits shown on the left.
@@ -132,6 +132,6 @@ GG are established based on some model features, while the dataset is fully
 disregarded. This is essentially the reason why standard notions of model 
 complexity, such as, for example, the Rademacher complexity and VC dimension, 
 are not useful in the DL setting. Looking deeper into classical learning theory, 
-one finds that, in fact, many fundamental concepts are not applicable to DL, 
-and thus building a theory of DL requires a new approach.
-
+one finds that, in fact, many fundamental concepts are not applicable to DNNs, 
+and thus building a theory of DL requires overthinking some of the established 
+approaches.
