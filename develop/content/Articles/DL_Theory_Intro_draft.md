@@ -70,13 +70,16 @@ gap** (GG) and is used as a measure for the generalization ability of a model.
     <p style="clear: both;">
     <figcaption>
     <b>Figure 1.</b> Illustration of the bias-variance tradeoff. 
-    <b>Left:</b> Training (grey) and test (red) errors, relative 
+    <b>(a):</b> Prediction error on the training (blue) or test (red) sample,
+    as a function of model complexity. 
+    <b>(b):</b> Example of different fits: Open circles is data simulated 
+    from the true target function shown in black. Orange, blue and green 
+    curves are three estimates of the target, with increasing model complexity 
+    (flexibility).
+    <b>(c)</b> Training (grey) and test (red) errors, relative 
     to the minimum possible test error over all methods (dashed line). 
-    Squares represent the values for the three fits shown on the left.
-    <b>Right:</b> Open circles is data simulated from the true 
-    target function shown in black. Orange, blue and green curves 
-    are three estimates of the target, with increasing model complexity 
-    (flexibility). Figures from: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Hastie, Tibshirani, Friedman - The Elements of Statistical Learning</a>
+    Squares represent the values for the three fits shown on the left. 
+    Figures from: <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Hastie, Tibshirani, Friedman - The Elements of Statistical Learning</a>
     </figcaption>
 </figure>
 <br/>
