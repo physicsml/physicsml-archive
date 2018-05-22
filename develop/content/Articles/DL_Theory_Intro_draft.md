@@ -107,7 +107,7 @@ In lack of a hard definition of model complexity for DNNs, the fact that they
 are overparametrized and thus unnecessarily complex for the actual task remains 
 a somewhat diffuse piece of common knowledge. Recently, [Zhang et al. (2017)](https://arxiv.org/abs/1611.03530) 
 brought this topic into focus of attention by making a concrete statement about 
-the DDNs complexity in terms of their capacity:
+the DDNs' complexity in terms of their capacity:
 
   > Modern DNNs have enough capacity to fit random noise.
 
@@ -134,7 +134,7 @@ as, for example, the [Rademacher complexity](https://en.wikipedia.org/wiki/Radem
 and the [VC dimension](https://epubs.siam.org/doi/10.1137/1116025), are not useful in 
 the DL setting. Looking deeper into classical learning theory, one finds that, 
 in fact, many fundamental concepts are not applicable to DNNs, and thus building 
-a theory of DL requires overthinking some of the established frameworks.
+a theory of DL requires rethinking some of the established frameworks.
 
 Is there a way to tackle the puzzle posed by DL outside the paradigm of classical 
 statistical learning theory, or can the classical frameworks be reconciled with 
