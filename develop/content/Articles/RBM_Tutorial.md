@@ -3,6 +3,7 @@ Date: 2018-05-22
 Tags: machine learning, unsupervised learning, Restricted Boltzmann Machines, RBM, tutorial
 Author: Anna Go
 Slug: RBM-tutorial
+Status: draft
 
 RBMs
 ====
