@@ -1,308 +1,315 @@
 Index,ID,Sublist,Title
-0,1808.10498,0,"Deep learning, quantum chaos, and pseudorandom evolution"
-1,1808.10601,0,Quantum Neural Network States
-2,1809.03124,0,Approaching the adiabatic timescale with machine-learning
-3,1809.03562,0,"Projective quantum Monte Carlo simulations guided by unrestricted neural
+0,1706.00868,0,Active learning machine learns to create new quantum experiments
+1,1509.02749,0,Automated Search for new Quantum Experiments
+2,1803.01857,0,Universal Quantum Control through Deep Reinforcement Learning
+3,1803.08195,0,"Extrapolating quantum observables with machine learning: Inferring
+  multiple phase transitions from properties of a single phase"
+4,1809.02612,0,GANs for generating EFT models
+5,1704.08724,0,Nonequilibrium Thermodynamics of Restricted Boltzmann Machines
+6,1808.10498,0,"Deep learning, quantum chaos, and pseudorandom evolution"
+7,1808.10601,0,Quantum Neural Network States
+8,1809.03124,0,Approaching the adiabatic timescale with machine-learning
+9,1809.03562,0,"Projective quantum Monte Carlo simulations guided by unrestricted neural
   network states"
-4,1809.04679,0,Supervised machine learning of ultracold atoms with speckle disorder
-5,1809.05519,0,"Identifying Quantum Phase Transitions using Artificial Neural Networks
+10,1809.04679,0,Supervised machine learning of ultracold atoms with speckle disorder
+11,1809.05519,0,"Identifying Quantum Phase Transitions using Artificial Neural Networks
   on Experimental Data"
-6,1809.06640,0,Neural Network Decoders for Large-Distance 2D Toric Codes
-7,1809.09865,0,"Phase Diagram of Disordered Higher Order Topological Insulator: a
+12,1809.0664,0,Neural Network Decoders for Large-Distance 2D Toric Codes
+13,1809.09865,0,"Phase Diagram of Disordered Higher Order Topological Insulator: a
   Machine Learning Study"
-8,1809.09927,0,"A machine learning approach to the Berezinskii-Kosterlitz-Thouless
+14,1809.09927,0,"A machine learning approach to the Berezinskii-Kosterlitz-Thouless
   transition in classical and quantum models"
-9,1809.10419,0,"Self-organizing maps as a method for detecting phase transitions and
+15,1809.10419,0,"Self-organizing maps as a method for detecting phase transitions and
   phase identification"
-10,1809.10606,0,Solving Statistical Mechanics using Variational Autoregressive Networks
-11,1810.00346,0,"Extracting many-particle entanglement entropy from observables using
+16,1809.10606,0,Solving Statistical Mechanics using Variational Autoregressive Networks
+17,1810.00346,0,"Extracting many-particle entanglement entropy from observables using
   supervised machine learning"
-12,1810.00913,0,"An Artificial Neural Network Approach to the Analytic Continuation
+18,1810.00913,0,"An Artificial Neural Network Approach to the Analytic Continuation
   Problem"
-13,1810.02352,0,"Efficient Representation of Topologically Ordered States with Restricted
+19,1810.02352,0,"Efficient Representation of Topologically Ordered States with Restricted
   Boltzmann Machines"
-14,1810.02372,0,Super-resolving the Ising model with convolutional neural networks
-15,1810.05538,0,Learning multiple order parameters with interpretable machines
-16,1810.05913,0,"Nonequilibrium fluctuations of a driven quantum heat engine via machine
+20,1810.02372,0,Super-resolving the Ising model with convolutional neural networks
+21,1810.05538,0,Learning multiple order parameters with interpretable machines
+22,1810.05913,0,"Nonequilibrium fluctuations of a driven quantum heat engine via machine
   learning"
-17,1810.07207,0,Reinforcement Learning Decoders for Fault-Tolerant Quantum Computation
-18,1810.08179,0,Thermodynamics and Feature Extraction by Machine Learning
-19,1810.10335,0,Emulating quantum computation with artificial neural networks
-20,1810.10584,0,Reconstructing quantum states with generative models
-21,1810.12700,0,Machine learning density functional theory for the Hubbard model
-22,1809.02599,1,Simple coarse graining and sampling strategies for image recognition
-23,1809.09349,1,"The jamming transition as a paradigm to understand the loss landscape of
+23,1810.07207,0,Reinforcement Learning Decoders for Fault-Tolerant Quantum Computation
+24,1810.08179,0,Thermodynamics and Feature Extraction by Machine Learning
+25,1810.10335,0,Emulating quantum computation with artificial neural networks
+26,1810.10584,0,Reconstructing quantum states with generative models
+27,1810.127,0,Machine learning density functional theory for the Hubbard model
+28,1809.02599,1,Simple coarse graining and sampling strategies for image recognition
+29,1809.09349,1,"The jamming transition as a paradigm to understand the loss landscape of
   deep neural networks"
-24,1809.10188,1,Monge-Ampère Flow for Generative Modeling
-25,1809.10941,1,Deep learning systems as complex networks
-26,1810.06992,1,Topographic Representation for Quantum Machine Learning
-27,1810.11075,1,"Free energies of Boltzmann Machines: self-averaging, annealed and
+30,1809.10188,1,Monge-Ampère Flow for Generative Modeling
+31,1809.10941,1,Deep learning systems as complex networks
+32,1810.06992,1,Topographic Representation for Quantum Machine Learning
+33,1810.11075,1,"Free energies of Boltzmann Machines: self-averaging, annealed and
   replica symmetric approximations in the thermodynamic limit"
-28,1810.09665,1,"A jamming transition from under- to over-parametrization affects loss
+34,1810.09665,1,"A jamming transition from under- to over-parametrization affects loss
   landscape and generalization"
-29,1810.10446,1,"The Role of Data in Model Building and Prediction: A Survey Through
+35,1810.10446,1,"The Role of Data in Model Building and Prediction: A Survey Through
   Examples"
-30,1810.10525,1,Toward an AI Physicist for Unsupervised Learning
-31,1808.10047,2,Quantum optical neural networks
-32,1808.10561,2,A Quantum Model for Multilayer Perceptron
-33,1809.06056,2,Implementable Quantum Classifier for Nonlinear Data
-34,1810.01637,2,A quantum autoencoder: the compression of qutrits via machine learning
-35,1810.03787,2,Quantum Convolutional Neural Networks
-36,1810.05025,2,Quantum Neural Network and Soft Quantum Computing
-37,1810.10710,2,Quantum data compression by principal component analysis
-38,1810.12948,2,Quantum advantage in training binary neural networks
-39,1811.00414,2,"Quantum-inspired classical algorithms for principal component analysis
+36,1810.10525,1,Toward an AI Physicist for Unsupervised Learning
+37,1808.10047,2,Quantum optical neural networks
+38,1808.10561,2,A Quantum Model for Multilayer Perceptron
+39,1809.06056,2,Implementable Quantum Classifier for Nonlinear Data
+40,1810.01637,2,A quantum autoencoder: the compression of qutrits via machine learning
+41,1810.03787,2,Quantum Convolutional Neural Networks
+42,1810.05025,2,Quantum Neural Network and Soft Quantum Computing
+43,1810.1071,2,Quantum data compression by principal component analysis
+44,1810.12948,2,Quantum advantage in training binary neural networks
+45,1811.00414,2,"Quantum-inspired classical algorithms for principal component analysis
   and supervised clustering"
-40,1811.02266,2,An Artificial Neuron Implemented on an Actual Quantum Processor
-41,1808.09241,0,"Reconstruction of a Photonic Qubit State with Quantum Reinforcement
+46,1811.02266,2,An Artificial Neuron Implemented on an Actual Quantum Processor
+47,1808.09241,0,"Reconstruction of a Photonic Qubit State with Quantum Reinforcement
   Learning"
-42,1808.09095,0,Policy Guided Monte Carlo: Reinforcement Learning Markov Chain Dynamics
-43,1808.07069,0,Machine learning non-local correlations
-44,1808.06935,0,"Smart energy models for atomistic simulations using a DFT-driven
+48,1808.09095,0,Policy Guided Monte Carlo: Reinforcement Learning Markov Chain Dynamics
+49,1808.07069,0,Machine learning non-local correlations
+50,1808.06935,0,"Smart energy models for atomistic simulations using a DFT-driven
   multifidelity approach"
-45,1808.05787,0,Machine Learning Configuration Interaction
-46,1808.04728,0,CosmoFlow: Using Deep Learning to Learn the Universe at Scale
-47,1808.04519,0,A machine-learning solver for modified diffusion equations
-48,1808.04258,0,"Model Reduction with Memory and the Machine Learning of Dynamical
+51,1808.05787,0,Machine Learning Configuration Interaction
+52,1808.04728,0,CosmoFlow: Using Deep Learning to Learn the Universe at Scale
+53,1808.04519,0,A machine-learning solver for modified diffusion equations
+54,1808.04258,0,"Model Reduction with Memory and the Machine Learning of Dynamical
   Systems"
-49,1808.03398,0,"Learning Parameters and Constitutive Relationships with Physics Informed
+55,1808.03398,0,"Learning Parameters and Constitutive Relationships with Physics Informed
   Deep Neural Networks"
-50,1808.02069,0,Generalized Transfer Matrix States from Artificial Neural Networks
-51,1808.01731,0,Machine Learning Phase Transition: An Iterative Methodology
-52,1808.01374,0,Modelling Non-Markovian Quantum Processes with Recurrent Neural Networks
-53,1808.00471,0,"From Bloch Oscillations to Many Body Localization in Clean Interacting
+56,1808.02069,0,Generalized Transfer Matrix States from Artificial Neural Networks
+57,1808.01731,0,Machine Learning Phase Transition: An Iterative Methodology
+58,1808.01374,0,Modelling Non-Markovian Quantum Processes with Recurrent Neural Networks
+59,1808.00471,0,"From Bloch Oscillations to Many Body Localization in Clean Interacting
   Systems"
-54,1808.00084,0,"Unsupervised machine learning for detection of phase transitions in
+60,1808.00084,0,"Unsupervised machine learning for detection of phase transitions in
   off-lattice systems I. Foundations"
-55,1807.1077,0,"Backflow Transformations via Neural Networks for Quantum Many-Body
+61,1807.1077,0,"Backflow Transformations via Neural Networks for Quantum Many-Body
   Wave-Functions"
-56,1807.103,0,Discovering physical concepts with neural networks
-57,1807.09787,0,"Fusing numerical relativity and deep learning to detect higher-order
+62,1807.103,0,Discovering physical concepts with neural networks
+63,1807.09787,0,"Fusing numerical relativity and deep learning to detect higher-order
   multipole waveforms from eccentric binary black hole mergers"
-58,1807.09422,0,"Solving frustrated quantum many-particle models with convolutional
+64,1807.09422,0,"Solving frustrated quantum many-particle models with convolutional
   neural networks"
-59,1807.0747,0,"Machine learning study of the relationship between the geometric and
+65,1807.0747,0,"Machine learning study of the relationship between the geometric and
   entropy discord"
-60,1807.07445,0,Local-measurement-based quantum state tomography via neural networks
-61,1807.07014,0,Solving Many-Electron Schrödinger Equation Using Deep Neural Networks
-62,1807.05237,0,"irbasis: Open-source database and software for
+66,1807.07445,0,Local-measurement-based quantum state tomography via neural networks
+67,1807.07014,0,Solving Many-Electron Schrödinger Equation Using Deep Neural Networks
+68,1807.05237,0,"irbasis: Open-source database and software for
   intermediate-representation basis functions of imaginary-time Green's
   function"
-63,1807.05051,0,Many-body (de)localization in large quantum chains
-64,1807.04955,0,Self-learning Monte Carlo method with Behler-Parrinello neural networks
-65,1807.04605,0,An introductory example of machine learning enhanced global optimization
-66,1807.0391,0,"Neural networks as ""hidden"" variable models for quantum systems"
-67,1807.03325,0,"Symmetries and many-body excited states with neural-network quantum
+69,1807.05051,0,Many-body (de)localization in large quantum chains
+70,1807.04955,0,Self-learning Monte Carlo method with Behler-Parrinello neural networks
+71,1807.04605,0,An introductory example of machine learning enhanced global optimization
+72,1807.0391,0,"Neural networks as ""hidden"" variable models for quantum systems"
+73,1807.03325,0,"Symmetries and many-body excited states with neural-network quantum
   states"
-68,1807.02468,0,"Interpretable Machine Learning for Inferring the Phase Boundaries in a
+74,1807.02468,0,"Interpretable Machine Learning for Inferring the Phase Boundaries in a
   Non-equilibrium System"
-69,1808.08495,1,"The effect of retardation in the random networks of excitable nodes
+75,1808.08495,1,"The effect of retardation in the random networks of excitable nodes
   embeddable in the Euclidean space"
-70,1808.07169,1,Statistical Neurodynamics of Deep Networks: Geometry of Signal Spaces
-71,1808.06604,1,"Artificial Neural Networks in Fluid Dynamics: A Novel Approach to the
+76,1808.07169,1,Statistical Neurodynamics of Deep Networks: Geometry of Signal Spaces
+77,1808.06604,1,"Artificial Neural Networks in Fluid Dynamics: A Novel Approach to the
   Navier-Stokes Equations"
-72,1808.04567,1,Geometry and symmetry in quantum Boltzmann machine
-73,1808.00408,1,"Geometry of energy landscapes and the optimizability of deep neural
+78,1808.04567,1,Geometry and symmetry in quantum Boltzmann machine
+79,1808.00408,1,"Geometry of energy landscapes and the optimizability of deep neural
   networks"
-74,1807.04162,1,TherML: Thermodynamics of Machine Learning
-75,1808.09058,2,"Quantum enhanced cross-validation for near-optimal neural networks
+80,1807.04162,1,TherML: Thermodynamics of Machine Learning
+81,1808.09058,2,"Quantum enhanced cross-validation for near-optimal neural networks
   architecture selection"
-76,1808.08888,2,Realizing quantum linear regression with auxiliary qumodes
-77,1808.05232,2,Neural-network states for the classical simulation of quantum computing
-78,1808.03425,2,Learning and Inference on Generative Adversarial Quantum Circuits
-79,1808.02893,2,"Quantum generative adversarial learning in a superconducting quantum
+82,1808.08888,2,Realizing quantum linear regression with auxiliary qumodes
+83,1808.05232,2,Neural-network states for the classical simulation of quantum computing
+84,1808.03425,2,Learning and Inference on Generative Adversarial Quantum Circuits
+85,1808.02893,2,"Quantum generative adversarial learning in a superconducting quantum
   circuit"
-80,1808.02516,2,Quantum Lyapunov control with machine learning
-81,1807.10781,2,"Machine learning method for state preparation and gate synthesis on
+86,1808.02516,2,Quantum Lyapunov control with machine learning
+87,1807.10781,2,"Machine learning method for state preparation and gate synthesis on
   photonic quantum computers"
-82,1807.10698,2,Quantized Hodgkin-Huxley Model for Quantum Neurons
-83,1807.10643,2,Experimental Implementation of a Quantum Autoencoder via Quantum Adders
-84,1807.04259,2,The fundamentals of quantum machine learning
-85,1807.03947,2,"Recurrent neural networks running on quantum spins: memory accuracy and
+88,1807.10698,2,Quantized Hodgkin-Huxley Model for Quantum Neurons
+89,1807.10643,2,Experimental Implementation of a Quantum Autoencoder via Quantum Adders
+90,1807.04259,2,The fundamentals of quantum machine learning
+91,1807.03947,2,"Recurrent neural networks running on quantum spins: memory accuracy and
   capacity"
-86,1807.03253,2,Benchmarking neural networks for quantum computation
-87,1807.01235,2,Adversarial training of quantum Born machine
-88,1807.00414,2,Optimization of neural networks via finite-value quantum fluctuations
-89,1806.08781,0,Quantum Codes from Neural Networks
-90,1806.03841,0,Analytic continuation via 'domain-knowledge free' machine learning
-91,1806.03749,0,Machine-learning Skyrmions
-92,1806.00829,0,Machine learning of quantum phase transitions
-93,1806.00463,0,Adversarial quantum circuit learning for pure state approximation
-94,1806.00419,0,"Automated discovery of characteristic features of phase transitions in
+92,1807.03253,2,Benchmarking neural networks for quantum computation
+93,1807.01235,2,Adversarial training of quantum Born machine
+94,1807.00414,2,Optimization of neural networks via finite-value quantum fluctuations
+95,1806.08781,0,Quantum Codes from Neural Networks
+96,1806.03841,0,Analytic continuation via 'domain-knowledge free' machine learning
+97,1806.03749,0,Machine-learning Skyrmions
+98,1806.00829,0,Machine learning of quantum phase transitions
+99,1806.00463,0,Adversarial quantum circuit learning for pure state approximation
+100,1806.00419,0,"Automated discovery of characteristic features of phase transitions in
   many-body localization"
-95,1805.12138,0,"Machine learning many-body localization: Search for the elusive
+101,1805.12138,0,"Machine learning many-body localization: Search for the elusive
   nonergodic metal"
-96,1805.10503,0,Deep Learning Topological Invariants of Band Insulators
-97,1805.05961,0,Identifying topological order via unsupervised machine learning
-98,1805.05462,0,Quantum artificial intelligence to simulate many body quantum systems
-99,1805.03477,0,Optimal universal learning machines for quantum state discrimination
-100,1806.05964,1,Supervised learning with generalized tensor networks
-101,1806.01316,1,"Universal Statistics of Fisher Information in Deep Neural Networks: Mean
+102,1805.10503,0,Deep Learning Topological Invariants of Band Insulators
+103,1805.05961,0,Identifying topological order via unsupervised machine learning
+104,1805.05462,0,Quantum artificial intelligence to simulate many body quantum systems
+105,1805.03477,0,Optimal universal learning machines for quantum state discrimination
+106,1806.05964,1,Supervised learning with generalized tensor networks
+107,1806.01316,1,"Universal Statistics of Fisher Information in Deep Neural Networks: Mean
   Field Approach"
-102,1805.09785,1,Entropy and mutual information in models of deep neural networks
-103,1805.07512,1,Physically optimizing inference
-104,1805.00915,1,"Neural Networks as Interacting Particle Systems: Asymptotic Convexity of
+108,1805.09785,1,Entropy and mutual information in models of deep neural networks
+109,1805.07512,1,Physically optimizing inference
+110,1805.00915,1,"Neural Networks as Interacting Particle Systems: Asymptotic Convexity of
   the Loss Landscape and Universal Scaling of the Approximation Error"
-105,1806.09729,2,A Universal Training Algorithm for Quantum Deep Learning
-106,1806.09664,2,"Artificial Quantum Neural Network: quantum neurons, logical elements and
+111,1806.09729,2,A Universal Training Algorithm for Quantum Deep Learning
+112,1806.09664,2,"Artificial Quantum Neural Network: quantum neurons, logical elements and
   tests of convolutional nets"
-107,1806.08321,2,"Quantum Kitchen Sinks: An algorithm for machine learning on near-term
+113,1806.08321,2,"Quantum Kitchen Sinks: An algorithm for machine learning on near-term
   quantum computers"
-108,1806.06871,2,Continuous-variable quantum neural networks
-109,1806.07251,2,Decoherence in a quantum neural network
-110,1805.11089,2,Bayesian Quantum Circuit
-111,1805.08837,2,Quantum classification of the MNIST dataset via Slow Feature Analysis
-112,1805.08654,2,Universal discriminative quantum neural networks
-113,1805.00654,0,"Multiparameter optimisation of a magneto-optical trap using deep
+114,1806.06871,2,Continuous-variable quantum neural networks
+115,1806.07251,2,Decoherence in a quantum neural network
+116,1805.11089,2,Bayesian Quantum Circuit
+117,1805.08837,2,Quantum classification of the MNIST dataset via Slow Feature Analysis
+118,1805.08654,2,Universal discriminative quantum neural networks
+119,1805.00654,0,"Multiparameter optimisation of a magneto-optical trap using deep
   learning"
-114,1804.08557,0,Probing Hidden Spin Order with Interpretable Machine Learning
-115,1804.07296,0,Learning non-Higgsable gauge groups in 4D F-theory
-116,1805.00915,1,"Neural networks as Interacting Particle Systems: Asymptotic convexity of
+120,1804.08557,0,Probing Hidden Spin Order with Interpretable Machine Learning
+121,1804.07296,0,Learning non-Higgsable gauge groups in 4D F-theory
+122,1805.00915,1,"Neural networks as Interacting Particle Systems: Asymptotic convexity of
   the Loss Landscape and Universal Scaling of the Approximation Error"
-117,1804.11326,2,Supervised learning with quantum enhanced feature spaces
-118,1804.09139,2,Quantum generative adversarial learning
-119,1804.08641,2,Quantum generative adversarial networks
-120,1804.07718,2,Machine learning assisted readout of trapped-ion qubits
-121,1804.07653,2,Quantum codes from classical graphical models
-122,1804.07633,2,A Simple Quantum Neural Net with a Periodic Activation Function
-123,1804.0724,0,"A sequential sampling strategy for extreme event statistics in nonlinear
+123,1804.11326,2,Supervised learning with quantum enhanced feature spaces
+124,1804.09139,2,Quantum generative adversarial learning
+125,1804.08641,2,Quantum generative adversarial networks
+126,1804.07718,2,Machine learning assisted readout of trapped-ion qubits
+127,1804.07653,2,Quantum codes from classical graphical models
+128,1804.07633,2,A Simple Quantum Neural Net with a Periodic Activation Function
+129,1804.0724,0,"A sequential sampling strategy for extreme event statistics in nonlinear
   dynamical systems"
-124,1804.06521,0,"Method to solve quantum few-body problems with artificial neural
+130,1804.06521,0,"Method to solve quantum few-body problems with artificial neural
   networks"
-125,1804.06154,0,"Classicalization Clearly: Quantum Transition into States of Maximal
+131,1804.06154,0,"Classicalization Clearly: Quantum Transition into States of Maximal
   Memory Storage Capacity"
-126,1804.02709,0,Machine learning of phase transitions in the percolation and XY models
-127,1804.02686,0,"Complex energy landscapes in spiked-tensor and simple glassy models:
+132,1804.02709,0,Machine learning of phase transitions in the percolation and XY models
+133,1804.02686,0,"Complex energy landscapes in spiked-tensor and simple glassy models:
   ruggedness, arrangements of local minima and phase transitions"
-128,1804.02171,0,Smallest Neural Network to Learn the Ising Criticality
-129,1803.11278,0,Learning quantum models from quantum or classical data
-130,1804.03546,1,"Supervised machine learning algorithms based on generalized Gibbs
+134,1804.02171,0,Smallest Neural Network to Learn the Ising Criticality
+135,1803.11278,0,Learning quantum models from quantum or classical data
+136,1804.03546,1,"Supervised machine learning algorithms based on generalized Gibbs
   ensembles"
-131,1804.02411,1,The Loss Surface of XOR Artificial Neural Networks
-132,1804.05231,2,Optimizing a Polynomial Function on a Quantum Simulator
-133,1804.04168,2,Differentiable Learning of Quantum Circuit Born Machine
-134,1804.0368,2,Hierarchical quantum classifiers
-135,1804.03159,2,Strawberry Fields: A Software Platform for Photonic Quantum Computing
-136,1804.03023,2,"Variational quantum simulation of imaginary time evolution with
+137,1804.02411,1,The Loss Surface of XOR Artificial Neural Networks
+138,1804.05231,2,Optimizing a Polynomial Function on a Quantum Simulator
+139,1804.04168,2,Differentiable Learning of Quantum Circuit Born Machine
+140,1804.0368,2,Hierarchical quantum classifiers
+141,1804.03159,2,Strawberry Fields: A Software Platform for Photonic Quantum Computing
+142,1804.03023,2,"Variational quantum simulation of imaginary time evolution with
   applications in chemistry and beyond"
-137,1804.02926,2,"Neural network decoder for topological color codes with circuit level
+143,1804.02926,2,"Neural network decoder for topological color codes with circuit level
   noise"
-138,1804.02398,2,Quantum Machine Learning Matrix Product States
-139,1804.01082,2,Classical Verification of Quantum Computations
-140,1804.00633,2,Circuit-centric quantum classifiers
-141,1804.00281,2,A note on state preparation for quantum machine learning
-142,1712.05304,2,A quantum algorithm to train neural networks using low-depth circuits
-143,1803.10908,0,Matrix Product Operators for Sequence to Sequence Learning
-144,1703.0081,1,Opening the Black Box of Deep Neural Networks via Information
-145,1710.09842,0,Machine learning vortices at the Kosterlitz-Thouless transition
-146,1803.08993,0,Deep Learning Phase Segregation
-147,1803.08823,0,"A high-bias, low-variance introduction to Machine Learning for
+144,1804.02398,2,Quantum Machine Learning Matrix Product States
+145,1804.01082,2,Classical Verification of Quantum Computations
+146,1804.00633,2,Circuit-centric quantum classifiers
+147,1804.00281,2,A note on state preparation for quantum machine learning
+148,1712.05304,2,A quantum algorithm to train neural networks using low-depth circuits
+149,1803.10908,0,Matrix Product Operators for Sequence to Sequence Learning
+150,1703.0081,1,Opening the Black Box of Deep Neural Networks via Information
+151,1710.09842,0,Machine learning vortices at the Kosterlitz-Thouless transition
+152,1803.08993,0,Deep Learning Phase Segregation
+153,1803.08823,0,"A high-bias, low-variance introduction to Machine Learning for
   physicists"
-148,1803.10995,1,Protection against Cloning for Deep Learning
-149,1803.0978,1,Bridging Many-Body Quantum Physics and Deep Learning via Tensor Networks
-150,1803.09111,1,"Learning architectures based on quantum entanglement: a simple matrix
+154,1803.10995,1,Protection against Cloning for Deep Learning
+155,1803.0978,1,Bridging Many-Body Quantum Physics and Deep Learning via Tensor Networks
+156,1803.09111,1,"Learning architectures based on quantum entanglement: a simple matrix
   product state algorithm for image recognition"
-151,1803.11537,2,Towards Quantum Machine Learning with Tensor Networks
-152,1803.11173,2,Barren plateaus in quantum neural network training landscapes
-153,1803.1052,2,Quantum algorithms for training Gaussian Processes
-154,1802.0868,0,Advantages of versatile neural-network decoding for topological codes
-155,1803.06969,1,Comparing Dynamics: Deep Neural Networks versus Glassy Systems
-156,1803.06111,1,Vulnerability of Deep Learning
-157,1803.0196,1,"Thermodynamics of Restricted Boltzmann Machines and related learning
+157,1803.11537,2,Towards Quantum Machine Learning with Tensor Networks
+158,1803.11173,2,Barren plateaus in quantum neural network training landscapes
+159,1803.1052,2,Quantum algorithms for training Gaussian Processes
+160,1802.0868,0,Advantages of versatile neural-network decoding for topological codes
+161,1803.06969,1,Comparing Dynamics: Deep Neural Networks versus Glassy Systems
+162,1803.06111,1,Vulnerability of Deep Learning
+163,1803.0196,1,"Thermodynamics of Restricted Boltzmann Machines and related learning
   dynamics"
-158,1803.01927,1,"Energy-entropy competition and the effectiveness of stochastic gradient
+164,1803.01927,1,"Energy-entropy competition and the effectiveness of stochastic gradient
   descent in machine learning"
-159,1803.0534,2,"Measurement-based adaptation protocol with quantum reinforcement
+165,1803.0534,2,"Measurement-based adaptation protocol with quantum reinforcement
   learning"
-160,1802.09025,0,Online Learning of Quantum States
-161,1803.01927,1,"Energy-entropy competition and the effectiveness of stochastic gradient
+166,1802.09025,0,Online Learning of Quantum States
+167,1803.01927,1,"Energy-entropy competition and the effectiveness of stochastic gradient
   descent in machine learning"
-162,1802.06441,0,Deep neural decoders for near term fault-tolerant experiments
-163,1802.0284,0,Neural Network Renormalization Group
-164,1802.0085,0,"Deep UQ: Learning deep neural network surrogate models for high
+168,1802.06441,0,Deep neural decoders for near term fault-tolerant experiments
+169,1802.0284,0,Neural Network Renormalization Group
+170,1802.0085,0,"Deep UQ: Learning deep neural network surrogate models for high
   dimensional uncertainty quantification"
-165,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
-166,1801.03523,0,"Generative Models for Stochastic Processes Using Convolutional Neural
+171,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
+172,1801.03523,0,"Generative Models for Stochastic Processes Using Convolutional Neural
   Networks"
-167,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
-168,1712.03893,0,Towards reduction of autocorrelation in HMC by machine learning
-169,1712.00371,0,Deep Neural Network Detects Quantum Phase Transition
-170,1712.00127,0,Experimental learning of quantum states
-171,1710.00725,0,Learning hard quantum distributions with variational autoencoders
-172,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
-173,1802.06126,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
+173,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
+174,1712.03893,0,Towards reduction of autocorrelation in HMC by machine learning
+175,1712.00371,0,Deep Neural Network Detects Quantum Phase Transition
+176,1712.00127,0,Experimental learning of quantum states
+177,1710.00725,0,Learning hard quantum distributions with variational autoencoders
+178,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
+179,1802.06126,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
   Complexity"
-174,1802.05756,1,Inferring relevant features: from QFT to PCA
-175,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
+180,1802.05756,1,Inferring relevant features: from QFT to PCA
+181,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
   Networks"
-176,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
+182,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
   Group Flow"
-177,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
+183,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
   analogy"
-178,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
-179,1712.04144,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
+184,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
+185,1712.04144,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
   versus Born Machines"
-180,1710.11029,1,"Stochastic gradient descent performs variational inference, converges to
+186,1710.11029,1,"Stochastic gradient descent performs variational inference, converges to
   limit cycles for deep networks"
-181,1710.0657,1,"A Correspondence Between Random Neural Networks and Statistical Field
+187,1710.0657,1,"A Correspondence Between Random Neural Networks and Statistical Field
   Theory"
-182,1710.0552,1,"Entanglement Entropy of Target Functions for Image Classification and
+188,1710.0552,1,"Entanglement Entropy of Target Functions for Image Classification and
   Convolutional Neural Network"
-183,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+189,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
   Quantum Information Theoretic Perspective on Deep Architectures"
-184,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
+190,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
   topological states"
-185,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
+191,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
   neural networks"
-186,1802.05779,2,Quantum Variational Autoencoder
-187,1802.0569,2,"Learning DNFs under product distributions via μ-biased quantum
+192,1802.05779,2,Quantum Variational Autoencoder
+193,1802.0569,2,"Learning DNFs under product distributions via μ-biased quantum
   Fourier sampling"
-188,1802.04063,2,"Taking gradients through experiments: LSTMs and memory proximal policy
+194,1802.04063,2,"Taking gradients through experiments: LSTMs and memory proximal policy
   optimization for black-box quantum control"
-189,1802.00069,2,Leveraging Adiabatic Quantum Computation for Election Forecasting
-190,1712.04709,2,A Quantum Extension of Variational Bayes Inference
-191,1711.06652,2,Hardening Quantum Machine Learning Against Adversaries
-192,1711.02038,2,An efficient quantum algorithm for generative machine learning
-193,1710.09016,2,Learning Hidden Quantum Markov Models
-194,1709.08519,2,Enhanced Quantum Synchronization via Quantum Machine Learning
-195,1709.07848,2,Generalized Quantum Reinforcement Learning with Quantum Technologies
-196,1709.07409,2,Quantum Autoencoders via Quantum Adders with Genetic Algorithms
-197,1707.08561,2,Quantum machine learning: a classical perspective
-198,1802.06441,0,Deep neural decoders for near term fault-tolerant experiments
-199,1802.0284,0,Neural Network Renormalization Group
-200,1802.0085,0,"Deep UQ: Learning deep neural network surrogate models for high
+195,1802.00069,2,Leveraging Adiabatic Quantum Computation for Election Forecasting
+196,1712.04709,2,A Quantum Extension of Variational Bayes Inference
+197,1711.06652,2,Hardening Quantum Machine Learning Against Adversaries
+198,1711.02038,2,An efficient quantum algorithm for generative machine learning
+199,1710.09016,2,Learning Hidden Quantum Markov Models
+200,1709.08519,2,Enhanced Quantum Synchronization via Quantum Machine Learning
+201,1709.07848,2,Generalized Quantum Reinforcement Learning with Quantum Technologies
+202,1709.07409,2,Quantum Autoencoders via Quantum Adders with Genetic Algorithms
+203,1707.08561,2,Quantum machine learning: a classical perspective
+204,1802.06441,0,Deep neural decoders for near term fault-tolerant experiments
+205,1802.0284,0,Neural Network Renormalization Group
+206,1802.0085,0,"Deep UQ: Learning deep neural network surrogate models for high
   dimensional uncertainty quantification"
-201,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
-202,1801.03523,0,"Generative Models for Stochastic Processes Using Convolutional Neural
+207,1801.07508,0,Experimentally detecting a quantum change point via Bayesian inference
+208,1801.03523,0,"Generative Models for Stochastic Processes Using Convolutional Neural
   Networks"
-203,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
-204,1712.03893,0,Towards reduction of autocorrelation in HMC by machine learning
-205,1712.00371,0,Deep Neural Network Detects Quantum Phase Transition
-206,1712.00127,0,Experimental learning of quantum states
-207,1710.00725,0,Learning hard quantum distributions with variational autoencoders
-208,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
-209,1802.06126,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
+209,1712.06863,0,Pattern recognition techniques for Boson Sampling validation
+210,1712.03893,0,Towards reduction of autocorrelation in HMC by machine learning
+211,1712.00371,0,Deep Neural Network Detects Quantum Phase Transition
+212,1712.00127,0,Experimental learning of quantum states
+213,1710.00725,0,Learning hard quantum distributions with variational autoencoders
+214,1709.08015,0,Combining Machine Learning and Physics to Understand Glassy Systems
+215,1802.06126,1,"The Mean-Field Approximation: Information Inequalities, Algorithms, and
   Complexity"
-210,1802.05756,1,Inferring relevant features: from QFT to PCA
-211,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
+216,1802.05756,1,Inferring relevant features: from QFT to PCA
+217,1802.02154,1,"Critical Percolation as a Framework to Analyze the Training of Deep
   Networks"
-212,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
+218,1801.07172,1,"Scale-invariant Feature Extraction of Neural Network and Renormalization
   Group Flow"
-213,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
+219,1801.01743,1,"A relativistic extension of Hopfield neural networks via the mechanical
   analogy"
-214,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
-215,1712.04144,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
+220,1801.00315,1,Learning Relevant Features of Data with Multi-scale Tensor Networks
+221,1712.04144,1,"Information Perspective to Probabilistic Modeling: Boltzmann Machines
   versus Born Machines"
-216,1710.11029,1,"Stochastic gradient descent performs variational inference, converges to
+222,1710.11029,1,"Stochastic gradient descent performs variational inference, converges to
   limit cycles for deep networks"
-217,1710.0657,1,"A Correspondence Between Random Neural Networks and Statistical Field
+223,1710.0657,1,"A Correspondence Between Random Neural Networks and Statistical Field
   Theory"
-218,1710.0552,1,"Entanglement Entropy of Target Functions for Image Classification and
+224,1710.0552,1,"Entanglement Entropy of Target Functions for Image Classification and
   Convolutional Neural Network"
-219,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
+225,1710.04833,1,"Machine Learning by Two-Dimensional Hierarchical Tensor Networks: A
   Quantum Information Theoretic Perspective on Deep Architectures"
-220,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
+226,1710.04045,1,"Neural Networks Quantum States, String-Bond States and chiral
   topological states"
-221,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
+227,1710.01467,1,"Mean-field theory of input dimensionality reduction in unsupervised deep
   neural networks"
-222,1802.05779,2,Quantum Variational Autoencoder
+228,1802.05779,2,Quantum Variational Autoencoder
