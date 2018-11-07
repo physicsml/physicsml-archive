@@ -1,18 +1,20 @@
 Index,ID,Title
-0,1808.07172,Fisher Information and Natural Gradient Learning of Random Deep Networks
-1,1808.06846,"Search for Common Minima in Joint Optimization of Multiple Cost
+0,1809.02942,Cellular automata as convolutional neural networks
+1,1810.10938,On the Sample Complexity of PAC Learning Quantum Process
+2,1808.07172,Fisher Information and Natural Gradient Learning of Random Deep Networks
+3,1808.06846,"Search for Common Minima in Joint Optimization of Multiple Cost
   Functions"
-2,1808.00408,"Geometry of energy landscapes and the optimizability of deep neural
+4,1808.00408,"Geometry of energy landscapes and the optimizability of deep neural
   networks"
-3,1807.10300,Discovering physical concepts with neural networks
-4,1807.07470,"Machine learning study of the relationship between the geometric and
+5,1807.103,Discovering physical concepts with neural networks
+6,1807.0747,"Machine learning study of the relationship between the geometric and
   entropy discord"
-5,1807.00042,"Neural Networks Trained to Solve Differential Equations Learn General
+7,1807.00042,"Neural Networks Trained to Solve Differential Equations Learn General
   Representations"
-6,1806.01421,Quantum Integrated Information Theory
-7,1712.08523,"Contemporary machine learning: a guide for practitioners in the physical
+8,1806.01421,Quantum Integrated Information Theory
+9,1712.08523,"Contemporary machine learning: a guide for practitioners in the physical
   sciences"
-8,1710.09825,"On the role of synaptic stochasticity in training low-precision neural
+10,1710.09825,"On the role of synaptic stochasticity in training low-precision neural
   networks"
-9,1710.06832,"The Origins of Computational Mechanics: A Brief Intellectual History and
+11,1710.06832,"The Origins of Computational Mechanics: A Brief Intellectual History and
   Several Clarifications"
