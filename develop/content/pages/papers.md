@@ -5357,7 +5357,7 @@ perform A-Optimal Projection for dimensionality reduction. Compared with the
 best-know classical algorithms, the quantum algorithm shows an exponential
 speedup in both the number of training vectors $n$ and the reduced feature
 space dimension $k$. We show that the space and time complexity of the QAOP
-circuit are $O\left[ {{\log_2}\left( {nk} /{\epsilon} \right) } \right]$ and
+circuit are $O\left[ \log_2 \left( {nk} /{\epsilon} \right) \right]$ and
 $O[ {\log_2(nk)} ploy\left({{\log }_2}\epsilon^{-1} \right)]$ respectively,
 with fidelity at least $1-\epsilon$. Firstly, a reformation of the original
 QAOP algorithm is proposed to help omit the quantum-classical interactions
