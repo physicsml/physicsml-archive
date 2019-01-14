@@ -3,6 +3,803 @@ Date: 2016-10-27 11:00
 
 ## Applying Machine Learning to Physics
 
+- ["QuCumber: wavefunction reconstruction with neural networks"](
+http://arxiv.org/abs/1812.09329v1
+"As we enter a new era of quantum technology, it is increasingly important to
+develop methods to aid in the accurate preparation of quantum states for a
+variety of materials, matter, and devices. Computational techniques can be used
+to reconstruct a state from data, however the growing number of qubits demands
+ongoing algorithmic advances in order to keep pace with experiments. In this
+paper, we present an open-source software package called QuCumber that uses
+machine learning to reconstruct a quantum state consistent with a set of
+projective measurements. QuCumber uses a restricted Boltzmann machine to
+efficiently represent the quantum wavefunction for a large number of qubits.
+New measurements can be generated from the machine to obtain physical
+observables not easily accessible from the original data."),
+Matthew J. S. Beach, Isaac De Vlugt, Anna Golubeva, Patrick Huembeli, Bohdan Kulchytskyy, Xiuzhe Luo, Roger G. Melko, Ejaaz Merali, Giacomo Torlai,
+arXiv: [1812.09329](http://arxiv.org/abs/1812.09329v1),
+12/2018
+
+- ["Deep ToC: A New Method for Estimating the Solutions of PDEs"](
+http://arxiv.org/abs/1812.08625v1
+"This article presents a new methodology called deep ToC that estimates the
+solutions of partial differential equations (PDEs) by combining neural networks
+with the Theory of Connections (ToC). ToC is used to transform PDEs with
+boundary conditions into unconstrained optimization problems by embedding the
+boundary conditions into a "constrained expression" that contains a neural
+network. The loss function for the unconstrained optimization problem is taken
+to be the square of the residual of the PDE. Then, the neural network is
+trained in an unsupervised manner to solve the unconstrained optimization
+problem. This methodology has two major advantages over other popular methods
+used to estimate the solutions of PDEs. First, this methodology does not need
+to discretize the domain into a grid, which becomes prohibitive as the
+dimensionality of the PDE increases. Instead, this methodology randomly samples
+points from the domain during the training phase. Second, after training, this
+methodology represents a closed form, analytical, differentiable approximation
+of the solution throughout the entire training domain. In contrast, other
+popular methods require interpolation if the estimated solution is desired at
+points that do not lie on the discretized grid. The deep ToC method for
+estimating the solution of PDEs is demonstrated on four problems with a variety
+of boundary conditions."),
+Carl Leake,
+arXiv: [1812.08625](http://arxiv.org/abs/1812.08625v1),
+12/2018
+
+- ["Optimizing Quantum Error Correction Codes with Reinforcement Learning"](
+http://arxiv.org/abs/1812.08451v1
+"Quantum error correction is widely thought to be the key to fault-tolerant
+quantum computation. However, determining the most suited encoding for unknown
+error channels or specific laboratory setups is highly challenging. Here, we
+present a reinforcement learning framework for optimizing and fault-tolerantly
+adapting quantum error correction codes. We consider a reinforcement learning
+agent tasked with modifying a quantum memory until a desired logical error rate
+is reached. Using efficient simulations of a surface code quantum memory with
+about 70 physical qubits, we demonstrate that such a reinforcement learning
+agent can determine near-optimal solutions, in terms of the number of physical
+qubits, for various error models of interest. Moreover, we show that agents
+trained on one task are able to transfer their experience to similar tasks.
+This ability for transfer learning showcases the inherent strengths of
+reinforcement learning and the applicability of our approach for optimization
+both in off-line simulations and on-line under laboratory conditions."),
+Hendrik Poulsen Nautrup, Nicolas Delfosse, Vedran Dunjko, Hans J. Briegel, Nicolai Friis,
+arXiv: [1812.08451](http://arxiv.org/abs/1812.08451v1),
+12/2018
+
+- ["Parameters optimization and real-time calibration of
+  Measurement-Device-Independent Quantum Key Distribution Network based on Back
+  Propagation Artificial Neural Network"](
+http://arxiv.org/abs/1812.08388v2
+"The parameters choosing (such as probabilities of choosing X-basis or
+Z-basis, intensity of signal state and decoy state, etc.) and system
+calibrating will be more challenging when the number of users of a
+measurement-device-independent quantum key distribution(MDI-QKD) network
+becomes larger. At present, people usually use optimization algorithms to
+search the best parameters. This method can find the optimized parameters
+accurately but may cost lots of time and hardware resources. It's a big problem
+in large scale MDI-QKD network. Here, we present a new method, using Back
+Propagation Artificial Neural Network(BPNN) to predict, rather than searching
+the optimized parameters. Compared with optimization algorithms, our BPNN is
+faster and more lightweight, it can save system resources. Another big problem
+brought by large scale MDI-QKD network is system recalibration. BPNN can
+support this work in real time, and it only needs to use some discarded data
+generated from communication process, rather than require us to add additional
+devices or scan the system"),
+Feng-Yu Lu, Zhen-Qiang Yin, Chao Wang, Chao-Han Cui, Jun Teng, Shuang Wang, Wei Chen, Wei Huang, Bing-Jie Xu, Guang-Can Guo, Zheng-Fu Han,
+arXiv: [1812.08388](http://arxiv.org/abs/1812.08388v2),
+12/2018
+
+- ["Machine Learning for Optimal Parameter Prediction in Quantum Key
+  Distribution"](
+http://arxiv.org/abs/1812.07724v1
+"For quantum key distribution (QKD) with finite-size effects, parameter
+optimization - the choice of intensities and probabilities of sending them - is
+a crucial step to gain optimal performance. Traditionally, such an optimization
+relies on brute-force search, or local search algorithm such as Coordinate
+Descent. Here we present a new method of using a neural network to learn to
+predict the optimal point for the convex optimization of parameters for QKD
+with any given set of experiment devices and quantum channel conditions.
+Selecting one protocol (symmetric 4-intensity measurement-device-independent
+QKD) as an example, we show that with neural-network-predicted parameters we
+can achieve over 99.99% of the optimal key rate. Harnessing the parallel
+processing power of a graphical processing unit (GPU), the neural network
+allows us to efficiently pre-generate on a desktop PC a large "look-up table"
+of optimal parameters for all possible experimental parameter and channel
+conditions, up to a finite resolution, and deploy this table to low-power
+devices. This eliminates the need for any on-device computation, and allows us
+to deploy finite-size QKD with optimal parameter setting to low-power mobile
+QKD devices that have limited computing power, short communication time, and
+quickly changing channel losses and experimental parameters (e.g. misalignment
+and background noise), such as in satellite, drone, or handheld QKD systems. We
+show that, on a Raspberry Pi 3 single-board computer, using look-up table is up
+to 15-25 times faster than local search. In addition to the look-up table
+method, we also point out the potential to directly deploy neural networks to
+an increasing number of mobile devices equipped with neural processing units
+for real-time fast parameter optimization."),
+Wenyuan Wang, Hoi-Kwong Lo,
+arXiv: [1812.07724](http://arxiv.org/abs/1812.07724v1),
+12/2018
+
+- ["Machine Learning as a universal tool for quantitative investigations of
+  phase transition"](
+http://arxiv.org/abs/1812.06726v1
+"The problem of identifying the phase of a given system for a certain value of
+the temperature can be reformulated as a classification problem in Machine
+Learning. Taking as a prototype the Ising model and using the Support Vector
+Machine as a tool to classify Monte Carlo generated configurations, we show
+that the critical region of the system can be clearly identified and the
+symmetry that drives the transition can be reconstructed from the performance
+of the learning process. The role of the discrete symmetry of the system in
+obtaining this result is discussed. A finite size analysis of the learned
+Support Vector Machine decision function allows us to determine the critical
+temperature and critical exponents with a precision that is comparable to that
+of the most efficient numerical approaches relying on a known Hamiltonian
+description of the system. For the determination of the critical temperature
+and of the critical exponent connected with the divergence of the correlation
+length, other than the availability of a range of temperatures having
+information on both phases, the method we propose does not rest on any physical
+input on the system, and in particular is agnostic to its Hamiltonian, its
+symmetry properties and its order parameter. Hence, our investigation provides
+a first significant step in the direction of devising robust tools for
+quantitative analyses of phase transitions in cases in which an order parameter
+is not known."),
+Cinzia Giannetti, Biagio Lucini, Davide Vadacchino,
+arXiv: [1812.06726](http://arxiv.org/abs/1812.06726v1),
+12/2018
+
+- ["Adaptive Quantum State Tomography with Neural Networks"](
+http://arxiv.org/abs/1812.06693v1
+"Quantum State Tomography is the task of determining an unknown quantum state
+by making measurements on identical copies of the state. Current algorithms are
+costly both on the experimental front -- requiring vast numbers of measurements
+-- as well as in terms of the computational time to analyze those measurements.
+In this paper, we address the problem of analysis speed and flexibility,
+introducing \textit{Neural Adaptive Quantum State Tomography} (NA-QST), a
+machine learning based algorithm for quantum state tomography that adapts
+measurements and provides orders of magnitude faster processing while retaining
+state-of-the-art reconstruction accuracy. Our algorithm is inspired by particle
+swarm optimization and Bayesian particle-filter based adaptive methods, which
+we extend and enhance using neural networks. The resampling step, in which a
+bank of candidate solutions -- particles -- is refined, is in our case learned
+directly from data, removing the computational bottleneck of standard methods.
+We successfully replace the Bayesian calculation that requires computational
+time of $O(\mathrm{poly}(n))$ with a learned heuristic whose time complexity
+empirically scales as $O(\log(n))$ with the number of copies measured $n$,
+while retaining the same reconstruction accuracy. This corresponds to a factor
+of a million speedup for $10^7$ copies measured. We demonstrate that our
+algorithm learns to work with basis, symmetric informationally complete (SIC),
+as well as other types of POVMs. We discuss the value of measurement adaptivity
+for each POVM type, demonstrating that its effect is significant only for basis
+POVMs. Our algorithm can be retrained within hours on a single laptop for a
+two-qubit situation, which suggests a feasible time-cost when extended to
+larger systems. It can also adapt to a subset of possible states, a choice of
+the type of measurement, and other experimental details."),
+Yihui Quek, Stanislav Fort, Hui Khoon Ng,
+arXiv: [1812.06693](http://arxiv.org/abs/1812.06693v1),
+12/2018
+
+- ["A hybrid machine-learning algorithm for designing quantum experiments"](
+http://arxiv.org/abs/1812.03183v1
+"We introduce a hybrid machine-learning algorithm for designing quantum optics
+experiments that produce specific quantum states. Our algorithm successfully
+found experimental schemes to produce all 5 states we asked it to, including
+Schr\"odinger cat states and cubic phase states, all to a fidelity of over
+$96\%$. Here we specifically focus on designing realistic experiments, and
+hence all of the algorithm's designs only contain experimental elements that
+are available with current technology. The core of our algorithm is a genetic
+algorithm that searches for optimal arrangements of the experimental elements,
+but to speed up the initial search we incorporate a neural network that
+classifies quantum states. The latter is of independent interest, as it quickly
+learned to accurately classify quantum states given their photon-number
+distributions."),
+L. O'Driscoll, R. Nichols, P. A. Knott,
+arXiv: [1812.03183](http://arxiv.org/abs/1812.03183v1),
+12/2018
+
+- ["Enhancing the efficiency of quantum annealing via reinforcement: A
+  path-integral Monte Carlo simulation of the quantum reinforcement algorithm"](
+http://arxiv.org/abs/1812.02569v1
+"The standard quantum annealing algorithm tries to approach the ground state
+of a classical system by slowly decreasing the hopping rates of a quantum
+random walk in the configuration space of the problem, where the on-site
+energies are provided by the classical energy function. In a quantum
+reinforcement algorithm, the annealing works instead by increasing gradually
+the strength of the on-site energies according to the probability of finding
+the walker on each site of the configuration space. Here, by using the
+path-integral Monte Carlo simulations of the quantum algorithms, we show that
+annealing via reinforcement can significantly enhance the success probability
+of the quantum walker. More precisely, we implement a local version of the
+quantum reinforcement algorithm, where the system wave function is replaced by
+an approximate wave function using the local expectation values of the system.
+We use this algorithm to find solutions to a prototypical constraint
+satisfaction problem (XORSAT) close to the satisfiability to unsatisfiability
+phase transition. The study is limited to small problem sizes (a few hundreds
+of variables), nevertheless, the numerical results suggest that quantum
+reinforcement may provide a useful strategy to deal with other computationally
+hard problems and larger problem sizes even as a classical optimization
+algorithm."),
+A. Ramezanpour,
+arXiv: [1812.02569](http://arxiv.org/abs/1812.02569v1),
+12/2018
+
+- ["Boltzmann Generators - Sampling Equilibrium States of Many-Body Systems
+  with Deep Learning"](
+http://arxiv.org/abs/1812.01729v1
+"Computing equilibrium states in condensed-matter many-body systems, such as
+solvated proteins, is a long-standing challenge. Lacking methods for generating
+statistically independent equilibrium samples directly, vast computational
+effort is invested for simulating these system in small steps, e.g., using
+Molecular Dynamics. Combining deep learning and statistical mechanics, we here
+develop Boltzmann Generators, that are shown to generate statistically
+independent samples of equilibrium states of representative condensed matter
+systems and complex polymers. Boltzmann Generators use neural networks to learn
+a coordinate transformation of the complex configurational equilibrium
+distribution to a distribution that can be easily sampled. Accurate computation
+of free energy differences, and discovery of new system states are
+demonstrated, providing a new statistical mechanics tool that performs orders
+of magnitude faster than standard simulation methods."),
+Frank Noé, Hao Wu,
+arXiv: [1812.01729](http://arxiv.org/abs/1812.01729v1),
+12/2018
+
+- ["Phase transition encoded in neural network"](
+http://arxiv.org/abs/1812.01522v1
+"We discuss an aspect of neural networks for the purpose of phase transition
+detection. To this end, we first train the neural network by feeding
+Ising/Potts configurations with labels of temperature so that it can predict
+the temperature of input. We do not explicitly supervise if the configurations
+are in ordered/disordered phase. Nevertheless, we can identify the critical
+temperature from the parameters (weights and biases) of trained neural network.
+We attempt to understand how temperature-supervised neural networks capture the
+information of phase transition by paying attention to what quantities they
+learn. Our detailed analyses reveal that it learns different physical
+quantities depending on how well it is trained. Main observation in this study
+is how the weights in the trained neural-network can have information of the
+phase transition in addition to temperature."),
+Kouji Kashiwa, Yuta Kikuchi, Akio Tomiya,
+arXiv: [1812.01522](http://arxiv.org/abs/1812.01522v1),
+12/2018
+
+- ["Approximating the solution to wave propagation using deep neural
+  networks"](
+http://arxiv.org/abs/1812.01609v1
+"Humans gain an implicit understanding of physical laws through observing and
+interacting with the world. Endowing an autonomous agent with an understanding
+of physical laws through experience and observation is seldom practical: we
+should seek alternatives. Fortunately, many of the laws of behaviour of the
+physical world can be derived from prior knowledge of dynamical systems,
+expressed through the use of partial differential equations. In this work, we
+suggest a neural network capable of understanding a specific physical
+phenomenon: wave propagation in a two-dimensional medium. We define
+`understanding' in this context as the ability to predict the future evolution
+of the spatial patterns of rendered wave amplitude from a relatively small set
+of initial observations. The inherent complexity of the wave equations --
+together with the existence of reflections and interference -- makes the
+prediction problem non-trivial. A network capable of making approximate
+predictions also unlocks the opportunity to speed-up numerical simulations for
+wave propagation. To this aim, we created a novel dataset of simulated wave
+motion and built a predictive deep neural network comprising of three main
+blocks: an encoder, a propagator made by 3 LSTMs, and a decoder. Results show
+reasonable predictions for as long as 80 time steps into the future on a
+dataset not seen during training. Furthermore, the network is able to
+generalize to an initial condition that is qualitatively different from those
+seen during training."),
+Wilhelm E. Sorteberg, Stef Garasto, Alison S. Pouplin, Chris D. Cantwell, Anil A. Bharath,
+arXiv: [1812.01609](http://arxiv.org/abs/1812.01609v1),
+12/2018
+
+- ["Designing quantum experiments with a genetic algorithm"](
+http://arxiv.org/abs/1812.01032v1
+"We introduce a genetic algorithm that designs quantum optics experiments for
+engineering quantum states with specific properties. Our algorithm is powerful
+and flexible, and can easily be modified to find methods of engineering states
+for a range of applications. Here we focus on quantum metrology. First, we
+consider the noise-free case, and use the algorithm to find quantum states with
+a large quantum Fisher information (QFI). We find methods, which only involve
+experimental elements that are available with current technology, for
+engineering quantum states with up to a 100-fold improvement over the best
+classical state, and a 20-fold improvement over the optimal Gaussian state.
+Such states are a superposition of the vacuum with a large number of photons
+(around 80), and can hence be seen as Schr\"odinger-cat-like states. We then
+apply the two most dominant noise sources in our setting -- photon loss and
+imperfect heralding -- and use the algorithm to find quantum states that still
+improve over the optimal Gaussian state with realistic levels of noise. This
+will open up experimental and technological work in using exotic non-Gaussian
+states for quantum-enhanced phase measurements. Finally, we use the Bayesian
+mean square error to look beyond the regime of validity of the QFI, finding
+quantum states with precision enhancements over the alternatives even when the
+experiment operates in the regime of limited data."),
+Rosanna Nichols, Lana Mineh, Jesús Rubio, Jonathan C. F. Matthews, Paul A. Knott,
+arXiv: [1812.01032](http://arxiv.org/abs/1812.01032v1),
+12/2018
+
+- ["Divergence of predictive model output as indication of phase transitions"](
+http://arxiv.org/abs/1812.00895v1
+"We introduce a new method to identify phase boundaries in physical systems.
+It is based on training a predictive model such as a neural network to infer a
+physical system's parameters from its state. The deviation of the inferred
+parameters from the underlying correct parameters will be most susceptible and
+diverge maximally in the vicinity of phase boundaries. Therefore, peaks in the
+divergence of the model's predictions are used as indication of phase
+transitions. Our method is applicable for phase diagrams of arbitrary parameter
+dimension and without prior information about the phases. Application to both
+the two-dimensional Ising model and the dissipative Kuramoto-Hopf model show
+promising results."),
+Frank Schäfer, Niels Lörch,
+arXiv: [1812.00895](http://arxiv.org/abs/1812.00895v1),
+12/2018
+
+- ["Quantum topology identification with deep neural networks and quantum
+  walks"](
+http://arxiv.org/abs/1811.12630v1
+"Topologically ordered materials may serve as a platform for new quantum
+technologies such as fault-tolerant quantum computers. To fulfil this promise,
+efficient and general methods are needed to discover and classify new
+topological phases of matter. We demonstrate that deep neural networks
+augmented with external memory can use the density profiles formed in quantum
+walks to efficiently identify properties of a topological phase as well as
+phase transitions. On a trial topological ordered model, our method's accuracy
+of topological phase identification reaches 97% and is shown to be robust to
+noise on the data. Our approach is generally applicable and may be used for
+topology identification with a variety of quantum materials."),
+Yurui Ming, Chin-Teng Lin, Stephen D. Bartlett, Wei-Wei Zhang,
+arXiv: [1811.12630](http://arxiv.org/abs/1811.12630v1),
+11/2018
+
+- ["Designing neural network based decoders for surface codes"](
+http://arxiv.org/abs/1811.12456v2
+"Recent works have shown that small distance quantum error correction codes
+can be efficiently decoded by employing machine learning techniques like neural
+networks. Various techniques employing neural networks have been used to
+increase the decoding performance, however, there is no framework that analyses
+a step-by-step procedure in designing such a neural network based decoder. The
+main objective of this work is to present a detailed framework that
+investigates the way that various neural network parameters affect the decoding
+performance, the training time and the execution time of a neural network based
+decoder. We focus on neural network parameters such as the size of the training
+dataset, the structure, and the type of the neural network, the batch size and
+the learning rate used during training. We compare various decoding strategies
+and showcase how these influence the objectives for different error models. For
+the noiseless syndrome measurements, we reach up to 50\% improvement against
+the benchmark algorithm (Blossom) and for the noisy syndrome measurements, we
+show efficient decoding performance up to 97 qubits for the rotated Surface
+code. Furthermore, we show that the scaling of the execution time (time
+calculated during the inference phase) is linear with the number of qubits,
+which is a significant improvement compared to existing classical decoding
+algorithms that scale polynomially with the number of qubits."),
+Savvas Varsamopoulos, Koen Bertels, Carmen G. Almudever,
+arXiv: [1811.12456](http://arxiv.org/abs/1811.12456v2),
+11/2018
+
+- ["Variational optimization in the AI era: Computational Graph States and
+  Supervised Wave-function Optimization"](
+http://arxiv.org/abs/1811.12423v1
+"Representing a target quantum state by a compact, efficient variational
+wave-function is an important approach to the quantum many-body problem. In
+this approach, the main challenges include the design of a suitable variational
+ansatz and optimization of its parameters. In this work, we address both of
+these challenges. First, we define the variational class of Computational Graph
+States (CGS) which gives a uniform framework for describing all computable
+variational ansatz. Secondly, we develop a novel optimization scheme,
+supervised wave-function optimization (SWO), which systematically improves the
+optimized wave-function by drawing on ideas from supervised learning. While SWO
+can be used independently of CGS, utilizing them together provides a flexible
+framework for the rapid design, prototyping and optimization of variational
+wave-functions. We demonstrate CGS and SWO by optimizing for the ground state
+wave-function of 1D and 2D Heisenberg models on nine different variational
+architectures including architectures not previously used to represent quantum
+many-body wave-functions and find they are energetically competitive to other
+approaches. One interesting application of this architectural exploration is
+that we show that fully convolution neural network wave-functions can be
+optimized for one system size and, using identical parameters, produce accurate
+energies for a range of system sizes. We expect these methods to increase the
+rate of discovery of novel variational ansatz and bring further insights to the
+quantum many body problem."),
+Dmitrii Kochkov, Bryan K. Clark,
+arXiv: [1811.12423](http://arxiv.org/abs/1811.12423v1),
+11/2018
+
+- ["Classifying Snapshots of the Doped Hubbard Model with Machine Learning"](
+http://arxiv.org/abs/1811.12425v1
+"Quantum gas microscopes for ultracold atoms can provide high-resolution
+real-space snapshots of complex many-body systems. We implement machine
+learning to analyze and classify such snapshots of ultracold atoms.
+Specifically, we compare the data from an experimental realization of the
+two-dimensional Fermi-Hubbard model to two theoretical approaches: a doped
+quantum spin liquid state of resonating valence bond type, and the geometric
+string theory, describing a state with hidden spin order. This approach
+considers all available information without a potential bias towards one
+particular theory by the choice of an observable and can therefore select the
+theory which is more predictive in general. Up to intermediate doping values,
+our algorithm tends to classify experimental snapshots as
+geometric-string-like, as compared to the doped spin liquid. Our results
+demonstrate the potential for machine learning in processing the wealth of data
+obtained through quantum gas microscopy for new physical insights."),
+Annabelle Bohrdt, Christie S. Chiu, Geoffrey Ji, Muqing Xu, Daniel Greif, Markus Greiner, Eugene Demler, Fabian Grusdt, Michael Knap,
+arXiv: [1811.12425](http://arxiv.org/abs/1811.12425v1),
+11/2018
+
+- ["Using a Recurrent Neural Network to Reconstruct Quantum Dynamics of a
+  Superconducting Qubit from Physical Observations"](
+http://arxiv.org/abs/1811.12420v3
+"At its core, Quantum Mechanics is a theory developed to describe fundamental
+observations in the spectroscopy of solids and gases. Despite these practical
+roots, however, quantum theory is infamous for being highly counterintuitive,
+largely due to its intrinsically probabilistic nature. Neural networks have
+recently emerged as a powerful tool that can extract non-trivial correlations
+in vast datasets. They routinely outperform state-of-the-art techniques in
+language translation, medical diagnosis and image recognition. It remains to be
+seen if neural networks can be trained to predict stochastic quantum evolution
+without a priori specifying the rules of quantum theory. Here, we demonstrate
+that a recurrent neural network can be trained in real time to infer the
+individual quantum trajectories associated with the evolution of a
+superconducting qubit under unitary evolution, decoherence and continuous
+measurement from raw observations only. The network extracts the system
+Hamiltonian, measurement operators and physical parameters. It is also able to
+perform tomography of an unknown initial state without any prior calibration.
+This method has potential to greatly simplify and enhance tasks in quantum
+systems such as noise characterization, parameter estimation, feedback and
+optimization of quantum control."),
+Emmanuel Flurin, Leigh S. Martin, Shay Hacohen-Gourgy, Irfan Siddiqi,
+arXiv: [1811.12420](http://arxiv.org/abs/1811.12420v3),
+11/2018
+
+- ["Quantum error correction for the toric code using deep reinforcement
+  learning"](
+http://arxiv.org/abs/1811.12338v1
+"We implement a quantum error correction algorithm for bit-flip errors on the
+topological toric code using deep reinforcement learning. An action-value
+Q-function encodes the discounted value of moving a defect to a neighboring
+site on the square grid (the action) depending on the full set of defects on
+the torus (the syndrome or state). The Q-function is represented by a deep
+convolutional neural network. Using the translational invariance on the torus
+allows for viewing each defect from a central perspective which significantly
+simplifies the state space representation independently of the number of defect
+pairs. The training is done using experience replay, where data from the
+algorithm being played out is stored and used for batch upgrade of the
+Q-network. We find performance which is close to that achieved by the Minimum
+Weight Perfect Matching algorithm for code distances up to $d=7$, which shows
+that the deep Q-network is highly versatile in dealing with varying numbers of
+syndrome defects."),
+Philip Andreasson, Joel Johansson, Simon Liljestrand, Mats Granath,
+arXiv: [1811.12338](http://arxiv.org/abs/1811.12338v1),
+11/2018
+
+- ["Developing a Bubble Chamber Particle Discriminator Using Semi-Supervised
+  Learning"](
+http://arxiv.org/abs/1811.11308v1
+"The identification of non-signal events is a major hurdle to overcome for
+bubble chamber dark matter experiments such as PICO-60. The current practice of
+manually developing a discriminator function to eliminate background events is
+difficult when available calibration data is frequently impure and present only
+in small quantities. In this study, several different discriminator
+input/preprocessing formats and neural network architectures are applied to the
+task. First, they are optimized in a supervised learning context. Next, two
+novel semi-supervised learning algorithms are trained, and found to replicate
+the Acoustic Parameter (AP) discriminator previously used in PICO-60 with a
+mean of 97% accuracy."),
+B. Matusch, C. Amole, M. Ardid, I. J. Arnquist, D. M. Asner, D. Baxter, E. Behnke, M. Bressler, B. Broerman, G. Cao, C. J. Chen, U. Chowdhury, K. Clark, J. I. Collar, P. S. Cooper, C. B. Coutu, C. Cowles, M. Crisler, G. Crowder, N. A. Cruz-Venegas, C. E. Dahl, M. Das, S. Fallows, J. Farine, I. Felis, R. Filgas, F. Girard, G. Giroux, J. Hall, C. Hardy, O. Harris, T. Hillier, E. W. Hoppe, C. M. Jackson, M. Jin, L. Klopfenstein, C. B. Krauss, M. Laurin, I. Lawson, A. Leblanc, I. Levine, C. Licciardi, W. H. Lippincott, B. Loer, F. Mamedov, P. Mitra, C. Moore, T. Nania, R. Neilson, A. J. Noble, P. Oedekerk, A. Ortega, M. -C. Piro, A. Plante, R. Podviyanuk, S. Priya, A. E. Robinson, S. Sahoo, O. Scallon, S. Seth, A. Sonnenschein, N. Starinski, I. Štekl, T. Sullivan, F. Tardif, E. Vázquez-Jáuregui, N. Walkowski, E. Weima, U. Wichoski, K. Wierman, Y. Yan, V. Zacek, J. Zhang,
+arXiv: [1811.11308](http://arxiv.org/abs/1811.11308v1),
+11/2018
+
+- ["Estimating of the inertial manifold dimension for a chaotic attractor of
+  complex Ginzburg-Landau equation using a neural network"](
+http://arxiv.org/abs/1811.11851v1
+"Dimension of an inertial manifold for a chaotic attractor of spatially
+distributed system is estimated using autoencoder neural network. The inertial
+manifold is a low dimensional manifold where the chaotic attractor is embedded.
+The autoencoder maps system state vectors onto themselves letting them pass
+through an inner state with a reduced dimension. The training processes of the
+autoencoder is shown to depend dramatically on the reduced dimension: a
+learning curve saturates when the dimension is too small and decays if it is
+sufficient for a lossless information transfer. The smallest sufficient value
+is considered as a dimension of the inertial manifold, and the autoencoder
+implements a mapping onto the inertial manifold and back. The correctness of
+the computed dimension is confirmed by its remarkable coincidence with the one
+obtained as a number of covariant Lyapunov vectors with vanishing pairwise
+angles. These vectors are called physical modes. Unlike never having zero
+angles residual ones they are known to span a tangent subspace for the inertial
+manifold."),
+Pavel V. Kuptsov, Anna V. Kuptsova,
+arXiv: [1811.11851](http://arxiv.org/abs/1811.11851v1),
+11/2018
+
+- ["Deep Learning and Density Functional Theory"](
+http://arxiv.org/abs/1811.08928v1
+"Density functional theory (DFT) is used for quantum mechanical simulations of
+electrons in molecules and materials, for applications in chemistry, physics,
+materials science, and engineering. However, usage of DFT for large numbers of
+atoms is hindered by typical scaling of $\mathcal{O}(N^3)$. Demonstration of a
+sufficiently accurate reduced model with deep neural networks would enable
+widespread application of DFT on larger, more complex systems for new
+scientific discoveries. We show that deep neural networks can be integrated
+into, or fully replace, the Kohn-Sham density functional theory scheme for
+multi-electron systems in simple harmonic oscillator and random external
+potentials. We first show that self-consistent charge densities can be used as
+input to an extensive deep neural network to make predictions for correlation,
+exchange, external, kinetic and total energies simultaneously. Additionally, we
+show that one can also make all of the same predictions with the external
+potential rather than the self-consistent charge density, which allows one to
+circumvent the Kohn-Sham scheme altogether. We then show that a self-consistent
+charge density found from a non-local exchange-correlation functional can be
+used to make energy predictions for a semi-local exchange-correlation
+functional. Lastly, we use a deep convolutional inverse graphics network to
+predict the charge density given an external potential and asses the viability
+of the predicted charge densities. This work shows that extensive deep neural
+networks are generalizable and transferable given the variability of the
+potentials and the fact that they can scale to an arbitrary system size with an
+$\mathcal{O}(N)$ computational cost."),
+Kevin Ryczko, David Strubbe, Isaac Tamblyn,
+arXiv: [1811.08928](http://arxiv.org/abs/1811.08928v1),
+11/2018
+
+- ["Extrapolation of quantum observables with Gaussian processes"](
+http://arxiv.org/abs/1901.00854v1
+"For applications in chemistry and physics, machine learning is generally used
+to solve one of three problems: interpolation, classification or clustering.
+These problems use information about physical systems in a certain range of
+parameters or variables in order to make predictions at unknown values of these
+variables within the same range. The present work considers the application of
+machine learning to {\it extrapolation} of physical properties beyond the range
+of the training parameters. We show that Gaussian processes can be used to
+build machine learning models capable of extrapolating the quantum properties
+of complex systems across quantum phase transitions. The approach is based on
+training Gaussian process models of variable complexity by the evolution of the
+physical functions. We show that, as the complexity of the models increases,
+they become capable of predicting new transitions. We also show that, where the
+evolution of the physical functions is analytic and relatively simple (the
+function considered here is $a + b/x + c/x^3$), Gaussian process models with
+simple kernels (such as a simple Gaussian) yield accurate extrapolation
+results. We thus argue that Gaussian processes can be used as a meaningful
+extrapolation tool for a wide variety of problems in physics and chemistry. We
+discuss strategies to prevent overfitting and obtain meaningful extrapolation
+results without validation."),
+Rodrigo A. Vargas-Hernández, Roman V. Krems,
+arXiv: [1901.00854](http://arxiv.org/abs/1901.00854v1),
+11/2018
+
+- ["Energy Levels of One Dimensional Anharmonic Oscillator via Neural
+  Networks"](
+http://arxiv.org/abs/1811.08893v1
+"In this work, we obtained energy levels of one dimensional quartic anharmonic
+oscillator by using neural network system. Quartic anharmonic oscillator is a
+very important tool in quantum mechanics and also in quantum field theory. Our
+results are in good agreement in high accuracy with the reference studies."),
+Halil Mutuk,
+arXiv: [1811.08893](http://arxiv.org/abs/1811.08893v1),
+11/2018
+
+- ["Advances in Quantum Reinforcement Learning"](
+http://arxiv.org/abs/1811.08676v1
+"In recent times, there has been much interest in quantum enhancements of
+machine learning, specifically in the context of data mining and analysis.
+Reinforcement learning, an interactive form of learning, is, in turn, vital in
+artificial intelligence-type applications. Also in this case, quantum mechanics
+was shown to be useful, in certain instances. Here, we elucidate these results,
+and show that quantum enhancements can be achieved in a new setting: the
+setting of learning models which learn how to improve themselves -- that is,
+those that meta-learn. While not all learning models meta-learn, all
+non-trivial models have the potential of being "lifted", enhanced, to
+meta-learning models. Our results show that also such models can be
+quantum-enhanced to make even better learners. In parallel, we address one of
+the bottlenecks of current quantum reinforcement learning approaches: the need
+for so-called oracularized variants of task environments. Here we elaborate on
+a method which realizes these variants, with minimal changes in the setting,
+and with no corruption of the operative specification of the environments. This
+result may be important in near-term experimental demonstrations of quantum
+reinforcement learning."),
+Vedran Dunjko, Jacob M. Taylor, Hans J. Briegel,
+arXiv: [1811.08676](http://arxiv.org/abs/1811.08676v1),
+11/2018
+
+- ["Physics-aware Deep Generative Models for Creating Synthetic
+  Microstructures"](
+http://arxiv.org/abs/1811.09669v1
+"A key problem in computational material science deals with understanding the
+effect of material distribution (i.e., microstructure) on material performance.
+The challenge is to synthesize microstructures, given a finite number of
+microstructure images, and/or some physical invariances that the microstructure
+exhibits. Conventional approaches are based on stochastic optimization and are
+computationally intensive. We introduce three generative models for the fast
+synthesis of binary microstructure images. The first model is a WGAN model that
+uses a finite number of training images to synthesize new microstructures that
+weakly satisfy the physical invariances respected by the original data. The
+second model explicitly enforces known physical invariances by replacing the
+traditional discriminator in a GAN with an invariance checker. Our third model
+combines the first two models to reconstruct microstructures that respect both
+explicit physics invariances as well as implicit constraints learned from the
+image data. We illustrate these models by reconstructing two-phase
+microstructures that exhibit coarsening behavior. The trained models also
+exhibit interesting latent variable interpolation behavior, and the results
+indicate considerable promise for enforcing user-defined physics constraints
+during microstructure synthesis."),
+Rahul Singh, Viraj Shah, Balaji Pokuri, Soumik Sarkar, Baskar Ganapathysubramanian, Chinmay Hegde,
+arXiv: [1811.09669](http://arxiv.org/abs/1811.09669v1),
+11/2018
+
+- ["fPINNs: Fractional Physics-Informed Neural Networks"](
+http://arxiv.org/abs/1811.08967v1
+"Physics-informed neural networks (PINNs) are effective in solving
+integer-order partial differential equations (PDEs) based on scattered and
+noisy data. PINNs employ standard feedforward neural networks (NNs) with the
+PDEs explicitly encoded into the NN using automatic differentiation, while the
+sum of the mean-squared PDE-residuals and the mean-squared error in
+initial/boundary conditions is minimized with respect to the NN parameters. We
+extend PINNs to fractional PINNs (fPINNs) to solve space-time fractional
+advection-diffusion equations (fractional ADEs), and we demonstrate their
+accuracy and effectiveness in solving multi-dimensional forward and inverse
+problems with forcing terms whose values are only known at randomly scattered
+spatio-temporal coordinates (black-box forcing terms). A novel element of the
+fPINNs is the hybrid approach that we introduce for constructing the residual
+in the loss function using both automatic differentiation for the integer-order
+operators and numerical discretization for the fractional operators. We
+consider 1D time-dependent fractional ADEs and compare white-box (WB) and
+black-box (BB) forcing. We observe that for the BB forcing fPINNs outperform
+FDM. Subsequently, we consider multi-dimensional time-, space-, and
+space-time-fractional ADEs using the directional fractional Laplacian and we
+observe relative errors of $10^{-4}$. Finally, we solve several inverse
+problems in 1D, 2D, and 3D to identify the fractional orders, diffusion
+coefficients, and transport velocities and obtain accurate results even in the
+presence of significant noise."),
+Guofei Pang, Lu Lu, George Em Karniadakis,
+arXiv: [1811.08967](http://arxiv.org/abs/1811.08967v1),
+11/2018
+
+- ["Neural Belief-Propagation Decoders for Quantum Error-Correcting Codes"](
+http://arxiv.org/abs/1811.07835v1
+"Belief-propagation (BP) decoders play a vital role in modern coding theory,
+but they are not suitable to decode quantum error-correcting codes because of a
+unique quantum feature called error degeneracy. Inspired by an exact mapping
+between BP and deep neural networks, we train neural BP decoders for quantum
+low-density parity-check (LDPC) codes with a loss function tailored to error
+degeneracy. Training substantially improves the performance of BP decoders for
+all families of codes we tested and may solve the degeneracy problem which
+plagues the decoding of quantum LDPC codes."),
+Ye-Hua Liu, David Poulin,
+arXiv: [1811.07835](http://arxiv.org/abs/1811.07835v1),
+11/2018
+
+- ["Experimental Simultaneous Learning of Multiple Non-Classical
+  Correlations"](
+http://arxiv.org/abs/1811.06658v1
+"Non-classical correlations can be regarded as resources for quantum
+information processing. However, the classification problem of non-classical
+correlations for quantum states remains a challenge, even for finite-size
+systems. Although there exist a set of criteria for determining individual
+non-classical correlations, a unified framework that is capable of
+simultaneously classifying multiple correlations is still missing. In this
+work, we experimentally explored the possibility of applying machine-learning
+methods for simultaneously identifying non-classical correlations such as
+entanglement, non-locality, and quantum steering, using the same set of
+features. In particular, we constructed quantum-state classifiers from three
+different machine-learning approaches, including neural network, support vector
+machine, and decision tree. We found that for a family of quantum states, all
+three approaches can achieve high accuracy for the classification problem, but
+the runtimes are very different. Overall, we found that support vector machine
+can significantly reduce the computing time with a mild loss of accuracy,
+compared with the neural network. Finally, we further demonstrated the
+scalability of this approach by analyzing the learn ability of the
+quantum-state classifiers from labels generated by semi-definite programming."),
+Mu Yang, Chang-liang Ren, Yue-chi Ma, Ya Xiao, Xiang-Jun Ye, Lu-Lu Song, Jin-Shi Xu, Man-Hong Yung, Chuan-Feng Li, Guang-Can Guo,
+arXiv: [1811.06658](http://arxiv.org/abs/1811.06658v1),
+11/2018
+
+- ["Neural network state estimation for full quantum state tomography"](
+http://arxiv.org/abs/1811.06654v2
+"An efficient state estimation model, neural network estimation (NNE),
+empowered by machine learning techniques, is presented for full quantum state
+tomography (FQST). A parameterized function based on neural network is applied
+to map the measurement outcomes to the estimated quantum states. Parameters are
+updated with supervised learning procedures. From the computational complexity
+perspective our algorithm is the most efficient one among existing state
+estimation algorithms for full quantum state tomography. We perform numerical
+tests to prove both the accuracy and scalability of our model."),
+Qian Xu, Shuqi Xu,
+arXiv: [1811.06654](http://arxiv.org/abs/1811.06654v2),
+11/2018
+
+- ["Efficient prediction of 3D electron densities using machine learning"](
+http://arxiv.org/abs/1811.06255v1
+"The Kohn-Sham scheme of density functional theory is one of the most widely
+used methods to solve electronic structure problems for a vast variety of
+atomistic systems across different scientific fields. While the method is fast
+relative to other first principles methods and widely successful, the
+computational time needed is still not negligible, making it difficult to
+perform calculations for very large systems or over long time-scales. In this
+submission, we revisit a machine learning model capable of learning the
+electron density and the corresponding energy functional based on a set of
+training examples. It allows us to bypass solving the Kohn-Sham equations,
+providing a significant decrease in computation time. We specifically focus on
+the machine learning formulation of the Hohenberg-Kohn map and its
+decomposability. We give results and discuss challenges, limits and future
+directions."),
+Mihail Bogojeski, Felix Brockherde, Leslie Vogt-Maranto, Li Li, Mark E. Tuckerman, Kieron Burke, Klaus-Robert Müller,
+arXiv: [1811.06255](http://arxiv.org/abs/1811.06255v1),
+11/2018
+
+- ["Adversarial Uncertainty Quantification in Physics-Informed Neural
+  Networks"](
+http://arxiv.org/abs/1811.04026v1
+"We present a deep learning framework for quantifying and propagating
+uncertainty in systems governed by non-linear differential equations using
+physics-informed neural networks. Specifically, we employ latent variable
+models to construct probabilistic representations for the system states, and
+put forth an adversarial inference procedure for training them on data, while
+constraining their predictions to satisfy given physical laws expressed by
+partial differential equations. Such physics-informed constraints provide a
+regularization mechanism for effectively training deep generative models as
+surrogates of physical systems in which the cost of data acquisition is high,
+and training data-sets are typically small. This provides a flexible framework
+for characterizing uncertainty in the outputs of physical systems due to
+randomness in their inputs or noise in their observations that entirely
+bypasses the need for repeatedly sampling expensive experiments or numerical
+simulators. We demonstrate the effectiveness of our approach through a series
+of examples involving uncertainty propagation in non-linear conservation laws,
+and the discovery of constitutive laws for flow through porous media directly
+from noisy data."),
+Yibo Yang, Paris Perdikaris,
+arXiv: [1811.04026](http://arxiv.org/abs/1811.04026v1),
+11/2018
+
+- ["Artificial neural networks for density-functional optimizations in
+  fermionic systems"](
+http://arxiv.org/abs/1811.03774v1
+"In this work we propose an artificial neural network functional to the
+ground-state energy of fermionic interacting particles in homogeneous chains
+described by the Hubbard model. Our neural network functional was proven to has
+an excellent performance: it deviates from numerically exact calculations by
+less than $0.15\%$ for all the regimes of filling factors and magnetizations,
+and for a vast regime of interactions. When compared to analytical functionals,
+the neural functional was found to be more precise for all the regimes of
+parameters, being particularly superior at the weakly interacting regime: where
+the analytical parametrization fails the most, $\sim7\%$, against only
+$\sim0.1\%$ for the neural functional. We have also applied our homogeneous
+functional to finite, localized impurities and harmonically confined systems
+within density-functional theory (DFT) methods. The results show that while our
+artificial neural network approach is substantially more accurate than other
+equivalently simple and fast DFT treatments, it has similar performance than
+more costly DFT calculations and other independent many-body calculations, at a
+fraction of the computational cost."),
+C. A. Custodio, E. R. Filletti, V. V. França,
+arXiv: [1811.03774](http://arxiv.org/abs/1811.03774v1),
+11/2018
+
+- ["Machine learning for molecular dynamics with strongly correlated
+  electrons"](
+http://arxiv.org/abs/1811.01914v1
+"We use machine learning to enable large-scale molecular dynamics (MD) of a
+correlated electron model under the Gutzwiller approximation scheme. This model
+exhibits a Mott transition as a function of on-site Coulomb repulsion $U$.
+Repeated solution of the Gutzwiller self-consistency equations would be
+prohibitively expensive for large-scale MD simulations. We show that machine
+learning models of the Gutzwiller potential energy can be remarkably accurate.
+The models, which are trained with $N=33$ atoms, enable highly accurate MD
+simulations at much larger scales ($N\gtrsim10^{3}$). We investigate the
+physics of the smooth Mott crossover in the fluid phase."),
+Hidemaro Suwa, Justin S. Smith, Nicholas Lubbers, Cristian D. Batista, Gia-Wei Chern, Kipton Barros,
+arXiv: [1811.01914](http://arxiv.org/abs/1811.01914v1),
+11/2018
+
+- ["Deep Learning of Robust and High-Precision Quantum Controls"](
+http://arxiv.org/abs/1811.01884v1
+"Robust and high-precision quantum control is extremely important but
+challenging for scalable quantum computation. In this letter, we show that this
+hard problem can be translated to a supervised machine learning task by
+treating the time-ordered controlled quantum evolution as a layer-ordered deep
+neural network (DNN). The finding of robust quantum controls is then equivalent
+to training a DNN with high generalizability. In this way, powerful DNN tuning
+skills matured in deep learning (DL) can be employed for the discovery of
+highly robust and precise quantum controls, which opens up a door through which
+a large family of learning algorithms can be developed. We exemplify this
+DL-inspired potential by introducing the commonly used trick of batch-based
+optimization. The resulting b-GRAPE algorithm is demonstrated to be able to
+remarkably enhance the control robustness while maintaining high fidelity in
+the implementation of a three-qubit quantum gate."),
+Re-Bing Wu, Haijin Ding, Daoyi Dong, Xiaoting Wang,
+arXiv: [1811.01884](http://arxiv.org/abs/1811.01884v1),
+11/2018
+
+
+
 
 
 - ["An Artificial Neural Network Approach to the Analytic Continuation
@@ -3222,6 +4019,31 @@ S. Courtin and S. Padovani,
 
 ## Physics-Inspired Ideas Applied to Machine Learning
 
+- ["Variational quantum simulation of general processes"](
+http://arxiv.org/abs/1812.08778v1
+"Hybrid variational quantum algorithms have been proposed for simulating
+many-body quantum systems with shallow quantum circuits, and are therefore
+relevant to Noisy Intermediate Scale Quantum devices. These algorithms are
+often discussed as a means to solve static energy spectra and simulate the
+dynamics of real and imaginary time evolutions. Here we consider broader uses
+of the variational method to simulate general processes. We first show a
+variational algorithm for simulating the generalised time evolution with a
+non-hermitian Hamiltonian. Then we consider matrix multiplication, a vital
+component of diverse applications in many fields including machine learning and
+optimisation. We first convert matrix multiplication into a matrix evolution
+problem and show how it can be simulated with the algorithm for generalised
+time evolution. Meanwhile, when considering matrices that are products of small
+matrices, we propose an alternative variational algorithm that can realise
+matrix multiplication with a simpler circuit. Finally, we focus on open quantum
+systems and apply the developed methods to the variational simulation of
+stochastic master equations. We numerically test our theory with a single qubit
+system suffering dephasing noise."),
+Suguru Endo, Ying Li, Simon Benjamin, Xiao Yuan,
+arXiv: [1812.08778](http://arxiv.org/abs/1812.08778v1),
+12/2018
+
+
+
 
 
 - ["Simple coarse graining and sampling strategies for image recognition"](
@@ -4524,6 +5346,78 @@ arXiv: [1407.3124](http://arxiv.org/abs/1407.3124v2),
 
 
 ## Quantum Computation and Quantum Algorithms for Machine Learning
+
+- ["Quantum algorithm and quantum circuit for A-Optimal Projection:
+  dimensionality reduction"](
+http://arxiv.org/abs/1812.09782v1
+"Learning low dimensional representation is a crucial issue for many machine
+learning tasks such as pattern recognition and image retrieval. In this
+article, we present a quantum algorithm and a quantum circuit to efficiently
+perform A-Optimal Projection for dimensionality reduction. Compared with the
+best-know classical algorithms, the quantum algorithm shows an exponential
+speedup in both the number of training vectors $n$ and the reduced feature
+space dimension $k$. We show that the space and time complexity of the QAOP
+circuit are $O\left[ {{{\log }_2}\left( {nk} /{\epsilon} \right)} \right]$ and
+$O[ {\log_2(nk)} ploy\left({{\log }_2}\epsilon^{-1} \right)]$ respectively,
+with fidelity at least $1-\epsilon$. Firstly, a reformation of the original
+QAOP algorithm is proposed to help omit the quantum-classical interactions
+durning the QAOP algorithm. Then the quantum algorithm and quantum circuit with
+performance guarantees are proposed. Specifically, the quantum circuit modules
+for preparing the initial quantum state and implementing the controlled
+rotation can be also used for other quantum machine learning algorithms."),
+Bojia Duan, Jiabin Yuan,
+arXiv: [1812.09782](http://arxiv.org/abs/1812.09782v1),
+12/2018
+
+- ["q-means: A quantum algorithm for unsupervised machine learning"](
+http://arxiv.org/abs/1812.03584v2
+"Quantum machine learning is one of the most promising applications of a
+full-scale quantum computer. Over the past few years, many quantum machine
+learning algorithms have been proposed that can potentially offer considerable
+speedups over the corresponding classical algorithms. In this paper, we
+introduce q-means, a new quantum algorithm for clustering which is a canonical
+problem in unsupervised machine learning. The $q$-means algorithm has
+convergence and precision guarantees similar to $k$-means, and it outputs with
+high probability a good approximation of the $k$ cluster centroids like the
+classical algorithm. Given a dataset of $N$ $d$-dimensional vectors $v_i$ (seen
+as a matrix $V \in \mathbb{R}^{N \times d})$ stored in QRAM, the running time
+of q-means is $\widetilde{O}\left( k d \frac{\eta}{\delta^2}\kappa(V)(\mu(V) +
+k \frac{\eta}{\delta}) + k^2 \frac{\eta^{1.5}}{\delta^2} \kappa(V)\mu(V)
+\right)$ per iteration, where $\kappa(V)$ is the condition number, $\mu(V)$ is
+a parameter that appears in quantum linear algebra procedures and $\eta =
+\max_{i} ||v_{i}||^{2}$. For a natural notion of well-clusterable datasets, the
+running time becomes $\widetilde{O}\left( k^2 d \frac{\eta^{2.5}}{\delta^3} +
+k^{2.5} \frac{\eta^2}{\delta^3} \right)$ per iteration, which is linear in the
+number of features $d$, and polynomial in the rank $k$, the maximum square norm
+$\eta$ and the error parameter $\delta$. Both running times are only
+polylogarithmic in the number of datapoints $N$. Our algorithm provides
+substantial savings compared to the classical $k$-means algorithm that runs in
+time $O(kdN)$ per iteration, particularly for the case of large datasets."),
+Iordanis Kerenidis, Jonas Landman, Alessandro Luongo, Anupam Prakash,
+arXiv: [1812.03584](http://arxiv.org/abs/1812.03584v2),
+12/2018
+
+- ["Quantum algorithms for feedforward neural networks"](
+http://arxiv.org/abs/1812.03089v1
+"Quantum machine learning has the potential for broad industrial applications,
+and the development of quantum algorithms for improving the performance of
+neural networks is of particular interest given the central role they play in
+machine learning today. In this paper we present quantum algorithms for
+training and evaluating feedforward neural networks based on the canonical
+classical feedforward and backpropagation algorithms. Our algorithms rely on an
+efficient quantum subroutine for approximating the inner products between
+vectors, and on storing intermediate values in quantum random access memory for
+fast retrieval at later stages. The running times of our algorithms can be
+quadratically faster than their classical counterparts, since they depend
+linearly on the number of neurons in the network, as opposed to the number of
+edges as in the classical case. This makes our algorithms suited for
+large-scale, highly-connected networks where the number of edges in the network
+dominates the classical algorithmic running time."),
+Jonathan Allcock, Chang-Yu Hsieh, Iordanis Kerenidis, Shengyu Zhang,
+arXiv: [1812.03089](http://arxiv.org/abs/1812.03089v1),
+12/2018
+
+
 
 
 
