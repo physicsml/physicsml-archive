@@ -2,4 +2,4 @@ html:
 	cd develop && make html
 
 serve:
-	cd develop && make serve
+	cd develop/output && make serve

@@ -51,8 +51,8 @@ NEWEST_FIRST_ARCHIVES = True
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-#MENUITEMS = [("News", "/category/news.html"), ("Blog", "/category/articles.html"), ("Papers", "/pages/papers.html")]
-MENUITEMS = [("News", "/news.html"), ("Blog", "/articles.html"), ("Papers", "/papers.html")]
+MENUITEMS = [("News", "/category/news.html"), ("Blog", "/category/articles.html"), ("Papers", "/pages/papers.html")]
+#MENUITEMS = [("News", "/news.html"), ("Blog", "/articles.html"), ("Papers", "/papers.html")]
 
 #TEMPLATE_PAGES = {'/themes/twenty/templates/page.html' : 'papers.html' }
 
@@ -74,7 +74,7 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}.html"
 
-USE_FOLDER_AS_CATEGORY = False #True
+USE_FOLDER_AS_CATEGORY = True
 
 
 #DISPLAY_PAGES_ON_MENU = True
