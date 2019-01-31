@@ -51,7 +51,9 @@ NEWEST_FIRST_ARCHIVES = True
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-MENUITEMS = [("News", "/category/news.html"), ("Blog", "/category/articles.html"), ("Papers", "/pages/papers.html")]
+#MENUITEMS = [("News", "/category/news.html"), ("Blog", "/category/articles.html"), ("Papers", "/pages/papers.html")]
+MENUITEMS = [("News", "/news.html"), ("Blog", "/articles.html"), ("Papers", "/papers.html")]
+
 #TEMPLATE_PAGES = {'/themes/twenty/templates/page.html' : 'papers.html' }
 
 # Formatting for urls
