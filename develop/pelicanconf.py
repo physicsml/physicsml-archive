@@ -74,7 +74,7 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}.html"
 
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False #True
 
 
 #DISPLAY_PAGES_ON_MENU = True
