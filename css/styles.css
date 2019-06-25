@@ -118,11 +118,11 @@ and (max-device-width: 768px) {
 
 #hero .banner {
   text-align: center;
-  padding: 10% 0;
+  padding: 10em 0;
 }
 
 #hero .inner {
-  line-height: 2.25em;
+  line-height: 2.5em;
   color: #FFF;
   display: inline-block;
   text-align: center;
@@ -132,6 +132,7 @@ and (max-device-width: 768px) {
 }
 
 #hero .inner h1 {
+  font-size: 2.25em;
   font-weight: 300;
 }
 
@@ -320,7 +321,7 @@ and (max-device-width: 768px) {
   background: #DDD;
 }
 
-.see-all {
+.blog-items-carousel > a {
   color: #3fb1a3;
   float: right;
   font-size: 1em;
