@@ -1,8 +1,3 @@
 # physicsml.github.io
-PhysicsML NEW VERSION
+PhysicsML Website
 
-
-
-
-
-#### To Do:

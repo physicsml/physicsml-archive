@@ -1,0 +1,291 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900');
+@import
+url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import
+url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  background: rgb(243, 246, 250);
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+a,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  font-size: 1.25em;
+  font-weight: 700;
+  width: 100%;
+  transition: all ease-in-out 250ms;
+  z-index:100;
+}
+
+nav {
+  padding: 1em;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  float: right;
+}
+      
+.logo {
+  float: left;
+}
+
+header a,
+header a:active,
+header a:hover {
+  color: #FFF;
+  text-align: center;
+  display: block;
+  padding: 1em;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+#hero {
+  background-image: radial-gradient(farthest-corner at 80% 40%, rgb(75,132,128) 0%, rgb(45,38,54) 70%);
+}
+
+#hero .banner {
+  text-align: center;
+  padding: 10em 0;
+}
+
+#hero .inner {
+  line-height: 2.5em;
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  padding: 2em;
+  margin: 0;
+  background-color: rgba(52, 27, 43, 0.5); 
+}
+
+#hero .inner h1 {
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+#hero .inner p {
+  font-size: 1.75em;
+  font-weight: 300;
+}
+
+.section-header {
+  text-align: center;
+  padding-top: 5.5em;
+  margin: auto;
+  margin-bottom: 4em;
+  position: relative;
+  width: 75vw;
+}
+
+.section-header::before,
+.section-header::after {
+  border-bottom: solid 1.5px;
+  border-top: solid 1.5px;
+  content: '';
+  height: 0.25em;
+  opacity: 0.1;
+  position: absolute;
+  top: 7em;
+  width: 43%;
+}
+
+.section-header::before {
+  left: 0;
+}
+
+.section-header::after {
+  right: 0;
+}
+
+.section-header .icon {
+  color: rgb(201, 205, 208);
+  font-size: 4em;
+}
+
+.section-header h2 {
+  color: #7c8081;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.content-wrapper {
+  background: #FFF;
+  margin: auto;
+  width: 72vw;
+  padding: 3vw;
+}
+
+.news-items {
+  list-style-type: none;
+  text-align: left;
+}
+
+.news-items a,
+.news-items a:active {
+  color: #3fb1a3;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.news-items i {
+  color: lightgrey;
+  padding: 0 0.25em;
+  font-size: 1.25em;
+}
+
+.news-item p {
+  color: #7c8081;
+  padding-bottom: 0.2em;
+}
+
+
+.news-items-wrapper > a {
+  color: #3fb1a3;
+  float: right;
+  font-size: 1em;
+}
+
+.blog-items-carousel {
+  overflow: hidden;
+  background: none;
+}
+
+.blog-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.blog-item {
+  flex: 1 0 33%;
+  order: 2;
+  padding: 1em;
+}
+
+.blog-item a,
+.blog-item a:active {
+  color: #3fb1a3;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.blog-item .button-div {
+  text-align: center;
+}
+
+.blog-item button,
+.blog-item button:active {
+  background: none;
+  border: solid 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: .7em;
+  color: #7c8081;
+  padding: 0.75em;
+  min-width: 14em;
+  margin: 0;
+}
+
+.blog-item button:hover {
+  background: #DDD;
+}
+
+.blog-items-carousel > a {
+  color: #3fb1a3;
+  float: right;
+  font-size: 1em;
+}
+
+#who-we-are {
+  color: #FFF;
+}
+
+.who-we-are-container {
+  background: rgb(124, 210, 201);
+  display: flex;
+}
+
+#who-we-are-content {
+  width: 62%;
+  float: left;
+  margin: 0;
+}
+
+#who-we-are-content a,
+#who-we-are-content a:active {
+  color: #1e626c; 
+}
+
+#who-we-are-content strong {
+  font-weight: 300;
+}
+
+#who-we-are-content p {
+  font-size: 1.5em;
+}
+
+#who-we-are-thumbnails {
+  width: 33%;
+  float: left;
+  margin: 0;
+  padding-left: 8em;
+}
+
+.crop {
+  height: 8em;
+  width: 8em;
+  overflow: hidden;
+  border-radius: 4em;
+}
+
+.crop img {
+  width: 8em;
+}
+
+footer {
+  padding: 6em;
+  background: #e8eef4;
+  color: #7c8081;
+  text-align: center;
+  margin-top: 8em;
+}
