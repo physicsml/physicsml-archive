@@ -74,6 +74,43 @@ header a:hover {
   text-decoration: underline;
 }
 
+@media only screen
+and (max-device-width: 768px) {
+  p {
+    font-size: 2.25em
+  }
+  
+  header {
+    font-size: 1.25em;
+    position: absolute;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  nav {
+    font-size: 2.25em;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .expanded {
+
+  }
+
+  header li {
+    float: left;
+  }
+
+}
 
 #hero {
   background-image: radial-gradient(farthest-corner at 80% 40%, rgb(75,132,128) 0%, rgb(45,38,54) 70%);
@@ -81,11 +118,11 @@ header a:hover {
 
 #hero .banner {
   text-align: center;
-  padding: 10em 0;
+  padding: 10% 0;
 }
 
 #hero .inner {
-  line-height: 2.5em;
+  line-height: 2.25em;
   color: #FFF;
   display: inline-block;
   text-align: center;
@@ -95,13 +132,37 @@ header a:hover {
 }
 
 #hero .inner h1 {
-  font-size: 2.25em;
   font-weight: 300;
 }
 
 #hero .inner p {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 300;
+}
+
+@media only screen 
+and (max-device-width:768px) {
+  #hero {
+    
+  }
+
+  #hero .banner {
+    padding: 0;
+  }
+
+  #hero .inner {
+    width: 100vw; height: 75vh;
+    padding-top: 18em;
+    line-height: 4em;
+  }  
+
+  #hero .inner h1 {
+
+  }
+
+  #hero .inner p {
+    font-size: 2.75em;
+  }
 }
 
 .section-header {
@@ -152,6 +213,20 @@ header a:hover {
   padding: 3vw;
 }
 
+@media only screen
+and (max-device-width: 768px) {
+  .section-header h2 {
+    font-size: 4em;
+  }
+
+  .content-wrapper {
+    margin: auto;
+    width: 94vw;
+    padding-bottom: 6vh;
+  }
+
+}
+
 .news-items {
   list-style-type: none;
   text-align: left;
@@ -180,6 +255,21 @@ header a:hover {
   color: #3fb1a3;
   float: right;
   font-size: 1em;
+}
+
+@media only screen
+and (max-device-width: 768px) {
+  .news-item i {
+    padding-right: 2em;
+  }
+
+  .news-items-wrapper > a {
+    font-size: 2.25em;
+  }
+}
+
+.blog-carousel {
+  background: none;
 }
 
 .blog-items-carousel {
@@ -230,10 +320,32 @@ header a:hover {
   background: #DDD;
 }
 
-.blog-items-carousel > a {
+.see-all {
   color: #3fb1a3;
   float: right;
   font-size: 1em;
+}
+
+@media only screen
+and (max-device-width: 768px) {
+  .blog-items-carousel {
+    overflow: auto;
+  }
+
+  .blog-item {
+    flex: 1 0 100%;
+  }
+
+  .blog-item button {
+    font-size: 2.25em;
+  }
+
+  .see-all {
+    font-size: 2.25em;
+    padding-bottom: 3em;
+    margin-right: 2em;
+  }
+
 }
 
 #who-we-are {
@@ -268,7 +380,7 @@ header a:hover {
   width: 33%;
   float: left;
   margin: 0;
-  padding-left: 8em;
+  padding-left: 2vw;
 }
 
 .crop {
@@ -280,6 +392,30 @@ header a:hover {
 
 .crop img {
   width: 8em;
+}
+
+@media only screen
+and (max-device-width: 768px) {
+  #who-we-are-content p {
+    font-size: 2.5em;
+  }
+
+  #who-we-are-thumbnails {
+    padding-left: 1em;
+    padding-top: 5em;
+  }
+
+  .crop {
+    height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 10vw;
+    margin: 3em 0;
+  }
+
+  .crop img {
+    width: 20vw;
+  }
 }
 
 footer {

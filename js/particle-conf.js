@@ -1,7 +1,10 @@
+var particles = 120
+if (window.outerWidth < 768) { particles = 0; }
+
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 120,
+      "value": particles,
       "density": {
         "enable": true,
         "value_area": 800
@@ -26,7 +29,7 @@ particlesJS("particles-js", {
       }
     },
     "opacity": {
-      "value": 0.5,
+      "value": 0.3,
       "random": false,
       "anim": {
         "enable": false,
@@ -49,7 +52,7 @@ particlesJS("particles-js", {
       "enable": true,
       "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.2,
       "width": 1
     },
     "move": {
@@ -70,6 +73,7 @@ particlesJS("particles-js", {
   "interactivity": {
     "detect_on": "canvas",
     "events": {
+      "resize": true,
       "onhover": {
         "enable": false,
         "mode": "grab"
@@ -84,3 +88,7 @@ particlesJS("particles-js", {
 });
 
 document.getElementById("particles-js").style.position = "absolute";
+document.getElementById("particles-js").style.width = "100vw";
+h = document.getElementsByClassName('banner')[0].clientHeight
+document.getElementById("particles-js").style.height = h + 'px';
+
