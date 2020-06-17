@@ -351,17 +351,32 @@ and (max-device-width: 768px) {
 
 #who-we-are {
   color: #FFF;
+  padding-bottom: 8em;
+  margin-bottom: 0;
+  background-image: url(/svgs/dark-bl.svg), url(/svgs/dark-br.svg);
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
 }
 
 .who-we-are-container {
   background: rgb(124, 210, 201);
   display: flex;
+  background-image: url(/svgs/light-bl.svg), url(/svgs/light-br.svg);
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
 }
 
 #who-we-are-content {
   width: 62%;
   float: left;
   margin: 0;
+}
+
+
+#who-we-are-content h1 {
+  font-weight: 400;
 }
 
 #who-we-are-content a,
@@ -424,5 +439,4 @@ footer {
   background: #e8eef4;
   color: #7c8081;
   text-align: center;
-  margin-top: 8em;
 }
