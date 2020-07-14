@@ -1,0 +1,138 @@
+<h1 id="probing-topological-properties-of-3d-lattice-dimer-model-with-neural-networks">Probing topological properties of 3D lattice dimer model with neural networks</h1>
+<p>Imagine a plane tiled with squares. Such arrangement may be covered with dominoes: each domino covers a pair of  neighboring squares, and every square is covered by half of a domino. Neighboring dominoes point in random directions: some are parallel and the others are perpendicular to each other. Now  imagine that such domino covering may evolve with time: if two adjacent dominoes happen to be parallel to each other, they are allowed to simultaneously rotate by 90 degrees. One may ask a question: can any arbitrary domino arrangement be transformed to another arbitrary domino arrangement through a series of such simultaneous rotations, or ‘local flips’? In the case of a square lattice with open boundaries, the answer to this question is known to be positive. However, the situation drastically changes, when the lattice filled with dominoes becomes three-dimensional.</p>
+<!--&#10;![*An example of local flip. Two blue dominoes are simultaneously rotated*](Dominoes_flip_2.jpg)&#10;-->
+<figure>
+<img src="/images/Dominoes_flip_2.jpg" alt="drawing" 
+style="float: center; width: 50%; margin-left: 25%; margin-bottom: 0.0em;"/>
+<figcaption> An example of local flip. Two blue dominoes are simultaneously rotated</figcaption>
+</figure>
+<h2 id="lattice-dimer-model">Lattice dimer model</h2>
+<p>In the context of condensed matter physics, the problem of domino tilings is known as <a href="#C3"> lattice dimer model </a>. Physicists imagine periodically arranged tiles as point-like sites connected with bonds, and represent each domino by a dimer placed at a bond. Such model of dimers has long been studied in the context of various physical systems. Back in the 1980-s, it was used to represent chemical bonds between periodically arranged atoms  in materials, which exhibit high-temperature superconductivity. More recently, another example was found: in certain crystals, local spins may point relative to each other, obeying such constraints, that they become exactly equivalent to dominoes, thus forming<br>
+<a href="https://en.wikipedia.org/wiki/Spin_ice"> spin ice. </a> The most promising <a href="#C5"> idea to simulate lattice dimer model </a> has to do with a series of nanomagnets placed on a periodic lattice. It forms so called <a href="https://en.wikipedia.org/wiki/Geometrical_frustration#Artificial_geometrically_frustrated_ferromagnets"> artificial spin ice. </a> Besides, there are <a href="#C6"> proposals </a> to study  lattice dimer model in experiments with <a href="https://en.wikipedia.org/wiki/Ultracold_atom"> cold atoms </a> trapped by optical laser pulses.</p>
+<figure>
+<img src="../images/Dominoes_vs_dimers_1.jpg" alt="drawing"
+style="float: center; width: 30%; margin-left: 35%; margin-bottom: 0.0em;"/>
+<figcaption> A plane tiled with dominoes is equivalent to dimers placed on a lattice  </figcaption>
+</figure>
+<p>Now let us go back to our original question: can any given dimer configuration be transformed into any other dimer configuration by a series of local flips? In 3D space, the answer is negative. A few years ago, <a href="#C3"> it was pointed out </a>  that one may write a topological invariant, which is preserved under local dimer flips, and draw two dimer configurations, where such topological invariant takes different values. But what do these dimer configurations look like? The first of them is just <em>trivial</em>: all dimers are arranged parallelly next to each other - this is the simplest dimer configuration one may imagine. But the second configuration has a ‘bubble’ of dimers, which we call a <em>hopfion</em>. This ‘bubble’ may be surrounded by other parallelly arranged dimers, but they just fill the lattice and do not affect its topological properties.</p>
+<figure>
+    <img src="/images/TrivialSmall_1.jpg" style="width:30%; margin-left:10%;"/>
+    <img src="/images/TrivialSmall_1.jpg" style="width:30%; margin-left:10%;"/>
+    <p>
+    <figcaption>
+     <b>Left:</b> A trivial dimer configuration formed by parallel dimers. <b>Right:</b> A hopfion - topologically distinct configuration from the trivial
+    </figcaption>
+</p></figure>
+<!--   -->
+<h2 id="lattice-dimer-model-and-neural-networks">Lattice dimer model and neural networks</h2>
+<p>So we agreed that a <em>hopfion</em> placed on a dimer lattice changes its topological properties, or in different words, makes the total dimer configuration inaccessible through local flips applied to parallelly arranged dimers. But what will happen if we place several <em>hopfions</em> on the dimer lattice? For example, if we place two of them, will the total dimer configuration be accessible through local flips from the <em>trivial</em>? This is our main question, which we can address using neural networks.</p>
+<p>Since we defined a pair of two dimer configurations to be equivalent if they can be transformed into each other through a series of local flips, and we have two known dimer configurations from different topological classes, we can easily generate our training dataset. We just take the <em>trivial</em> dimer configuration, label it by 0, then randomly apply a sequence of local flips to it, obtain a series of new dimer configurations and label all of them by 0. Then we take the dimer configuration with a <em>hopfion</em>, as well apply a sequence of local flips to it, and label all resulting configurations by 1. Hereby, we have many dimer configurations with labels: the ones equivalent to the <em>trivial</em> are labeled by 0, and the ones equivalent to a <em>hopfion</em> are labeled by 1. Now we can train a neural network to distinguish them.</p>
+<p>To test the neural network, we need a separate dataset, and we generate it by using the same method as in the case of the training data set. We just take configurations with a known label, apply a few local flips to them and get new configurations with the same label. So we test our neural network and see that it recongnizes dimer configurations equivalent to the <em>trivial</em> and to the <em>hopfion</em> very well! We note that our neural network works well with just one hidden layer, and its accuracy increases with increasing number of hidden units.</p>
+<p>Now we want to try the most interesting part - to test our neural network on dimer configurations equivalent to two <em>hopfions</em> placed on a dimer lattice.<br>
+Will the neural network output 2? To make sure we can see it, we choose a neural network without any activation function in the output layer: it may output any real number, which is just a superposition of the outputs from the previous layer. Though of course, to have non-linearity, we keep activation function in our single hidden layer - we choose <em>relu</em> - since it is the simplest, and it does not saturate.</p>
+<p>So we take a configuration with two <em>hopfions</em> surrounded by parallel dimers, apply many local flips to it, obtain more dimer configurations and test all of them with our neural network. We can see the answer: it is a real number close to 2, as we expected. The neural network is able to tell us how many <em>hopfions</em> were placed on a dimer lattice before applying local flips. We play with it more by testing the neural network on dimer configurations obtained by applying local flips to a mirror-reflected <em>hopfions</em>, and the neural network gives us an answer again: for a mirror-reflected <em>hopfion</em> it outputs a number close to -1.  We go further and test the neural network on configurations obtained by applying local flips to a mirror-reflected image of two <em>hopfions</em>. Again, the neural network tells us the answer: it is a real number near 2. To be more sure about our results, we repeat the exercise with larger number of hidden units in the neural network, and then with larger size of the training data set. In either case, the accuracy increases!</p>
+<p>How can we interpret our results? Well, the neural network tells us that <em>hopfions</em> are characterized by an integer topological invariant, which exists in three dimensions. This looks like a <a href="http://hopfion.com/hopf.html"> Hopf number, </a> isn’t it? We can verify it explicitly. In general, Hopf number is a topological invariant, which describes a vector field in three-dimensional space. Do we have a vector field here? In fact, we do have it. It is known, that dimer configurations can be described  in terms of an ‘effective magnetic field’ - a vector field related to fillings of each bond with dimers, which similarly to physical magnetic field, has zero divergence. So we can write a Hopf number of the effective magnetic field describing our dimer configurations and explicitly check that it satisfies all the same properties as we found using neural networks. Hopf invariant is exactly equal to the number of <em>hopfions</em> placed on a lattice, and it is preserved under local flips. So here is our conclusion: neural networks help us to identify new topological invariants on a dimer lattice, which can be later <a href="#C2"> verified using analytical techniques. </a></p>
+<h2 id="lattice-dimer-model-on-a-stacked-triangular-lattice">Lattice dimer model on a stacked triangular lattice</h2>
+<p>So we have established, that lattice dimer model on a cubic lattice possesses topological defects characterized by an integer topological invariant. We are excited about our result, and we would like to explore it further. The most straightforward generalization is trying a different kind of the underlying lattice. What kind of lattice shall we choose? When we were talking about cubic lattice, we mentioned that we managed to analytically reproduce our result by introducing effective magnetic field - this method can be repeated on any bipartite lattice, i.e. whose sites can be labeled as ‘black’ and ‘white’ in such a way that any bond always connects ‘black’ with ‘white’. So now we should try a non-bipartite lattice. The simplest example is a stacked triangular lattice: it is non-bipartite, but it is very similar to cubic, since we can still draw a <em>trivial</em> configurations and <em>hopfion</em> and apply a sequence of local flips to both of them. So this is exactly what we do: we repeat the procedure of generating training and test datasets and train neural networks to distinguish configurations obtained from the <em>trivial</em> and <em>hopfion</em>.</p>
+<figure>
+    <img src="/images/TrivialTriangular_1.jpg" style="width:30%; margin-left:10%;"/>
+    <img src="/images/JustHopfionTriangular_1.jpg" style="width:30%; margin-left:10%;"/>
+<pre><code><p style="clear: both;">
+<figcaption>
+ <b>Left:</b> A trivial dimer configuration on a triangular lattice. <b>Right:</b> A hopfion on triangular lattice
+</figcaption>  
+</code></pre>
+</figure>
+<p>
+However, when we start testing our neural network, a difference appears. The neural network with just one hidden layer does not classify dimer configurations obtained by applying local flips to the <i> trivial </i> and to the one containing a <i>hopfion</i> very well. So we increase the number of hidden layers. The neural network with three or more hidden layers is able to classify the dimer configurations very accurately. Even more interesting difference appears when we try to test our neural network on configurations equivalent to two <i>hopfions</i>: the neural network outputs just zero. In a similar way, if we test the neural network on a mirror-reflected image of a <i>hopfion</i>, it outputs +1, whereas for a mirror-reflected image of two <i>hopfions</i> it outputs 0 again. The outputs have a very high precision, which increases with increasing number of layers. Based on this, we make a conclusion, that on a stacked triangular lattice, dimer configurations are characterized by  \(\mathtt{Z}_2 \) topological invariant equal to parity of the number of hopfions. 
+</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>
+Now let us summarize our findings. We started from a simple toy model, which is widely known in condensed matter physics, explored its properties using neural networks and found a qualitatively new result. Let us state it again: configurations in three-dimensional lattice dimer model can be classified into distinct topological classes, which in the case of a bipartite lattice, are characterized by Hopf invariant and in the case of non-bipartite lattice, are characterized by \( \mathtt{Z}_2 \) invariant. We presented a general idea of how machine learning should be used to study physical systems. If you have a model and you do not know its properties, try to use machine learning algorithm to get an insight of what is happening, and once you have an idea, you can verify it by building a more rigorous theory. But in our case, <i>hopfions</i> are more than just abstract objects. We envision classical and artificial spin ice, cold atoms and other systems, and we  hope that soon <i>hopfions</i> will be realized in experiments! 
+</p>
+<h2 id="bibliography">Bibliography</h2>
+<p>
+[1] G. Bednik, <em> Probing topological properties of 3D lattice dimer model with neural networks </em>,
+<a href="https://arxiv.org/abs/1902.01845"> arXiv:1902.01845</a>
+</p>
+<p id="C2">
+[2] G. Bednik, <em> Hopfions in lattice dimer model </em>,
+<a href="https://arxiv.org/abs/1901.04527"> arXiv:1901.04527</a>,
+published in <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.024420"> Phys. Rev. B 100, 024420 (2019) </a>
+</p>
+<p id="C3">
+[3] M. Freedman, M. B. Hastings, C. Nayak, X.L. Qi,
+<em> Weakly-Coupled non-Abelian Anyons in Three Dimensions </em>,
+<a href="https://arxiv.org/abs/1107.2731"> arXiv:1107.2731</a>,
+published in 
+<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245119"> Phys. Rev. B 84, 245119 (2011) </a>
+</p>
+<p id="C4">
+[4] R, Kenyon
+<em> An introduction to the dimer model </em>,
+<a href="https://arxiv.org/abs/math/0310326"> arXiv:math/0310326 </a>
+</p>
+<p id="C5">
+[5] Y. Lao,
+<em> Classical topological order in the kinetics of artificial spin ice </em>, <a href="https://www.nature.com/articles/s41567-018-0077-0"> Nature Physics  14,  723–727 (2018)  </a>
+</p>
+<p id="C6">
+[6] A.Celi, B. Vermersch, O. Viyuela, H. Pichler, M.D. Lukin, P. Zoller,
+<em> Emerging 2D Gauge theories in Rydberg configurable arrays </em>,
+<a href="https://arxiv.org/abs/1907.03311"> arXiv:1907.03311 </a>
+</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script></p>

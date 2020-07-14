@@ -118,11 +118,11 @@ and (max-device-width: 768px) {
 
 #hero .banner {
   text-align: center;
-  padding: 10% 0;
+  padding: 10em 0;
 }
 
 #hero .inner {
-  line-height: 2.25em;
+  line-height: 2.5em;
   color: #FFF;
   display: inline-block;
   text-align: center;
@@ -132,6 +132,7 @@ and (max-device-width: 768px) {
 }
 
 #hero .inner h1 {
+  font-size: 2.25em;
   font-weight: 300;
 }
 
@@ -320,7 +321,7 @@ and (max-device-width: 768px) {
   background: #DDD;
 }
 
-.see-all {
+.blog-items-carousel > a {
   color: #3fb1a3;
   float: right;
   font-size: 1em;
@@ -350,17 +351,32 @@ and (max-device-width: 768px) {
 
 #who-we-are {
   color: #FFF;
+  padding-bottom: 8em;
+  margin-bottom: 0;
+  background-image: url(/svgs/dark-bl.svg), url(/svgs/dark-br.svg);
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
 }
 
 .who-we-are-container {
   background: rgb(124, 210, 201);
   display: flex;
+  background-image: url(/svgs/light-bl.svg), url(/svgs/light-br.svg);
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 25em, 25em;
 }
 
 #who-we-are-content {
   width: 62%;
   float: left;
   margin: 0;
+}
+
+
+#who-we-are-content h1 {
+  font-weight: 400;
 }
 
 #who-we-are-content a,
@@ -423,5 +439,4 @@ footer {
   background: #e8eef4;
   color: #7c8081;
   text-align: center;
-  margin-top: 8em;
 }
