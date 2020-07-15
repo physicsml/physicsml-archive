@@ -19,7 +19,7 @@ Sources:
 
 
 
-This article is meant as a practical tutorial provising basic knowledge and guidance to build an RBM.
+This article is meant as a practical tutorial providing basic knowledge and guidance to build an RBM.
 
 General Motivation About RBMs
 -----------------------------
