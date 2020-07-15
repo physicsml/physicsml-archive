@@ -1,0 +1,342 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+
+    <title>Probing Topological Properties of the 3D Lattice Dimer Model with Neural Networks</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href="..">&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                    <li><a href="/category/news.html">News</a></li>
+                    <li><a href="/category/articles.html">Blog</a></li>
+                    <li><a href="/pages/papers.html">Papers</a></li>
+                <!--
+                <li class="submenu">
+                    <a href="../">No Blog</a>
+                    <ul>
+                            <li class="active">
+                                <a href="../category/articles/">Articles</a>
+                            </li>
+                            <li >
+                                <a href="../category/news/">News</a>
+                            </li>
+                    </ul>
+                </li>
+                -->
+                <!--
+                <li><a href="#" class="button special">Nothing to Sign Up to</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+    <header class="special container">
+        <!-- <span class="icon fa-"></span> -->
+        <h2>Probing Topological Properties of 3D Lattice Dimer Models with Neural Networks</h2>
+        <!-- add page sub title here -->
+        <p>Posted in
+            <a href="../category/articles.html">Articles</a> on 08-08-2019 by Grigory Bednik, UCSC</p>
+        <!-- <p></p> -->
+    </header>
+
+    <style>
+        .bordered {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 1px solid darkorange;
+            border-radius: 8px;
+        }
+
+        .tagcloud {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .tagcloud a {
+            display: inline-block;
+            font-size: 0.9em;
+            margin: 0.125rem;
+            padding: 0.4375rem;
+            background: #f3f6fa;
+            border: 0px solid rgba(0, 0, 255, 0.2);
+            border-radius: 40px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .tagcloud a:hover,
+        .tagcloud a:focus {
+            background: grey;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <!-- One -->
+    <section class="wrapper style4 container">
+
+        <!-- Content -->
+        <div class="content">
+            <section>
+<p>Imagine a plane tiled with squares. Such arrangement may be covered with dominoes: each domino covers a pair of  neighboring squares, and every square is covered by half of a domino. Neighboring dominoes point in random directions: some are parallel and the others are perpendicular to each other. Now  imagine that such domino covering may evolve with time: if two adjacent dominoes happen to be parallel to each other, they are allowed to simultaneously rotate by 90 degrees. One may ask a question: can any arbitrary domino arrangement be transformed to another arbitrary domino arrangement through a series of such simultaneous rotations, or ‘local flips’? In the case of a square lattice with open boundaries, the answer to this question is known to be positive. However, the situation drastically changes, when the lattice filled with dominoes becomes three-dimensional.</p>
+<!--&#10;![*An example of local flip. Two blue dominoes are simultaneously rotated*](Dominoes_flip_2.jpg)&#10;-->
+<figure>
+<img src="../images/Dominoes_flip_2.jpg" alt="drawing" style="float: center; width: 50%; margin-left: 25%; margin-bottom: 0.0em;">
+<figcaption style="float: center; width: 40%; margin-left: 30%; margin-bottom: 2em;"> An example of local flip. Two blue dominoes are simultaneously rotated </figcaption>
+</figure>
+<h2 id="lattice-dimer-model">Lattice dimer model</h2>
+<p>In the context of condensed matter physics, the problem of domino tilings is known as <a href="#C3"> lattice dimer model </a>. Physicists imagine periodically arranged tiles as point-like sites connected with bonds, and represent each domino by a dimer placed at a bond. Such model of dimers has long been studied in the context of various physical systems. Back in the 1980-s, it was used to represent chemical bonds between periodically arranged atoms  in materials, which exhibit high-temperature superconductivity. More recently, another example was found: in certain crystals, local spins may point relative to each other, obeying such constraints, that they become exactly equivalent to dominoes, thus forming<br>
+<a href="https://en.wikipedia.org/wiki/Spin_ice"> spin ice. </a> The most promising <a href="#C5"> idea to simulate lattice dimer model </a> has to do with a series of nanomagnets placed on a periodic lattice. It forms so called <a href="https://en.wikipedia.org/wiki/Geometrical_frustration#Artificial_geometrically_frustrated_ferromagnets"> artificial spin ice. </a> Besides, there are <a href="#C6"> proposals </a> to study  lattice dimer model in experiments with <a href="https://en.wikipedia.org/wiki/Ultracold_atom"> cold atoms </a> trapped by optical laser pulses.</p>
+<figure>
+<img src="../images/Dominoes_vs_dimers_1.jpg" alt="drawing" style="float: center; width: 30%; margin-left: 35%; margin-bottom: 0.0em;">
+<figcaption style="float: center; width: 40%; margin-left: 30%; margin-bottom: 2em;"> A plane tiled with dominoes is equivalent to dimers placed on a lattice  </figcaption>
+</figure>
+<p>Now let us go back to our original question: can any given dimer configuration be transformed into any other dimer configuration by a series of local flips? In 3D space, the answer is negative. A few years ago, <a href="#C3"> it was pointed out </a>  that one may write a topological invariant, which is preserved under local dimer flips, and draw two dimer configurations, where such topological invariant takes different values. But what do these dimer configurations look like? The first of them is just <em>trivial</em>: all dimers are arranged parallelly next to each other - this is the simplest dimer configuration one may imagine. But the second configuration has a ‘bubble’ of dimers, which we call a <em>hopfion</em>. This ‘bubble’ may be surrounded by other parallelly arranged dimers, but they just fill the lattice and do not affect its topological properties.</p>
+<figure>
+    <img src="../images/TrivialSmall_1.jpg" style="width:30%; margin-left:10%;">
+    <img src="../images/JustHopfion_1.jpg" style="width:30%; margin-left:10%;">
+    <figcaption style="float: center; width: 45%; margin-left: 25%; margin-bottom: 2em;">
+     <b>Left:</b> A trivial dimer configuration formed by parallel dimers. <b>Right:</b> A hopfion - topologically distinct configuration from the trivial
+    </figcaption>
+<p></p></figure>
+<!--   -->
+<h2 id="lattice-dimer-model-and-neural-networks">Lattice dimer model and neural networks</h2>
+<p>So we agreed that a <em>hopfion</em> placed on a dimer lattice changes its topological properties, or in different words, makes the total dimer configuration inaccessible through local flips applied to parallelly arranged dimers. But what will happen if we place several <em>hopfions</em> on the dimer lattice? For example, if we place two of them, will the total dimer configuration be accessible through local flips from the <em>trivial</em>? This is our main question, which we can address using neural networks.</p>
+<p>Since we defined a pair of two dimer configurations to be equivalent if they can be transformed into each other through a series of local flips, and we have two known dimer configurations from different topological classes, we can easily generate our training dataset. We just take the <em>trivial</em> dimer configuration, label it by 0, then randomly apply a sequence of local flips to it, obtain a series of new dimer configurations and label all of them by 0. Then we take the dimer configuration with a <em>hopfion</em>, as well apply a sequence of local flips to it, and label all resulting configurations by 1. Hereby, we have many dimer configurations with labels: the ones equivalent to the <em>trivial</em> are labeled by 0, and the ones equivalent to a <em>hopfion</em> are labeled by 1. Now we can train a neural network to distinguish them.</p>
+<p>To test the neural network, we need a separate dataset, and we generate it by using the same method as in the case of the training data set. We just take configurations with a known label, apply a few local flips to them and get new configurations with the same label. So we test our neural network and see that it recongnizes dimer configurations equivalent to the <em>trivial</em> and to the <em>hopfion</em> very well! We note that our neural network works well with just one hidden layer, and its accuracy increases with increasing number of hidden units.</p>
+<p>Now we want to try the most interesting part - to test our neural network on dimer configurations equivalent to two <em>hopfions</em> placed on a dimer lattice. Will the neural network output 2? To make sure we can see it, we choose a neural network without any activation function in the output layer: it may output any real number, which is just a superposition of the outputs from the previous layer. Though of course, to have non-linearity, we keep activation function in our single hidden layer - we choose <em>relu</em> - since it is the simplest, and it does not saturate.</p>
+<p>So we take a configuration with two <em>hopfions</em> surrounded by parallel dimers, apply many local flips to it, obtain more dimer configurations and test all of them with our neural network. We can see the answer: it is a real number close to 2, as we expected. The neural network is able to tell us how many <em>hopfions</em> were placed on a dimer lattice before applying local flips. We play with it more by testing the neural network on dimer configurations obtained by applying local flips to a mirror-reflected <em>hopfions</em>, and the neural network gives us an answer again: for a mirror-reflected <em>hopfion</em> it outputs a number close to -1.  We go further and test the neural network on configurations obtained by applying local flips to a mirror-reflected image of two <em>hopfions</em>. Again, the neural network tells us the answer: it is a real number near -2. To be more sure about our results, we repeat the exercise with larger number of hidden units in the neural network, and then with larger size of the training data set. In either case, the accuracy increases!</p>
+<p>How can we interpret our results? Well, the neural network tells us that <em>hopfions</em> are characterized by an integer topological invariant, which exists in three dimensions. This looks like a <a href="http://hopfion.com/hopf.html"> Hopf number, </a> isn’t it? We can verify it explicitly. In general, Hopf number is a topological invariant, which describes a vector field in three-dimensional space. Do we have a vector field here? In fact, we do have it. It is known, that dimer configurations can be described  in terms of an ‘effective magnetic field’ - a vector field related to fillings of each bond with dimers, which similarly to physical magnetic field, has zero divergence. So we can write a Hopf number of the effective magnetic field describing our dimer configurations and explicitly check that it satisfies all the same properties as we found using neural networks. Hopf invariant is exactly equal to the number of <em>hopfions</em> placed on a lattice, and it is preserved under local flips. So here is our conclusion: neural networks help us to identify new topological invariants on a dimer lattice, which can be later <a href="#C2"> verified using analytical techniques. </a></p>
+<h2 id="lattice-dimer-model-on-a-stacked-triangular-lattice">Lattice dimer model on a stacked triangular lattice</h2>
+<p>So we have established, that lattice dimer model on a cubic lattice possesses topological defects characterized by an integer topological invariant. We are excited about our result, and we would like to explore it further. The most straightforward generalization is trying a different kind of the underlying lattice. What kind of lattice shall we choose? When we were talking about cubic lattice, we mentioned that we managed to analytically reproduce our result by introducing effective magnetic field - this method can be repeated on any bipartite lattice, i.e. whose sites can be labeled as ‘black’ and ‘white’ in such a way that any bond always connects ‘black’ with ‘white’. So now we should try a non-bipartite lattice. The simplest example is a stacked triangular lattice: it is non-bipartite, but it is very similar to cubic, since we can still draw a <em>trivial</em> configuration and a <em>hopfion</em> and apply a sequence of local flips to both of them. So this is exactly what we do: we repeat the procedure of generating training and test datasets and train neural networks to distinguish configurations obtained from the <em>trivial</em> and the <em>hopfion</em>.</p>
+<figure>
+    <img src="../images/TrivialTriangular_1.jpg" style="width:30%; margin-left:10%;">
+    <img src="../images/JustHopfionTriangular_1.jpg" style="width:30%; margin-left:10%;">
+<figcaption style="float: center; width: 45%; margin-left: 25%; margin-bottom: 2em;">
+ <b>Left:</b> A trivial dimer configuration on a triangular lattice. <b>Right:</b> A hopfion on triangular lattice
+</figcaption>  
+<p>
+However, when we start testing our neural network, we can see a difference. The neural network with just one hidden layer does not classify dimer configurations obtained by applying local flips to the <i> trivial </i> and to the one containing a <i>hopfion</i> very well. So we increase the number of hidden layers. The neural network with three or more hidden layers is able to classify the dimer configurations very accurately. Even more interesting difference appears when we try to test our neural network on configurations equivalent to two <i>hopfions</i>: the neural network outputs just zero. In a similar way, if we test the neural network on a mirror-reflected image of a <i>hopfion</i>, it outputs +1, whereas for a mirror-reflected image of two <i>hopfions</i> it outputs 0 again. The outputs have a very high precision, which increases with increasing number of layers. Based on this, we make a conclusion, that on a stacked triangular lattice, dimer configurations are characterized by \(\mathtt{Z}_2 \) topological invariant equal to parity of the number of hopfions. 
+</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>
+Now let us summarize our findings. We started from a simple toy model widely known in condensed matter physics, explored its properties using neural networks and found a qualitatively new result. Let us state it again: configurations in three-dimensional lattice dimer model can be classified into distinct topological classes, which in the case of a bipartite lattice, are characterized by Hopf invariant and in the case of non-bipartite lattice, are characterized by \( \mathtt{Z}_2 \) invariant. We presented a general idea of how machine learning should be used to study physical systems. If you have a model and you do not know its properties, try to use machine learning algorithm to get an insight of what is happening, and once you have an idea, you can verify it by building a more rigorous theory. <!--We successfully did it,-->
+In this way, we successfully studied 3D lattice dimer model, and we believe that our result - <i>hopfions</i> is more than just a abstract object. We envision classical and artificial spin ice, cold atoms and other systems, and we  hope that soon <i>hopfions</i> will be realized in experiments! 
+</p>
+<h2 id="bibliography">Bibliography</h2>
+<p>
+[1] G. Bednik, <em> Probing topological properties of 3D lattice dimer model with neural networks </em>,
+<a href="https://arxiv.org/abs/1902.01845"> arXiv:1902.01845</a>
+</p>
+<p id="C2">
+[2] G. Bednik, <em> Hopfions in lattice dimer model </em>,
+<a href="https://arxiv.org/abs/1901.04527"> arXiv:1901.04527</a>,
+published in <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.024420"> Phys. Rev. B 100, 024420 (2019) </a>
+</p>
+<p id="C3">
+[3] M. Freedman, M. B. Hastings, C. Nayak, X.L. Qi,
+<em> Weakly-Coupled non-Abelian Anyons in Three Dimensions </em>,
+<a href="https://arxiv.org/abs/1107.2731"> arXiv:1107.2731</a>,
+published in 
+<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245119"> Phys. Rev. B 84, 245119 (2011) </a>
+</p>
+<p id="C4">
+[4] R, Kenyon
+<em> An introduction to the dimer model </em>,
+<a href="https://arxiv.org/abs/math/0310326"> arXiv:math/0310326 </a>
+</p>
+<p id="C5">
+[5] Y. Lao,
+<em> Classical topological order in the kinetics of artificial spin ice </em>, <a href="https://www.nature.com/articles/s41567-018-0077-0"> Nature Physics  14,  723–727 (2018)  </a>
+</p>
+<p id="C6">
+[6] A.Celi, B. Vermersch, O. Viyuela, H. Pichler, M.D. Lukin, P. Zoller,
+<em> Emerging 2D Gauge theories in Rydberg configurable arrays </em>,
+<a href="https://arxiv.org/abs/1907.03311"> arXiv:1907.03311 </a>
+</p>
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script></p>
+                <br />
+                <br />
+                <p class="tags tagcloud">
+                     <a href="../tag/machine-learning/">machine learning</a>
+                    <a href="../tag/deep-learning/">deep learning</a>
+                 </p>
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Two 
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/machine-learning-for-quantum-design-at-pi.html" rel='bookmark'><h3>Machine Learning for Quantum Design at PI</h3></a>
+              </header>
+              <p>The Perimeter Institute for Theoretical Physics in Waterloo, Canada, hosts "</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/machine-learning-for-quantum-design-at-pi.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/workshop-machine-learning-for-quantum-technology-at-mpl-erlangen.html" rel='bookmark'><h3>Workshop Machine Learning for Quantum Technology at MPL Erlangen</h3></a>
+              </header>
+              <p>The Max Planck Institute for the Science of Light in Erlangen, Germany, hosts <a href="https://www.mpl.mpg.de/divisions/marquardt-division/workshops/2019-machi</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/workshop-machine-learning-for-quantum-technology-at-mpl-erlangen.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/DL-theory.html" rel='bookmark'><h3>The Theory of Deep Learning - Part I</h3></a>
+              </header>
+              <p>Why do modern deep neural networks (DNNs) perform so well on previously unseen test data, even when their number of weights is much larger than the number of data points</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/DL-theory.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section> -->
+
+</article>
+
+ 
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+    </ul>
+
+    <span class="copyright">&copy; physicsml. All rights reserved. <br> Powered by <a href="https://blog.getpelican.com">Pelican</a>. Theme Twenty, Design: <a href="http://html5up.net">HTML5 UP</a>. Implemented and maintained by Anna Go.</span>
+
+</footer>
+<style>
+ em {
+   font-style: italic;
+ }
+
+ strong {
+   font-style: bold;
+ }
+
+ figcaption {
+   font-style: italic;
+ }
+</style>
+</body>
+</html>

@@ -3,7 +3,7 @@ Date: 2020-07-15
 Tags: machine learning, deep learning, autoregressive models, autoregressive distribution estimation
 Author: Isaac De Vlugt
 Summary: Neural Autoregressive Distribution Estimators
-Slug: NADEs
+Slug: NADE
 
 
 
