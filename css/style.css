@@ -717,7 +717,7 @@
 					-webkit-font-smoothing: antialiased;
 					font-family: Font Awesome\ 5 Free;
 					font-style: normal;
-					font-weight: normal;
+					font-weight: 900;
 				}
 
 				#header nav ul li.submenu > a:before {
