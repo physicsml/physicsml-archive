@@ -1,0 +1,325 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.dropotron.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/skel-layers.min.js"></script>
+    <script src="/js/init.js"></script>
+    <link rel="stylesheet" href="/css/pygment.css" />
+    <noscript>
+        <link rel="stylesheet" href="/css/skel.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style-noscript.css" />
+    </noscript>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link  href="http://fonts.googleapis.com/css?family=Anonymous+Pro:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie/v9.css" /><![endif]-->
+
+    <title>Machine Learning Topological Defects in the XY Model | &#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297; </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+</head>
+
+<body class=" loading">
+
+
+
+    <!-- Header -->
+    <header id="header" >
+        <h1 class="logo">
+            <a href="..">&#12296&nbsp;physics&nbsp;&#124;&nbsp;machine&nbsp;learning&nbsp;&#12297;</a>
+        </h1>
+        <nav id="nav">
+            <ul>
+                <!-- <li class="current"><a href="index.html">Welcome</a></li> -->
+                    <li><a href="/category/news.html">News</a></li>
+                    <li><a href="/category/articles.html">Blog</a></li>
+                    <li><a href="/pages/papers.html">Papers</a></li>
+                <!--
+                <li class="submenu">
+                    <a href="../">No Blog</a>
+                    <ul>
+                            <li class="active">
+                                <a href="../category/articles/">Articles</a>
+                            </li>
+                            <li >
+                                <a href="../category/news/">News</a>
+                            </li>
+                    </ul>
+                </li>
+                -->
+                <!--
+                <li><a href="#" class="button special">Nothing to Sign Up to</a></li>
+                -->
+            </ul>
+        </nav>
+    </header>
+
+<!-- Main -->
+<article id="main">
+
+    <header class="special container">
+        <!-- <span class="icon fa-"></span> -->
+        <h2>Neural Autoregressive Distribution Estimators (NADEs)</h2>
+        <!-- add page sub title here -->
+        <p>Posted in
+            <a href="../category/articles.html">Articles</a> on 15-07-2020 by Isaac De Vlugt </p>
+        <!-- <p></p> -->
+    </header>
+
+    <style>
+        .bordered {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 1px solid darkorange;
+            border-radius: 8px;
+        }
+
+        .tagcloud {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .tagcloud a {
+            display: inline-block;
+            font-size: 0.9em;
+            margin: 0.125rem;
+            padding: 0.4375rem;
+            background: #f3f6fa;
+            border: 0px solid rgba(0, 0, 255, 0.2);
+            border-radius: 40px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        .tagcloud a:hover,
+        .tagcloud a:focus {
+            background: grey;
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <!-- One -->
+    <section class="wrapper style4 container">
+
+        <!-- Content -->
+        <div class="content">
+            <section>
+                <!-- <a href="#" class="image feature"><img src="images/pic04.jpg" alt="" /></a> -->
+                <!-- <h3>Posted in <a href="../category/articles.html">Articles</a></h3> -->
+<p>Modeling states (ground or thermal) in computational physics requires calculating the partition function - an expression that scales exponentially with the number of constituents and is thus generally intractable. As a workaround, physicists commonly use probabilistic sampling methods, many of which are based on a Markov Chain (MC). A huge drawback about MC-based sampling is that the equilibration time required to generate uncorrelated samples can be very long.</p>
+<p>Restricted Boltzmann Machines (RBMs) are a class of generative models that have many appealing properties as a tool for statistical physics, yet it too is burdened by a MC-like procedure called Gibbs sampling.</p>
+<p>In this post, we discuss an alternative that can be used for the purpose of state modeling: Neural Autoregressive Distributions Estimators (NADEs). The NADE is a generative model which is inspired by the RBM architecture, but unlike the RBM, it does not employ a MC-based sampling method. Algorithms wherein the partition function need not be calculated, yet the probability distribution defined by the model can be directly sampled, are called autoregressive.</p>
+<h2 class="mume-header" id="an-rbm-as-a-bayesian-network">An RBM as a Bayesian Network</h2>
+
+<p>The probability of a sample&apos;s occurence, as modelled by an RBM, requires the calculation of the partition function, which is intractable. Recall that for an RBM,</p>
+<p></p><div class="mathjax-exps">$$Z = \sum_{\mathbf{h} \in \mathcal{H}_{\mathbf{h}}} \sum_{\mathbf{v} \in \mathcal{H}_{\mathbf{v}}} e^{-E(\mathbf{v},\mathbf{h})},$$</div><p></p>
+<p>and</p>
+<p></p><div class="mathjax-exps">$$p(\mathbf{v}) = \frac{e^{-\sum_{\mathbf{h} \in \mathcal{H}_{\mathbf{h}}}E(\mathbf{v},h)}}{Z},$$</div><p></p>
+<p>where <span class="mathjax-exps">$\mathbf{v}$</span> and <span class="mathjax-exps">$\mathbf{h}$</span> denote the visible and hidden layer of the RBM, respectively. Autoregressive models define a probability distribution that is the product of conditional disitributions of the <span class="mathjax-exps">$i^{\text{th}}$</span> visible unit (<span class="mathjax-exps">$v_i$</span>) given all preceeding visible units (<span class="mathjax-exps">$\mathbf{v}_{&lt;i}$</span>):</p>
+<p></p><div class="mathjax-exps">$$p_{\text{autoreg.}}(\mathbf{v}) = \prod_{i} p(v_i \vert \mathbf{v}_{&lt;i}).$$</div><p></p>
+<p>If we can write the probability distribution defined by the RBM as a product of tractable conditionals like that of autoregressive models, then we can bypass calculating <span class="mathjax-exps">$Z$</span> entirely and directly sample the distribution. We can write <span class="mathjax-exps">$p(\mathbf{v})$</span> exactly as a product of conditionals by employing Baye&apos;s rule:</p>
+<p></p><div class="mathjax-exps">$$p(\mathbf{v}) = \prod_{i} p(v_i \vert \mathbf{v}_{&lt;i}) = \prod_{i} \frac{p(v_i, \mathbf{v}_{ \lt i})}{p(\mathbf{v}_{ \lt i})}.$$</div><p></p>
+<p>However, <span class="mathjax-exps">$p(v_i, \mathbf{v}_{ \lt i})$</span> nor <span class="mathjax-exps">$p(\mathbf{v}_{ \lt i})$</span> are tractable. If we can approximate both quantities, then there might be instances where the above expression is tractable and we&apos;ve made the RBM autoregressive.</p>
+<p>Consider a mean-field approach for the approximation (recall that a mean-field approximation just relates to the idea that our variables are independent, e.g. <span class="mathjax-exps">$p(a,b) = p(a)p(b)$</span>): approximate <span class="mathjax-exps">$p(v_i \vert \mathbf{v}_{&lt;i})$</span> by finding a tractable approximation for <span class="mathjax-exps">$p(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i}) \approx q(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i})$</span> such that <span class="mathjax-exps">$q(v_i \vert \mathbf{v}_{&lt;i})$</span> is easily obtainable. In our mean-field approximation for <span class="mathjax-exps">$p(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i})$</span>,</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     q(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i}) =&amp; q(v_i \vert \mathbf{v}_{ \lt i}) q(\mathbf{v}_{&gt;i} \vert \mathbf{v}_{&lt;i}) q(\mathbf{h} \vert \mathbf{v}_{&gt;i}) \\     =&amp; q(v_i \vert \mathbf{v}_{&lt;i}) \prod_{j &gt; i} q(v_j \vert \mathbf{v}_{&lt;i}) \prod_k q(h_k \vert \mathbf{v}_{ \lt i}). \end{aligned}$$</div><p></p>
+<p>Noting that <span class="mathjax-exps">$v_i \in 0,1$</span> (we will strictly deal with binary variables in this post), write the conditional distribution <span class="mathjax-exps">$q(v_j \vert \mathbf{v}_{&lt;i})$</span> as binomial with a success (<span class="mathjax-exps">$v_i = 1$</span>) probability <span class="mathjax-exps">$\mu_j (i)$</span>:</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     q(v_j \vert \mathbf{v}_{&lt;i}) =&amp; \mu_j(i)^{v_j} (1-\mu_j(i))^{1-v_j}. \end{aligned}$$</div><p></p>
+<p>We may assume a similar form for <span class="mathjax-exps">$q(h_k \vert \mathbf{v}_{&lt;i})$</span> (again, we also only consider binary hidden units):</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     q(h_k \vert \mathbf{v}_{&lt;i}) =&amp; \tau_k(i)^{h_k} (1-\tau_k(i))^{1-h_k}. \end{aligned}$$</div><p></p>
+<p>Therefore,</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     q(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i}) =&amp; \mu_i(i)^{v_i} (1-\mu_i(i))^{1-v_i} \prod_{j &gt; i} \mu_j(i)^{v_j} (1-\mu_j(i))^{1-v_j} \prod_k \tau_k(i)^{h_k} (1-\tau_k(i))^{1-h_k}, \end{aligned}$$</div><p></p>
+<p>with</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     \mu_j(i) =  &amp; q(v_i = 1 \vert \mathbf{v}_{&lt;i}) \approx p(v_i = 1 \vert \mathbf{v}_{\lt i}), \\     \tau_k(i) = &amp; q(h_k = 1 \vert \mathbf{v}_{\lt i}) \approx p(h_k = 1 \vert \mathbf{v}_{\lt i}). \end{aligned}$$</div><p></p>
+<p>But what are <span class="mathjax-exps">$\mu_j(i)$</span> and <span class="mathjax-exps">$\tau_k(i)$</span>? We need to find <span class="mathjax-exps">$\mu_j(i)$</span> for <span class="mathjax-exps">$j \geq i$</span> and <span class="mathjax-exps">$\tau_k(i)$</span> which minimize the KL divergence between <span class="mathjax-exps">$q(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i})$</span> and <span class="mathjax-exps">$p(v_i, \mathbf{v}_{&gt;i}, \mathbf{h} \vert \mathbf{v}_{&lt;i})$</span>. There exists an algebraic solution for this problem:</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     \tau_k(i) = &amp; \mathrm{sigm}\left(c_k + \sum_{j \geq i} W_{jk}\mu_j(i) + \sum_{j&lt;i}W_{kj}v_j\right) \\     \mu_j(i) =  &amp; \mathrm{sigm}\left(b_j + \sum_{k}W_{kj}\tau_k(i)\right) \forall j \geq i. \end{aligned}$$</div><p></p>
+<p>Note that these expressions depend on their counterparts (i.e. <span class="mathjax-exps">$\tau_k(i)$</span> depends on <span class="mathjax-exps">$\mu_j(i)$</span> and vice versa), and there is no exact solution for this set of non-linear equations. Similar to a Gibbs sampling procedure in an RBM where we bounce back and forth between the hidden and visible layers to infer the other conditioned upon the current, we can bounce back and forth between <span class="mathjax-exps">$\mu_j(i)$</span> and <span class="mathjax-exps">$\tau_k(i)$</span> (initialize them to 0), and we are guaranteed to converge to some equilibrium values of <span class="mathjax-exps">$\mu_j(i)$</span> and <span class="mathjax-exps">$\tau_k(i)$</span>. Then, <span class="mathjax-exps">$\mu_j(i)$</span> is used to approximate <span class="mathjax-exps">$p(v_j = 1 \vert \mathbf{v}_{&lt;i})$</span> and we have an autoregressive model!</p>
+<p>Unfortunately, in making the RBM (approximately) autoregressive we also encounter computational bottlenecks. To determine <span class="mathjax-exps">$\mu_j(i)$</span> and <span class="mathjax-exps">$\tau_k(i)$</span> takes <span class="mathjax-exps">$O(10)$</span> iterations, and it turns out that each iteration is quite costly. Moreover, we would need to do this for every <span class="mathjax-exps">$v_i$</span>. So, this mean-field approximation to make an RBM autoregressive does not actually end up being tractable.</p>
+<h2 class="mume-header" id="nades-building-off-of-the-mean-field-bayesian-rbm">NADEs: Building off of the mean-field Bayesian RBM</h2>
+
+<p>Let&apos;s build off of this mean-field idea presented in the previous section. However, it&apos;s at this point where the physical ties to an RBM vanish. How the NADE architecture is formed is simply &quot;inspired by&quot; this mean-field approximation for an RBM.</p>
+<p>For one iteration with <span class="mathjax-exps">$\mu_j(i)$</span> initialized to zero,</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     \mu_j(i)^{(0)} = 0 \rightarrow \tau_k(i)^{(0)} = \mathrm{sigm}\left(c_k + \sum_{j&lt;i}W_{kj}v_j\right) \rightarrow \mu_j(i)^{(1)} = \mathrm{sigm}\left(b_j + \sum_{k}W_{kj}\tau_k(i)^{(0)}\right) \end{aligned}$$</div><p></p>
+<p>If you stare at this long enough, you&apos;ll realize that this is simply many feed-forward networks, each with one hidden layer and shared weights going across the networks! There are <span class="mathjax-exps">$N$</span> networks to train, where <span class="mathjax-exps">$N$</span> is the number of visible units, and the input to the <span class="mathjax-exps">$i^{th}$</span> network is the <span class="mathjax-exps">$j&lt;i$</span> preceeding parts of the visible layer (i.e. all visible unit values before the <span class="mathjax-exps">$i^{th}$</span> visible unit) as dictated by <span class="mathjax-exps">$\sum_{j&lt;i}$</span>. The activation of the hidden layer is given by <span class="mathjax-exps">$\tau_k(i)^{(0)}$</span>, and the ouput of the network is <span class="mathjax-exps">$\mu_j(i)^{(1)}$</span> which we take to be the desired conditional <span class="mathjax-exps">$p(v_i = 1 \vert \mathbf{v}_{&lt;i})$</span>. The model is inherently autoregressive!</p>
+<p><img src="figures/NADE_full.png" alt="Illustration of a NADE. Here, . Red lines correspond to shared connections. The network to the right is simply an unfolded version of the fourth feed-forward neural network."></p>
+<p><img src="figures/NADE_expand.png" alt="An unfolded version of the fourth feed-forward neural network in the full NADE illustration."></p>
+<p>It turns out to be computationally benefitial to train a seperate set of weights connecting the output of the networks with the hidden layers, rather than having a shared weight matrix. Each of the <span class="mathjax-exps">$N$</span> networks looks like the following:</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     \mathrm{input} =      &amp; \mathbf{v}_{\lt i}                                                                           \\     \mathrm{activation} = &amp; \mathbf{h}_i = \mathrm{sigm}(\mathbf{c} + \mathbf{W}_{\cdot, \lt i} \mathbf{v}_{\lt i})         \\     \mathrm{output} =     &amp; p(v_i = 1 \vert \mathbf{v}_{\lt i}) = \mathrm{sigm}(b_i + \mathbf{U}_{i,\cdot} \mathbf{h}_i) \end{aligned}$$</div><p></p>
+<p>There is a lot of reusing parameters in each of the <span class="mathjax-exps">$N$</span> networks. Let&apos;s just jot some things down to understand the architecture better.</p>
+<ul>
+<li>For <span class="mathjax-exps">$N$</span> sites, there are <span class="mathjax-exps">$N$</span> hidden layers that each comprise of <span class="mathjax-exps">$n_h$</span> neurons.</li>
+<li><span class="mathjax-exps">$\mathbf{W}$</span> (<span class="mathjax-exps">$n_h \times N$</span> matrix) and <span class="mathjax-exps">$\mathbf{c}$</span> are shared by all <span class="mathjax-exps">$N$</span> networks.</li>
+<li><span class="mathjax-exps">$\mathbf{U}$</span> is <span class="mathjax-exps">$N \times n_h$</span>.</li>
+</ul>
+<p>Training the NADE boils down to minimizing the negative log-likelihood of the parameters given the training set.</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned}     \mathrm{NLL} =&amp; -\frac{1}{\vert D \vert} \sum_{\mathbf{v} \in D} \log p(\mathbf{v}) \\     =&amp; -\frac{1}{\vert D \vert} \sum_{\mathbf{v} \in D} \sum_{i = 1}^N \log p(v_i = 1 \vert \mathbf{v}_{&lt;i})  \end{aligned}$$</div><p></p>
+<p>The autoregressive probability, <span class="mathjax-exps">$p(\mathbf{v})$</span>, is calculated via the following procedure:</p>
+<p>$$<br>
+\begin{aligned}<br>
+&amp;p(\mathbf{v}) = 1 \<br>
+&amp;\mathbf{a} = \mathbf{c} \<br>
+&amp;\text{for i in 1:N} \<br>
+&amp;\qquad \mathbf{h}<em>i \leftarrow sigm(\mathbf{a}) \<br>
+&amp;\qquad p(v_i = 1 \vert \mathbf{v}</em>{\lt i}) \leftarrow sigm(b_i + \mathbf{U}<em>{i,\cdot}\mathbf{h}<em>i) \<br>
+&amp;\qquad p(\mathbf{v}) \leftarrow p(\mathbf{v}) \times p(v_i = 1 \vert \mathbf{v}</em>{\lt i})^{v_i} \times \left( 1 - p(v_i = 1 \vert \mathbf{v}</em>{\lt i}) \right)^{1-v_i} \<br>
+&amp;\qquad \mathbf{a} \leftarrow \mathbf{a} + \mathbf{W}_{\cdot,i} v_i \</p>
+<pre class="language-text">&amp;\text{return} \qquad p(\mathbf{v})
+</pre>
+<p>\end{aligned}<br>
+$$</p>
+<p>Now, we can calculate gradients of the NLL w.r.t. the NADE parameters (<span class="mathjax-exps">$\mathbf{W}, \mathbf{U}, \mathbf{b}, \mathbf{c}$</span>). Note, <span class="mathjax-exps">$\bigodot$</span> refers to an element-wise multiplication.</p>
+<p></p><div class="mathjax-exps">$$\begin{aligned} &amp;\delta \mathbf{a} = 0 \\ &amp;\delta \mathbf{c} = 0 \\ &amp;\text{for i in 1:N} \\ &amp;\qquad \delta b_i \leftarrow p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \\ &amp;\qquad \delta \mathbf{U}_{i, \cdot} \leftarrow \left( p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \right) \mathbf{h}_{i} \\ &amp;\qquad \delta \mathbf{h}_i \leftarrow \left( p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \right) \mathbf{U}_{i, \cdot} \\ &amp;\qquad \delta \mathbf{c} \leftarrow \delta \mathbf{c} + \delta \mathbf{h}_i \bigodot \mathbf{h}_i \bigodot (1 - \mathbf{h}_i) \\ &amp;\qquad \delta \mathbf{W}_{\cdot,i} \leftarrow \delta \mathbf{a} v_i \\ &amp;\qquad \delta \mathbf{a} \leftarrow \delta \mathbf{a} + \delta \mathbf{h}_i \bigodot \mathbf{h}_i \bigodot (1 - \mathbf{h}_i) \\ &amp;\text{return} \qquad \delta \mathbf{b}, \delta \mathbf{c}, \delta \mathbf{W}, \delta \mathbf{U} \end{aligned}$$</div><p></p>
+<h2 class="mume-header" id="try-for-yourself">Try for yourself!</h2>
+
+<p>I have open-source code for using NADEs to do quantum state reconstruction. It is relatively new and continues to be regularily updated with more functionality. Go check it out <a href="https://github.com/isaacdevlugt/GreNADE.git">here</a>.</p>
+<h2 class="mume-header" id="references">References</h2>
+
+<p>[1] B. McNaughton, M. V. Milo&#x161;evi&#x107;, A. Perali, and S. Pilati, ArXiv:2002.04292 (2020).</p>
+<p>[2] H. Larochelle and I. Murray, AISTATS 15, 9 (2011).</p>
+<p>[3] B. Uria, M.-A. C&#xF4;t&#xE9;, K. Gregor, I. Murray, and H. Larochelle, ArXiv:1605.02226 (2016).</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script></p>
+                <br />
+                <br />
+                <p class="tags tagcloud">
+                     <a href="../tag/quantum-mechanics/">quantum mechanics</a>
+                    <a href="../tag/topological-phase-transitions/">topological phase transitions</a>
+                    <a href="../tag/machine-learning/">machine learning</a>
+                    <a href="../tag/supervised-learning/">supervised learning</a>
+                 </p>
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Two 
+    <section class="wrapper style1 container special">
+        <div class="row">
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/machine-learning-for-quantum-design-at-pi.html" rel='bookmark'><h3>Machine Learning for Quantum Design at PI</h3></a>
+              </header>
+              <p>The Perimeter Institute for Theoretical Physics in Waterloo, Canada, hosts "</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/machine-learning-for-quantum-design-at-pi.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/workshop-machine-learning-for-quantum-technology-at-mpl-erlangen.html" rel='bookmark'><h3>Workshop Machine Learning for Quantum Technology at MPL Erlangen</h3></a>
+              </header>
+              <p>The Max Planck Institute for the Science of Light in Erlangen, Germany, hosts <a href="https://www.mpl.mpg.de/divisions/marquardt-division/workshops/2019-machi</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/workshop-machine-learning-for-quantum-technology-at-mpl-erlangen.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+          <div class="4u">
+
+            <section>
+              <span class="icon feature fa-"></span>
+              <header>
+                <a href="../blog/DL-theory.html" rel='bookmark'><h3>The Theory of Deep Learning - Part I</h3></a>
+              </header>
+              <p>Why do modern deep neural networks (DNNs) perform so well on previously unseen test data, even when their number of weights is much larger than the number of data points</p>
+              <footer>
+                  <ul class="buttons">
+                      <li><a href="../blog/DL-theory.html" class="button small">Read More</a></li>
+                  </ul>
+              </footer>
+            </section>
+
+          </div>
+        </div>
+    </section> -->
+
+</article>
+
+ 
+<!-- Footer -->
+<footer id="footer">
+
+    <ul class="icons">
+    </ul>
+
+    <span class="copyright">&copy; physicsml. All rights reserved. <br> Powered by <a href="https://blog.getpelican.com">Pelican</a>. Theme Twenty, Design: <a href="http://html5up.net">HTML5 UP</a>. Implemented and maintained by Anna Go and Danny Kong</span>
+
+</footer>
+</body>
+</html>
