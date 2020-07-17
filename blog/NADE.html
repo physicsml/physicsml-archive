@@ -151,8 +151,8 @@
 <p>For one iteration with <span class="mathjax-exps">$\mu_j(i)$</span> initialized to zero,</p>
 <p></p><div class="mathjax-exps">$$\begin{aligned}     \mu_j(i)^{(0)} = 0 \rightarrow \tau_k(i)^{(0)} = \mathrm{sigm}\left(c_k + \sum_{j&lt;i}W_{kj}v_j\right) \rightarrow \mu_j(i)^{(1)} = \mathrm{sigm}\left(b_j + \sum_{k}W_{kj}\tau_k(i)^{(0)}\right) \end{aligned}$$</div><p></p>
 <p>If you stare at this long enough, you&apos;ll realize that this is simply many feed-forward networks, each with one hidden layer and shared weights going across the networks! There are <span class="mathjax-exps">$N$</span> networks to train, where <span class="mathjax-exps">$N$</span> is the number of visible units, and the input to the <span class="mathjax-exps">$i^{th}$</span> network is the <span class="mathjax-exps">$j&lt;i$</span> preceeding parts of the visible layer (i.e. all visible unit values before the <span class="mathjax-exps">$i^{th}$</span> visible unit) as dictated by <span class="mathjax-exps">$\sum_{j&lt;i}$</span>. The activation of the hidden layer is given by <span class="mathjax-exps">$\tau_k(i)^{(0)}$</span>, and the ouput of the network is <span class="mathjax-exps">$\mu_j(i)^{(1)}$</span> which we take to be the desired conditional <span class="mathjax-exps">$p(v_i = 1 \vert \mathbf{v}_{&lt;i})$</span>. The model is inherently autoregressive!</p>
-<p><img src="figures/NADE_full.png" alt="Illustration of a NADE. Here, . Red lines correspond to shared connections. The network to the right is simply an unfolded version of the fourth feed-forward neural network."></p>
-<p><img src="figures/NADE_expand.png" alt="An unfolded version of the fourth feed-forward neural network in the full NADE illustration."></p>
+<p style="text-align: center;"><img src="../images/NADE_full.png" style="width:15vw;" alt="Illustration of a NADE. Here, . Red lines correspond to shared connections. The network to the right is simply an unfolded version of the fourth feed-forward neural network.">
+<img src="../images/NADE_expand.png" style="width:15vw;" alt="An unfolded version of the fourth feed-forward neural network in the full NADE illustration."></p>
 <p>It turns out to be computationally benefitial to train a seperate set of weights connecting the output of the networks with the hidden layers, rather than having a shared weight matrix. Each of the <span class="mathjax-exps">$N$</span> networks looks like the following:</p>
 <p></p><div class="mathjax-exps">$$\begin{aligned}     \mathrm{input} =      &amp; \mathbf{v}_{\lt i}                                                                           \\     \mathrm{activation} = &amp; \mathbf{h}_i = \mathrm{sigm}(\mathbf{c} + \mathbf{W}_{\cdot, \lt i} \mathbf{v}_{\lt i})         \\     \mathrm{output} =     &amp; p(v_i = 1 \vert \mathbf{v}_{\lt i}) = \mathrm{sigm}(b_i + \mathbf{U}_{i,\cdot} \mathbf{h}_i) \end{aligned}$$</div><p></p>
 <p>There is a lot of reusing parameters in each of the <span class="mathjax-exps">$N$</span> networks. Let&apos;s just jot some things down to understand the architecture better.</p>
@@ -164,19 +164,19 @@
 <p>Training the NADE boils down to minimizing the negative log-likelihood of the parameters given the training set.</p>
 <p></p><div class="mathjax-exps">$$\begin{aligned}     \mathrm{NLL} =&amp; -\frac{1}{\vert D \vert} \sum_{\mathbf{v} \in D} \log p(\mathbf{v}) \\     =&amp; -\frac{1}{\vert D \vert} \sum_{\mathbf{v} \in D} \sum_{i = 1}^N \log p(v_i = 1 \vert \mathbf{v}_{&lt;i})  \end{aligned}$$</div><p></p>
 <p>The autoregressive probability, <span class="mathjax-exps">$p(\mathbf{v})$</span>, is calculated via the following procedure:</p>
-<p>$$<br>
-\begin{aligned}<br>
-&amp;p(\mathbf{v}) = 1 \<br>
-&amp;\mathbf{a} = \mathbf{c} \<br>
-&amp;\text{for i in 1:N} \<br>
-&amp;\qquad \mathbf{h}<em>i \leftarrow sigm(\mathbf{a}) \<br>
-&amp;\qquad p(v_i = 1 \vert \mathbf{v}</em>{\lt i}) \leftarrow sigm(b_i + \mathbf{U}<em>{i,\cdot}\mathbf{h}<em>i) \<br>
-&amp;\qquad p(\mathbf{v}) \leftarrow p(\mathbf{v}) \times p(v_i = 1 \vert \mathbf{v}</em>{\lt i})^{v_i} \times \left( 1 - p(v_i = 1 \vert \mathbf{v}</em>{\lt i}) \right)^{1-v_i} \<br>
-&amp;\qquad \mathbf{a} \leftarrow \mathbf{a} + \mathbf{W}_{\cdot,i} v_i \</p>
-<pre class="language-text">&amp;\text{return} \qquad p(\mathbf{v})
-</pre>
-<p>\end{aligned}<br>
-$$</p>
+<p></p><div class="mathjax-exps">$$
+\begin{aligned}
+    &p(\mathbf{v}) = 1 \\
+    &\mathbf{a} = \mathbf{c} \\
+    &\text{for i in 1:N} \\
+    &\qquad \mathbf{h}_i \leftarrow sigm(\mathbf{a}) \\
+    &\qquad p(v_i = 1 \vert \mathbf{v}_{\lt i}) \leftarrow sigm(b_i + \mathbf{U}_{i,\cdot}\mathbf{h}_i) \\
+    &\qquad p(\mathbf{v}) \leftarrow p(\mathbf{v}) \times p(v_i = 1 \vert \mathbf{v}_{\lt i})^{v_i} \times \left( 1 - p(v_i = 1 \vert \mathbf{v}_{\lt i}) \right)^{1-v_i} \\
+    &\qquad \mathbf{a} \leftarrow \mathbf{a} + \mathbf{W}_{\cdot,i} v_i \\
+
+    &\text{return} \qquad p(\mathbf{v})
+\end{aligned}
+$$</div><p></p>
 <p>Now, we can calculate gradients of the NLL w.r.t. the NADE parameters (<span class="mathjax-exps">$\mathbf{W}, \mathbf{U}, \mathbf{b}, \mathbf{c}$</span>). Note, <span class="mathjax-exps">$\bigodot$</span> refers to an element-wise multiplication.</p>
 <p></p><div class="mathjax-exps">$$\begin{aligned} &amp;\delta \mathbf{a} = 0 \\ &amp;\delta \mathbf{c} = 0 \\ &amp;\text{for i in 1:N} \\ &amp;\qquad \delta b_i \leftarrow p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \\ &amp;\qquad \delta \mathbf{U}_{i, \cdot} \leftarrow \left( p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \right) \mathbf{h}_{i} \\ &amp;\qquad \delta \mathbf{h}_i \leftarrow \left( p(v_i = 1 \vert \mathbf{v}_{&lt;i}) - v_i \right) \mathbf{U}_{i, \cdot} \\ &amp;\qquad \delta \mathbf{c} \leftarrow \delta \mathbf{c} + \delta \mathbf{h}_i \bigodot \mathbf{h}_i \bigodot (1 - \mathbf{h}_i) \\ &amp;\qquad \delta \mathbf{W}_{\cdot,i} \leftarrow \delta \mathbf{a} v_i \\ &amp;\qquad \delta \mathbf{a} \leftarrow \delta \mathbf{a} + \delta \mathbf{h}_i \bigodot \mathbf{h}_i \bigodot (1 - \mathbf{h}_i) \\ &amp;\text{return} \qquad \delta \mathbf{b}, \delta \mathbf{c}, \delta \mathbf{W}, \delta \mathbf{U} \end{aligned}$$</div><p></p>
 <h2 class="mume-header" id="try-for-yourself">Try for yourself!</h2>
